@@ -5,7 +5,7 @@
 
   onMount(() => {
     gsap.to(".check", {
-      scale: 1,
+      scale: 1.2,
      ease:"expoScale",
       scrollTrigger: {
         trigger: ".check",
@@ -91,7 +91,7 @@
     color: var(--colorC);
   }
   .check {
-    grid-column: 9/12;
+    grid-column: 8;
     grid-row: 1;
     height: 100px;
     width: 80px;
@@ -111,7 +111,7 @@
     align-items: center;
   }
   .halo {
-    grid-column: 7/12;
+    grid-column: 8;
     grid-row: 1;
     background-color: rgb(79, 68, 235);
     width: 100px;
@@ -119,7 +119,7 @@
     border-radius: 50%;
     filter: blur(30px);
     z-index: 0;
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: 0px;
   }
   @media screen and (max-width: 768px) {

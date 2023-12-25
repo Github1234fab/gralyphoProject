@@ -6,7 +6,7 @@
 
   onMount(() => {
     gsap.to(".space-ship", {
-      scale: 1,
+      scale: 1.3,
      ease:"expoScale",
       scrollTrigger: {
         trigger: ".space-ship",
@@ -58,7 +58,7 @@
     color: var(--colorC);
   }
   .space-ship {
-    grid-column: 8/12;
+    grid-column: 9;
     height: 150px;
     width: 150px;
     transform: scale(0.7) rotate(50deg);
@@ -66,16 +66,16 @@
     z-index: 1;
   }
   .halo {
-    grid-column: 7/12;
+    grid-column: 9;
     grid-row: 1;
     background-color: rgb(79, 68, 235);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     filter: blur(30px);
     z-index: 0;
-    margin-left: 70px;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 0px;
   }
   @media screen and (max-width: 768px) {
     .E-section {
