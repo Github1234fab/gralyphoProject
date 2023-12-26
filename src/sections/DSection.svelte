@@ -127,10 +127,10 @@
       font-size: 10px;
     }
   }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 375px) {
     .D-section h2 {
     grid-column: 2/12;
-    margin-top: 190px;
+    margin-top: 200px;
     }
   }
 </style>
