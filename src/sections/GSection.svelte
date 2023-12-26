@@ -6,7 +6,7 @@
 
 	  onMount(() => {
     gsap.to(".dev", {
-      scale: 1.1,
+      scale: 1.3,
       ease: "bounce.out(1,0.3)",
       scrollTrigger: {
         trigger: ".dev",
@@ -70,13 +70,13 @@
 		grid-column: 7/12;
 		grid-row: 1;
 		background-color: rgb(79, 68, 235);
-		width: 80px;
-		height: 80px;
+		width: 100px;
+		height: 100px;
 		border-radius: 50%;
 		filter: blur(30px);
 		z-index: 0;
-		margin-left: 40px;
-		margin-top: 20px;
+		margin-left: 20px;
+		margin-top: 0px;
 	}
 
 	@media screen and (max-width: 768px) {

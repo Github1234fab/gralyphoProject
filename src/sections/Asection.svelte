@@ -95,8 +95,7 @@
     margin-top: 60px;
   }
 
-
-    @media screen and (max-width: 861px) {
+  @media screen and (max-width: 861px) {
     .A-section h2 {
       margin-top: 150px;
     }
@@ -115,6 +114,7 @@
     }
     .link {
       margin-top: 160px;
+      grid-column: 2/10;
     }
     .ordi {
       width: 180px;
@@ -129,7 +129,7 @@
       width: 100px;
     }
   }
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .A-section {
       font-size: 11px;
       height: auto;
@@ -138,35 +138,62 @@
       margin-top: 120px;
     }
     .link {
-      margin-top: 190px;
+      margin-top: 220px;
+      grid-column: 2/12;
     }
   }
-     @media screen and (max-width: 490px) {
+  @media screen and (max-width: 490px) {
     .A-section {
       font-size: 11px;
       height: auto;
     }
+    .A-section h1 {
+      font-size: 1.5em;
+    }
     .A-section h2 {
-      margin-top: 190px;
+      margin-top: 100px;
     }
     .link {
-      margin-top: 290px;
+      margin-top: 220px;
+      grid-column: 2/12;
     }
-    @media screen and (max-width: 369px) {
+    .ordi {
+      width: 140px;
+      height: 140px;
+    }
+    .port {
+      width: 70px;
+      height: 70px;
+    }
+    .halo {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  @media screen and (max-width: 382px) {
     .A-section {
       font-size: 11px;
       height: auto;
     }
     .A-section h2 {
+      margin-top: 120px;
+    }
+    .link {
+      margin-top: 200px;
+      grid-column: 2/12;
+    }
+  }
+  @media screen and (max-width: 332px) {
+    .A-section {
+      font-size: 11px;
+      height: auto;
+    }
+    .A-section h2 {
+      margin-top: 150px;
+    }
+    .link {
+      grid-column: 2/12;
       margin-top: 250px;
     }
-    .link {
-      margin-top: 360px;
-    }
-    
   }
-}
-
-
-
 </style>

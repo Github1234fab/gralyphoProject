@@ -9,7 +9,7 @@
      ease:"expoScale",
       scrollTrigger: {
         trigger: ".check",
-        start: "top 500px",
+        start: "top 600px",
 	end: "-200px",
 	scrub: 2,
       },
@@ -66,7 +66,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 100%;
+    height: 700px;
     margin-top: 150px;
     font-size: 16px;
     background-color: var(--colorO);
@@ -91,7 +91,7 @@
     color: var(--colorC);
   }
   .check {
-    grid-column: 8;
+    grid-column: 9;
     grid-row: 1;
     height: 100px;
     width: 80px;
@@ -111,7 +111,7 @@
     align-items: center;
   }
   .halo {
-    grid-column: 8;
+    grid-column: 9;
     grid-row: 1;
     background-color: rgb(79, 68, 235);
     width: 100px;
@@ -125,6 +125,12 @@
   @media screen and (max-width: 768px) {
     .D-section {
       font-size: 10px;
+    }
+  }
+    @media screen and (max-width: 350px) {
+    .D-section h2 {
+    grid-column: 2/12;
+    margin-top: 190px;
     }
   }
 </style>
