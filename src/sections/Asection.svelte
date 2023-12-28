@@ -4,67 +4,78 @@
 </script>
 
 <section class="A-section">
-  <h1>NOUS CRÉEONS LES OUTILS DIGITAUX QU'IL VOUS FAUT.</h1>
-  <h2>Agence experte dans la création de site Web et dans le développement d’application.</h2>
-  <img src={ordi} alt="Icon d'ornitateur en 3D" class="ordi" />
-  <img src={port} alt="icon de téléphone portable en 3D" class="port" />
+  <div class="wrapper-title">
+    <!-- <h1>Sites internet et applications sur mesures. <br> Boostez votre présence en ligne grâce aux outils digitaux.</h1> -->
+    <h1>Sites internet et applications sur mesure conçus spécifiquement pour répondre à vos besoins.</h1>
+    <!-- <h2> Offrez une solution d'exception à votre activité, grâce  à notre expertise en développement web</h2> -->
+    <h2>
+      Boostez votre présence en ligne avec nos solutions digitales exclusives, taillées sur mesure pour votre succès.
+    </h2>
+  </div>
+
   <a class="link" href="/#sectionE">Découvrir</a>
-  <div class="halo"></div>
 </section>
 
 <style>
+  /* 41, 30, 23, 09"  */
   .A-section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 350px;
-    margin-top: 50px;
+    height: 700px;
+    margin-top: 0px;
     font-size: 16px;
-    background-color: var(--colorO);
+    background-image: url(../Assets/png-gralypho/23.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+  .wrapper-title {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/12;
+  }
+  .wrapper-title::before {
+    position: absolute;
+    content: "";
+    background-color: #11232e95;
+    z-index: 0;
+    height: 34%;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: -20px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
   .A-section h1 {
     word-wrap: break-word;
     grid-column: 2/10;
     grid-row: 1;
-    margin-top: 20px;
+    margin-top: 70px;
     font-family: epilogue;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 1.8em;
     color: white;
+    position: relative;
+    z-index: 1;
+    /* text-transform: uppercase; */
   }
+
   .A-section h2 {
     word-wrap: break-word;
     grid-column: 2/10;
     grid-row: 1;
-    margin-top: 120px;
     font-family: epilogue;
     font-weight: 400;
     font-size: 1em;
-    color: var(--colorD);
-  }
-  .ordi {
-    grid-column: 11;
-    grid-row: 1;
-    width: 250px;
-    height: 250px;
-    margin-top: 30px;
-    margin-left: 20px;
+    color: var(--colorC);
+    margin-top: 20px;
     z-index: 2;
-  }
-  .port {
-    grid-column: 11;
-    grid-row: 1;
-    width: 140px;
-    height: 140px;
-    transform: rotate(30deg);
-    margin-top: 17px;
-    margin-left: 10px;
-    z-index: 3;
   }
 
   .link {
-    grid-column: 2/7;
-    grid-row: 1;
+    grid-column: 2/12;
+    grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,122 +89,60 @@
     font-family: epilogue;
     font-weight: 400;
     font-size: 1em;
-    margin-top: 220px;
+    margin-top: 260px;
     margin-bottom: 30px;
+    box-shadow: inset 2px 2px 5px var(--colorO);
   }
 
-  .halo {
-    grid-column: 11;
-    grid-row: 1;
-    background-color: rgb(79, 68, 235);
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    filter: blur(30px);
-    z-index: 0;
-    margin-left: 20px;
-    margin-top: 60px;
-  }
-
-  @media screen and (max-width: 861px) {
-    .A-section h2 {
-      margin-top: 150px;
+  @media screen and (max-width: 760px) {
+    .A-section {
+      font-size: 13px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
     }
-    .link {
-      margin-top: 250px;
+    .wrapper-title::before {
+      height: 35%;
     }
   }
 
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 620px) {
     .A-section {
-      font-size: 11px;
-      height: auto;
+      font-size: 12px;
+      background-size: cover;
+      background-position: center;
     }
     .A-section h2 {
-      margin-top: 100px;
+      font-size: 1.1em;
     }
-    .link {
-      margin-top: 160px;
-      grid-column: 2/10;
+    .wrapper-title {
+      margin-top: -20px;
     }
-    .ordi {
-      width: 180px;
-      height: 180px;
-    }
-    .port {
-      width: 100px;
-      height: 100px;
-    }
-    .halo {
-      height: 100px;
-      width: 100px;
+    .wrapper-title::before {
+      height: 35%;
     }
   }
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 420px) {
     .A-section {
-      font-size: 11px;
-      height: auto;
-    }
-    .A-section h2 {
-      margin-top: 120px;
-    }
-    .link {
-      margin-top: 220px;
-      grid-column: 2/12;
-    }
-  }
-  @media screen and (max-width: 490px) {
-    .A-section {
-      font-size: 11px;
-      height: auto;
+      font-size: 14px;
+      height: 100%;
     }
     .A-section h1 {
-      font-size: 1.5em;
+      line-height: 27px;
+      font-weight: 600;
     }
     .A-section h2 {
+      font-size: 1.1em;
+    }
+    .wrapper-title {
+      margin-top: 0px;
+    }
+    .wrapper-title::before {
+      height: 50%;
+    }
+    .link {
       margin-top: 100px;
-    }
-    .link {
-      margin-top: 220px;
-      grid-column: 2/12;
-    }
-    .ordi {
-      width: 140px;
-      height: 140px;
-    }
-    .port {
-      width: 70px;
-      height: 70px;
-    }
-    .halo {
-      height: 100px;
-      width: 100px;
-    }
-  }
-  @media screen and (max-width: 382px) {
-    .A-section {
-      font-size: 11px;
-      height: auto;
-    }
-    .A-section h2 {
-      margin-top: 120px;
-    }
-    .link {
-      margin-top: 200px;
-      grid-column: 2/12;
-    }
-  }
-  @media screen and (max-width: 332px) {
-    .A-section {
-      font-size: 11px;
-      height: auto;
-    }
-    .A-section h2 {
-      margin-top: 150px;
-    }
-    .link {
-      grid-column: 2/12;
-      margin-top: 250px;
     }
   }
 </style>

@@ -6,14 +6,14 @@
   onMount(() => {
     gsap.to(".check", {
       scale: 1.2,
-     ease:"expoScale",
+      ease: "expoScale",
       scrollTrigger: {
         trigger: ".check",
         start: "top 600px",
-	end: "-200px",
-	scrub: 2,
+        end: "-200px",
+        scrub: 2,
       },
-})
+    });
   });
 
   let infosCards = [
@@ -54,7 +54,7 @@
   <img src={Check} alt="" class="check" />
 
   <div class="wrapper-accordeon">
-    {#each infosCards as card}	
+    {#each infosCards as card}
       <CardsSectionB title={card.title} p={card.p} number={card.number} />
     {/each}
   </div>
@@ -127,10 +127,10 @@
       font-size: 10px;
     }
   }
-    @media screen and (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     .D-section h2 {
-    grid-column: 2/12;
-    margin-top: 200px;
+      grid-column: 2/12;
+      margin-top: 200px;
     }
   }
 </style>
