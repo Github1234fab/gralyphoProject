@@ -31,6 +31,7 @@
 </script>
 
 <section class="C-section">
+  <div class="bar"></div>
   <img src={Robot} alt="icon de robot en 3D" class="robot" />
   <h1>Votre projet est unique et mérite une technologie appropriée.</h1>
   
@@ -46,6 +47,12 @@
 </section>
 
 <style>
+   .bar{
+    width: 3000%;
+    height: 1%;
+    background-color: blue;
+    box-shadow: 0px 5px 10px blue;
+  }
   .C-section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -53,7 +60,7 @@
     height: 500px;
     font-size: 16px;
     background-color: var(--colorO);
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .C-section h1 {
     word-wrap: break-word;
