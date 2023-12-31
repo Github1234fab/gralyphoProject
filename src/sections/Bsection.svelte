@@ -1,26 +1,157 @@
 <script>
-        import Customers from '../Components/Customers.svelte';
-
+  import Customers from "../Components/Customers.svelte";
 </script>
-<section class="B-section">
-<Customers/>
 
+<section class="B-section">
+  <div class="wrapper-cards">
+    <div class="cards-experience">
+      <div class="icon linear-gradient">100%</div>
+      <h1>Référencement</h1>
+      <h2>
+        Grâce à notre expertise en SEO et SEA, optimisez votre stratégie pour un référencement sur la première page des
+        moteurs de recherche
+      </h2>
+      <a class="button" href="/#sectionE">Découvrir</a>
+    </div>
+    <div class="cards-experience">
+      <div class="icon linear-gradient">100%</div>
+      <h1>Design sur mesure</h1>
+      <h2>Démarquez vous de vos concurents. Faîtes la différence grâce une identité visuelle qui vous raconte.</h2>
+      <a class="button" href="/#sectionE">Découvrir</a>
+    </div>
+    <div class="cards-experience">
+      <div class="icon linear-gradient">100%</div>
+      <h1>Évolutif</h1>
+      <h2>
+        Optez pour des solutions qui vous permettrons de faire évoluer votre site internet et votre application, au fur
+        et à mseure de l'évolution de votre business.
+      </h2>
+      <a class="button" href="/#sectionE">Découvrir</a>
+    </div>
+  </div>
 </section>
+
 <style>
-        	.B-section {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: auto;
-		height: 100%;
-		margin: 0 0px;
-		font-size: 16px;
-		background-color: var(--colorO);
-		overflow: hidden;
-	}
-	@media screen and (max-width: 768px) {
-		.B-section {
-			font-size: 10px;
-		}
-	}
-        
+  .B-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+    margin-bottom: 100px;
+    font-size: 16px;
+    background-color: var(--colorO);
+  }
+  .wrapper-cards {
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: auto;
+  }
+  .cards-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--colorO);
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 20px;
+    z-index: 0;
+    box-shadow: 3px 3px 15px rgb(1, 6, 27);
+    background-color: #152a37;
+  }
+  .icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    color: transparent;
+    background: linear-gradient(to left, var(--colorD), var(--colorI));
+    background-clip: text;
+    font-weight: 600;
+    margin-top: 40px;
+    border: solid 2px linear-gradient(to left, var(--colorD), var(--colorI));
+  }
+  .linear-gradient {
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
+  }
+
+  .cards-experience h1 {
+    word-wrap: break-word;
+    z-index: 1;
+    font-family: kanit;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: white;
+    padding: 3px;
+    margin-top: 160px;
+  }
+  .cards-experience h2 {
+    margin-top: 0px;
+    z-index: 1;
+    position: relative;
+    font-family: epilogue;
+    font-weight: 300;
+    line-height: 30px;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 1em;
+    color: var(--colorC);
+    padding: 30px;
+  }
+  .button {
+    /* background: linear-gradient(to left, var(--colorJ), var(--colorI)); */
+    background-color: rgb(100, 100, 229);
+    padding: 13px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1em;
+    transition: 0.4s ease-in-out;
+  }
+  .button:hover {
+    animation: bounce 0.4s ease-in-out;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
+    }
+    25% {
+      transform: scale(1) translateY(3px);
+    }
+    50% {
+      transform: scale(1) translateY(-1px);
+    }
+    75% {
+      transform: scale(1) translateY(2px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper-cards {
+      display: flex;
+      flex-direction: column;
+    }
+    .cards-experience h2 {
+      font-size: 0.9em;
+    }
+  }
 </style>

@@ -5,13 +5,13 @@
 
   onMount(() => {
     gsap.to(".check", {
-      scale: 1.2,
+      scale: 1.3,
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".check",
-        start: "top 600px",
+        start: "top 700px",
         end: "-200px",
-        scrub: 2,
+        scrub: 1,
       },
     });
   });
@@ -49,9 +49,15 @@
 </script>
 
 <section class="D-section">
-  <h1>Nos process de créations sont stables et testés.</h1>
-  <h2>lls nous permettent de créer des produits Digitaux 100% efficace et correspondants formellement à vos besoins</h2>
-  <img src={Check} alt="" class="check" />
+  <div class="wrapper-text">
+    <h1>Nos process de créations sont stables et testés.</h1>
+    <h2>
+      lls nous permettent de créer des produits Digitaux 100% efficace et correspondants formellement à vos besoins
+    </h2>
+  </div>
+  <div class="wrapper-check">
+    <img src={Check} alt="" class="check" />
+  </div>
 
   <div class="wrapper-accordeon">
     {#each infosCards as card}
@@ -66,33 +72,60 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 700px;
+    height: auto;
     margin-top: 150px;
     font-size: 16px;
     background-color: var(--colorO);
   }
-  .D-section h1 {
-    grid-column: 2/7;
-    grid-row: 1;
-    font-family: epilogue;
-    font-weight: bolder;
-    font-size: 1.8em;
-    font-weight: 600;
-    color: white;
-    text-transform: uppercase;
+  .wrapper-text {
+    grid-column: 2/12;
+    grid-row: 2;
+    background-color: var(--colorN);
+    border-radius: 20px;
+    padding: 20px;
   }
+  .D-section h1 {
+    word-wrap: break-word;
+    grid-column: 2/12;
+    text-align: left;
+    grid-row: 2;
+    font-family: epilogue;
+    font-weight: 500;
+    font-size: 1.7em;
+    color: white;
+    margin-top: 50px;
+    padding: 10px;
+    line-height: 37px;
+  }
+
   .D-section h2 {
-    grid-column: 2/7;
-    grid-row: 1;
-    margin-top: 110px;
+    word-wrap: break-word;
+    grid-column: 2/12;
+    grid-row: 3;
+    margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
     font-size: 1.2em;
     color: var(--colorC);
+    text-align: left;
+    padding: 10px;
+    line-height: 30px;
+  }
+  .wrapper-check {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/12;
+    grid-row: 1;
+    z-index: 0;
+    background-image: url(../Assets//png-gralypho/form1.svg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+    transform: rotate(1deg);
   }
   .check {
-    grid-column: 9;
-    grid-row: 1;
     height: 100px;
     width: 80px;
     z-index: 1;
@@ -100,7 +133,7 @@
   }
   .wrapper-accordeon {
     grid-column: 2/12;
-    grid-row: 2;
+    grid-row: 4;
     height: 100%;
     width: 100%;
     margin-top: 50px;
@@ -109,28 +142,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .halo {
-    grid-column: 9;
-    grid-row: 1;
-    background-color: rgb(79, 68, 235);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    filter: blur(30px);
-    z-index: 0;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  @media screen and (max-width: 768px) {
-    .D-section {
-      font-size: 10px;
-    }
-  }
-  @media screen and (max-width: 375px) {
-    .D-section h2 {
-      grid-column: 2/12;
-      margin-top: 200px;
-    }
   }
 </style>

@@ -32,7 +32,7 @@
 <style>
 .bg-custom{
         background-color: var(--colorO);
-        box-shadow: 0px 0px 10px 0px var(--colorL);
+        /* box-shadow: 0px 0px 10px 0px var(--colorL); */
         padding: 20px;
 }
 .bg-toggle{

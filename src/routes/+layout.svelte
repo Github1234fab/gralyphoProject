@@ -1,9 +1,10 @@
+
 <script>
 	// import "../app.pcss";
 	import './styles.css';
 	import Header from '../sections/Header.svelte';
 	import Asection from '../sections/Asection.svelte';
-	// import Bsection from '../sections/Bsection.svelte';
+	import Bsection from '../sections/Bsection.svelte';
 	import Csection from '../sections/Csection.svelte';
 	import DSection from '../sections/DSection.svelte';
 	import ESection from '../sections/ESection.svelte';
@@ -13,15 +14,13 @@
 	// import ISection from '../sections/ISection.svelte';
 	import JSection from '../sections/JSection.svelte';
 	import Footer from '../sections/Footer.svelte';
-	
 </script>
 
 <main>
 <Header/>
 	<section id="sectionA">
 	<Asection />
-	</section>
-	<!-- <Bsection /> -->
+	<Bsection />
 	<Csection />
 	<DSection />
 	<section id="sectionE">
@@ -33,7 +32,6 @@
 	<GSection />
 	<JSection />
 	<HSection />
-	<!-- <ISection /> -->
 
 	<Footer />
 </main>

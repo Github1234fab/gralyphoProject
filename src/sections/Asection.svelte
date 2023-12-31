@@ -1,42 +1,32 @@
 <script>
-  import background from "../Assets/png-gralypho/09.png";
+  import background from "../Assets/png-gralypho/18.png";
 </script>
 
 <section class="A-section">
-  <div class="bar"></div>
   <div class="wrapper-title">
-    <!-- <h1>Sites internet et applications sur mesures. <br> Boostez votre présence en ligne grâce aux outils digitaux.</h1> -->
-    <h1>Optez pour nos solutions digitales 100% sur mesure.</h1>
-    <!-- <h2> Offrez une solution d'exception à votre activité, grâce  à notre expertise en développement web</h2> -->
+    <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1>
     <h2>
-      Simplifiez vos opérations, augmentez votre visibilité et offrez à vos clients une expérience exceptionnelle !
+      Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
     </h2>
-      <a class="link" href="/#sectionE">Découvrir</a>
+    <a class="link" href="/#sectionE">Découvrir</a>
     <img src={background} alt="" class="background" />
   </div>
-
 </section>
 
 <style>
-  .bar {
-    width: 3000%;
-    height: 2px;
-    background-color: blue;
-    box-shadow: 0px 5px 10px blue;
-  }
-  /* 41, 30, 23, 09"  */
   .A-section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 700px;
+    height: auto;
     font-size: 16px;
+    margin-bottom: 100px;
   }
 
   .wrapper-title {
     grid-column: 2/12;
     background-color: var(--colorN);
-    height: 500px;
+    height: 90%;
     width: 100%;
     border-radius: 20px;
     margin-top: 20px;
@@ -51,26 +41,35 @@
     font-weight: 500;
     font-size: 1.8em;
     color: white;
-    line-height: 28px;
+    line-height: 37px;
     padding: 30px;
-    margin-top: 0px;
+    margin-top: 10px;
   }
+  .A-section h1 span{
+    color: transparent;
+       background: linear-gradient(to left, var(--colorD), var(--colorI));
+       background-clip: text;
 
+
+  }
   .A-section h2 {
-    margin-top: 0px;
+    margin-top: -30px;
     z-index: 1;
     position: relative;
     font-family: epilogue;
     font-weight: 300;
     word-wrap: break-word;
     text-align: left;
+        line-height: 30px;
     font-size: 1.1em;
     color: var(--colorC);
     padding: 30px;
   }
   .background {
     width: 100%;
+    height: auto;
     z-index: 0;
+    margin-top: 30px;
   }
 
   .link {
@@ -78,51 +77,54 @@
     z-index: 2;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 150px;
     height: 3.1em;
-    background-color: var(--colorJ);
+    background: linear-gradient(to left, var(--colorJ), var(--colorI));
     border: none;
-    border-radius: 40px;
+    border-radius: 8px;
     color: white;
     text-decoration: none;
     font-family: epilogue;
-    font-weight: 700;
-    font-size: 1.3em;
+    font-weight: 400;
+    font-size: 1em;
     box-shadow: inset 2px 2px 5px var(--colorO);
     margin-left: 30px;
-    margin-top:  20px;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding: 30px;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
-  .link:hover{
-    background-color: var(--colorI);
-    transform: scale(0.9);
+  .link:hover {
+    animation: bounce 0.4s ease-in-out;
   }
-
-  @media screen and (max-width: 768px) {
-    .A-section {
-      font-size: 13px;
+  @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
     }
-    .wrapper-title {
-      height: 410px;
+    25% {
+      transform: scale(1) translateY(3px);
     }
-    .A-section h2 {
-      line-height: 25px;
-      margin-top: -40px;
+    50% {
+      transform: scale(1) translateY(-1px);
     }
-  }
-
-  @media screen and (max-width: 590px) {
-    .A-section {
-      font-size: 11px;
+    75% {
+      transform: scale(1) translateY(2px);
     }
-    .wrapper-title {
-      height: 450px;
-    }
-    .A-section h2 {
-      line-height: 25px;
-      margin-top: -40px;
+    100% {
+      transform: scale(1) translateY(0);
     }
   }
+ @media screen and (max-width: 590px){
+  .wrapper-title{
+    overflow: hidden;
+    height: 850px
+  }
+  .background{
+    width: auto;
+    height: 420px;
+    z-index: 0;
+    margin-top: 30px;
+    margin-left: -140px;
+  }
+ }
 </style>
