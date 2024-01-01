@@ -3,22 +3,26 @@
   export let title;
   export let p;
   //   export let number;
-  	import { fade } from 'svelte/transition';
-		import { slide } from 'svelte/transition';
+  import { fade, slide } from "svelte/transition";
 
-let close= false;
+  let close = false;
+  let buttonText = "+";
 
   function collapse() {
     close = !close;
+    buttonText = close ? "-" : "+";
   }
 </script>
 
 <div class="wrapper {close ? 'active' : ''}">
-  <div class="button" on:click={collapse}>{title}</div>
- {#if  close}
-    <div class="content" transition:slide={{ duration: 900}}  transition:fade={ opacity: 1}}>
-      <p class="p">{p}</p>
-    </div>
+  <div class="button" on:click={collapse}>{title} <span class="button-after" in:fade out:fade>{buttonText}</span></div>
+
+  {#if close}
+    <span transition:slide={{ duration: 1200 }}>
+      <div class="content {close ? 'less' : ''} " in:fade={{ duration: 1200 }} out:fade={{ duration: 1200 }}>
+        <p class="p">{p}</p>
+      </div>
+    </span>
   {/if}
 </div>
 
@@ -29,19 +33,26 @@ let close= false;
     width: 100%;
   }
   .button {
+    position: relative;
     display: flex;
-    
     background-color: var(--colorO);
-    padding:18px;
+    padding: 18px;
     border-radius: 5px;
     color: white;
     font-size: 1.2em;
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 10px;
-    box-shadow:
-      3px 5px 6px black,
-      -3px -5px 6px black;
+    box-shadow: 3px 3px 15px rgb(1, 6, 27);
+  }
+  .button-after {
+    position: absolute;
+    content: "{buttonText}";
+    color: rgb(100, 100, 229);
+    font-size: 2em;
+    font-weight: bolder;
+    right: 30px;
+    align-self: center;
   }
   .content {
     width: 100%;
@@ -50,15 +61,13 @@ let close= false;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    box-shadow: 3px 5px 6px black;
-    opacity: 0.5;
+    border: none;
   }
 
   .p {
     font-size: 1.2em;
     font-weight: 300;
-      color: white;
+    color: white;
+    border: none;
   }
- 
-
 </style>
