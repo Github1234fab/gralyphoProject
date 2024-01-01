@@ -22,13 +22,14 @@
   <div class="wrapper-text">
   <h1>Gralypho créer un service unique de produits numériques.</h1>
   <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...).</h2>
+  <Banner />
   </div>
   <div class="wrapper-spaceShip">
     <img src={SpaceShip} alt="" class="space-ship" />
   </div>
 </section>
 
-<Banner />
+
 
 <style>
   .E-section {

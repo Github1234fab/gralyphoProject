@@ -45,12 +45,10 @@
     padding: 30px;
     margin-top: 10px;
   }
-  .A-section h1 span{
+  .A-section h1 span {
     color: transparent;
-       background: linear-gradient(to left, var(--colorD), var(--colorI));
-       background-clip: text;
-
-
+    background: linear-gradient(to left, var(--colorD), var(--colorI));
+    background-clip: text;
   }
   .A-section h2 {
     margin-top: -30px;
@@ -60,7 +58,7 @@
     font-weight: 300;
     word-wrap: break-word;
     text-align: left;
-        line-height: 30px;
+    line-height: 30px;
     font-size: 1.1em;
     color: var(--colorC);
     padding: 30px;
@@ -114,17 +112,17 @@
       transform: scale(1) translateY(0);
     }
   }
- @media screen and (max-width: 590px){
-  .wrapper-title{
-    overflow: hidden;
-    height: 850px
+  @media screen and (max-width: 590px) {
+    .wrapper-title {
+      overflow: hidden;
+      height: 850px;
+    }
+    .background {
+      width: auto;
+      height: 420px;
+      z-index: 0;
+      margin-top: 30px;
+      margin-left: -140px;
+    }
   }
-  .background{
-    width: auto;
-    height: 420px;
-    z-index: 0;
-    margin-top: 30px;
-    margin-left: -140px;
-  }
- }
 </style>

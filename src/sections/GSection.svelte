@@ -21,11 +21,12 @@
   <div class="wrapper-text">
     <h1>Nos exemples de réalisations</h1>
     <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...) ou n</h2>
+  <Carousel />
   </div>
   <div class="wrapper-dev">
     <img src={Dev} alt="icon de developpeur informatique" class="dev" />
   </div>
-  <Carousel />
+
 </section>
 
 <style>
@@ -75,7 +76,7 @@
     grid-column: 2/12;
     grid-row: 1;
     z-index: 0;
-    background-image: url(../Assets//png-gralypho/form4.svg);
+    background-image: url(../Assets//png-gralypho/form1.svg);
     background-repeat: no-repeat;
     background-size: 130%;
     background-position: center;

@@ -93,11 +93,12 @@
 		overflow: hidden;
 		cursor: grab;
 		position: relative;
-		background-color: transparent;
-		grid-column: 2/12;
+		background-color: var(--colorO);
+		grid-column: 1/12;
 		grid-row: 5;
 		z-index: 5;
 		margin-top: 0px;
+		border-radius: 10px;
 	}
 	.wrapper-caroussel ::-webkit-scrollbar {
 		background-color: transparent;

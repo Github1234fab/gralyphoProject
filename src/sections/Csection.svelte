@@ -1,6 +1,7 @@
 <script>
   import Robot from "../Assets/png-gralypho/Saly-39.png";
   import { onMount } from "svelte";
+  import triangle from "../Assets/png-gralypho/form5.svg";
 
   onMount(() => {
     gsap.to(".robot", {
@@ -17,13 +18,10 @@
 </script>
 
 <section class="C-section">
-  <div class="wrapper-image">
-    <img src={Robot} alt="icon de robot en 3D" class="robot" />
-  </div>
+  <img src={Robot} alt="icon de robot en 3D" class="robot" />
+  <img class="triangle" src={triangle} alt="" />
   <div class="wrapper-text">
-    <h1>
-      Grâce à notre expertise en création de sites Web et Apps , vous bénéficiez des meilleures technologies !
-    </h1>
+    <h1>Grâce à notre expertise en création de sites Web et Apps , vous bénéficiez des meilleures technologies !</h1>
 
     <p>
       Selon vos besoins spécifiques, nous choisirons méticuleusement la technologie la plus adaptée pour la réalisation
@@ -79,7 +77,8 @@
     font-family: epilogue;
     padding: 10px;
   }
-  .wrapper-image {
+  /* .wrapper-image {
+    position: relative;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -87,17 +86,34 @@
     grid-column: 2/12;
     grid-row: 1;
     z-index: 0;
-    background-image: url(../Assets//png-gralypho/form5.svg);
-    background-repeat: no-repeat;
+    background-image: url(../Assets//png-gralypho/form5.svg); 
+   background-repeat: no-repeat;
     background-size: 130%;
     background-position: center;
-  }
-  .robot {
+  } */
+  /* .triangle {
+    grid-column: 4/9;
+    grid-row: 1;
+    height: 450px;
+    width: 450px;
+    z-index: 1;
     transform: rotate(0deg);
+  } */
+  .robot {
+    grid-column: 6;
+    grid-row: 1;
     transform: scale(0.6);
     height: 180px;
     width: 180px;
     margin-top: 50px;
     z-index: 2;
+  }
+  .robot::after {
+    position: absolute;
+    content: "";
+    height: 450px;
+    width: 450px;
+    z-index: 1;
+    transform: rotate(0deg);
   }
 </style>

@@ -5,7 +5,7 @@
 
 <div class="card">
   <h2>{title}</h2>
-  <a href={link} target="_blank"><button class="button">Voir</button></a>
+  <a href={link} target="_blank" class="button linear-gradient">Go</a>
 </div>
 
 <style>
@@ -13,7 +13,6 @@
     /* position: relative; */
     flex-shrink: 0;
     border-radius: 3px;
-    border: none;
     margin: 8px;
     height: 20em;
     width: 20em;
@@ -24,11 +23,15 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    box-shadow: 3px 3px 15px rgb(1, 6, 27);
+    box-shadow: 3px 3px 5px rgb(1, 6, 27);
     background-color: #152a37;
   }
+  .linear-gradient{
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
+  }
   .button {
-    background-color: rgb(100, 100, 229);
     padding: 30px;
     border-radius: 10px;
     width: auto;
@@ -66,7 +69,7 @@
     z-index: 1;
     font-family: kanit;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: white;
     padding: 10px;
     text-align: center;

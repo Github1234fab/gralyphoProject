@@ -54,17 +54,19 @@
     <h2>
       lls nous permettent de créer des produits Digitaux 100% efficace et correspondants formellement à vos besoins
     </h2>
-  </div>
-  <div class="wrapper-check">
-    <img src={Check} alt="" class="check" />
-  </div>
-
-  <div class="wrapper-accordeon">
+        <div class="wrapper-accordeon">
     {#each infosCards as card}
       <CardsSectionB title={card.title} p={card.p} number={card.number} />
     {/each}
   </div>
-  <div class="halo"></div>
+  </div>
+  <div class="wrapper-check">
+    <img src={Check} alt="" class="check" />
+  
+  </div>
+
+
+
 </section>
 
 <style>
