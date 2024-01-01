@@ -1,14 +1,14 @@
 <script>
   import Robot from "../Assets/png-gralypho/Saly-39.png";
   import { onMount } from "svelte";
-  import triangle from "../Assets/png-gralypho/form5.svg";
+  import triangle from "../Assets/png-gralypho/nnneon (6).svg";
 
   onMount(() => {
-    gsap.to(".robot", {
-      scale: 1.1,
+    gsap.to(".gsap", {
+      scale: 1,
       ease: "expoScale",
       scrollTrigger: {
-        trigger: ".robot",
+        trigger: ".gsap",
         start: "top 700px",
         end: "-200px",
         scrub: 1,
@@ -18,9 +18,9 @@
 </script>
 
 <section class="C-section">
-  <img src={Robot} alt="icon de robot en 3D" class="robot" />
-  <img class="triangle" src={triangle} alt="" />
   <div class="wrapper-text">
+    <img src={Robot} alt="icon de robot en 3D" class="robot gsap" />
+    <img src={triangle} alt="icon de robot en 3D" class="triangle gsap" />
     <h1>Grâce à notre expertise en création de sites Web et Apps , vous bénéficiez des meilleures technologies !</h1>
 
     <p>
@@ -46,21 +46,23 @@
   }
   .wrapper-text {
     grid-column: 2/12;
-    grid-row: 2;
-    background-color: var(--colorN);
+    grid-row: 1;
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px grey;
   }
   .C-section h1 {
     word-wrap: break-word;
     grid-column: 2/12;
     text-align: left;
-    grid-row: 2;
+    grid-row: 1;
     font-family: epilogue;
     font-weight: 500;
     font-size: 1.7em;
     color: white;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
     line-height: 37px;
   }
@@ -77,43 +79,28 @@
     font-family: epilogue;
     padding: 10px;
   }
-  /* .wrapper-image {
-    position: relative;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2/12;
-    grid-row: 1;
-    z-index: 0;
-    background-image: url(../Assets//png-gralypho/form5.svg); 
-   background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: center;
-  } */
-  /* .triangle {
-    grid-column: 4/9;
-    grid-row: 1;
-    height: 450px;
-    width: 450px;
-    z-index: 1;
-    transform: rotate(0deg);
-  } */
   .robot {
-    grid-column: 6;
-    grid-row: 1;
     transform: scale(0.6);
     height: 180px;
     width: 180px;
     margin-top: 50px;
     z-index: 2;
+    align-self: center;
   }
-  .robot::after {
-    position: absolute;
-    content: "";
-    height: 450px;
-    width: 450px;
+  .triangle {
+    transform: scale(0.2);
+    height: 180px;
+    margin-top: -180px;
     z-index: 1;
-    transform: rotate(0deg);
+    align-self: center;
+  }
+  .gsap {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .C-section {
+      font-size: 13px;
+    }
   }
 </style>

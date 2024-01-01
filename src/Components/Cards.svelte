@@ -10,7 +10,6 @@
 
 <style>
   .card {
-    /* position: relative; */
     flex-shrink: 0;
     border-radius: 3px;
     margin: 8px;

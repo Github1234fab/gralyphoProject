@@ -1,14 +1,15 @@
 <script>
   import Climber from "../Assets/png-gralypho/Saly-15.png";
+  import six from "../Assets/png-gralypho/six.svg";
 
   import { onMount } from "svelte";
 
   onMount(() => {
-    gsap.to(".climb", {
-      rotate: 360,
+    gsap.to(".gsap5", {
+      rotate: 370,
       scale: 1,
       scrollTrigger: {
-        trigger: ".climb",
+        trigger: ".gsap5",
         start: "top 600px",
         end: "-300px",
         scrub: 2,
@@ -19,13 +20,11 @@
 
 <section class="H-section">
   <div class="wrapper-text">
+    <img src={Climber} alt="" class="climb gsap5" />
+    <img src={six} alt="" class="six gsap5" />
     <h1>Les meilleurs c’est nous</h1>
     <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...) ou n</h2>
   </div>
-  <div class="wrapper-climber">
-  <img src={Climber} alt="" class="climb" />
-  </div>
- 
 </section>
 
 <style>
@@ -41,9 +40,11 @@
   .wrapper-text {
     grid-column: 2/12;
     grid-row: 2;
-    background-color: var(--colorN);
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     padding: 20px;
+    border: solid 1px grey;
   }
   .H-section h1 {
     word-wrap: break-word;
@@ -57,7 +58,7 @@
     line-height: 37px;
   }
   .H-section h2 {
-     word-wrap: break-word;
+    word-wrap: break-word;
     margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
@@ -67,27 +68,27 @@
     padding: 10px;
     line-height: 30px;
   }
-  .wrapper-climber{
-	 padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2/12;
-    grid-row: 1;
-    z-index: 0;
-    background-image: url(../Assets//png-gralypho/form4.svg);
-    background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: center;
-    transform: rotate(2deg);
+  .gsap5 {
+    background-color: transparent;
   }
+
   .climb {
-    grid-column: 2/3;
     height: 160px;
-    width: 100px;
-    grid-row: 1;
-    margin-top: -30px;
-    z-index: 1;
+    margin-top: 40px;
+    z-index: 2;
+    align-self: center;
   }
-  
+
+  .six {
+    height: 160px;
+    margin-top: -130px;
+    z-index: 1;
+    align-self: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .H-section {
+      font-size: 13px;
+    }
+  }
 </style>

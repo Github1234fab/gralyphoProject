@@ -31,6 +31,7 @@
 		height: 400px;
 		font-family: epilogue;
 		background-color: rgba(6, 6, 70, 0.271);
+		    box-shadow: 3px 3px 5px rgb(1, 6, 27);
 		padding: 20px;
 	}
 	.card h3 {
@@ -53,4 +54,5 @@
 		font-size: 1.2em;
 		color: white;
 	}
+
 </style>

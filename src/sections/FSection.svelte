@@ -2,16 +2,17 @@
   import World from "../Assets/png-gralypho/Saly-12.png";
   import Analist from "../Assets/png-gralypho/Saly-44.png";
   import { onMount } from "svelte";
+   import six from "../Assets/png-gralypho/six.svg";
 
   onMount(() => {
     gsap.to(".smartphone", {
-      rotate: 390,
+      rotate: 740,
       scale: 1,
       scrollTrigger: {
         trigger: ".smartphone",
-        start: "top 600px",
+        start: "top 700px",
         end: "-300px",
-        scrub: 1,
+        scrub: 2,
       },
     });
   });
@@ -19,13 +20,11 @@
 
 <section class="F-section">
   <div class="wrapper-text">
+    <img src={World} alt="" class="smartphone gsap3" />
+    <img src={six} alt="" class="six gsap3" />
     <h1>Rérencement: SEO ou SEA?</h1>
     <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...) ou n</h2>
   </div>
-  <div class="wrapper-smartphone">
-    <img src={World} alt="" class="smartphone" />
-  </div>
-  <div class="halo"></div>
 </section>
 
 <style>
@@ -42,9 +41,11 @@
   .wrapper-text {
     grid-column: 2/12;
     grid-row: 2;
-    background-color: var(--colorN);
+    border: solid 1px grey;
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
   .F-section h1 {
     word-wrap: break-word;
@@ -72,25 +73,25 @@
     padding: 10px;
     line-height: 30px;
   }
-  .wrapper-smartphone {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2/12;
-    grid-row: 1;
-    z-index: 0;
-    background-image: url(../Assets//png-gralypho/form2.svg);
-    background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: center;
-    transform: rotate(1deg);
-  }
   .smartphone {
     height: 200px;
-    width: 200px;
     margin-top: 0px;
     transform: rotate(20deg);
+    z-index: 2;
+    align-self: center;
+    margin-top: 50px;
+  }
+  .six {
+    height: 200px;
+    margin-top: -190px;
+    transform: rotate(20deg);
     z-index: 1;
+    align-self: center;
+  }
+
+    @media screen and (max-width: 768px) {
+    .F-section {
+      font-size: 13px;
+    }
   }
 </style>

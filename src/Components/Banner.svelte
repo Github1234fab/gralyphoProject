@@ -14,9 +14,9 @@ onMount(() => {
       duration: 0.5,
       scrollTrigger: {
         trigger: ".banner-icon", // Utilisez le sélecteur de classe ici aussi
-        start: "top 600px",
-	end: "-300px",
-	scrub: 2,
+        start: "top 3500px",
+	// end: "-300px",
+	scrub: 1,
       },
     });
   });

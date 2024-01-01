@@ -2,13 +2,14 @@
   import Check from "../Assets/png-gralypho/Saly-26.png";
   import CardsSectionB from "../Components/CardsSectionB.svelte";
   import { onMount } from "svelte";
+  import circle from '../Assets/png-gralypho/circle.svg'
 
   onMount(() => {
-    gsap.to(".check", {
-      scale: 1.3,
+    gsap.to(".gsap1", {
+      scale: 1,
       ease: "expoScale",
       scrollTrigger: {
-        trigger: ".check",
+        trigger: ".gsap1",
         start: "top 700px",
         end: "-200px",
         scrub: 1,
@@ -50,22 +51,20 @@
 
 <section class="D-section">
   <div class="wrapper-text">
+      <!-- <div class="wrapper-check"> -->
+    <img src={Check} alt="" class="check gsap1" />
+        <img src={circle} alt="" class="circle gsap1" />
+  <!-- </div> -->
     <h1>Nos process de créations sont stables et testés.</h1>
     <h2>
       lls nous permettent de créer des produits Digitaux 100% efficace et correspondants formellement à vos besoins
     </h2>
-        <div class="wrapper-accordeon">
-    {#each infosCards as card}
-      <CardsSectionB title={card.title} p={card.p} number={card.number} />
-    {/each}
+    <div class="wrapper-accordeon">
+      {#each infosCards as card}
+        <CardsSectionB title={card.title} p={card.p} number={card.number} />
+      {/each}
+    </div>
   </div>
-  </div>
-  <div class="wrapper-check">
-    <img src={Check} alt="" class="check" />
-  
-  </div>
-
-
 
 </section>
 
@@ -82,9 +81,12 @@
   .wrapper-text {
     grid-column: 2/12;
     grid-row: 2;
-    background-color: var(--colorN);
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--colorN); */
     border-radius: 20px;
     padding: 20px;
+    border: solid 1px grey;
   }
   .D-section h1 {
     word-wrap: break-word;
@@ -113,25 +115,23 @@
     padding: 10px;
     line-height: 30px;
   }
-  .wrapper-check {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 2/12;
-    grid-row: 1;
-    z-index: 0;
-    background-image: url(../Assets//png-gralypho/form1.svg);
-    background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: center;
-    transform: rotate(1deg);
-  }
   .check {
-    height: 100px;
+    margin-top: 50px;
+    height: 150px;
     width: 80px;
     z-index: 1;
     transform: scale(0.7);
+    align-self: center;
+  }
+   .circle {
+    height: 180px;
+    z-index: 1;
+    transform: scale(0.7);
+    align-self: center;
+    margin-top: -130px;
+  }
+  .gsap1{
+    background-color: transparent;
   }
   .wrapper-accordeon {
     grid-column: 2/12;
@@ -144,5 +144,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+    @media screen and (max-width: 768px) {
+    .D-section {
+      font-size: 13px;
+    }
   }
 </style>

@@ -25,12 +25,13 @@
 
   .wrapper-title {
     grid-column: 2/12;
-    background-color: var(--colorN);
+    /* background-color: var(--colorN); */
     height: 90%;
     width: 100%;
     border-radius: 20px;
     margin-top: 20px;
     z-index: 0;
+    border: solid 1px grey;
   }
 
   .A-section h1 {
@@ -46,6 +47,7 @@
     margin-top: 10px;
   }
   .A-section h1 span {
+    font-weight: 700;
     color: transparent;
     background: linear-gradient(to left, var(--colorD), var(--colorI));
     background-clip: text;
@@ -112,6 +114,7 @@
       transform: scale(1) translateY(0);
     }
   }
+  
   @media screen and (max-width: 590px) {
     .wrapper-title {
       overflow: hidden;

@@ -59,9 +59,9 @@
 	.accordeon {
 		background-color: var(--colorO);
 		padding: 10px;
-		/* box-shadow:
-			3px 3px 50px rgb(15, 15, 15),
-			-3px -3px 50px rgb(16, 16, 16); */
+		   box-shadow:
+      2px 2px 15px rgba(15, 15, 15, 0.606),
+      -2px -2px 15px rgba(16, 16, 16, 0.599);
 		border-radius: 8px;
 		border: none;
 		width: 80vw;
