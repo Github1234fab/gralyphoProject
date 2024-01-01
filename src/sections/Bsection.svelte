@@ -1,5 +1,5 @@
 <script>
-  import Customers from "../Components/Customers.svelte";
+
 </script>
 
 <section class="B-section">
