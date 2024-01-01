@@ -6,7 +6,7 @@
   <div class="wrapper-title">
     <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1>
     <h2>
-      Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
+      Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients  et utilisateurs une expérience exceptionnelle !
     </h2>
     <a class="link" href="/#sectionE">Découvrir</a>
     <img src={background} alt="" class="background" />
@@ -114,7 +114,7 @@
       transform: scale(1) translateY(0);
     }
   }
-  
+
   @media screen and (max-width: 590px) {
     .wrapper-title {
       overflow: hidden;

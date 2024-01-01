@@ -13,7 +13,7 @@
         trigger: ".gsap4",
         start: "top 500px",
         end: "-300px",
-        scrub: 1,
+        scrub: 3,
       },
     });
   });
@@ -78,18 +78,20 @@
     margin-top: 50px;
     z-index: 2;
     align-self: center;
-    transform: scale(0.4) opacity(0.2);
-    margin-left: 30px;
+    transform: scale(0.4);
+    opacity: 0.2;
+    margin-left: 17px;
   }
   .triangle {
     height: 150px;
     z-index: 1;
-    transform: scale(0.4) rotate(180deg) opacity(0.2);
+    transform: scale(0.4) rotate(180deg);
+    opacity: 0.2;
     align-self: center;
     margin-top: -130px;
   }
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .G-section {
       font-size: 13px;
     }
