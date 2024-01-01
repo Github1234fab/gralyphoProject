@@ -15,7 +15,7 @@
 </script>
 
 <div class="wrapper {close ? 'active' : ''}">
-  <div class="button" on:click={collapse}>{title} <span class="button-after" in:fade out:fade>{buttonText}</span></div>
+  <button class="button" on:click={collapse}>{title} <span class="button-after" in:fade out:fade>{buttonText}</span></button>
 
   {#if close}
     <span transition:slide={{ duration: 1200 }}>
