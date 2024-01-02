@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <section class="B-section">
@@ -75,7 +74,9 @@
     align-items: center;
     padding: 34px;
     color: transparent;
-    background: linear-gradient(to left, var(--colorD), var(--colorI));
+    -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
+    background-image: linear-gradient(to left, var(--colorD), var(--colorI));
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: 600;
     margin-top: 40px;

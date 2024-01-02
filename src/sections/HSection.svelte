@@ -23,8 +23,16 @@
     <img src={Climber} alt="" class="climb gsap5" />
     <img src={six} alt="" class="six gsap5" />
     <h1>L'agence <strong>Gralypho</strong>, l'expertise et l'expérience <span>100% </span>gagnante !</h1>
-    <h2>Le web c'est avant tout une passion. <br>Le code informatique c'est avant tout le langage créatif par excellence. Celui qui permet de tout faire et dont la seule limite est notre propre connaissance. <br>  Créer un service digital est avant tout une vocation. Aider, apporter des solutions, permettre à chaque entreprise de grandir et de se développer. <br> Écouter est avant tout une qualité, chercher à comprendre l'histoire de l'entrepreneur, de l'indépendant, de la société, du collectif (...).  <br>
-      Gralypho est une agence Digitale éthique et responsable. Les tarifs, les délais, les objectifs sont toujours au coeur même de nos priorités et nous apprécions plus que tout  de travailler dans la plus constructive des collaborations, à travers un échange sincère et enrichissant.</h2>
+    <h2>
+      Le web c'est avant tout une passion. <br />Le code informatique c'est avant tout le langage créatif par
+      excellence. Celui qui permet de tout faire et dont la seule limite est notre propre connaissance. <br /> Créer un
+      service digital est avant tout une vocation. Aider, apporter des solutions, permettre à chaque entreprise de
+      grandir et de se développer. <br /> Écouter est avant tout une qualité, chercher à comprendre l'histoire de
+      l'entrepreneur, de l'indépendant, de la société, du collectif (...). <br />
+      Gralypho est une agence Digitale éthique et responsable. Les tarifs, les délais, les objectifs sont toujours au coeur
+      même de nos priorités et nous apprécions plus que tout de travailler dans la plus constructive des collaborations,
+      à travers un échange sincère et enrichissant.
+    </h2>
   </div>
 </section>
 
@@ -61,8 +69,10 @@
   .H-section h1 span {
     font-weight: 600;
     color: transparent;
-    background-clip: text;
+    -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
     background-image: linear-gradient(to left, var(--colorD), var(--colorI));
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .H-section h2 {
     word-wrap: break-word;
