@@ -50,7 +50,9 @@
   .A-section h1 span {
     font-weight: 600;
     color: transparent;
+    -webkit-background-image:inear-gradient(to left, var(--colorD), var(--colorI));
     background-image: linear-gradient(to left, var(--colorD), var(--colorI));
+    -webkit-background-clip: text;
     background-clip: text;
   }
   .A-section h2 {
