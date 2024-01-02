@@ -55,9 +55,9 @@
     <img src={Check} alt="" class="check gsap1" />
         <img src={circle} alt="" class="circle gsap1" />
   <!-- </div> -->
-    <h1>Nos process de créations sont stables et testés.</h1>
+    <h1>Les 4 étapes clefs pour créer un outil digital gagnant sur le Web !</h1>
     <h2>
-      lls nous permettent de créer des produits Digitaux 100% efficace et correspondants formellement à vos besoins
+   Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications gagnantes sur le Web, en suivant un process de création optimal. Nous gagnons ainsi du temps et vous économisez de l'argent !.
     </h2>
     <div class="wrapper-accordeon">
       {#each infosCards as card}
@@ -79,6 +79,10 @@
     background-color: var(--colorO);
   }
   .wrapper-text {
+     background-image: url(../Assets/png-gralypho/cccoil.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50%;
     grid-column: 2/12;
     grid-row: 2;
     display: flex;
@@ -86,7 +90,7 @@
     /* background-color: var(--colorN); */
     border-radius: 20px;
     padding: 20px;
-    border: solid 1px grey;
+    border: solid 1px rgb(55, 55, 55);
   }
   .D-section h1 {
     word-wrap: break-word;

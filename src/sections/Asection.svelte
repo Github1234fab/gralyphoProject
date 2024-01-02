@@ -1,12 +1,12 @@
 <script>
-  import background from "../Assets/png-gralypho/18.png";
+  import background from "../Assets/png-gralypho/17.png";
 </script>
 
 <section class="A-section">
   <div class="wrapper-title">
     <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1>
     <h2>
-      Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients  et utilisateurs une expérience exceptionnelle !
+      Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
     </h2>
     <a class="link" href="/#sectionE">Découvrir</a>
     <img src={background} alt="" class="background" />
@@ -20,7 +20,7 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .wrapper-title {
@@ -31,7 +31,8 @@
     border-radius: 20px;
     margin-top: 20px;
     z-index: 0;
-    border: solid 1px grey;
+    border: solid 1px rgb(55, 55, 55);
+    overflow: hidden;
   }
 
   .A-section h1 {
@@ -47,9 +48,9 @@
     margin-top: 10px;
   }
   .A-section h1 span {
-    font-weight: 700;
+    font-weight: 600;
     color: transparent;
-    background: linear-gradient(to left, var(--colorD), var(--colorI));
+    background-image: linear-gradient(to left, var(--colorD), var(--colorI));
     background-clip: text;
   }
   .A-section h2 {
@@ -70,6 +71,7 @@
     height: auto;
     z-index: 0;
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   .link {
@@ -115,17 +117,26 @@
     }
   }
 
-  @media screen and (max-width: 590px) {
+   @media screen and (max-width: 590px) {
+    .A-section {
+      font-size: 15px;
+    }
     .wrapper-title {
       overflow: hidden;
-      height: 850px;
+      height: auto;
     }
     .background {
       width: auto;
       height: 420px;
       z-index: 0;
       margin-top: 30px;
-      margin-left: -140px;
+      margin-left: -50px;
+      margin-bottom: 0px;
     }
-  }
+  } 
+    @media screen and (max-width: 491px) {
+    .background {
+      margin-left: -130px;
+    }
+  } 
 </style>

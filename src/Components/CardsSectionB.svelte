@@ -68,7 +68,7 @@
   .p {
     font-size: 1.2em;
     font-weight: 300;
-    color: white;
+    color: rgb(191, 189, 189);
     border: none;
   }
 </style>

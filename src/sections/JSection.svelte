@@ -10,29 +10,27 @@
       img: profilOne,
       alt: "Photo de profil client",
       title: "SOPEGO",
-      job: "CTO",
-      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      job: "Patricia - CTO",
+      p: "Nous avons travailler à plusieurs reprises avec l'agence Gralypho. En premier lieu, nous avons demandé une refonte partielle de notre site. Puis nous avons par la suite demandé une application pour faciliter le travail de nos commerciaux, principalement en interne. Ce fût une réussite! Puis de fil en aiguille, nous avons demander la réalisation de notre tout nouveau site internet. Merci à l'agence Gralypho pour avoir toujours la patience de nous écouter et de structurer nos idées, en les transformant ensuite en outil digital, qui nous correspondent absolument!",
     },
     {
       img: profilTwo,
       alt: "Photo de profil client",
-      title: "Titre 2",
-      job: "CTO",
-      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      title: "Electricity",
+      job: "Damien - Électricien indépendant",
+      p:'Quand j\'ai monté ELECTRICITY à Orléans, j\'entendais tout le temps mes clients me demander si j\'avais un site. Moi, j\'avais seulement une carte de visite à l\'époque !. J\'ai fait appel à l\'agence Gralypho et nosu avons collaboré tout en visio. Au début j\'étais toujours sceptique pour l\'idée d\'avoir un site internet , mais l\'agence Gralypho a su me démontrer tout l\'avantage d\'en avoir un. L\'ajout de fonctionnalité comme la prise de RV en ligne et les paiements en ligne m\'ont grandement faciliter la tâche et fait gagner beaucoup de temps. Merci encore !!',
     },
     {
       img: profilThree,
-      alt: "Photo de profil client",
-      title: "Titre 3",
-      job: "CTO",
-      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      title: "Electricity",
+      job: "Damien - Électricien indépendant",
+      p:'Quand j\'ai monté ELECTRICITY à Orléans, j\'entendais tout le temps mes clients me demander si j\'avais un site. Moi, j\'avais seulement une carte de visite à l\'époque !. J\'ai fait appel à l\'agence Gralypho et nosu avons collaboré tout en visio. Au début j\'étais toujours sceptique pour l\'idée d\'avoir un site internet , mais l\'agence Gralypho a su me démontrer tout l\'avantage d\'en avoir un. L\'ajout de fonctionnalité comme la prise de RV en ligne et les paiements en ligne m\'ont grandement faciliter la tâche et fait gagner beaucoup de temps. Merci encore !!',
     },
     {
       img: profilFour,
-      alt: "Photo de profil client",
-      title: "Titre 3",
-      job: "CTO",
-      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    title: "Electricity",
+      job: "Damien - Électricien indépendant",
+      p:'Quand j\'ai monté ELECTRICITY à Orléans, j\'entendais tout le temps mes clients me demander si j\'avais un site. Moi, j\'avais seulement une carte de visite à l\'époque !. J\'ai fait appel à l\'agence Gralypho et nosu avons collaboré tout en visio. Au début j\'étais toujours sceptique pour l\'idée d\'avoir un site internet , mais l\'agence Gralypho a su me démontrer tout l\'avantage d\'en avoir un. L\'ajout de fonctionnalité comme la prise de RV en ligne et les paiements en ligne m\'ont grandement faciliter la tâche et fait gagner beaucoup de temps. Merci encore !!',
     },
   ];
 </script>
@@ -65,7 +63,6 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-    border: solid 1px grey;
   }
   .J-section h1 {
     grid-column: 2/12;
@@ -78,7 +75,7 @@
   .J-section h2 {
     grid-column: 2/12;
     grid-row: 1;
-    margin-top: 50px;
+    margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
     font-size: 1.2em;

@@ -12,7 +12,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".gsap2",
-        start: "top 800px",
+        start: "top 600px",
         end: "-200px",
         scrub: 1,
       },
@@ -24,15 +24,15 @@
   <div class="wrapper-text">
     <img src={SpaceShip} alt="" class="space-ship gsap2" />
     <img src={square} alt="" class="square gsap2" />
-    <h1>Gralypho créer un service unique de produits numériques.</h1>
-    <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...).</h2>
+    <h1>Nos solutions digitales.</h1>
+    <h2>Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans débourser une fortune, le relooker serait plutôt sympa ?! <br>Profitez de nos conseils en stratégie, de nos systèmes de composants intégrés et de notre expertise en référencement.</h2>
     <Banner />
   </div>
 </section>
 
 <style>
   .E-section {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -48,7 +48,11 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-    border: solid grey 1px;
+    border: solid 1px rgb(55, 55, 55);
+     background-image: url(../Assets/png-gralypho/cccoil.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 60%;
   }
 
   .E-section h1 {

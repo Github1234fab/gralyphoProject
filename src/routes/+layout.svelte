@@ -22,6 +22,7 @@
 	<Asection />
 	<Bsection />
 	<Csection />
+	<JSection />
 	<DSection />
 	<section id="sectionE">
 	<ESection />
@@ -30,7 +31,7 @@
 	<FSection />
 	</section>
 	<GSection />
-	<JSection />
+	
 	<HSection />
 
 	<Footer />

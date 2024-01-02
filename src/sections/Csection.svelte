@@ -17,20 +17,26 @@
   });
 </script>
 
-<section class="C-section">
+<section class="C-section" id="sectionC">
   <div class="wrapper-text">
     <img src={Robot} alt="icon de robot en 3D" class="robot gsap" />
     <img src={triangle} alt="icon de robot en 3D" class="triangle gsap" />
-    <h1>Grâce à notre expertise en création de sites Web et Apps , vous bénéficiez des meilleures technologies !</h1>
+    <h1>La technologie à votre service!</h1>
 
     <p>
-      Selon vos besoins spécifiques, nous choisirons méticuleusement la technologie la plus adaptée pour la réalisation
-      de votre application. <br />
-      Wordpress? Wix? Shopify? From Scratch? Woo Commerce? Squarespace ? Webflow? (...) Quelle est la technologie la plus
-      appropriée à la réalisation de votre site internet ou de votre application? C'est une question fondamentale parce qu'elle
-      va déterminer la durée de conception, le coût et l'efficacité de votre outil en terme de rapidité, de fonctionnalité
-      et de maintenance
+      Pour le développement de votre site internet ou votre application, nous avons le choix entre de nombreuses
+      technologies! Par technologies nous entendons les plateformes avec lesquelles nous pourrons créer, mais aussi
+      déployer et héberger votre outil digital.  <br><br> 
+      Vous avez sûrement entendu parler de Wordpress? de Wix? ou encore
+      Shopify? Woo Commerce? Squarespace ? Webflow? (...) .  Toutes ces plateformes nous permettent de créer votre outil digital en utilisant que très peu de code, ou pas du tout et en bénéficant du CMS associé à ses plateformes<br />
+      Mais, nous pouvons tout aussi bien développer votre site internet ou votre application en utilisant exclusivement du code informatique (html/css/Js)
+      et en passant par un Framework, celui que nous utilisons est le bien nommé SVELTE. <br /> <br>
+      Alors quelle technologie choisir pour obtenir le meilleur de votre outil digital afin que vous puissiez atteindre
+      les objectifs que vous vous êtes fixés?<br>
+       Et bien, et ce n'est pas une réponse de Normand, mais la réponse est : "Cela dépend de votre projet". Car en effet, chaque projet d'application et chaque site internet qu'il soit un Site vitrine, un Site e-commerce, un Blog, un Portfolio, un Site institutionnel, un Forum, un Réseau social, une Landing page, un Site d'actualités ou encore un Site éducatif requiert en matière de conception, de réalisation et de déploiement des besoins très différents et variables. <br>Wordpress est bien oui, mais pas pour tout et présente des avantages et des inconvénients. Il peut être rapide pour la conception avec son système de Drag and Drop et ses templates, mais si un template n'est plus mis à jour par son concepteur, vous perdez votre site.  <br> Wordpress est peu cher, mais les budgets pour étendre ses fonctionnalités peuvent atteindre des coûts impressionnant. <br> Wordpress peut être simple avec ses plugins, mais les plugins peuvent considérablement réduire les temps de chargements. Et pour chaque plateforme et méthode de développement ce sera pareil. Elles possèderont toutes des avantages et des inconvénients.
     </p>
+    <h1>Bien choisir, c'est réussir!</h1>
+    <p>Faire le bon choix de la méthode et de la palteforme, bien  en amont de la réalisation de votre application ou de votre site Web sera déterminant pour la réalisation de votre outil digital. Ce choix sera totalement imbriqué avec le budget final de votre outil digital. Nous le savons tous, le temps, c'est de l'argent. Alors nous devons faire le bon choix pour optimiser au maximum le résultat de votre outil digital , ainsi que son budget et ses capacités futures. </p>
   </div>
 </section>
 
@@ -45,24 +51,31 @@
     margin-top: 0px;
   }
   .wrapper-text {
+    background-image: url(../Assets/png-gralypho/cccoil.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50%;
     grid-column: 2/12;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1;
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border: solid 1px grey;
+    border: solid 1px rgb(55, 55, 55);
   }
   .C-section h1 {
     word-wrap: break-word;
     grid-column: 2/12;
-    text-align: left;
     grid-row: 1;
+    text-align: left;
     font-family: epilogue;
     font-weight: 500;
     font-size: 1.7em;
     color: white;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 10px;
     line-height: 37px;
   }

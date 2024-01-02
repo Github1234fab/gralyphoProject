@@ -47,6 +47,8 @@ Year = new Date().getFullYear();
     color: white;
     text-align: center;
     font-family: epilogue;
+    margin-bottom: 100px;
+
   }
   .footer h1 {
     grid-column: 6;

@@ -11,9 +11,9 @@
       opacity: 1,
       scrollTrigger: {
         trigger: ".gsap4",
-        start: "top 500px",
+        start: "top 640px",
         end: "-300px",
-        scrub: 3,
+        scrub: 1,
       },
     });
   });
@@ -23,8 +23,8 @@
   <div class="wrapper-text">
     <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
     <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
-    <h1>Nos exemples de réalisations</h1>
-    <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...) ou n</h2>
+    <h1>Exemples de réalisations</h1>
+    <h2>Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met l'accent sur un design, une fonctionnalité, une fonctionnalité. Découvrez !</h2>
     <Carousel />
   </div>
 </section>
@@ -44,7 +44,11 @@
     grid-row: 2;
     border-radius: 20px;
     padding: 20px;
-    border: solid 1px grey;
+      border: solid 1px rgb(55, 55, 55);
+       background-image: url(../Assets/png-gralypho/cccoil.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50%;
     display: flex;
     flex-direction: column;
   }
