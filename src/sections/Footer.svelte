@@ -13,7 +13,9 @@ Year = new Date().getFullYear();
 
 <footer class="footer">
   <h1>Gralypho</h1>
-  <p>gralypho@gmail.com <br />06 51 85 85 85</p>
+
+  <p><a href="mailto:gralypho@gmail.com " class="contact">Écrivez nous à : gralypho@gmail.com</a><br /><a href="tel:0672901614" class="contact">Appelez-nous au: 06 72 90 16 14</a>
+</p>
   <div class="wrapper-media">
     <a
       href="https://facebook.com/intent/tweet?url=URL_DU_SITE&text=Texte_du_tweet&via=NomUtilisateurTwitter"
@@ -59,28 +61,38 @@ Year = new Date().getFullYear();
     font-family: kanit;
   }
   .footer p {
-    grid-column: 6;
+    grid-column: 1/12;
     grid-row: 2;
     font-family: epilogue;
     font-weight: 400;
     font-size: 1em;
     color: var(--colorC);
+
   }
   .footer h4 {
-    grid-column: 6;
+    grid-column: 1/12;
     grid-row: 4;
     font-family: epilogue;
     font-weight: 200;
-    font-size: 0.6em;
+    font-size: 0.8em;
     color: var(--colorC);
     text-align: center;
   }
   .wrapper-media {
-    grid-column: 6;
+    grid-column: 1/12;
     grid-row: 3;
     gap: 20px;
+    margin-bottom: 30px;
+  }
+  .contact{
+    text-decoration: none;
+    color: grey;
+    font-size: 1.3em;
+    font-family: kanit;
+    width: 100%;
   }
   a {
+    
     color: rgb(100, 100, 229);
     font-size: 1.8em;
     margin: 0 0px;

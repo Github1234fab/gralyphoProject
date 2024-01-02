@@ -54,6 +54,10 @@
     border-radius: 20px;
     padding: 20px;
     border: solid 1px rgb(55, 55, 55);
+     background-image: url(../Assets/png-gralypho/ssspiral.svg);
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-position: top;
   }
   .H-section h1 {
     word-wrap: break-word;
@@ -106,6 +110,9 @@
   @media screen and (max-width: 768px) {
     .H-section {
       font-size: 13px;
+    }
+        .wrapper-text{
+      background-size: 100%;
     }
   }
 </style>

@@ -79,7 +79,8 @@
     background-color: var(--colorO);
   }
   .wrapper-text {
-     background-image: url(../Assets/png-gralypho/cccoil.svg);
+   
+          background-image: url(../Assets/png-gralypho/bbburst.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;
@@ -153,6 +154,9 @@
     @media screen and (max-width: 768px) {
     .D-section {
       font-size: 13px;
+    }
+        .wrapper-text{
+      background-size: 100%;
     }
   }
 </style>

@@ -50,7 +50,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-     background-image: url(../Assets/png-gralypho/cccoil.svg);
+     background-image: url(../Assets/png-gralypho/tttwinkle.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;
@@ -100,6 +100,9 @@
     @media screen and (max-width: 768px) {
     .F-section {
       font-size: 13px;
+    }
+        .wrapper-text{
+      background-size: 100%;
     }
   }
 </style>

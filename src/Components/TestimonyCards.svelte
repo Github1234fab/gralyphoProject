@@ -18,8 +18,8 @@
 <style>
   .wrapper-cards {
     display: flex;
-    grid-column: 3/9;
-    grid-row: 3;
+    align-items: center;
+    justify-content: center;
   }
   .card {
     display: flex;
@@ -27,12 +27,15 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 100%;
+    width: 70%;
     height: auto;
     font-family: epilogue;
-    background-color: var(--colorO);
-    box-shadow: 3px 3px 5px rgb(1, 6, 27);
+    background-color: transparent;
+    box-shadow:
+      14px 16px 30px rgb(1, 6, 27),
+      -14px -16px 30px rgb(1, 6, 27);
     padding: 30px;
+    margin-bottom: 20px;
   }
   .linear-gradient {
     border-style: solid;
@@ -43,11 +46,12 @@
     font-size: 1.4em;
     color: var(--colorC);
     font-weight: 700;
+    font-family: kanit;
   }
   .card h5 {
     font-size: 1em;
     color: var(--colorC);
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     line-height: 30px;
   }

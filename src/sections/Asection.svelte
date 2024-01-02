@@ -25,7 +25,6 @@
 
   .wrapper-title {
     grid-column: 2/12;
-    /* background-color: var(--colorN); */
     height: 90%;
     width: 100%;
     border-radius: 20px;

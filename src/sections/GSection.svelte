@@ -45,10 +45,10 @@
     border-radius: 20px;
     padding: 20px;
       border: solid 1px rgb(55, 55, 55);
-       background-image: url(../Assets/png-gralypho/cccoil.svg);
+   background-image: url(../Assets/png-gralypho/ggglitch.svg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 50%;
+    background-size: 30%;
     display: flex;
     flex-direction: column;
   }
@@ -98,6 +98,9 @@
   @media screen and (max-width: 768px) {
     .G-section {
       font-size: 13px;
+    }
+        .wrapper-text{
+      background-size: 100%;
     }
   }
 </style>
