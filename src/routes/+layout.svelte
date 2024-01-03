@@ -25,15 +25,14 @@
     justify-content: space-around;
     padding: 30px;
   }
-  a{
+  a {
     color: white;
     text-decoration: none;
-    transform: rotate(0deg);
     transition: 0.3s ease-in-out;
     font-weight: 500;
   }
-  a:hover{
-    transform: rotate(-2deg);
-    color: var(--colorN);
+  a:hover {
+    color: var(--colorD);
   }
+
 </style>

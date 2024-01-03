@@ -29,7 +29,6 @@
     background-color: var(--colorO);
     height: 100%;
     width: 100%;
-    padding: 0 30px 0 30px;
   }
   .container{
     grid-column: 2/12;

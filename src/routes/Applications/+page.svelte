@@ -27,7 +27,8 @@
     background-color: var(--colorO);
     height: 100%;
     width: 100%;
-    padding: 0 30px 0 30px;
+    font-size: 16px;
+ 
   }
   .container{
     grid-column: 2/12;
@@ -77,4 +78,10 @@
     font-size: 1.1em;
     font-family: epilogue;
   }
+@media screen and (max-width: 768px){
+section{
+font-size: 10px
+  }
+}
+
 </style>

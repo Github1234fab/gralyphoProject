@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 70%;
+    width: 60%;
     height: auto;
     font-family: epilogue;
     background-color: transparent;
@@ -63,5 +63,16 @@
   .card h4 {
     font-size: 1.2em;
     color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .card {
+      width: 100%;
+      padding: 0;
+    }
+    .img{
+      margin-top: 20px;
+    }
   }
 </style>

@@ -97,7 +97,7 @@
     color: grey;
     font-size: 1.3em;
     font-family: kanit;
-    width: 30%;
+    width: 100%;
     transform: rotate(0deg);
     transition: 0.4s ease-in-out;
   }
