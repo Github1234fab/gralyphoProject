@@ -53,10 +53,10 @@
     border-radius: 20px;
     padding: 20px;
     border: solid 1px rgb(55, 55, 55);
-    background-image: url(../Assets/png-gralypho/ssspiral.svg);
+    background-image: url(../Assets/png-gralypho/ggglitch.svg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 40%;
+    background-size: 27%;
   }
 
   .E-section h1 {

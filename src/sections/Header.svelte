@@ -1,9 +1,12 @@
 <script>
+  import { Link } from "svelte-routing";
 </script>
+
+
 
 <nav class="navbar navbar-expand-lg bg-custom">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="/">Gralypho</a>
+    <a class="navbar-brand text-white" href="/Site">Gralypho</a>
     <button
       class="navbar-toggler bg-toggle navbar-toggler-custom"
       type="button"
@@ -18,10 +21,11 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="/#sectionF">Référencement</a>
+          <a class="nav-link active text-white" aria-current="page" href="/">Sites Internet</a>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="/#sectionC">Technologies</a>
+          <a class="nav-link text-white" href="/#sectionC">Applications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="/">Tarifs</a>

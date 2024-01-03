@@ -80,10 +80,10 @@
   }
   .wrapper-text {
    
-          background-image: url(../Assets/png-gralypho/bbburst.svg);
+          background-image: url(../Assets/png-gralypho/ggglitch.svg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 50%;
+    background-size: 20%;
     grid-column: 2/12;
     grid-row: 2;
     display: flex;

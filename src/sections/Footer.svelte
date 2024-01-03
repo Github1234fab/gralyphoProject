@@ -1,21 +1,20 @@
 <script>
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
-let Year;
+  let Year;
 
-onMount(() => {
-Year = new Date().getFullYear();
-
-});
-
-
+  onMount(() => {
+    Year = new Date().getFullYear();
+  });
 </script>
 
 <footer class="footer">
   <h1>Gralypho</h1>
+  <div class="wrapper-contact">
+ <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
+<a href="tel:0672901614" class="contact">06 72 90 16 14</a>
+  </div>
 
-  <p><a href="mailto:gralypho@gmail.com " class="contact">Écrivez nous à : gralypho@gmail.com</a><br /><a href="tel:0672901614" class="contact">Appelez-nous au: 06 72 90 16 14</a>
-</p>
   <div class="wrapper-media">
     <a
       href="https://facebook.com/intent/tweet?url=URL_DU_SITE&text=Texte_du_tweet&via=NomUtilisateurTwitter"
@@ -43,14 +42,12 @@ Year = new Date().getFullYear();
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: 100%;
-    margin-top: 150px;
     font-size: 16px;
     background-color: var(--colorO);
     color: white;
     text-align: center;
     font-family: epilogue;
-    margin-bottom: 100px;
-
+    padding: 20px;
   }
   .footer h1 {
     grid-column: 6;
@@ -67,13 +64,14 @@ Year = new Date().getFullYear();
     font-weight: 400;
     font-size: 1em;
     color: var(--colorC);
-
+    transition: 0.4s ease-in-out;
   }
+ 
   .footer h4 {
     grid-column: 1/12;
     grid-row: 4;
     font-family: epilogue;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.8em;
     color: var(--colorC);
     text-align: center;
@@ -84,20 +82,36 @@ Year = new Date().getFullYear();
     gap: 20px;
     margin-bottom: 30px;
   }
-  .contact{
+  .wrapper-contact{
+    grid-column: 1/12;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  .contact {
     text-decoration: none;
     color: grey;
     font-size: 1.3em;
     font-family: kanit;
-    width: 100%;
+    width: 30%;
+    transform: rotate(0deg);
+    transition: 0.4s ease-in-out;
   }
+  .contact:hover {
+transform: rotate(-2deg);
+  }
+
   a {
-    
     color: rgb(100, 100, 229);
     font-size: 1.8em;
     margin: 0 0px;
-    transition: 0.4s ease-in-out
+    transition: 0.4s ease-in-out;
   }
+
   .anim:hover {
     animation: bounce 0.4s ease-in-out;
   }
