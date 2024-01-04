@@ -26,22 +26,28 @@ onMount(() => {
 
 <div class="cont">
   <div class="banner-wrapper">
+    <div class="wrapper-by-3-Cards">
     <i class="fa-solid fa-desktop banner-icon"><span>Sites Web</span><i class="fa-solid fa-arrow-right arrow" /></i>
-    <i class="fa-solid fa-magnifying-glass-chart banner-icon"
-      ><span>Applications</span><i class="fa-solid fa-arrow-right arrow" /></i
-    >
+
+    <i class="fa-solid fa-magnifying-glass-chart banner-icon"><span>Applications</span><i class="fa-solid fa-arrow-right arrow" /></i>
+
     <i class="fa-solid fa-magnifying-glass-chart banner-icon"
       ><span>Référencement</span><i class="fa-solid fa-arrow-right arrow" /></i
     >
+</div>
+    <div class="wrapper-by-3-Cards">
     <i class="fa-solid fa-comments-dollar banner-icon"
       ><span>Marketing</span><i class="fa-solid fa-arrow-right arrow" /></i
     >
+
     <i class="fa-solid fa-comments-dollar banner-icon"
       ><span>Composants</span><i class="fa-solid fa-arrow-right arrow" /></i
     >
+
     <i class="fa-solid fa-wand-magic-sparkles banner-icon"
       ><span>Refonte</span><i class="fa-solid fa-arrow-right arrow" /></i
     >
+    </div>
   </div>
 </div>
 
@@ -51,11 +57,16 @@ onMount(() => {
     grid-column: 2/11;
     grid-row: 2;
   }
+  .wrapper-by-3-Cards{
+display: flex;
+gap: 40px;
+flex-wrap: wrap;
+  }
   .banner-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
@@ -70,7 +81,7 @@ onMount(() => {
     padding: 10px;
     gap: 20px;
     align-items: center;
-    width: 6em;
+    width: 10em;
     height: 6em;
     border-radius: 5%;
     justify-content: center;

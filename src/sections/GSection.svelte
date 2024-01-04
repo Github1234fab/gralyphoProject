@@ -44,8 +44,8 @@
     grid-row: 2;
     border-radius: 20px;
     padding: 20px;
-      border: solid 1px rgb(55, 55, 55);
-   background-image: url(../Assets/png-gralypho/ggglitch.svg);
+      /* border: solid 1px rgb(55, 55, 55); */
+   /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: 30%;

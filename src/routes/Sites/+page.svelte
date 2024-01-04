@@ -1,12 +1,13 @@
 <script>
   import { fade, slide } from "svelte/transition";
+  import bg from "../../Assets/png-gralypho/41.png"
 </script>
 
 <section class="" in:fade={{ duration: 3000 }}>
   <div class="container">
     <div class="wrapper">
     <h1>Sites Web</h1>
-
+<img src={bg} alt="" class="bg">
     <p>
       <span>Qu'est-ce qu'une application?</span> <br /><br>
       Une application est un logiciel qui permet de réaliser une tâche spécifique. <br /><br> Voilà princpalement la différence entre une application et un site web. Le site web traite d'un sujet et le développe à travers ses différentes rubriques, ses différentes pages et ses différentes fonctionnalités. <br /><br> Une application va donc, quant à elle, permettre à l'utilisateur de réaliser une tâche spécifique. <br /> <br>Par exemple, une application de gestion de stock, une application de gestion de planning, de gestion de facturation, un application météorologique, de rencontre, de localisation, etc.    <br><br>
@@ -78,4 +79,5 @@
     font-size: 1.1em;
     font-family: epilogue;
   }
+ 
 </style>

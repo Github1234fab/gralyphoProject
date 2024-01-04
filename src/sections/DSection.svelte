@@ -79,8 +79,8 @@
     background-color: var(--colorO);
   }
   .wrapper-text {
-   
-          background-image: url(../Assets/png-gralypho/ggglitch.svg);
+       /* border: solid 1px rgb(55, 55, 55); */
+          /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: 20%;
@@ -91,7 +91,7 @@
     /* background-color: var(--colorN); */
     border-radius: 20px;
     padding: 20px;
-    border: solid 1px rgb(55, 55, 55);
+
   }
   .D-section h1 {
     word-wrap: break-word;

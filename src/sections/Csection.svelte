@@ -55,7 +55,7 @@
 
   }
   .wrapper-text {
-    background-image: url(../Assets/png-gralypho/cccoil.svg);
+    /* background-image: url(../Assets/png-gralypho/cccoil.svg); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;
@@ -68,7 +68,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border: solid 1px rgb(55, 55, 55);
+    /* border: solid 1px rgb(55, 55, 55); */
   }
   .C-section h1 {
     word-wrap: break-word;

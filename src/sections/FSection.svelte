@@ -45,12 +45,12 @@
   .wrapper-text {
     grid-column: 2/12;
     grid-row: 2;
-        border: solid 1px rgb(55, 55, 55);
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-     background-image: url(../Assets/png-gralypho/tttwinkle.svg);
+        /* border: solid 1px rgb(55, 55, 55); */
+     /* background-image: url(../Assets/png-gralypho/tttwinkle.svg); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;

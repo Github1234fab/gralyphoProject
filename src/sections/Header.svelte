@@ -2,8 +2,6 @@
   import { Link } from "svelte-routing";
 </script>
 
-
-
 <nav class="navbar navbar-expand-lg bg-custom">
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="/Site">Gralypho</a>

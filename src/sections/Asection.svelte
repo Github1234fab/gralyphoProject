@@ -2,7 +2,7 @@
   import background from "../Assets/png-gralypho/17.png";
 </script>
 
-<section class="A-section">
+<section class="A-section" >
   <div class="wrapper-title">
     <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1>
     <h2>
@@ -30,7 +30,7 @@
     border-radius: 20px;
     margin-top: 20px;
     z-index: 0;
-    border: solid 1px rgb(55, 55, 55);
+    /* border: solid 1px rgb(55, 55, 55); */
     overflow: hidden;
   }
 

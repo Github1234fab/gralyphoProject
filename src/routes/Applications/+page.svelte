@@ -2,7 +2,7 @@
   import { fade, slide } from "svelte/transition";
 </script>
 
-<section class="" in:fade={{ duration: 3000 }}>
+<section  in:fade={{ duration: 3000 }}>
   <div class="container">
     <div class="wrapper">
     <h1>Applications</h1>

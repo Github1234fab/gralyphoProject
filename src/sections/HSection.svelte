@@ -53,8 +53,8 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-    border: solid 1px rgb(55, 55, 55);
-     background-image: url(../Assets/png-gralypho/ssspiral.svg);
+    /* border: solid 1px rgb(55, 55, 55); */
+     /* background-image: url(../Assets/png-gralypho/ssspiral.svg); */
      background-repeat: no-repeat;
      background-size: 50%;
      background-position: top;
