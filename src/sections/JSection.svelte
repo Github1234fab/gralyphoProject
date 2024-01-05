@@ -1,47 +1,49 @@
 <script>
   import TestimonyCards from "../Components/TestimonyCards.svelte";
-  import profilOne from "../Assets/Profils-gralypho/Ellipse 43.png";
-  import profilTwo from "../Assets/Profils-gralypho/Ellipse 46.png";
-  import profilThree from "../Assets/Profils-gralypho/Ellipse 54.png";
-  import profilFour from "../Assets/Profils-gralypho/Ellipse 63.png";
+  import profilOne from "../Assets/Profils-gralypho/Frame (2).png";
+  import profilTwo from "../Assets/Profils-gralypho/Frame (5).png";
+  import profilThree from "../Assets/Profils-gralypho/Frame (12).png";
+  import profilFour from "../Assets/Profils-gralypho/Ellipse 125.png";
+    import profilFive from "../Assets/Profils-gralypho/Ellipse 131.png";
+      import profilSix from "../Assets/Profils-gralypho/Ellipse 220.png";
 
   let dataCard = [
              {
-      img: profilThree,
-      title: "Green NRJ",
-      job: "Arjun Ramanujan",
-      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! Thanks again for the collaboration. Best Freelancer based in Europe! Well done! Looking forward to a new collaboration.",
+      img: profilTwo,
+      title: "Mademoiselle G.",
+      job: "Marjolaine - Directrice de la communicaiton",
+      p: 'Délai respecté, composants fonctionnels avec une très bonne intégration. Nous recommandons Gralypho! ',
     },
     {
-      img: profilTwo,
+      img: profilFive,
       alt: "Photo de profil client",
       title: "ElectriKcity",
       job: "Damien - Électricien indépendant",
-      p: "Quand j'ai monté ELECTRICITY à Orléans, j'entendais tout le temps mes clients me demander si j'avais un site. J'étais toujours sceptique, mais l'agence Gralypho a su me démontrer tout l'avantage d'en avoir un. L'ajout de fonctionnalité comme la prise de RV en ligne et les paiements en ligne m'ont grandement faciliter la tâche et fait gagner beaucoup de temps. Merci encore !!",
+      p: "L'ajout de fonctionnalité comme la prise de RV et les paiements en ligne m'ont grandement faciliter la tâche et fait gagner beaucoup de temps et de l'argent! Merci encore pour l'accompagnement.",
     },
      {
-      img: profilOne,
+      img: profilThree,
       title: "Green NRJ",
-      job: "Arjun Ramanujan",
-      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! Thanks again for the collaboration. Best Freelancer based in Europe! Well done! Looking forward to a new collaboration.",
+      job: "Asha Ramanujan - Project Manager",
+      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! ",
     },
     {
       img: profilFour,
-      title: "Green NRJ",
-      job: "Arjun Ramanujan",
-      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! Thanks again for the collaboration. Best Freelancer based in Europe! Well done! Looking forward to a new collaboration.",
+      title: "Sepocat",
+      job: "Christophe Muun - Styliste",
+      p: "Enfin un professionnel ! Merci pour notre application, elle est parfaite! ",
     },
         {
-      img: profilFour,
-      title: "Green NRJ",
-      job: "Arjun Ramanujan",
-      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! Thanks again for the collaboration. Best Freelancer based in Europe! Well done! Looking forward to a new collaboration.",
+      img: profilSix,
+      title: "Le Marminot",
+      job: "Hugo Hervé - Restaurateur",
+      p: "Merci pour toutes les idées qui permettent à nos clients de découvrir notre restauration, comme jamais!",
     },
         {
-      img: profilFour,
-      title: "Green NRJ",
-      job: "Arjun Ramanujan",
-      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! Thanks again for the collaboration. Best Freelancer based in Europe! Well done! Looking forward to a new collaboration.",
+      img: profilOne,
+      title: "Inès Marjot",
+      job: "Photographe",
+      p: "Plus de clients, moins de temps perdu, plus d'argent.... it's perfect Gralypho!!",
     },
   ];
 </script>
@@ -71,9 +73,9 @@
     grid-column: 2/12;
     grid-row: 2;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    padding: 20px;
   }
   .J-section h1 {
     grid-column: 2/12;
@@ -93,9 +95,10 @@
     color: white;
   }
   .wrapper-testimony {
-    grid-column: 2/12;
-    grid-row: 2;
+    /* grid-column: 3/12;
+    grid-row: 2; */
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;

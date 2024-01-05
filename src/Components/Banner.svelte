@@ -1,52 +1,62 @@
 <script>
-	import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
-onMount(() => {
-
-
+  onMount(() => {
     const timeline = gsap.timeline();
 
     // Utilisez le sélecteur de classe directement
     timeline.to(".banner-icon", {
       opacity: 1,
       y: 0,
-       stagger: 0.2, 
+      stagger: 0.2,
       duration: 0.5,
       scrollTrigger: {
         trigger: ".banner-icon", // Utilisez le sélecteur de classe ici aussi
         start: "top 3500px",
-	// end: "-300px",
-	scrub: 1,
+        // end: "-300px",
+        scrub: 1,
       },
     });
   });
-
-
 </script>
 
 <div class="cont">
-  <div class="banner-wrapper">
-    <div class="wrapper-by-3-Cards">
-    <i class="fa-solid fa-desktop banner-icon"><span>Sites Web</span><i class="fa-solid fa-arrow-right arrow" /></i>
+  <div class="wrapper-by-3-Cards">
+    <div class="card">
+      <i class="fa-solid fa-desktop banner-icon icon"></i>
+      <h3>Sites Web</h3>
+      <a href="/Sites"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-sitemap icon"></i>
+      <h3>Applications</h3>
+      <a href="/Applications"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    </div>
+  </div>
 
-    <i class="fa-solid fa-magnifying-glass-chart banner-icon"><span>Applications</span><i class="fa-solid fa-arrow-right arrow" /></i>
+  <div class="wrapper-by-3-Cards">
+    <div class="card">
+      <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
+      <h3>Référencement</h3>
+      <a href="/Referencement"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
+      <h3>Marketing</h3>
+      <a href="/Marketing"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    </div>
+  </div>
 
-    <i class="fa-solid fa-magnifying-glass-chart banner-icon"
-      ><span>Référencement</span><i class="fa-solid fa-arrow-right arrow" /></i
-    >
-</div>
-    <div class="wrapper-by-3-Cards">
-    <i class="fa-solid fa-comments-dollar banner-icon"
-      ><span>Marketing</span><i class="fa-solid fa-arrow-right arrow" /></i
-    >
-
-    <i class="fa-solid fa-comments-dollar banner-icon"
-      ><span>Composants</span><i class="fa-solid fa-arrow-right arrow" /></i
-    >
-
-    <i class="fa-solid fa-wand-magic-sparkles banner-icon"
-      ><span>Refonte</span><i class="fa-solid fa-arrow-right arrow" /></i
-    >
+  <div class="wrapper-by-3-Cards">
+    <div class="card">
+      <i class="fa-solid fa-recycle icon"></i>
+      <h3>Composants</h3>
+      <a href="/Composants"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
+      <h3>Refonte</h3>
+      <a href="/Refonte"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
 </div>
@@ -54,103 +64,79 @@ onMount(() => {
 <style>
   .cont {
     background-color: transparent;
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-row: 2;
-  }
-  .wrapper-by-3-Cards{
-display: flex;
-gap: 40px;
-flex-wrap: wrap;
-  }
-  .banner-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin-top: 50px;
     gap: 40px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-  }
-  .banner-icon {
-    opacity: 0.3;
-    background-color: transparent;
-    font-size: 1.5em;
-    color: var(--colorD);
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    gap: 20px;
     align-items: center;
-    width: 10em;
-    height: 6em;
-    border-radius: 5%;
     justify-content: center;
-    transition: 0.3s ease-in-out;
-    box-shadow:
-      2px 2px 15px rgba(15, 15, 15, 0.606),
-      -2px -2px 15px rgba(16, 16, 16, 0.599);
+  }
+  .wrapper-by-3-Cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
-  .banner-icon span {
-    font-size: 0.6em;
-    font-family: kanit;
-    font-weight: 500;
-    color: var(--colorC);
-    letter-spacing: -0.04em;
+  .card {
+    z-index: 0;
+    background-color: transparent;
+    width: 30%;
+    height: auto;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
   }
-  /* .banner-icon:hover {
-		transform: scale(1);
-		background-color: var(--colorL);
-	} */
+  .icon {
+    color: var(--colorN);
+    font-size: 1.9em;
+  }
   .arrow {
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+    z-index: 2;
     color: var(--colorA);
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
   }
   .arrow:hover {
-    transform: scale(1.2);
+    transform: scale(0.9);
+  }
+  .card h3 {
+    font-family: kanit;
+    color: white;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
   }
 
-  /* @media screen and (min-width: 998px) {
-		.banner-wrapper {
-			grid-template-columns: repeat(2, 1fr);
-		}
-		.banner-icon {
-			background-color: transparent;
-			font-size: 1.6em;
-			width: 25em;
-			height: 12em;
-		}
-		.banner-icon span {
-			font-size: 1.4em;
-			font-family: kanit;
-			font-weight: 500;
-			color: var(--colorC);
-			letter-spacing: -0.04em;
-		}
-		.arrow {
-		font-size: 1.8em;
-	}
-	}
-	@media screen and (max-width: 768px){
-		.banner-wrapper {
-			grid-template-columns: repeat(1, 1fr);
-		}
-		.banner-icon {
-			background-color: transparent;
-			font-size: 1.6em;
-			width: 100%;
-			height: 12em;
-		}
-		.banner-icon span {
-			font-size: 1em;
-			font-family: kanit;
-			font-weight: 500;
-			color: var(--colorC);
-			letter-spacing: -0.04em;
-		}
-		.arrow {
-		font-size: 1.8em;
-	}
-} */
+  @media screen and (max-width: 800px) {
+    .wrapper-by-3-Cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .card {
+      z-index: 0;
+      background-color: transparent;
+      width: 90%;
+      height: auto;
+      box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 30px;
+    }
+  }
 </style>

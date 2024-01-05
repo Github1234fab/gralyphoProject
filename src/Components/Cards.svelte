@@ -11,7 +11,7 @@
 <style>
   .card {
     flex-shrink: 0;
-    border-radius: 3px;
+    border-radius: 50px;
     margin: 8px;
     height: 20em;
     width: 20em;
@@ -22,7 +22,8 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    box-shadow: 3px 3px 5px rgb(1, 6, 27);
+    border: 1px solid rgb(60, 60, 60);
+    box-shadow: 3px 3px 25px rgba(1, 6, 27, 0.209);
     background-color: #152a37;
   }
   .linear-gradient{

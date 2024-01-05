@@ -25,7 +25,11 @@
     <div in:fade={{ duration: 600 }} out:fade={{ duration: 600 }} class="wrapper-links ">
       <a href="/">Home</a>
       <a href="/Sites">Sites Web</a>
-      <a href="/Applications">Application</a>
+      <a href="/Applications">Applications</a>
+       <a href="/Referencement">Référencement</a>
+        <a href="/Marketing">Marketing</a>
+         <a href="/Composant">Composants</a>
+          <a href="/Refonte">Refonte</a>
     </div>
       </span>
   {/if}

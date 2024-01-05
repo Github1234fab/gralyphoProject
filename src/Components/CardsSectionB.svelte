@@ -43,7 +43,7 @@
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 10px;
-    box-shadow: 3px 3px 15px rgb(1, 6, 27);
+    box-shadow: 3px 3px 15px rgba(1, 6, 27, 0.532);
     border: none;
   }
   .button-after {
