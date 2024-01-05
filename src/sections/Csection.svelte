@@ -76,7 +76,7 @@
     grid-row: 1;
     text-align: left;
     font-family: epilogue;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.7em;
     color: white;
     margin-top: 50px;
@@ -97,7 +97,7 @@
     padding: 10px;
   }
   .C-section p span{
-    font-weight: 800;
+    font-weight: 700;
   }
   .robot {
     transform: scale(0.6);

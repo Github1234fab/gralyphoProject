@@ -58,7 +58,7 @@
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.7em;
     color: white;
     margin-top: 50px;

@@ -87,14 +87,12 @@ width:100%;
     border-radius: 40px 40px 30px 60px;
 
   }
-  .background {
+  /* .background {
     padding: 40px;
     width:auto;
     height: 600px;
     box-shadow: 6px 10px 15px black;
-
-    /* z-index: 0; */
-  }
+  } */
 
   .link {
     display: flex;
@@ -147,18 +145,14 @@ width:100%;
       overflow: hidden;
       height: auto;
     }
-    .background {
+    /* .background {
       width: auto;
       height: 420px;
       z-index: 0;
       margin-top: 30px;
       margin-left: -50px;
       margin-bottom: 0px;
-    }
+    } */
   } 
-    @media screen and (max-width: 491px) {
-    .background {
-      margin-left: -130px;
-    }
-  } 
+
 </style>

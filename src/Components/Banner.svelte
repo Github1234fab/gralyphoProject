@@ -94,6 +94,9 @@
     padding: 40px;
     gap: 30px;
   }
+  .card:hover{
+background-color: var(--colorL);
+  }
   .icon {
     color: var(--colorN);
     font-size: 1.9em;
@@ -102,10 +105,10 @@
     z-index: 2;
     color: var(--colorA);
     font-size: 2em;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
   }
   .arrow:hover {
-    transform: scale(0.9);
+    transform: scale(1.3);
   }
   .card h3 {
     font-family: kanit;

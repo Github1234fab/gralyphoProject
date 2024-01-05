@@ -61,7 +61,7 @@
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.7em;
     color: white;
     margin-top: 50px;

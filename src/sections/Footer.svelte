@@ -48,6 +48,7 @@
     text-align: center;
     font-family: epilogue;
     padding: 20px;
+    margin-top: 100px;
   }
   .footer h1 {
     grid-column: 6;
@@ -57,7 +58,7 @@
     color: white;
     font-family: kanit;
   }
-  .footer p {
+  /* .footer p {
     grid-column: 1/12;
     grid-row: 2;
     font-family: epilogue;
@@ -65,7 +66,7 @@
     font-size: 1em;
     color: var(--colorC);
     transition: 0.4s ease-in-out;
-  }
+  } */
  
   .footer h4 {
     grid-column: 1/12;
