@@ -140,6 +140,7 @@ background-color: var(--colorL);
       justify-content: center;
       padding: 40px;
       gap: 30px;
+      border: 1px solid grey;
     }
   }
 </style>
