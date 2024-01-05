@@ -10,7 +10,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".gsap1",
-        start: "top 700px",
+        start: "top 670px",
         end: "-200px",
         scrub: 1,
       },

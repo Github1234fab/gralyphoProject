@@ -11,7 +11,7 @@
       opacity: 1,
       scrollTrigger: {
         trigger: ".gsap4",
-        start: "top 640px",
+        start: "top 440px",
         end: "-300px",
         scrub: 1,
       },

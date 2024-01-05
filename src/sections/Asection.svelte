@@ -1,5 +1,9 @@
 <script>
   import background from "../Assets/png-gralypho/17.png";
+    import background2 from "../Assets/png-gralypho/41.png";
+      import background3 from "../Assets/png-gralypho/09.png";
+       import background4 from "../Assets/png-gralypho/21.png";
+        import background5 from "../Assets/png-gralypho/30.png";
 </script>
 
 <section class="A-section" >
@@ -9,7 +13,13 @@
       Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
     </h2>
     <a class="link" href="/#sectionE">Découvrir</a>
-    <img src={background} alt="" class="background" />
+    <div class="wrapper-images">
+    <!-- <img src={background2} alt="" class="background" /> -->
+        <!-- <img src={background} alt="" class="background" />
+            <img src={background3} alt="" class="background" /> -->
+            <!-- <img src={background4} alt="" class="background" />
+            <img src={background5} alt="" class="background" /> -->
+    </div>
   </div>
 </section>
 
@@ -30,8 +40,8 @@
     border-radius: 20px;
     margin-top: 20px;
     z-index: 0;
-    /* border: solid 1px rgb(55, 55, 55); */
     overflow: hidden;
+  
   }
 
   .A-section h1 {
@@ -55,9 +65,8 @@
     background-clip: text;
   }
   .A-section h2 {
-    margin-top: -30px;
+    margin-top: -50px;
     z-index: 1;
-    position: relative;
     font-family: epilogue;
     font-weight: 300;
     word-wrap: break-word;
@@ -67,12 +76,24 @@
     color: var(--colorC);
     padding: 30px;
   }
+  .wrapper-images{
+width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    overflow: hidden;
+    border-radius: 40px 40px 30px 60px;
+
+  }
   .background {
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding: 40px;
+    width:auto;
+    height: 600px;
+    box-shadow: 6px 10px 15px black;
+
+    /* z-index: 0; */
   }
 
   .link {

@@ -30,6 +30,7 @@
     background-color: var(--colorO);
     height: 100%;
     width: 100%;
+        margin-top: 30px;
   }
   .container{
     grid-column: 2/12;

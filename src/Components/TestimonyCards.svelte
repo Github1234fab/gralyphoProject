@@ -6,29 +6,28 @@
   export let job;
 </script>
 
-<div class="wrapper-cards">
+<!-- <div class="wrapper-cards"> -->
   <div class="card linear-gradient">
     <img src={img} {alt} class="img" />
     <h3>{title}</h3>
     <h4>{job}</h4>
     <h5>{p}</h5>
   </div>
-</div>
+<!-- </div> -->
 
 <style>
-  .wrapper-cards {
+  /* .wrapper-cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    width: auto;
+  } */
   .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 60%;
-    height: auto;
+    width: calc(30.33% - 10px);
+    height: calc(50.33% - 10px);
     font-family: epilogue;
     background-color: transparent;
     box-shadow:
@@ -47,6 +46,7 @@
     color: var(--colorC);
     font-weight: 700;
     font-family: kanit;
+    text-align: center;
   }
   .card h5 {
     font-size: 1em;
@@ -63,16 +63,7 @@
   .card h4 {
     font-size: 1.2em;
     color: white;
+    text-align: center;
   }
 
-  @media screen and (max-width: 768px) {
-
-    .card {
-      width: 100%;
-      padding: 0;
-    }
-    .img{
-      margin-top: 20px;
-    }
-  }
 </style>

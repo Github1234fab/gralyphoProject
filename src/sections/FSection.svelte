@@ -10,9 +10,9 @@
       scale: 1,
       scrollTrigger: {
         trigger: ".smartphone",
-        start: "top 700px",
+        start: "top 400px",
         end: "-300px",
-        scrub: 2,
+        scrub: 3,
       },
     });
   });

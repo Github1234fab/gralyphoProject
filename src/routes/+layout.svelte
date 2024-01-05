@@ -49,7 +49,7 @@
     color: var(--colorN);
     font-family: kanit;
     font-size: 1.5em;
-    margin-left: 20px;
+    margin-left: 45px;
   }
 
   .navigation {
@@ -90,11 +90,11 @@
     grid-column: 3;
     grid-row: 1;
     margin-left: 20px;
+    width: 50%;
   }
 
   .burger {
     height: 30px;
-
   }
     .burger:hover {
     animation: bounce 0.4s ease-in-out;
