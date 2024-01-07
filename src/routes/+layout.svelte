@@ -40,8 +40,9 @@
 
 <style>
   main {
-    background-color: var(--colorO);
+    /* background-color: var(--colorO); */
     overflow: hidden;
+ 
   }
 
   h1 {

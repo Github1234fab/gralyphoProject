@@ -9,7 +9,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".gsap",
-        start: "top 600px",
+        start: "top 700px",
         end: "-200px",
         scrub: 1,
       },
@@ -55,10 +55,8 @@
 
   }
   .wrapper-text {
-    /* background-image: url(../Assets/png-gralypho/cccoil.svg); */
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 50%;
+
+        background: radial-gradient(circle, var(--colorO), var(--colorN));
     grid-column: 2/12;
     grid-row: 1;
     display: grid;
@@ -85,6 +83,8 @@
   }
 
   .C-section p {
+         column-count: 4; /* ou le nombre de colonnes souhaité */
+  column-gap: 20px;
     grid-column: 2/12;
     grid-row: 3;
     color: var(--colorC);

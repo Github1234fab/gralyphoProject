@@ -69,6 +69,8 @@
     line-height: 37px;
   }
   .F-section h2 {
+             column-count: 3; /* ou le nombre de colonnes souhaité */
+  column-gap: 20px;
     word-wrap: break-word;
     grid-column: 2/12;
     grid-row: 3;

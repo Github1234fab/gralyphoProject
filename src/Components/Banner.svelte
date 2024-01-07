@@ -94,8 +94,8 @@
     padding: 40px;
     gap: 30px;
   }
-  .card:hover{
-background-color: var(--colorL);
+  .card:hover {
+    background-color: var(--colorL);
   }
   .icon {
     color: var(--colorN);
