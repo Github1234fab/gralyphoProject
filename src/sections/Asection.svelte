@@ -35,7 +35,7 @@
     margin-bottom: 50px;
     margin-top: 50px;
     z-index: 0;
-    background: radial-gradient(circle at top, var(--colorL), var(--colorO));
+    background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
   }

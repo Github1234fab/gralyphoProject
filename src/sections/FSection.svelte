@@ -38,7 +38,9 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    background-color: var(--colorO);
+      background: radial-gradient(circle at top, var(--colorN), var(--colorO));
+    background-size: 100% 100%;
+    shape-outside: circle(90%);
     margin-top: 170px;
     margin-bottom: 100px;
   }

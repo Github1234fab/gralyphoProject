@@ -93,7 +93,7 @@
 		overflow: hidden;
 		cursor: grab;
 		position: relative;
-		background-color: var(--colorO);
+		/* background-color: var(--colorO); */
 		grid-column: 1/12;
 		grid-row: 5;
 		z-index: 5;

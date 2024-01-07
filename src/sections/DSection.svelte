@@ -76,7 +76,9 @@
     height: auto;
     margin-top: 150px;
     font-size: 16px;
-    background-color: var(--colorO);
+    background: radial-gradient(circle at top, var(--colorN), var(--colorO));
+    background-size: 100% 100%;
+    shape-outside: circle(90%);
   }
   .wrapper-text {
        /* border: solid 1px rgb(55, 55, 55); */

@@ -43,7 +43,9 @@
     margin-top: 150px;
     height: 100%;
     font-size: 16px;
-    background-color: var(--colorO);
+    background: radial-gradient(circle at top, var(--colorN), var(--colorO));
+    background-size: 100% 100%;
+    shape-outside: circle(90%);
   }
   .wrapper-text {
     grid-column: 2/12;

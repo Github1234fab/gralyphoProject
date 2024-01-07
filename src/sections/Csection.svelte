@@ -50,13 +50,15 @@
     grid-template-rows: 1;
     height: auto;
     font-size: 16px;
-    background-color: var(--colorO);
+        background: radial-gradient(circle at top, var(--colorN), var(--colorO));
+    background-size: 100% 100%;
+    shape-outside: circle(90%);
     margin-top: 0px;
 
   }
   .wrapper-text {
 
-        background: radial-gradient(circle, var(--colorO), var(--colorN));
+        /* background: radial-gradient(circle, var(--colorO), var(--colorN)); */
     grid-column: 2/12;
     grid-row: 1;
     display: grid;
