@@ -67,6 +67,7 @@
     grid-column: 2/12;
     grid-row: 2;
     margin-top: 50px;
+    margin-bottom: 50px;
     gap: 40px;
     display: flex;
     flex-direction: column;

@@ -19,11 +19,12 @@
     <Asection />
     <Bsection />
     <Csection />
-    <JSection />
-    <DSection />
-    <section id="sectionE">
+       <section id="sectionE">
       <ESection />
     </section>
+    <JSection />
+    <DSection />
+ 
     <section id="sectionF">
       <FSection />
     </section>

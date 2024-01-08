@@ -78,7 +78,7 @@
 
   a {
     color: white;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: 200;
     text-decoration: none;
   }

@@ -83,6 +83,9 @@
     font-size: 16px;
     margin-top: 100px;
     opacity: 0.2;
+            margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
   }
   .wrapper-contain {
     grid-column: 2/12;

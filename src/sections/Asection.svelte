@@ -4,7 +4,9 @@
   import background3 from "../Assets/png-gralypho/09.png";
   import background4 from "../Assets/png-gralypho/21.png";
   import background5 from "../Assets/png-gralypho/30.png";
-
+  import dev from "../Assets/png-gralypho/Saly-15.png";
+      import world from "../Assets/png-gralypho/Saly-44.png";
+            import smart from "../Assets/png-gralypho/Saly-12.png";
 </script>
 
 <section class="A-section">
@@ -25,6 +27,9 @@
     </div>
     <a class="link" href="/#sectionE">Découvrir</a>
   </div>
+  <img src={smart} alt="" class="smart" />
+
+      <!-- <img src={world} alt="" class="world" /> -->
 </section>
 
 <style>
@@ -44,19 +49,26 @@
     margin-right: 30px;
     border-radius: 6px;
   }
-  .A-section::after {
-    content: "";
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: beige;
-    z-index: -1;
-    opacity: 0.2;
+  .smart {
+    grid-column: 10/12;
+    grid-row: 3;
+    height: 190px;
+    z-index: 10;
+    margin-top: -220px; 
+    rotate: 10deg;
+    animation: 20s ease-in-out infinite move ;
   }
-
+  @keyframes move {
+    0% {
+transform: scale(1) rotate(0deg);
+    }
+    50% {
+transform:scale(1.1) rotate(10deg);
+    }
+    100% {
+transform: scale(1) rotate(-3deg)
+    }
+  }
   .wrapper-title {
     grid-column: 2/12;
     height: 100%;
@@ -154,8 +166,16 @@
       transform: scale(1) translateY(0);
     }
   }
+@media screen and (max-width: 840px){
+    .smart{
+    grid-column: 10/12;
+    grid-row: 3;
+    height: 140px;
+    margin-top: -100px;
 
-  @media screen and (max-width: 590px) {
+    }
+}
+  @media screen and (max-width: 627px) {
     .icon {
       font-size: 1.2em;
     }
@@ -166,13 +186,8 @@
       overflow: hidden;
       height: auto;
     }
-    /* .background {
-      width: auto;
-      height: 420px;
-      z-index: 0;
-      margin-top: 30px;
-      margin-left: -50px;
-      margin-bottom: 0px;
-    } */
+.smart{
+display: none;
+}
   }
 </style>

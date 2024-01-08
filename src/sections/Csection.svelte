@@ -65,7 +65,7 @@
     shape-outside: circle(90%);
        margin-left: 30px;
     margin-right: 30px;
-    border-radius: 30px 120px 80px 170px;
+       border-radius: 6px;
     margin-top: 0px;
     opacity: 0.2;
 

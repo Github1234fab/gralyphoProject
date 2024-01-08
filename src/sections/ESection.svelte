@@ -51,12 +51,16 @@ opacity: 1,
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     margin-top: 150px;
-    height: 100%;
+    margin-bottom: 50px;
+    height: auto;
     font-size: 16px;
     background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
     opacity: 0.2;
+        margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
   }
   .wrapper-text {
     grid-column: 2/12;

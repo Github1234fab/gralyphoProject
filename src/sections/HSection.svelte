@@ -47,6 +47,9 @@
     background-size: 100% 100%;
     shape-outside: circle(90%);
     margin-top: 150px;
+            margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
   }
   .wrapper-text {
     grid-column: 2/12;
