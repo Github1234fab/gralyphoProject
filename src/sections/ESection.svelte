@@ -17,6 +17,16 @@
         scrub: 1,
       },
     });
+        gsap.to(".E-section", {
+opacity: 1,
+      ease: "E-section",
+      scrollTrigger: {
+        trigger: ".gsap2",
+        start: "top 400px",
+        end: "-200px",
+        scrub: 1,
+      },
+    });
   });
 </script>
 
@@ -46,6 +56,7 @@
     background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
+    opacity: 0.2;
   }
   .wrapper-text {
     grid-column: 2/12;

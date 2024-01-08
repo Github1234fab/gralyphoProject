@@ -4,25 +4,27 @@
   import background3 from "../Assets/png-gralypho/09.png";
   import background4 from "../Assets/png-gralypho/21.png";
   import background5 from "../Assets/png-gralypho/30.png";
+
 </script>
 
 <section class="A-section">
+  <div class="halo"></div>
+  <div class="halo2"></div>
   <div class="wrapper-title">
     <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1>
     <h2>
       Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
     </h2>
-      <div class="wrapper-images">
-    <i class="fa-solid fa-desktop banner-icon icon"></i>
-    <i class="fa-solid fa-sitemap icon"></i>
-    <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
-    <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
-    <i class="fa-solid fa-recycle icon"></i>
-    <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
-  </div>
+    <div class="wrapper-images">
+      <i class="fa-solid fa-desktop banner-icon icon"></i>
+      <i class="fa-solid fa-sitemap icon"></i>
+      <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
+      <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
+      <i class="fa-solid fa-recycle icon"></i>
+      <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
+    </div>
     <a class="link" href="/#sectionE">Découvrir</a>
   </div>
-
 </section>
 
 <style>
@@ -34,10 +36,25 @@
     font-size: 16px;
     margin-bottom: 50px;
     margin-top: 50px;
-    z-index: 0;
+    z-index: 1;
     background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
+  }
+  .A-section::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: beige;
+    z-index: -1;
+    opacity: 0.2;
   }
 
   .wrapper-title {
@@ -48,10 +65,9 @@
     margin-top: 20px;
     z-index: 0;
     overflow: hidden;
-
   }
-  .icon{
-    color: var(--colorH);
+  .icon {
+    color: var(--colorD);
     font-size: 2em;
   }
 
@@ -140,7 +156,7 @@
   }
 
   @media screen and (max-width: 590px) {
-    .icon{
+    .icon {
       font-size: 1.2em;
     }
     .A-section {

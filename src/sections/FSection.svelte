@@ -15,6 +15,16 @@
         scrub: 3,
       },
     });
+       gsap.to(".F-section", {
+opacity: 1,
+      ease: "F-section",
+      scrollTrigger: {
+        trigger: ".gsap2",
+        start: "top 400px",
+        end: "-200px",
+        scrub: 1,
+      },
+    });
   });
 </script>
 
@@ -43,6 +53,7 @@
     shape-outside: circle(90%);
     margin-top: 170px;
     margin-bottom: 100px;
+    opacity: 0.2;
   }
   .wrapper-text {
     grid-column: 2/12;

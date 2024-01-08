@@ -14,6 +14,16 @@
         scrub: 1,
       },
     });
+        gsap.to(".C-section", {
+     opacity: 1,
+      ease: "expoScale",
+      scrollTrigger: {
+        trigger: ".C-section",
+        start: "top 500px",
+        end: "-200px",
+        scrub: 1,
+      },
+    });
   });
 </script>
 
@@ -53,7 +63,11 @@
         background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
+       margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px 120px 80px 170px;
     margin-top: 0px;
+    opacity: 0.2;
 
   }
   .wrapper-text {

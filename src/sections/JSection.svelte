@@ -1,18 +1,32 @@
 <script>
+  import { onMount } from "svelte";
   import TestimonyCards from "../Components/TestimonyCards.svelte";
   import profilOne from "../Assets/Profils-gralypho/Frame (2).png";
   import profilTwo from "../Assets/Profils-gralypho/Frame (5).png";
   import profilThree from "../Assets/Profils-gralypho/Frame (12).png";
   import profilFour from "../Assets/Profils-gralypho/Ellipse 125.png";
-    import profilFive from "../Assets/Profils-gralypho/Ellipse 131.png";
-      import profilSix from "../Assets/Profils-gralypho/Ellipse 220.png";
+  import profilFive from "../Assets/Profils-gralypho/Ellipse 131.png";
+  import profilSix from "../Assets/Profils-gralypho/Ellipse 220.png";
+
+  onMount(() => {
+    gsap.to(".J-section", {
+      opacity: 1,
+      ease: "expoScale",
+      scrollTrigger: {
+        trigger: ".J-section",
+        start: "top 400px",
+        end: "-200px",
+        scrub: 4,
+      },
+    });
+  });
 
   let dataCard = [
-             {
+    {
       img: profilTwo,
       title: "Mademoiselle G.",
       job: "Marjolaine - Directrice de la communicaiton",
-      p: 'Délai respecté, composants fonctionnels avec une très bonne intégration. Nous recommandons Gralypho! ',
+      p: "Délai respecté, composants fonctionnels avec une très bonne intégration. Nous recommandons Gralypho! ",
     },
     {
       img: profilFive,
@@ -21,7 +35,7 @@
       job: "Damien - Électricien indépendant",
       p: "L'ajout de fonctionnalité comme la prise de RV et les paiements en ligne m'ont grandement faciliter la tâche et fait gagner beaucoup de temps et de l'argent! Merci encore pour l'accompagnement.",
     },
-     {
+    {
       img: profilThree,
       title: "Green NRJ",
       job: "Asha Ramanujan - Project Manager",
@@ -33,13 +47,13 @@
       job: "Christophe Muun - Styliste",
       p: "Enfin un professionnel ! Merci pour notre application, elle est parfaite! ",
     },
-        {
+    {
       img: profilSix,
       title: "Le Marminot",
       job: "Hugo Hervé - Restaurateur",
       p: "Merci pour toutes les idées qui permettent à nos clients de découvrir notre restauration, comme jamais!",
     },
-        {
+    {
       img: profilOne,
       title: "Inès Marjot",
       job: "Photographe",
@@ -68,6 +82,7 @@
     height: auto;
     font-size: 16px;
     margin-top: 100px;
+    opacity: 0.2;
   }
   .wrapper-contain {
     grid-column: 2/12;

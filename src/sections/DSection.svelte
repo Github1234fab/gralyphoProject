@@ -2,7 +2,7 @@
   import Check from "../Assets/png-gralypho/Saly-26.png";
   import CardsSectionB from "../Components/CardsSectionB.svelte";
   import { onMount } from "svelte";
-  import circle from '../Assets/png-gralypho/circle.svg'
+  import circle from "../Assets/png-gralypho/circle.svg";
 
   onMount(() => {
     gsap.to(".gsap1", {
@@ -11,6 +11,16 @@
       scrollTrigger: {
         trigger: ".gsap1",
         start: "top 670px",
+        end: "-200px",
+        scrub: 1,
+      },
+    });
+       gsap.to(".D-section", {
+opacity: 1,
+      ease: "D-section",
+      scrollTrigger: {
+        trigger: ".D-section",
+        start: "top 500px",
         end: "-200px",
         scrub: 1,
       },
@@ -51,13 +61,15 @@
 
 <section class="D-section">
   <div class="wrapper-text">
-      <!-- <div class="wrapper-check"> -->
+    <!-- <div class="wrapper-check"> -->
     <img src={Check} alt="" class="check gsap1" />
-        <img src={circle} alt="" class="circle gsap1" />
-  <!-- </div> -->
+    <img src={circle} alt="" class="circle gsap1" />
+    <!-- </div> -->
     <h1>Les 4 étapes clefs pour créer un outil digital gagnant sur le Web !</h1>
     <h2>
-   Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications gagnantes sur le Web, en suivant un process de création optimal. Nous gagnons ainsi du temps et vous économisez de l'argent !.
+      Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications
+      gagnantes sur le Web, en suivant un process de création optimal. Nous gagnons ainsi du temps et vous économisez de
+      l'argent !.
     </h2>
     <div class="wrapper-accordeon">
       {#each infosCards as card}
@@ -65,7 +77,6 @@
       {/each}
     </div>
   </div>
-
 </section>
 
 <style>
@@ -79,10 +90,14 @@
     background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px 120px 80px 170px;
+    opacity: 0.2;
   }
   .wrapper-text {
-       /* border: solid 1px rgb(55, 55, 55); */
-          /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
+    /* border: solid 1px rgb(55, 55, 55); */
+    /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: 20%;
@@ -93,7 +108,6 @@
     /* background-color: var(--colorN); */
     border-radius: 20px;
     padding: 20px;
-
   }
   .D-section h1 {
     word-wrap: break-word;
@@ -130,14 +144,14 @@
     transform: scale(0.7);
     align-self: center;
   }
-   .circle {
+  .circle {
     height: 180px;
     z-index: 1;
     transform: scale(0.7);
     align-self: center;
     margin-top: -130px;
   }
-  .gsap1{
+  .gsap1 {
     background-color: transparent;
   }
   .wrapper-accordeon {
@@ -153,11 +167,11 @@
     align-items: center;
   }
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .D-section {
       font-size: 13px;
     }
-        .wrapper-text{
+    .wrapper-text {
       background-size: 100%;
     }
   }

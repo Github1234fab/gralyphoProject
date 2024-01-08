@@ -1,4 +1,18 @@
 <script>
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    gsap.to(".B-section", {
+      opacity:1,
+      ease: "expoScale",
+      scrollTrigger: {
+        trigger: ".B-section",
+        start: "top 480px",
+        end: "-200px",
+        scrub: 1,
+      },
+    });
+  });
 </script>
 
 <section class="B-section">
@@ -39,6 +53,7 @@
     margin-bottom: 100px;
     font-size: 16px;
     background-color: var(--colorO);
+    opacity: 0.2
   }
   .wrapper-cards {
     grid-column: 2/12;

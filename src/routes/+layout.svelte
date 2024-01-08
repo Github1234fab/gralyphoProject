@@ -42,6 +42,7 @@
   main {
     /* background-color: var(--colorO); */
     overflow: hidden;
+
  
   }
 
