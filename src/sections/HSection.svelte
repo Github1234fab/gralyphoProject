@@ -22,7 +22,7 @@
   <div class="wrapper-text">
     <img src={Climber} alt="" class="climb gsap5" />
     <img src={six} alt="" class="six gsap5" />
-    <h1>L'agence <strong>Gralypho</strong>, l'expertise et l'expérience <span>100% </span>gagnante !</h1>
+    <h1>L'agence  digitale <strong>Gralypho</strong>, l'expertise et l'expérience <span>100% </span>gagnante !</h1>
     <h2>
       Le web c'est avant tout une passion. <br />Le code informatique c'est avant tout le langage créatif par
       excellence. Celui qui permet de tout faire et dont la seule limite est notre propre connaissance. <br /> Créer un
@@ -43,13 +43,10 @@
     grid-template-rows: auto;
     height: 100%;
     font-size: 16px;
-       background: radial-gradient(circle at top, var(--colorN), var(--colorO));
-    background-size: 100% 100%;
-    shape-outside: circle(90%);
-    margin-top: 150px;
-            margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 6px;
+background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
+    background-size: 150% 100%; 
+
+
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -58,25 +55,22 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-    /* border: solid 1px rgb(55, 55, 55); */
-     /* background-image: url(../Assets/png-gralypho/ssspiral.svg); */
-     background-repeat: no-repeat;
-     background-size: 50%;
-     background-position: top;
+
+
   }
   .H-section h1 {
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-    font-weight: 800;
-    font-size: 1.7em;
+  font-weight: 700;
+    font-size: 2.3em;
     color: white;
     margin-top: 50px;
     padding: 10px;
     line-height: 37px;
   }
   .H-section h1 span {
-    font-weight: 600;
+    font-weight: 800;
     color: transparent;
     -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
     background-image: linear-gradient(to left, var(--colorD), var(--colorI));

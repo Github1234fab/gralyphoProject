@@ -66,9 +66,9 @@
     background-color: transparent;
     grid-column: 2/12;
     grid-row: 2;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
-    gap: 40px;
+    gap: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;

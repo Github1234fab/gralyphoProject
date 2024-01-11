@@ -54,8 +54,8 @@ import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
     color: transparent;
     font-family: kanit;
     font-size: 1.5em;
-    margin-left: 25px;
-    background: linear-gradient(to right, var(--button), var(--colorC), var(--ca));
+
+    background: linear-gradient(to right, rgb(107, 107, 178), var(--colorC), var(--ca));
     background-clip: text;
   }
   .wrapper-links {

@@ -26,7 +26,7 @@
       <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
     </div>
     <a class="link" href="/#sectionE">Découvrir</a>
-      <img src={mediaTree} alt="" class="media-tree" />
+      <img src={mediaTree} alt="arbre de logos de médias" class="media-tree" />
   </div>
 
 

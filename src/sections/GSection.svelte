@@ -24,8 +24,8 @@
   <div class="wrapper-text">
     <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
     <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
-    <h1>Exemples de réalisations</h1>
-    <h2>Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met l'accent sur un design, une fonctionnalité, une fonctionnalité. Découvrez !</h2>
+    <h1>Exemples de réalisations d'outils digitaux</h1>
+    <h2>Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met l'accent sur un design, une fonctionnalité, etc Découvrez !</h2>
 <i class="fa-solid fa-arrows-left-right  arrow"></i>
     <Carousel />
   </div>
@@ -38,9 +38,6 @@
     grid-template-rows: auto;
     height: 100%;
     font-size: 16px;
-       background: radial-gradient(circle at top, var(--colorN), var(--colorO));
-    background-size: 100% 100%;
-    shape-outside: circle(90%);
     margin-top: 170px;
             margin-left: 30px;
     margin-right: 30px;
@@ -63,8 +60,8 @@
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-    font-weight: 800;
-    font-size: 1.7em;
+      font-weight: 700;
+    font-size: 2.3em;
     color: white;
     margin-top: 50px;
     padding: 10px;

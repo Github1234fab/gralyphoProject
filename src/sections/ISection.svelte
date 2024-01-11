@@ -24,8 +24,8 @@
 		grid-column: 2/6;
 		grid-row: 1;
 		font-family: epilogue;
-		font-weight: bolder;
-		font-size: 1.8em;
+		 font-weight: 700;
+    font-size: 2.3em;
 		color: white;
 		text-transform: uppercase;
 	}

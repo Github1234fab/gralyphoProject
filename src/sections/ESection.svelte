@@ -79,7 +79,7 @@ opacity: 1,
   font-size: 2.4em;
     font-weight: 800;
     color: white;
-    margin-top: 50px;
+    margin-top: 100px;
     padding: 10px;
     line-height: 53px;
   }
