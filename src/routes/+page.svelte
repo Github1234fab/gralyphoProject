@@ -13,16 +13,16 @@
 </script>
 
 <main in:fade={{duration:2000}}>
-  <!-- <slot /> -->
-  <!-- <Header /> -->
+
   <section id="sectionA">
     <Asection />
     <Bsection />
     <Csection />
+        <JSection />
        <section id="sectionE">
       <ESection />
     </section>
-    <JSection />
+
     <DSection />
  
     <section id="sectionF">
@@ -35,7 +35,7 @@
 
 <style>
   main {
-    background-color: var(--colorO);
+
     overflow: hidden;
   }
 </style>

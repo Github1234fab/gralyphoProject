@@ -1,22 +1,25 @@
 *,
 ::before,
 ::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
+body {
   background-color: var(--colorO);
   scroll-behavior: smooth;
 }
-html{
+html {
   scroll-behavior: smooth;
-  
 }
 
 /* Désactiver le système de grille Bootstrap */
-.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
   width: 100%;
   max-width: none;
   padding-right: 0;
@@ -35,24 +38,27 @@ html{
   padding-left: 0;
 }
 
-
-:root{
-	--colorA: #E13E3B;
-	--colorB: #0C0B2E;
-	--colorC: white;
-	--colorD:#BB7CF2;
-	--colorE:#1b1b1b;
-	--colorF:#28282e;
-  --colorG:#005248;
-  --colorH:#755B8A;
-  --colorI:#F76E48;
-  --colorJ: #B2A8B8;
-  --colorK:#D5CABD; 
-  --colorL:#006E60;
+:root {
+  --colorA: #e13e3b;
+  --colorB: #0c0b2e;
+  --colorC: white;
+  --colorD: #bb7cf2;
+  --colorE: #1b1b1b;
+  --colorF: #28282e;
+  --colorG: #005248;
+  --colorH: #755b8a;
+  --colorI: #f76e48;
+  --colorJ: #b2a8b8;
+  --colorK: #d5cabd;
+  --colorL: #006e60;
   --colorM: #390071;
-  --colorN: #553C69;
-  --colorO: #11232E;
-    --colorO2:rgba(17, 35, 46, 0.645);
+  --colorN: #553c69;
+  --colorO: #11232e;
+  --colorO2: rgba(17, 35, 46, 0.645);
+ 
+  --primary: #1a1c21;
+   --bg: #23262b;
+  --ca: #FF8C00;
+  --gradient: #1d2f4f;
+  --button: #6CA0DC;
 }
-
-

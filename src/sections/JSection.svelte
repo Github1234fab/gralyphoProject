@@ -65,7 +65,7 @@
 <section class="J-section">
   <div class="wrapper-contain">
     <h1>Témoignages de nos clients</h1>
-    <h2>Collaborations, Missions, Partenariats</h2>
+    <h2>Collaborations, Missions, Partenariats.</h2>
     <div class="wrapper-testimony">
       {#each dataCard as card}
         <TestimonyCards title={card.title} job={card.job} p={card.p} img={card.img} alt={card.alt} />
@@ -81,7 +81,7 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    margin-top: 100px;
+    margin-top: 150px;
     opacity: 0.2;
             margin-left: 30px;
     margin-right: 30px;
@@ -99,8 +99,8 @@
     grid-column: 2/12;
     grid-row: 1;
     font-family: epilogue;
-    font-weight: 600;
-    font-size: 1.7em;
+  font-size: 2.4em;
+    font-weight: 800;
     color: white;
   }
   .J-section h2 {
@@ -119,7 +119,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
     margin-top: 50px;
   }
 

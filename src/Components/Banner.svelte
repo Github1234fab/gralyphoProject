@@ -84,7 +84,7 @@
 
   .card {
     z-index: 0;
-    background-color: transparent;
+    background: linear-gradient(to top, var(--bg), var(--gradient));
     width: 30%;
     height: auto;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
@@ -99,17 +99,34 @@
     background-color: var(--colorL);
   }
   .icon {
-    color: var(--colorN);
+    color: var(--button);
     font-size: 1.9em;
   }
   .arrow {
     z-index: 2;
-    color: var(--colorA);
-    font-size: 2em;
+    color: var(--ca);
+    font-size: 2.5em;
     transition: 0.1s ease-in-out;
   }
   .arrow:hover {
-    transform: scale(1.3);
+ animation: bounce 0.4s ease-in-out;
+  }
+   @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
+    }
+    25% {
+      transform: scale(1) translateY(3px);
+    }
+    50% {
+      transform: scale(1) translateY(-1px);
+    }
+    75% {
+      transform: scale(1) translateY(2px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
   }
   .card h3 {
     font-family: kanit;

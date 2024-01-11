@@ -34,11 +34,10 @@ opacity: 1,
   <div class="wrapper-text">
     <img src={SpaceShip} alt="" class="space-ship gsap2" />
     <img src={square} alt="" class="square gsap2" />
-    <h1>Nos solutions digitales.</h1>
+    <h1>Révolutionnez votre stratégie Numérique grâce à nos solutions Digitales ! </h1>
     <h2>
       Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans
-      débourser une fortune, le relooker serait plutôt sympa ?! <br />Profitez de nos conseils en stratégie, de nos
-      systèmes de composants intégrés et de notre expertise en référencement.
+      débourser une fortune, le relooker serait plutôt sympa ?! <br />Trouvez la bonne solution par gagner du temps et de l'argent, grâce à nos solutions digitales, livrées clefs en main !
     </h2>
     <Banner />
   </div>
@@ -54,8 +53,8 @@ opacity: 1,
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
-    background: radial-gradient(circle at top, var(--colorN), var(--colorO));
-    background-size: 100% 100%;
+ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
+    background-size: 150% 100%; 
     shape-outside: circle(90%);
     opacity: 0.2;
         margin-left: 30px;
@@ -69,11 +68,6 @@ opacity: 1,
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-    /* border: solid 1px rgb(55, 55, 55); */
-    /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
-    /* background-repeat: no-repeat;
-    background-position: top;
-    background-size: 27%; */
   }
 
   .E-section h1 {
@@ -82,12 +76,12 @@ opacity: 1,
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
+  font-size: 2.4em;
     font-weight: 800;
-    font-size: 1.7em;
     color: white;
     margin-top: 50px;
     padding: 10px;
-    line-height: 37px;
+    line-height: 53px;
   }
   .E-section h2 {
     word-wrap: break-word;
@@ -95,7 +89,7 @@ opacity: 1,
     grid-row: 3;
     margin-top: 10px;
     font-family: epilogue;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.2em;
     color: var(--colorC);
     text-align: left;

@@ -1,53 +1,98 @@
 <script>
-  import { Link } from "svelte-routing";
+import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
+  import { fade, slide } from "svelte/transition";
+
+  let toggle = false;
+  function display() {
+    toggle = !toggle;
+    console.log(4);
+  }
+
 </script>
 
-<nav class="navbar navbar-expand-lg bg-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="/Site">Gralypho</a>
-    <button
-      class="navbar-toggler bg-toggle navbar-toggler-custom"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
+
+  <nav class="navigation">
+    <h1>GRALYPHO</h1>
+    <button class="burger-menu" on:click={display}>
+      <img src={burger} alt="" class="burger" class:visible={toggle} />
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="/">Sites Internet</a>
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/#sectionC">Applications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/">Tarifs</a>
-        </li>
-        <li class="nav-item">
-          <!-- <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a> -->
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    {#if toggle}
+      <span class="span" transition:slide={{ duration: 1200 }}>
+        <div in:fade={{ duration: 600 }} out:fade={{ duration: 600 }} class="wrapper-links">
+          <a href="/">Home</a>
+          <a href="/Sites">Sites Web</a>
+          <a href="/Applications">Applications</a>
+          <a href="/Referencement">Référencement</a>
+          <a href="/Marketing">Marketing</a>
+          <a href="/Composants">Composants</a>
+          <a href="/Refonte">Refonte</a>
+          <a href="/Technologies">Technologies</a>
+        </div>
+      </span>
+    {/if}
+  </nav>
+  <style>
 
-<style>
-  .bg-custom {
-    background-color: var(--colorO);
-    /* box-shadow: 0px 0px 10px 0px var(--colorL); */
-    padding: 20px;
+  .navigation {
+    grid-column: 1/13;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+    margin-top: 20px;
   }
-  .bg-toggle {
-    background-color: rgb(100, 100, 229);
+  .span {
+    grid-row: 2;
+    grid-column: 2/12;
+  }
+
+  h1 {
+    grid-column: 2;
+    grid-row: 1;
+    color: transparent;
+    font-family: kanit;
+    font-size: 1.5em;
+    margin-left: 25px;
+    background: linear-gradient(to right, var(--button), var(--colorC), var(--ca));
+    background-clip: text;
+  }
+  .wrapper-links {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    opacity: 1; /* Initial opacity */
+  }
+
+  a {
+    color: white;
+    font-size: 0.9em;
+    font-weight: 200;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--colorD);
+  }
+
+  .burger-menu {
+    background-color: transparent;
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 20px;
+    width: 50%;
     border: none;
-    transition: 0.3s ease-in-out;
+    border-left: 1px grey solid;
+     border-top: 1px grey solid;
   }
-  .bg-toggle:hover {
+
+  .burger {
+    height: 30px;
+    border: none;
+  }
+  .burger:hover {
     animation: bounce 0.4s ease-in-out;
   }
   @keyframes bounce {
@@ -67,9 +112,10 @@
       transform: scale(1) translateY(0);
     }
   }
-  .navbar-toggler-custom:focus {
-    outline: none; /* Annule la bordure de focus */
-    box-shadow: none; /* Annule l'ombre de focus */
-    background-color: grey;
+
+  @media screen and (max-width: 768px) {
+    .wrapper-links {
+      flex-direction: column;
+    }
   }
-</style>
+  </style>

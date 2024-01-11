@@ -38,7 +38,7 @@
   }
   .linear-gradient {
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
   }
   .card h3 {

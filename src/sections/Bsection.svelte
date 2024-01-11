@@ -19,7 +19,7 @@
   <div class="wrapper-cards">
     <div class="cards-experience">
       <div class="icon linear-gradient">100%</div>
-      <h1>Référencement</h1>
+      <h1>Référencement optimisé</h1>
       <h2>
         Grâce à notre expertise en SEO et SEA, optimisez votre stratégie pour un référencement sur la première page des
         moteurs de recherche
@@ -34,7 +34,7 @@
     </div>
     <div class="cards-experience">
       <div class="icon linear-gradient">100%</div>
-      <h1>Évolutif</h1>
+      <h1>Sites Évolutifs</h1>
       <h2>
         Optez pour des solutions qui vous permettrons de faire évoluer votre site internet et votre application, au fur
         et à mseure de l'évolution de votre business.
@@ -52,14 +52,14 @@
     height: auto;
     margin-bottom: 100px;
     font-size: 16px;
-    background-color: var(--colorO);
+    background-color: var(--primary);
     opacity: 0.2
   }
   .wrapper-cards {
     grid-column: 2/12;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     height: auto;
   }
   .cards-experience {
@@ -75,7 +75,12 @@
     margin-top: 20px;
     z-index: 0;
     box-shadow: 3px 3px 15px rgb(1, 6, 27);
-    background-color: #152a37;
+    /* background-color: #152a37; */
+    /* background-image: url(../Assets//png-gralypho/waves3-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; */
+background:  linear-gradient( to top,  var(--bg),  var(--gradient));
   }
   .icon {
     position: absolute;
@@ -99,7 +104,7 @@
   }
   .linear-gradient {
     border-style: solid;
-    border-width: 3px;
+    border-width: 5px;
     border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
   }
 
@@ -127,19 +132,19 @@
     padding: 30px;
   }
   .button {
-    /* background: linear-gradient(to left, var(--colorJ), var(--colorI)); */
-    background-color: rgb(100, 100, 229);
     padding: 13px;
     border-radius: 10px;
     width: auto;
     height: auto;
-    color: white;
+    color:  white;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 20px;
     font-weight: 400;
+    font-family: kanit;
     font-size: 1em;
     transition: 0.4s ease-in-out;
+    background-color: var(--ca);
   }
   .button:hover {
     animation: bounce 0.4s ease-in-out;

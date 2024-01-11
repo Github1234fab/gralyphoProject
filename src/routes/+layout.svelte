@@ -1,19 +1,18 @@
 <script>
   import "./styles.css";
   import Footer from "../sections/Footer.svelte";
-  import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
-  import { fade, slide } from "svelte/transition";
-  // import Header from "../sections/Header.svelte";
+  // import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
+  // import { fade, slide } from "svelte/transition";
 
-  let toggle = false;
-  function display() {
-    toggle = !toggle;
-    console.log(4);
-  }
+  // let toggle = false;
+  // function display() {
+  //   toggle = !toggle;
+  //   console.log(4);
+  // }
 </script>
 
 <main>
-  <nav class="navigation">
+  <!-- <nav class="navigation">
     <h1>GRALYPHO</h1>
     <button class="burger-menu" on:click={display}>
       <img src={burger} alt="" class="burger" class:visible={toggle} />
@@ -29,24 +28,24 @@
           <a href="/Marketing">Marketing</a>
           <a href="/Composants">Composants</a>
           <a href="/Refonte">Refonte</a>
+          <a href="/Technologies">Technologies</a>
         </div>
       </span>
     {/if}
-  </nav>
-  <!-- <Header/> -->
+  </nav> -->
+
   <slot />
   <Footer />
 </main>
 
+
 <style>
   main {
-    /* background-color: var(--colorO); */
+ background-color: var(--primary);
     overflow: hidden;
-
- 
   }
 
-  h1 {
+ /* h1 {
     grid-column: 2;
     grid-row: 1;
     color: var(--colorN);
@@ -56,12 +55,12 @@
   }
 
   .navigation {
-    margin-top: 30px;
-    background-color: var(--colorO);
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: auto;
+    background-color: #47578D;
   }
   .span {
     grid-row: 2;
@@ -73,7 +72,7 @@
     margin-left: 20px;
     display: flex;
     gap: 20px;
-    opacity: 1; /* Initial opacity */
+    opacity: 1; 
   }
 
   a {
@@ -119,9 +118,9 @@
     }
   }
 
-  @media screen and (max-width: 768px){
-    .wrapper-links{
+  @media screen and (max-width: 768px) {
+    .wrapper-links {
       flex-direction: column;
-    }
-  }
+    } */
+  
 </style>

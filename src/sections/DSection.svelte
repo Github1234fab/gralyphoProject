@@ -65,7 +65,7 @@ opacity: 1,
     <img src={Check} alt="" class="check gsap1" />
     <img src={circle} alt="" class="circle gsap1" />
     <!-- </div> -->
-    <h1>Les 4 étapes clefs pour créer un outil digital gagnant sur le Web !</h1>
+    <h1>Les 4 étapes pour obtenir un outil digital, gagnant sur le Web !</h1>
     <h2>
       Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications
       gagnantes sur le Web, en suivant un process de création optimal. Nous gagnons ainsi du temps et vous économisez de
@@ -87,9 +87,9 @@ opacity: 1,
     height: auto;
     margin-top: 150px;
     font-size: 16px;
-    background: radial-gradient(circle at top, var(--colorN), var(--colorO));
+    /* background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
-    shape-outside: circle(90%);
+    shape-outside: circle(90%); */
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 6px;
@@ -115,12 +115,12 @@ opacity: 1,
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
+     font-size: 2.4em;
     font-weight: 800;
-    font-size: 1.7em;
     color: white;
     margin-top: 50px;
     padding: 10px;
-    line-height: 37px;
+    line-height: 45px;
   }
 
   .D-section h2 {
@@ -165,6 +165,7 @@ opacity: 1,
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
 
   @media screen and (max-width: 768px) {
