@@ -2,6 +2,7 @@
   export let title;
   export let icon;
   export let p;
+    export let lien;
 </script>
 
 <div class="cards">
@@ -11,6 +12,7 @@
     <p>
       {p}
     </p>
+    <button class="button"  href={lien}>En savoir plus<button/> 
   </div>
 </div>
 
@@ -35,10 +37,7 @@
     border: 1px solid white;
     border-radius: 50%;
   }
-  .icon:hover {
-    animation: bounce 0.4s ease-in-out;
-    border: 2px solid var(--ca);
-  }
+
 
   @keyframes bounce {
     0% {
@@ -57,6 +56,23 @@
       transform: scale(1) translateY(0);
     }
   }
+  .button {
+    /* background: linear-gradient(to left, var(--colorJ), var(--colorI)); */
+    background-color: var(--colorD);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: Kanit;
+    font-weight: 400;
+    font-size: 1em;
+    font-weight: 400;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+  }
+  .button:hover{
+    animation: bounce 0.4s ease-in-out;
+  }
 
   .wrapper-text {
     display: flex;
@@ -71,7 +87,7 @@
     font-weight: kanit;
     font-weight: 800;
     font-size: 1.5em;
- text-transform: uppercase;
+    text-transform: uppercase;
   }
   .wrapper-text p {
     font-size: 1em;
@@ -80,5 +96,12 @@
     text-align: center;
     line-height: 30px;
     padding: 5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cards {
+  width: calc(100% - 10px);
+   height: auto;
+    }
   }
 </style>

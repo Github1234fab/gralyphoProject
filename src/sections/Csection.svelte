@@ -14,32 +14,32 @@
     {
       title: "Site vitrine",
       icon: vitrine,
-      p: "Un site vitrine est un site web qui présente l'activité d'une entreprise ou d'une organisation. Il a pour objectif de présenter les produits et services de l'entreprise et de donner aux visiteurs toutes les informations nécessaires pour les inciter à contacter l'entreprise.",
+      p: "Créer un site internet vitrine permet de présenter la société, ses produits et ses services. Il permet de fournir des informations aux clients potentiels et de les diriger vers les canaux de vente de l’entreprise..",
     },
     {
       title: "Site e-commerce",
       icon: commerce,
-      p: "Un site e-commerce est un site web qui permet de vendre des produits ou des services en ligne. Il a pour objectif de présenter les produits et services de l'entreprise et de donner aux visiteurs toutes les informations nécessaires pour les inciter à contacter l'entreprise.",
+      p: "Réaliser un site internet e-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne 24h/24. Les fonctionnalités clés d’un site e-commerce comprennent :...",
     },
     {
       title: "Blog",
       icon: blog,
-      p: "Un site sur mesure est un site web qui présente l'activité d'une entreprise ou d'une organisation. Il a pour objectif de présenter les produits et services de l'entreprise et de donner aux visiteurs toutes les informations nécessaires pour les inciter à contacter l'entreprise.",
+      p: "Le blog d’entreprise est un site éditorial animé par un ou plusieurs auteurs qui publient des articles et des contenus sur des sujets spécifiques B2C ou B2B. ",
     },
     {
       title: "Portfolio",
       icon: portfolio,
-      p: "Un site vitrine est un site web qui présente l'activité d'une entreprise ou d'une organisation. Il a pour objectif de présenter les produits et services de l'entreprise et de donner aux visiteurs toutes les informations nécessaires pour les inciter à contacter l'entreprise.",
+      p: "Le portfolio est une plateforme internet professionnelle qui permet aux créatifs de présenter leurs travaux et leurs réalisations. ",
     },
     {
       title: "Corporate",
       icon: corporate,
-      p: "Un site e-commerce est un site web qui permet de vendre des produits ou des services en ligne. Il a pour objectif de présenter les produits et services de l'entreprise et de donner aux visiteurs toutes les informations nécessaires pour les inciter à contacter l'entreprise.",
+      p: "Les grandes entreprises, institutions ou organisations ont besoin de présenter leurs activités. Un site web corporate apporte les réponses nécessaires de ce point de vue.",
     },
     {
       title: "Insitutionnel",
       icon: institution,
-      p: "Un site sur mesure est un site web qui présente l'activité d'une entreprise ou d'une organisation. Il a pour",
+      p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
     },
   ];
 
@@ -87,13 +87,7 @@
     grid-template-rows: 1;
     height: auto;
     font-size: 16px;
-    /* background: radial-gradient(circle at top, var(--colorO), var(--colorN)); */
     background-size: 100% 100%;
-   /* margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 6px;
-    margin-top: 0px;
-    opacity: 0.2; */
   }
   .C-section h1 {
     grid-column: 2/12;
@@ -148,8 +142,12 @@
 
   @media screen and (max-width: 768px) {
     .C-section {
-      font-size: 13px;
+      font-size: 16px;
     }
+        .wrapper-cards {
+ margin-top: 65px;
+
+  }
  
   }
 </style>

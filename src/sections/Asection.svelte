@@ -5,13 +5,13 @@
   import background4 from "../Assets/png-gralypho/21.png";
   import background5 from "../Assets/png-gralypho/30.png";
   import dev from "../Assets/png-gralypho/Saly-15.png";
-      import world from "../Assets/png-gralypho/Saly-44.png";
-            import mediaTree from "../Assets/png-gralypho/applis.png";
-            import Header from "../sections/Header.svelte";
+  import world from "../Assets/png-gralypho/Saly-44.png";
+  import mediaTree from "../Assets/png-gralypho/applis.png";
+  import Header from "../sections/Header.svelte";
 </script>
 
 <section class="A-section">
-  <Header/>
+  <Header />
   <div class="wrapper-title">
     <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1>
     <h2>
@@ -26,10 +26,11 @@
       <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
     </div>
     <a class="link" href="/#sectionE">Découvrir</a>
-      <img src={mediaTree} alt="arbre de logos de médias" class="media-tree" />
+   
   </div>
-
-
+   <div class="wrapper-tree">
+      <img src={mediaTree} alt="arbre de logos de médias" class="media-tree" />
+    </div>
 </section>
 
 <style>
@@ -39,10 +40,9 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    margin-bottom: 50px;
     z-index: 1;
-background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
-    background-size: 150% 100%; 
+    background: radial-gradient(circle at top, var(--gradient) 30%, var(--primary));
+    background-size: 130% 100%;
   }
 
   .wrapper-title {
@@ -52,7 +52,8 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
     border-radius: 20px;
     z-index: 0;
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 10px;
+    z-index:1;
   }
   .icon {
     color: var(--colorD);
@@ -65,9 +66,9 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
     text-align: left;
     font-family: epilogue;
     font-weight: 700;
-    font-size: 2.3em;
+    font-size: 3em;
     color: white;
-    line-height: 37px;
+    line-height: 52px;
     padding: 30px;
     margin-top: 10px;
   }
@@ -83,7 +84,7 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
     margin-top: -50px;
     z-index: 1;
     font-family: epilogue;
-    font-weight: 400;
+    font-weight: 300;
     word-wrap: break-word;
     text-align: left;
     line-height: 30px;
@@ -103,7 +104,7 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
 
   .link {
     display: flex;
-    z-index: 2;
+    z-index: 3;
     justify-content: center;
     align-items: center;
     width: 150px;
@@ -118,9 +119,10 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
     font-size: 1em;
     box-shadow: inset 2px 2px 5px var(--colorO);
     margin-left: 30px;
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 30px;
     transition: 0.4s ease-in-out;
+    margin-bottom: 50px;
   }
   .link:hover {
     animation: bounce 0.4s ease-in-out;
@@ -142,38 +144,61 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
       transform: scale(1) translateY(0);
     }
   }
-    .media-tree {
-      width: 510px;
-    height: 320px;
-    z-index: 10;
-    rotate: 0deg;
-   margin-left: 700px;
-      margin-top: -100px;
+  .wrapper-tree {
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: -150px;
+    z-index: 0;
   }
-   
+  .media-tree {
+    width: 400px;
+    height: 300px;
+    margin-left: 400px;
+  }
 
-@media screen and (max-width: 840px){
-    .media-tree{
-    grid-column: 10/12;
-    grid-row: 3;
-    height: 140px;
-    margin-top: -100px;
-
+  @media screen and (max-width: 892px) {
+    .media-tree {
+      width: 300px;
+      height: 200px;
+      margin-left: 300px;
     }
-}
+
+    .wrapper-tree {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin-top: -120px;
+    }
+  }
+
   @media screen and (max-width: 627px) {
+    .wrapper-images {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-left: 30px;
+      gap: 23px;
+      width: 100%;
+      margin-top: 30px;
+    }
     .icon {
-      font-size: 1.2em;
+      font-size: 1.6em;
     }
     .A-section {
-      font-size: 15px;
+      font-size: 14px;
     }
     .wrapper-title {
       overflow: hidden;
       height: auto;
     }
-.media-tree{
-display: none;
-}
+    .media-tree {
+ visibility: hidden;
+    }
   }
 </style>

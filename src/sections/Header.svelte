@@ -42,6 +42,7 @@ import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
     grid-template-rows: auto;
     height: auto;
     margin-top: 20px;
+    margin-left: 30px;
   }
   .span {
     grid-row: 2;
@@ -54,9 +55,11 @@ import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
     color: transparent;
     font-family: kanit;
     font-size: 1.5em;
-
-    background: linear-gradient(to right, rgb(107, 107, 178), var(--colorC), var(--ca));
+    -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
+    background-image: linear-gradient(to right, rgb(107, 107, 178), var(--colorC), var(--ca));
+    -webkit-background-clip: text;
     background-clip: text;
+
   }
   .wrapper-links {
     margin-top: 20px;

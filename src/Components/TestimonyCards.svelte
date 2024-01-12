@@ -63,8 +63,6 @@
   .img {
     width: 130px;
     height: 130px;
-    /* object-fit: cover; */
-
   }
   .card h4 {
     font-size: 0.8em;
@@ -74,7 +72,7 @@
 
 @media screen and (max-width:768px){
   .card{
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 }

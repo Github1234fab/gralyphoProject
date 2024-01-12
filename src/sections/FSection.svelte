@@ -48,15 +48,11 @@ opacity: 1,
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-      background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%);
     margin-top: 170px;
     margin-bottom: 100px;
     opacity: 0.2;
-            margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 6px;
   }
   .wrapper-text {
     grid-column: 2/12;

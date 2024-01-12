@@ -34,7 +34,7 @@ opacity: 1,
   <div class="wrapper-text">
     <img src={SpaceShip} alt="" class="space-ship gsap2" />
     <img src={square} alt="" class="square gsap2" />
-    <h1>Révolutionnez votre stratégie Numérique grâce à nos solutions Digitales ! </h1>
+    <h1>Grâce à nos solutions Digitales, déclenchez la révolution de votre stratégie Numérique ! </h1>
     <h2>
       Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans
       débourser une fortune, le relooker serait plutôt sympa ?! <br />Trouvez la bonne solution par gagner du temps et de l'argent, grâce à nos solutions digitales, livrées clefs en main !
@@ -53,13 +53,10 @@ opacity: 1,
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
- background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
+ /* background: radial-gradient(circle at top,  var(--gradient),  var(--primary)); */
     background-size: 150% 100%; 
     shape-outside: circle(90%);
     opacity: 0.2;
-        margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 6px;
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -71,7 +68,7 @@ opacity: 1,
   }
 
   .E-section h1 {
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     grid-column: 2/12;
     text-align: left;
     grid-row: 2;
@@ -89,7 +86,7 @@ opacity: 1,
     grid-row: 3;
     margin-top: 10px;
     font-family: epilogue;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.2em;
     color: var(--colorC);
     text-align: left;
@@ -117,7 +114,7 @@ opacity: 1,
 
   @media screen and (max-width: 768px) {
     .E-section {
-      font-size: 13px;
+      font-size: 16px;
     }
     .wrapper-text {
       background-size: 100%;

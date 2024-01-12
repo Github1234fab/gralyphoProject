@@ -66,7 +66,7 @@
     background-color: transparent;
     grid-column: 2/12;
     grid-row: 2;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-bottom: 50px;
     gap: 60px;
     display: flex;
@@ -109,9 +109,9 @@
     transition: 0.1s ease-in-out;
   }
   .arrow:hover {
- animation: bounce 0.4s ease-in-out;
+    animation: bounce 0.4s ease-in-out;
   }
-   @keyframes bounce {
+  @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
     }

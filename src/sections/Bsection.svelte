@@ -3,7 +3,7 @@
 
   onMount(() => {
     gsap.to(".B-section", {
-      opacity:1,
+      opacity: 1,
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".B-section",
@@ -16,6 +16,7 @@
 </script>
 
 <section class="B-section">
+  <h1>L'agence Digitale Gralypho, l'exigence comme défaut.</h1>
   <div class="wrapper-cards">
     <div class="cards-experience">
       <div class="icon linear-gradient">100%</div>
@@ -50,10 +51,20 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: auto;
-    margin-bottom: 100px;
+    margin-top: -60px;
+    margin-bottom: 50px;
     font-size: 16px;
     background-color: var(--primary);
-    opacity: 0.2
+    opacity: 0.2;
+  }
+    .B-section h1 {
+    grid-column: 2/12;
+    grid-row: 1;
+    font-size: 2.4em;
+    font-weight: 800;
+    text-align: left;
+    color: var(--colorC);
+    margin-top: 50px;
   }
   .wrapper-cards {
     grid-column: 2/12;
@@ -61,6 +72,7 @@
     justify-content: center;
     gap: 25px;
     height: auto;
+    margin-top: 50px;
   }
   .cards-experience {
     display: flex;
@@ -75,12 +87,7 @@
     margin-top: 20px;
     z-index: 0;
     box-shadow: 3px 3px 15px rgb(1, 6, 27);
-    /* background-color: #152a37; */
-    /* background-image: url(../Assets//png-gralypho/waves3-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right; */
-background:  linear-gradient( to top,  var(--bg),  var(--gradient));
+    background: linear-gradient(to top, var(--bg), var(--gradient));
   }
   .icon {
     position: absolute;
@@ -133,10 +140,10 @@ background:  linear-gradient( to top,  var(--bg),  var(--gradient));
   }
   .button {
     padding: 13px;
-    border-radius: 10px;
+    border-radius: 8px;
     width: auto;
     height: auto;
-    color:  white;
+    color: white;
     text-decoration: none;
     margin-bottom: 50px;
     margin-top: 20px;
@@ -144,7 +151,7 @@ background:  linear-gradient( to top,  var(--bg),  var(--gradient));
     font-family: kanit;
     font-size: 1em;
     transition: 0.4s ease-in-out;
-    background-color: var(--ca);
+    background: linear-gradient(to left, var(--colorJ), var(--colorI));
   }
   .button:hover {
     animation: bounce 0.4s ease-in-out;

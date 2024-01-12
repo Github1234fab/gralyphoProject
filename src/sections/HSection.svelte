@@ -22,7 +22,7 @@
   <div class="wrapper-text">
     <img src={Climber} alt="" class="climb gsap5" />
     <img src={six} alt="" class="six gsap5" />
-    <h1>L'agence  digitale <strong>Gralypho</strong>, l'expertise et l'expérience <span>100% </span>gagnante !</h1>
+    <h1>L'agence digitale <strong>Gralypho</strong>, l'expertise et l'expérience <span>100% </span>gagnante !</h1>
     <h2>
       Le web c'est avant tout une passion. <br />Le code informatique c'est avant tout le langage créatif par
       excellence. Celui qui permet de tout faire et dont la seule limite est notre propre connaissance. <br /> Créer un
@@ -43,10 +43,8 @@
     grid-template-rows: auto;
     height: 100%;
     font-size: 16px;
-background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
-    background-size: 150% 100%; 
-
-
+    /* background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
+    background-size: 150% 100%;  */
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -55,21 +53,20 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
-
-
   }
   .H-section h1 {
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-  font-weight: 700;
+    font-weight: 700;
     font-size: 2.3em;
     color: white;
     margin-top: 50px;
     padding: 10px;
-    line-height: 37px;
+    line-height: 48px;
   }
   .H-section h1 span {
+    line-height: 48px;
     font-weight: 800;
     color: transparent;
     -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
@@ -108,9 +105,9 @@ background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
 
   @media screen and (max-width: 768px) {
     .H-section {
-      font-size: 13px;
+      font-size: 16px;
     }
-        .wrapper-text{
+    .wrapper-text {
       background-size: 100%;
     }
   }
