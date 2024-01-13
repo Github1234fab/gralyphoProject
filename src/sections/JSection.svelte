@@ -63,9 +63,9 @@
 </script>
 
 <section class="J-section">
-  <div class="wrapper-contain">
     <h1>Témoignages de nos clients</h1>
     <h2>Collaborations, Missions, Partenariats.</h2>
+  <div class="wrapper-contain">
     <div class="wrapper-testimony">
       {#each dataCard as card}
         <TestimonyCards title={card.title} job={card.job} p={card.p} img={card.img} alt={card.alt} />
@@ -81,27 +81,28 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    margin-top: 150px;
+    margin-top: 0px;
     opacity: 0.2;
-            margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 6px;
+    background-color: var(--colorC);
   }
   .wrapper-contain {
     grid-column: 2/12;
     grid-row: 2;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    justify-content: center;
+    align-items: center;
   }
   .J-section h1 {
     grid-column: 2/12;
     grid-row: 1;
     font-family: epilogue;
-  font-size: 2.4em;
+  font-size: 2.7em;
     font-weight: 800;
-    color: white;
+    color: var(--primay);
+    margin-left: 100px;
+    margin-top: 100px;
   }
   .J-section h2 {
     grid-column: 2/12;
@@ -111,15 +112,14 @@
     font-weight: 300;
     font-size: 1.2em;
     color: white;
+       margin-left: 100px;
   }
   .wrapper-testimony {
-    /* grid-column: 3/12;
-    grid-row: 2; */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
     margin-top: 50px;
   }
 

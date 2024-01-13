@@ -2,18 +2,18 @@
   export let title;
   export let icon;
   export let p;
-    export let lien;
+  export let lien;
 </script>
 
 <div class="cards">
   <div class="wrapper-text">
-    <img src={icon} alt="" class="icon" />
+    <img src={icon} alt="icon de types de sites" class="icon" />
     <h1>{title}</h1>
     <p>
       {p}
     </p>
-    <button class="button"  href={lien}>En savoir plus<button/> 
   </div>
+  <button class="button" href={lien}>En savoir plus<button /> </button>
 </div>
 
 <style>
@@ -25,20 +25,22 @@
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
     color: white;
-    background: radial-gradient(circle at center, var(--gradient), var(--primary));
-    background-size: 130% 100%;
-    border: 4px solid var(--bg);
+    justify-content: center;
+    align-items: center;
+    /* background: radial-gradient(circle at center, var(--gradient), var(--primary));
+    background-size: 130% 100%; */
+    background-color: var(--primary);
+    border: 2px solid var(--bg);
   }
   .icon {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     padding: 10px;
-    color: white;
+    color: blue;
     border: 1px solid white;
     border-radius: 50%;
+    text-align: center;
   }
-
-
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
@@ -57,20 +59,20 @@
     }
   }
   .button {
-    /* background: linear-gradient(to left, var(--colorJ), var(--colorI)); */
-    background-color: var(--colorD);
-    border: none;
+    background-color: transparent;
+    border: 2px solid #7f00fd;
     border-radius: 10px;
     padding: 10px;
     color: white;
     font-family: Kanit;
-    font-weight: 400;
     font-size: 1em;
     font-weight: 400;
     transition: 0.4s ease-in-out;
     text-align: center;
+    width: 150px;
+    margin-bottom: 50px;
   }
-  .button:hover{
+  .button:hover {
     animation: bounce 0.4s ease-in-out;
   }
 
@@ -100,8 +102,8 @@
 
   @media screen and (max-width: 768px) {
     .cards {
-  width: calc(100% - 10px);
-   height: auto;
+      width: calc(100% - 10px);
+      height: auto;
     }
   }
 </style>

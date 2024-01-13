@@ -51,10 +51,8 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: auto;
-    margin-top: -60px;
-    margin-bottom: 50px;
     font-size: 16px;
-    background-color: var(--primary);
+    background-color: var(--colorC);
     opacity: 0.2;
   }
     .B-section h1 {

@@ -61,4 +61,6 @@ html {
   --ca: #c97b1c;
   --gradient: #1d2f4f;
   --button: #6CA0DC;
+  --blueGradient: linear-gradient(to right,#3f00e6, #7f00fd);
+  --blue: #7f00fd;
 }

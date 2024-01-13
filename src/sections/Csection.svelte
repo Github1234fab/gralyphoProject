@@ -3,12 +3,12 @@
   import { onMount } from "svelte";
   import triangle from "../Assets/png-gralypho/nnneon (6).svg";
   import TypeSiteCards from "../Components/TypeSiteCards.svelte";
-  import vitrine from "../Assets/png-gralypho/store-solid.svg"
-  import  portfolio from '../Assets/png-gralypho/address-card-regular.svg';
-  import commerce from '../Assets/png-gralypho/euro-sign-solid.svg';
-  import blog from '../Assets/png-gralypho/blog-solid.svg';
-  import corporate from '../Assets/png-gralypho/user-tie-solid.svg';
-  import  institution from '../Assets/png-gralypho/building-columns-solid.svg';
+  import vitrine from "../Assets/png-gralypho/store-solid.svg";
+  import portfolio from "../Assets/png-gralypho/address-card-regular.svg";
+  import commerce from "../Assets/png-gralypho/euro-sign-solid.svg";
+  import blog from "../Assets/png-gralypho/blog-solid.svg";
+  import corporate from "../Assets/png-gralypho/user-tie-solid.svg";
+  import institution from "../Assets/png-gralypho/building-columns-solid.svg";
 
   let SiteCards = [
     {
@@ -68,16 +68,13 @@
 </script>
 
 <section class="C-section" id="sectionC">
-  <!-- <img src={Robot} alt="icon de robot en 3D" class="robot gsap" />
-  <img src={triangle} alt="icon de robot en 3D" class="triangle gsap" /> -->
-  <h1>Grâce à nos solutions digitales  <span>100%</span> sur mesure, obtenez le site Web qui vous convient !</h1>
+  <h1>Grâce à nos solutions digitales <span>100%</span> sur mesure, choisissez le site Web dont vous avez besoin !</h1>
 
-<div class="wrapper-cards">
+  <div class="wrapper-cards">
     {#each SiteCards as Cards}
       <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p} />
     {/each}
-    </div>
-
+  </div>
 </section>
 
 <style>
@@ -87,67 +84,43 @@
     grid-template-rows: 1;
     height: auto;
     font-size: 16px;
-    background-size: 100% 100%;
   }
   .C-section h1 {
     grid-column: 2/12;
     grid-row: 2;
-    font-size: 2.4em;
+    font-size: 2.7em;
     font-weight: 800;
     text-align: left;
     color: var(--colorC);
     margin-top: 50px;
   }
 
-    .C-section h1 span {
+  .C-section h1 span {
     font-weight: 800;
     color: transparent;
-    -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
-    background-image: linear-gradient(to left, var(--colorD), var(--colorI));
+      -webkit-background-image: inear-gradient(to left, var(--blue), var(--ca));
+    background-image: linear-gradient(to left,  var(--blue), var(--ca));
     -webkit-background-clip: text;
     background-clip: text;
   }
- 
-  /* .robot {
-    transform: scale(0.6);
-    height: 150px;
-    width: 150px;
-    margin-top: 50px;
-    z-index: 2;
-    grid-column: 6;
-    grid-row: 1;
-  }
-  .triangle {
-    transform: scale(0.2);
-    height: 150px;
-    z-index: 1;
-    align-self: center;
-       grid-column: 6;
-          grid-row: 1;
-  }
-  .gsap {
-    opacity: 1;
-  } */
-    .wrapper-cards {
- grid-column: 2/12;
+
+  .wrapper-cards {
+    grid-column: 2/12;
     grid-row: 3;
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-
+    gap: 50px;
   }
 
   @media screen and (max-width: 768px) {
     .C-section {
       font-size: 16px;
     }
-        .wrapper-cards {
- margin-top: 65px;
-
-  }
- 
+    .wrapper-cards {
+      margin-top: 65px;
+    }
   }
 </style>

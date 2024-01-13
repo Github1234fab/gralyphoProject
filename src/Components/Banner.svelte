@@ -24,12 +24,12 @@
   <div class="wrapper-by-3-Cards">
     <div class="card">
       <i class="fa-solid fa-desktop banner-icon icon"></i>
-      <h3>Sites Web</h3>
+      <h3>Création de sites Internet</h3>
       <a href="/Sites"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
     <div class="card">
       <i class="fa-solid fa-sitemap icon"></i>
-      <h3>Applications</h3>
+      <h3>Développement Application </h3>
       <a href="/Applications"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
@@ -42,7 +42,7 @@
     </div>
     <div class="card">
       <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
-      <h3>Marketing</h3>
+      <h3>Marketing & Communication</h3>
       <a href="/Marketing"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
@@ -129,10 +129,10 @@
     }
   }
   .card h3 {
-    font-family: kanit;
+    font-family: epilogue;
     color: white;
-    font-weight: 400;
-    font-size: 1.3em;
+    font-weight: 200;
+    font-size: 1.2em;
     text-align: center;
   }
 

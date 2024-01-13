@@ -6,59 +6,52 @@
   export let job;
 </script>
 
-<!-- <div class="wrapper-cards"> -->
-  <div class="card linear-gradient">
+<div class="card">
+  <div class="wrapper-img">
     <img src={img} {alt} class="img" />
-    <h3>{title}</h3>
-    <h4>{job}</h4>
-    <h5><span>"</span>  {p}  <span>"</span> </h5>
+    <div class="wrapper-text-img">
+      <h3>{title}</h3>
+      <h4>{job}</h4>
+    </div>
   </div>
-<!-- </div> -->
+  <div class="wrapper-text">
+    <h5><span>"</span> {p} <span>"</span></h5>
+  </div>
+</div>
 
 <style>
-  /* .wrapper-cards {
-    display: flex;
-    width: auto;
-  } */
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    align-items: left;
     gap: 15px;
-    width: calc(30.33% - 10px);
-    height: calc(50.33% - 10px);
+    width: calc(30% - 10px);
+    height: auto;
+    /* height: calc(40% -10px); */
     font-family: epilogue;
     background-color: transparent;
-    box-shadow:
-      14px 16px 30px rgba(1, 6, 27, 0.376),
-      -14px -16px 30px rgba(1, 6, 27, 0.392);
-    padding: 30px;
     margin-bottom: 20px;
   }
-  .linear-gradient {
-    border-style: solid;
-    border-width: 3px;
-    border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
-  }
+
   .card h3 {
     font-size: 1.3em;
-    color: var(--colorC);
+    color: var(--bg);
     font-weight: 700;
     font-family: kanit;
-    text-align: center;
+    text-align: left;
   }
   .card h5 {
+    font-family: kanit;
     font-size: 1em;
-    color: var(--colorC);
-    font-weight: 300;
-    text-align: center;
+    color: var(--bg);
+    font-weight: 500;
+    text-align: left;
     line-height: 30px;
     padding: 5px;
   }
-  .card h5 span{
+  .card h5 span {
     font-size: 2em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
   }
   .img {
     width: 130px;
@@ -66,14 +59,34 @@
   }
   .card h4 {
     font-size: 0.8em;
-    color: white;
-    text-align: center;
+    color: var(--bg);
+    text-align: left;
+  }
+  .wrapper-text {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .wrapper-img {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+  }
+  .wrapper-text-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
   }
 
-@media screen and (max-width:768px){
-  .card{
-    width: 100%;
-    height: auto;
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+      height: auto;
+    }
   }
-}
 </style>

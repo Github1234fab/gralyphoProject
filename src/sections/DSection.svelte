@@ -61,10 +61,7 @@ opacity: 1,
 
 <section class="D-section">
   <div class="wrapper-text">
-    <!-- <div class="wrapper-check"> -->
-    <img src={Check} alt="" class="check gsap1" />
-    <img src={circle} alt="" class="circle gsap1" />
-    <!-- </div> -->
+
     <h1>Les 4 étapes pour obtenir un outil digital puissant et gagnant sur le Web !</h1>
     <h2>
       Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications
@@ -87,6 +84,7 @@ opacity: 1,
     height: auto;
     margin-top: 150px;
     font-size: 16px;
+background-image: url(../Assets/png-gralypho/waves4.svg );
     /* background: radial-gradient(circle at top, var(--colorN), var(--colorO));
     background-size: 100% 100%;
     shape-outside: circle(90%); */
@@ -112,9 +110,9 @@ opacity: 1,
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
-     font-size: 2.4em;
+     font-size: 2.7em;
     font-weight: 800;
-    color: white;
+    color:  var(--primary);
     margin-top: 50px;
     padding: 10px;
     line-height: 45px;
@@ -128,28 +126,10 @@ opacity: 1,
     font-family: epilogue;
     font-weight: 300;
     font-size: 1.2em;
-    color: var(--colorC);
+    color: var(--bg);
     text-align: left;
     padding: 10px;
     line-height: 30px;
-  }
-  .check {
-    margin-top: 50px;
-    height: 150px;
-    width: 80px;
-    z-index: 1;
-    transform: scale(0.7);
-    align-self: center;
-  }
-  .circle {
-    height: 180px;
-    z-index: 1;
-    transform: scale(0.7);
-    align-self: center;
-    margin-top: -130px;
-  }
-  .gsap1 {
-    background-color: transparent;
   }
   .wrapper-accordeon {
     grid-column: 2/12;

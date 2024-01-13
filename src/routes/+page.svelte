@@ -1,7 +1,7 @@
 <script>
   import "./styles.css";
   import Asection from "../sections/Asection.svelte";
-  import Bsection from "../sections/Bsection.svelte";
+  import SectionTestimony from "../sections/SectionCent.svelte";
   import Csection from "../sections/Csection.svelte";
   import DSection from "../sections/DSection.svelte";
   import ESection from "../sections/ESection.svelte";
@@ -12,30 +12,34 @@
   import { fade, slide } from "svelte/transition";
 </script>
 
-<main in:fade={{duration:2000}}>
-
+<main in:fade={{ duration: 2000 }}>
   <section id="sectionA">
     <Asection />
-    <Bsection />
-    <Csection />
-        <JSection />
-       <section id="sectionE">
-      <ESection />
-    </section>
-
-    <DSection />
- 
-    <section id="sectionF">
-      <FSection />
-    </section>
-    <GSection />
-    <HSection />
   </section>
+  <SectionTestimony />
+  <Csection />
+      <DSection />
+         <section id="sectionE">
+    <ESection />
+  </section>
+  <JSection />
+
+   <!-- <GSection /> -->
+ 
+
+     
+  <!-- <FSection /> -->
+
+
+ 
+
+  <section id="sectionF"></section>
+ 
+  <HSection />
 </main>
 
 <style>
   main {
-
     overflow: hidden;
   }
 </style>
