@@ -23,7 +23,7 @@
     align-items: center;
     padding: 10px;
     border: 1px solid rgb(60, 60, 60);
-    box-shadow: 3px 3px 25px rgba(1, 6, 27, 0.209);
+    box-shadow: 3px 3px 25px rgba(1, 6, 27, 0.336);
     background-color: #152a37;
   }
   .linear-gradient{

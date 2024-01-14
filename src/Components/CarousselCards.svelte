@@ -113,5 +113,6 @@
 		overflow-x: auto;
 		scroll-behavior: smooth;
 		margin-top: 50px;
+		gap: 30px;
 	}
 </style>

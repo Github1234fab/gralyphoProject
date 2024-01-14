@@ -39,17 +39,13 @@
     height: 100%;
     font-size: 16px;
     margin-top: 170px;
-            margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 6px;
+    background-color: white;
   }
   .wrapper-text {
     grid-column: 2/12;
     grid-row: 2;
     border-radius: 20px;
     padding: 20px;
-      /* border: solid 1px rgb(55, 55, 55); */
-   /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: 30%;
@@ -60,9 +56,9 @@
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-      font-weight: 700;
-    font-size: 2.3em;
-    color: white;
+      font-weight: 900;
+    font-size: 2.7em;
+    color: var(--primary);
     margin-top: 50px;
     padding: 10px;
     line-height: 37px;
@@ -73,7 +69,7 @@
     font-family: epilogue;
     font-weight: 300;
     font-size: 1.2em;
-    color: var(--colorC);
+    color: var(--bg);
     text-align: left;
     padding: 10px;
     line-height: 30px;
@@ -116,7 +112,7 @@ border: solid grey 1px;
 
   @media screen and (max-width: 768px) {
     .G-section {
-      font-size: 13px;
+      font-size: 14px;
     }
         .wrapper-text{
       background-size: 100%;
