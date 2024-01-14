@@ -87,7 +87,7 @@
     background-color: var(--bg);
     width: 40%;
     height: auto;
-    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
+    box-shadow: inset 3px 4px 5px rgba(0, 0, 0, 0.685);
     display: flex;
     flex-direction: column;
     align-items: center;

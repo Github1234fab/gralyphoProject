@@ -54,6 +54,17 @@
         scrub: 1,
       },
     });
+    gsap.to(".wrapper-cards", {
+      x: 0,
+      opacity: 1,
+      ease: "expoScale",
+      scrollTrigger: {
+        trigger: ".wrapper-cards",
+        start: "top 600px",
+        end: "-200px",
+        scrub: 4,
+      },
+    });
   });
 </script>
 
@@ -110,6 +121,8 @@
     justify-content: center;
     gap: 50px;
     margin-bottom: 100px;
+    transform: translateX(-700px);
+    opacity: 0.3;
   }
 
   @media screen and (max-width: 1120px) {
