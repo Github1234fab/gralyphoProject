@@ -133,33 +133,33 @@
     .A-section {
       font-size: 14px;
     }
-     .A-section h1 {
-    z-index: 1;
-    text-align: left;
-    font-family: epilogue;
-    font-weight: 900;
-    font-size: 2.8em;
-    color: white;
-    line-height: 56px;
-    margin-left: 20px;
-    margin-top: 40px;
-  }
+    .A-section h1 {
+      z-index: 1;
+      text-align: left;
+      font-family: epilogue;
+      font-weight: 900;
+      font-size: 2.8em;
+      color: white;
+      line-height: 56px;
+      margin-left: 20px;
+      margin-top: 40px;
+    }
     .A-section h2 {
-    z-index: 1;
-    font-family: epilogue;
-    font-weight: 100;
-    word-wrap: break-word;
-    text-align: left;
-    line-height: 20px;
-    font-size: 1.1em;
-    color: var(--colorC);
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  .link{
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
+      z-index: 1;
+      font-family: epilogue;
+      font-weight: 100;
+      word-wrap: break-word;
+      text-align: left;
+      line-height: 20px;
+      font-size: 1.1em;
+      color: var(--colorC);
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .link {
+      margin-left: 20px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
   }
 </style>
