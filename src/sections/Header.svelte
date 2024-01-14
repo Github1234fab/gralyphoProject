@@ -42,6 +42,7 @@
     height: auto;
     margin-top: 30px;
     margin-left: 0px;
+    font-size: 16px;
   }
   .span {
     grid-row: 2;
@@ -116,6 +117,9 @@
   @media screen and (max-width: 768px) {
     .wrapper-links {
       flex-direction: column;
+    }
+    .navigation{
+      font-size: 12px
     }
   }
 </style>

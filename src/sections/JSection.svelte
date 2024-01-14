@@ -132,7 +132,23 @@
 
   @media screen and (max-width: 768px) {
     .J-section {
-      font-size: 16px;
+      font-size: 14px;
     }
+    .gallery {
+    overflow-x: auto;
+    grid-column: 1/13;
+    grid-row: 2;
+    margin-left: 20px;
+  }
+  .J-section h1 {
+    grid-column: 1/12;
+    grid-row: 1;
+    font-family: epilogue;
+    font-size: 2.7em;
+    font-weight: 800;
+    color: var(--primay);
+    margin-left: 50px;
+    margin-top: 100px;
+  }
   }
 </style>

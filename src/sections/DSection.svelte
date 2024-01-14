@@ -88,8 +88,7 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
     opacity: 0.2;
   }
   .wrapper-text {
-    /* border: solid 1px rgb(55, 55, 55); */
-    /* background-image: url(../Assets/png-gralypho/ggglitch.svg); */
+
     background-repeat: no-repeat;
     background-position: top;
     background-size: 20%;
@@ -102,7 +101,6 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
     padding: 20px;
   }
   .D-section h1 {
-    word-wrap: break-word;
     grid-column: 2/12;
     text-align: left;
     grid-row: 2;
@@ -116,7 +114,7 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
   }
 
   .D-section h2 {
-    word-wrap: break-word;
+  
     grid-column: 2/12;
     grid-row: 3;
     margin-top: 10px;
@@ -144,10 +142,15 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
 
   @media screen and (max-width: 768px) {
     .D-section {
-      font-size: 15px;
+      font-size: 14px;
     }
     .wrapper-text {
       background-size: 100%;
+      grid-column: 1/13;
     }
+      .wrapper-accordeon {
+    margin-bottom: 60px;
+    
+  }
   }
 </style>

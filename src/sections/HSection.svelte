@@ -15,7 +15,20 @@
         scrub: 2,
       },
     });
+
+ gsap.to(".H-section", {
+  opacity: 1,
+  scale: 1,
+  scrollTrigger: {
+    trigger: ".H-section",
+    start: "top 500px",
+    end: "-300px",
+    scrub: 2,
+  }
+});
   });
+
+
 </script>
 
 <section class="H-section">
@@ -43,8 +56,7 @@
     grid-template-rows: auto;
     height: 100%;
     font-size: 16px;
-    /* background: radial-gradient(circle at top,  var(--gradient),  var(--primary));
-    background-size: 150% 100%;  */
+   opacity: 0.2;
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -108,6 +120,7 @@
       font-size: 16px;
     }
     .wrapper-text {
+      grid-column: 1/13;
       background-size: 100%;
     }
   }

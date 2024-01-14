@@ -100,6 +100,13 @@
     padding: 5px;
   }
 
+  @media screen and (max-width: 1116px) {
+    .cards {
+      width: calc(40% - 10px);
+      height: calc(37% - 10px);
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .cards {
       width: calc(100% - 10px);

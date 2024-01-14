@@ -54,4 +54,15 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
+  @media screen and (max-width:768px){
+    .wrapper-list{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+          margin: 0px;
+    }
+    .wrapper-icon{
+      margin-bottom: 20px;
+    }
+  }
 </style>

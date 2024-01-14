@@ -1,5 +1,20 @@
 <script>
   import ListValue from "../Components/ListValue.svelte";
+  import { onMount } from "svelte";
+   
+  onMount(() => {
+    gsap.to(".section-value", {
+      opacity: 1,
+      ease: "expoScale",
+      scrollTrigger: {
+        trigger: ".section-value",
+        start: "top 600px",
+        end: "-200px",
+        scrub: 1,
+      },
+    });
+  });
+
 
   let values = [
     {
@@ -31,7 +46,7 @@
 </script>
 
 <section class="section-value">
-  <h1>Réinventez aujourd'hui pour exceller demain.</h1>
+  <h1>Réinventez aujourd'hui pour exceller, demain.</h1>
   <div class="wrapper-list">
     {#each values as value}
       <ListValue icon={value.icon} p={value.p} title={value.title} />
@@ -50,6 +65,7 @@
     background-position: center;
     padding: 30px;
     gap: 0px;
+    opacity: 0.2;
   }
   .section-value h1 {
     font-family: epilogue;
@@ -57,7 +73,7 @@
     font-size: 2.8em;
     color: var(--primary);
     text-align: left;
-    margin: 50px;
+    padding: 20px;
   }
 
   .wrapper-list {
@@ -69,7 +85,14 @@
   }
   @media screen and (max-width: 768px) {
     .section-value {
-      font-size: 12px;
+      font-size: 14px;
     }
+     .wrapper-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
   }
 </style>

@@ -17,24 +17,13 @@
   <section id="sectionA">
     <Asection />
   </section>
-    <SectionValue />
+  <SectionValue />
   <Csection />
-    <JSection />
-        <ESection />  
-      <DSection />
-         <section id="sectionE">
-
+  <JSection />
+  <section id="sectionE">
+    <ESection />
   </section>
-
-
-   <!-- <GSection /> -->
- 
-
-     
-  <!-- <FSection /> -->
-
-  <!-- <section id="sectionF"></section> -->
- 
+  <DSection />
   <HSection />
 </main>
 

@@ -22,7 +22,7 @@ opacity: 1,
       ease: "E-section",
       scrollTrigger: {
         trigger: ".gsap2",
-        start: "top 400px",
+        start: "top 700px",
         end: "-200px",
         scrub: 1,
       },
@@ -53,7 +53,6 @@ opacity: 1,
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
- /* background: radial-gradient(circle at top,  var(--gradient),  var(--primary)); */
     background-size: 150% 100%; 
     shape-outside: circle(90%);
     opacity: 0.2;
@@ -68,7 +67,6 @@ opacity: 1,
   }
 
   .E-section h1 {
-    /* word-wrap: break-word; */
     grid-column: 2/12;
     text-align: left;
     grid-row: 2;
@@ -114,7 +112,7 @@ opacity: 1,
 
   @media screen and (max-width: 768px) {
     .E-section {
-      font-size: 16px;
+      font-size: 14px;
     }
     .wrapper-text {
       background-size: 100%;

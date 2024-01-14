@@ -83,11 +83,4 @@ height: 450px;
     align-items: flex-start;
     margin-left: 10px;
   }
-
-  @media screen and (max-width: 768px) {
-    .card {
-      width: 100%;
-      height: auto;
-    }
-  }
 </style>

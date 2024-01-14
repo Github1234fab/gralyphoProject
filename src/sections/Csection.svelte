@@ -44,16 +44,6 @@
   ];
 
   onMount(() => {
-    gsap.to(".gsap", {
-      scale: 1,
-      ease: "expoScale",
-      scrollTrigger: {
-        trigger: ".gsap",
-        start: "top 700px",
-        end: "-200px",
-        scrub: 1,
-      },
-    });
     gsap.to(".C-section", {
       opacity: 1,
       ease: "expoScale",
@@ -68,8 +58,13 @@
 </script>
 
 <section class="C-section" id="sectionC">
-  <h1>Avec Gralypho, le futur de votre business commence maintenant.</h1>
-  <h2> Vous avez besoin d'un site Internet? Découvrez toutes nos solutions de sites Web et choisissez celui dont vous avez besoin !</h2>
+  <div class="wrapper-text">
+    <h1>Avec Gralypho, le futur de votre business commence maintenant.</h1>
+    <h2>
+      Vous avez besoin d'un site Internet? Découvrez toutes nos solutions de sites Web et choisissez celui dont vous
+      avez besoin !
+    </h2>
+  </div>
 
   <div class="wrapper-cards">
     {#each SiteCards as Cards}
@@ -85,30 +80,28 @@
     grid-template-rows: 1;
     height: auto;
     font-size: 16px;
+    opacity: 0.2;
   }
   .C-section h1 {
-    grid-column: 2/12;
-    grid-row: 2;
     font-size: 2.7em;
     font-weight: 900;
     text-align: left;
     color: var(--colorC);
     margin-top: 50px;
   }
-   .C-section h2 {
-    grid-column: 2/12;
-    grid-row: 2;
+  .C-section h2 {
     font-size: 1.2em;
     font-weight: 300;
     text-align: left;
     color: white;
-    margin-top: 180px;
+    margin-top: 20px;
   }
-
-
-
-  .wrapper-cards {
+  .wrapper-text {
     grid-column: 2/12;
+    grid-row: 2;
+  }
+  .wrapper-cards {
+    grid-column: 1/13;
     grid-row: 3;
     margin-top: 100px;
     display: flex;
@@ -119,12 +112,27 @@
     margin-bottom: 100px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1120px) {
     .C-section {
-      font-size: 16px;
+      font-size: 15px;
     }
     .wrapper-cards {
       margin-top: 65px;
+      margin-bottom: 300px;
+
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .C-section {
+      font-size: 12px;
+    }
+    .wrapper-cards {
+      margin-top: 65px;
+    }
+    .wrapper-cards {
+      grid-column: 2/12;
+      margin-bottom: 150px;
     }
   }
 </style>

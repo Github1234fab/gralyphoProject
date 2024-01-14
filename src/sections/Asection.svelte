@@ -14,25 +14,13 @@
   <Header />
   <div class="wrapper-title">
     <!-- <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1> -->
-    <h1>Chez <span>Gralypho</span>, nous transformons l'ordinaire en extraordinaire !</h1>
+    <h1>Chez <span>Gralypho</span>, <br />nous transformons l'ordinaire <br /> en extraordinaire !</h1>
     <h2>
       Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
     </h2>
-    <!-- avec  <span>Gralypho</span>, votre partenaire Digital -->
 
-    <!-- <div class="wrapper-images">
-      <i class="fa-solid fa-desktop banner-icon icon"></i>
-      <i class="fa-solid fa-sitemap icon"></i>
-      <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
-      <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
-      <i class="fa-solid fa-recycle icon"></i>
-      <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
-    </div> -->
     <a class="link" href="/#sectionE">Découvrir</a>
   </div>
-  <!-- <div class="wrapper-tree">
-      <img src={mediaTree} alt="arbre de logos de médias" class="media-tree" />
-    </div> -->
 </section>
 
 <style>
@@ -143,7 +131,35 @@
       height: auto;
     }
     .A-section {
-      font-size: 12px;
+      font-size: 14px;
     }
+     .A-section h1 {
+    z-index: 1;
+    text-align: left;
+    font-family: epilogue;
+    font-weight: 900;
+    font-size: 2.8em;
+    color: white;
+    line-height: 56px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+    .A-section h2 {
+    z-index: 1;
+    font-family: epilogue;
+    font-weight: 100;
+    word-wrap: break-word;
+    text-align: left;
+    line-height: 20px;
+    font-size: 1.1em;
+    color: var(--colorC);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .link{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
   }
 </style>
