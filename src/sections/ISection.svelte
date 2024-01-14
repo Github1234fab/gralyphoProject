@@ -6,10 +6,6 @@
         <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...) ou n</h2>
 </section>
 
-
-
-
-
 <style>
 .I-section {
 		display: grid;

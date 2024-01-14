@@ -8,8 +8,9 @@
 
 <div class="card">
   <div class="wrapper-img">
-    <img src={img} {alt} class="img" />
+  
     <div class="wrapper-text-img">
+        <img src={img} {alt} class="img" />
       <h3>{title}</h3>
       <h4>{job}</h4>
     </div>
@@ -23,16 +24,16 @@
   .card {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     gap: 15px;
-    width: calc(30% - 10px);
-    height: auto;
-    /* height: calc(40% -10px); */
+    width: 500px;
+height: 450px;
     font-family: epilogue;
     background-color: transparent;
+    margin-top: 30px;
     margin-bottom: 20px;
+    flex-shrink: 0;
   }
-
   .card h3 {
     font-size: 1.3em;
     color: var(--bg);

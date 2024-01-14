@@ -84,8 +84,8 @@
 
   .card {
     z-index: 0;
-    background: linear-gradient(to top, var(--bg), var(--gradient));
-    width: 30%;
+    background-color: var(--bg);
+    width: 40%;
     height: auto;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
     display: flex;
@@ -94,9 +94,6 @@
     justify-content: center;
     padding: 40px;
     gap: 30px;
-  }
-  .card:hover {
-    background-color: var(--colorL);
   }
   .icon {
     color: var(--button);
@@ -107,6 +104,11 @@
     color: var(--ca);
     font-size: 2.5em;
     transition: 0.1s ease-in-out;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: solid 1px white;
+    padding: 20px;
   }
   .arrow:hover {
     animation: bounce 0.4s ease-in-out;
@@ -131,7 +133,7 @@
   .card h3 {
     font-family: epilogue;
     color: white;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.2em;
     text-align: center;
   }

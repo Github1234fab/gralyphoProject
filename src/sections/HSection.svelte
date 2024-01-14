@@ -22,7 +22,7 @@
   <div class="wrapper-text">
     <img src={Climber} alt="" class="climb gsap5" />
     <img src={six} alt="" class="six gsap5" />
-    <h1>L'agence digitale <strong>Gralypho</strong>, l'expertise et l'expérience <span>100% </span>gagnante !</h1>
+    <h1><span>Gralypho</span> Digital : Expertise et Expérience, votre victoire Digitale assurée !</h1>
     <h2>
       Le web c'est avant tout une passion. <br />Le code informatique c'est avant tout le langage créatif par
       excellence. Celui qui permet de tout faire et dont la seule limite est notre propre connaissance. <br /> Créer un
@@ -58,8 +58,8 @@
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-    font-weight: 700;
-    font-size: 2.3em;
+    font-weight: 900;
+    font-size: 2.7em;
     color: white;
     margin-top: 50px;
     padding: 10px;
@@ -67,7 +67,7 @@
   }
   .H-section h1 span {
     line-height: 48px;
-    font-weight: 800;
+    font-weight: 900;
     color: transparent;
     -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
     background-image: linear-gradient(to left, var(--colorD), var(--colorI));

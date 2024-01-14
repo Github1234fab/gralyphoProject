@@ -98,7 +98,7 @@ opacity: 1,
     transform: scale(0.7) rotate(50deg);
     z-index: 2;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .square {
     height: 150px;

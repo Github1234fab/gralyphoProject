@@ -63,10 +63,10 @@
 </script>
 
 <section class="J-section">
-    <h1>Témoignages de nos clients</h1>
-    <h2>Collaborations, Missions, Partenariats.</h2>
-  <div class="wrapper-contain">
-    <div class="wrapper-testimony">
+  <h1>Témoignages de nos clients</h1>
+  <h2>Collaborations, Missions, Partenariats.</h2>
+  <div class="gallery">
+    <div class="wrapper-contain">
       {#each dataCard as card}
         <TestimonyCards title={card.title} job={card.job} p={card.p} img={card.img} alt={card.alt} />
       {/each}
@@ -85,20 +85,27 @@
     opacity: 0.2;
     background-color: var(--colorC);
   }
-  .wrapper-contain {
-    grid-column: 2/12;
+  .gallery {
+    overflow-x: auto;
+    grid-column: 1/13;
     grid-row: 2;
+    margin-left: 200px;
+  }
+  .wrapper-contain {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     border-radius: 20px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
   }
   .J-section h1 {
-    grid-column: 2/12;
+    grid-column: 1/12;
     grid-row: 1;
     font-family: epilogue;
-  font-size: 2.7em;
+    font-size: 2.7em;
     font-weight: 800;
     color: var(--primay);
     margin-left: 100px;
@@ -112,16 +119,16 @@
     font-weight: 300;
     font-size: 1.2em;
     color: white;
-       margin-left: 100px;
+    margin-left: 100px;
   }
-  .wrapper-testimony {
+  /* .wrapper-testimony {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 50px;
-  }
+  } */
 
   @media screen and (max-width: 768px) {
     .J-section {

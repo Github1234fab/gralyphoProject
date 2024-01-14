@@ -9,6 +9,7 @@
   import GSection from "../sections/GSection.svelte";
   import HSection from "../sections/HSection.svelte";
   import JSection from "../sections/JSection.svelte";
+  import SectionValue from "../sections/SectionValue.svelte";
   import { fade, slide } from "svelte/transition";
 </script>
 
@@ -16,13 +17,15 @@
   <section id="sectionA">
     <Asection />
   </section>
-  <SectionTestimony />
+    <SectionValue />
   <Csection />
+    <JSection />
+        <ESection />  
       <DSection />
          <section id="sectionE">
-    <ESection />
+
   </section>
-  <JSection />
+
 
    <!-- <GSection /> -->
  
@@ -30,10 +33,7 @@
      
   <!-- <FSection /> -->
 
-
- 
-
-  <section id="sectionF"></section>
+  <!-- <section id="sectionF"></section> -->
  
   <HSection />
 </main>

@@ -62,7 +62,7 @@ opacity: 1,
 <section class="D-section">
   <div class="wrapper-text">
 
-    <h1>Les 4 étapes pour obtenir un outil digital puissant et gagnant sur le Web !</h1>
+    <h1>Du Concept à la Concrétisation : Les 4 Étapes de la Création Digitale"!</h1>
     <h2>
       Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications
       gagnantes sur le Web, en suivant un process de création optimal. Nous gagnons ainsi du temps et vous économisez de
@@ -85,9 +85,6 @@ opacity: 1,
     margin-top: 150px;
     font-size: 16px;
 background-image: url(../Assets/png-gralypho/waves4.svg );
-    /* background: radial-gradient(circle at top, var(--colorN), var(--colorO));
-    background-size: 100% 100%;
-    shape-outside: circle(90%); */
     opacity: 0.2;
   }
   .wrapper-text {

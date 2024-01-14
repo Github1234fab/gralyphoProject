@@ -47,27 +47,22 @@
     color: white;
     text-align: center;
     font-family: epilogue;
-    padding: 20px;
+    padding: 40px;
     margin-top: 100px;
   }
   .footer h1 {
     grid-column: 6;
     grid-row: 1;
-    font-weight: 500;
-    font-size: 1.4em;
-    color: white;
+    font-weight: 800;
+    font-size: 2.8em;
+    color: transparent;
     font-family: kanit;
+    -webkit-background-clip: text;
+    background-clip: text;
+     -webkit-background-image: linear-gradient(to right, var(--colorD), var(--colorI));
+    background-image: linear-gradient(to right, var(--colorD), var(--colorI));
   }
-  /* .footer p {
-    grid-column: 1/12;
-    grid-row: 2;
-    font-family: epilogue;
-    font-weight: 400;
-    font-size: 1em;
-    color: var(--colorC);
-    transition: 0.4s ease-in-out;
-  } */
- 
+
   .footer h4 {
     grid-column: 1/12;
     grid-row: 4;
@@ -82,6 +77,7 @@
     grid-row: 3;
     gap: 20px;
     margin-bottom: 30px;
+    margin-top: 30px
   }
   .wrapper-contact{
     grid-column: 1/12;
@@ -92,15 +88,16 @@
     justify-content: center;
 
 
+
   }
   .contact {
     text-decoration: none;
-    color: grey;
+    color:  var(--colorC);
     font-size: 1.3em;
     font-family: kanit;
     width: 100%;
     transform: rotate(0deg);
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
   .contact:hover {
 transform: rotate(-2deg);

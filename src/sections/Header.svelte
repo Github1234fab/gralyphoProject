@@ -40,8 +40,8 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: auto;
-    margin-top: 50px;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-left: 0px;
   }
   .span {
     grid-row: 2;
@@ -49,17 +49,14 @@
   }
 
   h1 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     color: transparent;
     font-family: kanit;
     font-size: 1.5em;
     color: var(--colorC);
     font-weight: 200;
-    /* -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
-    background-image: linear-gradient(to right, rgb(107, 107, 178), var(--colorC), var(--ca));
-    -webkit-background-clip: text;
-    background-clip: text; */
+    margin-left: 50px;
   }
   .wrapper-links {
     margin-top: 20px;
@@ -72,7 +69,7 @@
   a {
     color: white;
     font-size: 0.9em;
-    font-weight: 200;
+    font-weight: 300;
     text-decoration: none;
   }
 
@@ -82,9 +79,9 @@
 
   .burger-menu {
     background-color: transparent;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
-    margin-left: 20px;
+    margin-left: 10px;
     width: 50%;
     border: none;
     border-left: 1px grey solid;

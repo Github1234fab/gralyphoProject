@@ -89,7 +89,7 @@
     font-weight: kanit;
     font-weight: 800;
     font-size: 1.5em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   .wrapper-text p {
     font-size: 1em;
