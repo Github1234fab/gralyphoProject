@@ -25,6 +25,7 @@
   </section>
   <DSection />
   <HSection />
+  <GSection />
 </main>
 
 <style>
