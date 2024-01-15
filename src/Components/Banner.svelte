@@ -24,12 +24,12 @@
   <div class="wrapper-by-3-Cards">
     <div class="card">
       <i class="fa-solid fa-desktop banner-icon icon"></i>
-      <h3>Création de sites Internet</h3>
+      <h3>Création de <strong>sites Internet</strong></h3>
       <a href="/Sites"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
     <div class="card">
       <i class="fa-solid fa-sitemap icon"></i>
-      <h3>Développement Application </h3>
+      <h3>Développement d'<strong>Applications </strong> </h3>
       <a href="/Applications"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
@@ -37,12 +37,12 @@
   <div class="wrapper-by-3-Cards">
     <div class="card">
       <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
-      <h3>Référencement</h3>
+      <h3><strong>Référencement</strong></h3>
       <a href="/Referencement"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
     <div class="card">
       <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
-      <h3>Marketing & Communication</h3>
+      <h3><strong>Marketing & Communication</strong></h3>
       <a href="/Marketing"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
@@ -50,12 +50,12 @@
   <div class="wrapper-by-3-Cards">
     <div class="card">
       <i class="fa-solid fa-recycle icon"></i>
-      <h3>Composants</h3>
+      <h3><strong>Composants Web</strong></h3>
       <a href="/Composants"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
     <div class="card">
       <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
-      <h3>Refonte</h3>
+      <h3><strong>Refonte</strong></h3>
       <a href="/Refonte"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
@@ -84,19 +84,20 @@
 
   .card {
     z-index: 0;
-    background-color: var(--bg);
+    background-color: var(--primary);
     width: 40%;
     height: auto;
-    box-shadow: inset 3px 4px 5px rgba(0, 0, 0, 0.685);
+    box-shadow:  3px 4px 25px rgba(0, 0, 0, 0.27);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px;
     gap: 30px;
+    border: rgb(104, 104, 104) 1px solid;
   }
   .icon {
-    color: var(--button);
+    color: var(--blue);
     font-size: 1.9em;
   }
   .arrow {
@@ -131,7 +132,7 @@
     }
   }
   .card h3 {
-    font-family: epilogue;
+    font-family: kanit;
     color: white;
     font-weight: 400;
     font-size: 1.2em;

@@ -13,7 +13,7 @@
     flex-shrink: 0;
     border-radius: 50px;
     margin: 8px;
-    height: 20em;
+    height: 30em;
     width: 20em;
     user-select: none;
     overflow: hidden;

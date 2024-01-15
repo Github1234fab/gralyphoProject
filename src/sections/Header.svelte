@@ -25,7 +25,6 @@
         <a href="/Marketing">Marketing</a>
         <a href="/Composants">Composants</a>
         <a href="/Refonte">Refonte</a>
-        <a href="/Technologies">Technologies</a>
       </div>
     </span>
   {/if}

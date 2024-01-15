@@ -73,11 +73,14 @@
     text-align: center;
   }
   .wrapper-media {
-    grid-column: 1/12;
+    display: flex;
+    grid-column: 6/10;
     grid-row: 3;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 30px;
-    margin-top: 30px
+    margin-top: 30px;
+    margin-left: 5px;
+
   }
   .wrapper-contact{
     grid-column: 1/12;
@@ -100,7 +103,7 @@
     transition: 0.2s ease-in-out;
   }
   .contact:hover {
-transform: rotate(-2deg);
+animation: bounce 0.4s ease-in-out;
   }
 
   a {

@@ -15,31 +15,37 @@
       title: "Site vitrine",
       icon: vitrine,
       p: "Créer un site internet vitrine permet de présenter la société, ses produits et ses services. Il permet de fournir des informations aux clients potentiels et de les diriger vers les canaux de vente de l’entreprise..",
+      lien: "/Sites"
     },
     {
       title: "Site e-commerce",
       icon: commerce,
       p: "Réaliser un site internet e-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne 24h/24. Les fonctionnalités clés d’un site e-commerce comprennent :...",
+       lien: "/Sites"
     },
     {
       title: "Blog",
       icon: blog,
       p: "Le blog d’entreprise est un site éditorial animé par un ou plusieurs auteurs qui publient des articles et des contenus sur des sujets spécifiques B2C ou B2B. ",
+       lien: "/Sites"
     },
     {
       title: "Portfolio",
       icon: portfolio,
       p: "Le portfolio est une plateforme internet professionnelle qui permet aux créatifs de présenter leurs travaux et leurs réalisations. ",
+       lien: "/Sites"
     },
     {
       title: "Corporate",
       icon: corporate,
       p: "Les grandes entreprises, institutions ou organisations ont besoin de présenter leurs activités. Un site web corporate apporte les réponses nécessaires de ce point de vue.",
+       lien: "/Sites"
     },
     {
       title: "Insitutionnel",
       icon: institution,
       p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
+       lien: "/Sites"
     },
   ];
 
@@ -79,7 +85,7 @@
 
   <div class="wrapper-cards">
     {#each SiteCards as Cards}
-      <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p} />
+      <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p}  lien={Cards.lien}/>
     {/each}
   </div>
 </section>

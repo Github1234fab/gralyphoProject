@@ -40,6 +40,9 @@
     font-size: 16px;
     margin-top: 170px;
     background-color: white;
+     background-image: url(../Assets/png-gralypho/waves4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .wrapper-text {
     grid-column: 2/12;

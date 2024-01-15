@@ -66,6 +66,9 @@
     padding: 30px;
     gap: 0px;
     opacity: 0.2;
+    background-image: url(../Assets/png-gralypho/waves4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .section-value h1 {
     font-family: epilogue;

@@ -24,7 +24,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+         filter: drop-shadow(3px 6px 15px rgba(0, 0, 0, 0.406));
   }
+  
   .icon {
     height: 80px;
     width: 80px;
@@ -35,8 +37,8 @@
     align-items: center;
     margin-right: 20px;
    background-color: var(--primary);
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.355);
-    border: solid white 2px
+    /* border: solid white 2px; */
+    clip-path: polygon(70% 0, 100% 11%, 85% 38%, 96% 67%, 82% 89%, 16% 99%, 0 65%, 11% 44%, 16% 15%);
   }
   .p {
     font-size: 1.2em;

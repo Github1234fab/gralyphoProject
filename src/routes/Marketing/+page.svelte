@@ -1,8 +1,9 @@
 <script>
   import { fade, slide } from "svelte/transition";
     import bg from "../../Assets/png-gralypho/17.png";
+    import Header from "../../sections/Header.svelte";
 </script>
-
+      <Header />
 <section  in:fade={{ duration: 3000 }}>
   <div class="container">
     <div class="wrapper">

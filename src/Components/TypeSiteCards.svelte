@@ -13,7 +13,7 @@
       {p}
     </p>
   </div>
-  <button class="button" href={lien}>En savoir plus<button /> </button>
+ <a href={lien}><button class="button" >En savoir plus<button /></a> 
 </div>
 
 <style>

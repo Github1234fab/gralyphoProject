@@ -84,6 +84,9 @@
     margin-top: 0px;
     opacity: 0.2;
     background-color: var(--colorC);
+     background-image: url(../Assets/png-gralypho/waves4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .gallery {
     overflow-x: auto;

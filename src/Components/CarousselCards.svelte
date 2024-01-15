@@ -89,7 +89,7 @@
 <style>
 	.wrapper-caroussel {
 		width: 100%;
-		height: 400px;
+		height: 600px;
 		overflow: hidden;
 		cursor: grab;
 		position: relative;

@@ -88,7 +88,6 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
     opacity: 0.2;
   }
   .wrapper-text {
-
     background-repeat: no-repeat;
     background-position: top;
     background-size: 20%;
@@ -132,6 +131,7 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
     height: 100%;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 1em;
     /* background-color: var(--colorD); */
     display: flex;

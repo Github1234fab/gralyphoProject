@@ -1,13 +1,15 @@
 <script>
   import { fade, slide } from "svelte/transition";
   import bg from "../../Assets/png-gralypho/41.png";
+  import Header from "../../sections/Header.svelte";
 </script>
 
+<Header />
 <section class="" in:fade={{ duration: 3000 }}>
   <div class="container">
     <div class="wrapper">
       <h1>Sites Web</h1>
-      <img src={bg} alt="" class="bg">
+      <img src={bg} alt="" class="bg" />
       <p>
         <span>Qu'est-ce qu'une application?</span> <br /><br />
         Une application est un logiciel qui permet de réaliser une tâche spécifique. <br /><br /> Voilà princpalement la
@@ -59,8 +61,8 @@
     /* background-image: url(../../Assets/png-gralypho/qqquad.svg); */
   }
   .container::after {
-        border-radius: 20px;
-        z-index: 1;
+    border-radius: 20px;
+    z-index: 1;
     position: absolute;
     content: "";
     background-color: rgba(12, 12, 27, 0.66);
@@ -82,7 +84,7 @@
     background-image: url(../../Assets/png-gralypho/rrrainbow.svg);
   }
   section h1 {
-            z-index: 2;
+    z-index: 2;
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
@@ -93,7 +95,7 @@
     line-height: 37px;
   }
   section p span {
-           z-index: 2;
+    z-index: 2;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
@@ -102,7 +104,7 @@
     margin-top: 30px;
   }
   section p {
-           z-index: 2;
+    z-index: 2;
     margin-top: 30px;
     color: var(--colorC);
     text-align: left;
@@ -111,7 +113,7 @@
     font-size: 1.1em;
     font-family: epilogue;
   }
-  .bg{
+  .bg {
     z-index: 2;
     margin-top: 30px;
     border-radius: 20px;
