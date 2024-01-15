@@ -1,115 +1,170 @@
 <script>
   import { fade, slide } from "svelte/transition";
-    import bg from "../../Assets/png-gralypho/17.png";
-    import Header from "../../sections/Header.svelte";
+  // import bg from "../../Assets/png-gralypho/41.png";
+  import Header from "../../sections/Header.svelte";
 </script>
-      <Header />
-<section  in:fade={{ duration: 3000 }}>
-  <div class="container">
-    <div class="wrapper">
-    <h1>Applications</h1>
-     <img src={bg} alt="" class="bg">
+
+<Header />
+<section class="" in:fade={{ duration: 3000 }}>
+  <div class="wrapper">
+    <h1>Développement et intégration de composant.</h1>
+    <!-- <img src={bg} alt="" class="bg" /> -->
+
     <p>
-      <span>Qu'est-ce qu'une application?</span> <br /><br>
-      Une application est un logiciel qui permet de réaliser une tâche spécifique. <br /><br> Voilà princpalement la différence entre une application et un site web. Le site web traite d'un sujet et le développe à travers ses différentes rubriques, ses différentes pages et ses différentes fonctionnalités. <br /><br> Une application va donc, quant à elle, permettre à l'utilisateur de réaliser une tâche spécifique. <br /> <br>Par exemple, une application de gestion de stock, une application de gestion de planning, de gestion de facturation, un application météorologique, de rencontre, de localisation, etc.    <br><br>
-      <span>Quel est le budget pour obtenir une application?</span> <br /><br>
-      Le budget va varier d'une application à l'autre en fonftion des besoins qu'elle requiert et de la complexité de sa réalisation. <br /><br> Il est donc difficile de donner un prix fixe pour une application. <br /><br> Cependant, nous pouvons vous donner une fourchette de prix pour une application simple, sans base de données, ni gestion comlexe, le tarif peut débuter autour de 2000 euros et aller jsuqu'à 10 000 euros et plus.
-      <br><br>
-      <span>Quels sont les délais de création?</span> <br /><br>
-      Nous pouvons concevoir et réaliser une application entre 1 mois et un an, selon sa complexité !<br /><br> Il est essentiel de déterminer votre projet dans les moindres détails, car les prix peuvent considérablement varier en fonction des fontionnalités, des besoins<br /><br> Cependant, nous pouvons vous donner une fourchette de prix pour une application simple, sans base de données, ni gestion comlexe, le tarif peut débuter autour de 2000 euros et aller jsuqu'à 10 000 euros et plus.
+      <span>C'est quoi, un composant ?!</span> <br /><br />
+      Dans le monde en constante évolution du développement web, les composants jouent un rôle essentiel pour créer des sites
+      internet à la pointe de la technologie, répondant aux besoins spécifiques de nos clients. Imaginez avoir une horloge
+      élégante intégrée à votre site, offrant une expérience visuelle captivante tout en informant vos visiteurs du temps
+      qui s'écoule. Un composant web c'est ça, un élément que l'on ajoute à votre site ou votre application pour répondre
+      à de nouveaux besoins.<br /><br />
+
+      <span>Un composant pour répondre à quels besoins ?</span> <br /><br />
+      Besoin d'une fonction de prise de rendez-vous fluide et conviviale ? Nos composants sont conçus pour faciliter l'interaction
+      avec vos clients, en leur permettant de planifier des rendez-vous en ligne de manière transparente. Vous pourriez également
+      intégrer une fonction météo pour informer vos visiteurs des conditions actuelles, ajoutant ainsi une touche pratique
+      et engageante à votre site. <br /><br />
+
+      Si votre vision inclut des animations de contenu pour rendre votre site dynamique et attrayant, nos composants
+      peuvent également répondre à cette demande. Des animations subtiles aux effets visuels saisissants, nous
+      personnalisons chaque composant pour refléter l'identité unique de votre entreprise. <br /><br />
+
+      Avec notre approche axée sur les composants, nous façonnons des sites web interactifs et fonctionnels, anticipant
+      et répondant à vos besoins spécifiques. Ensemble, créons un site internet qui va au-delà des attentes, offrant une
+      expérience en ligne exceptionnelle à vos visiteurs."<br /><br />
     </p>
+
+    <h4>
+      Vous souhaitez en savoir plus sur les composants ? <br />Alors parlez nous de votre projet, autour d'un café!
+    </h4>
+    <div class="wrapper-contact">
+      <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
+      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-phone-volume"></i></a>
+      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-mug-hot"></i></a>
     </div>
   </div>
 </section>
 
 <style>
+  .wrapper-contact {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  h4 {
+    z-index: 2;
+    margin-top: 30px;
+    color: var(--colorC);
+    text-align: left;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: epilogue;
+    text-align: center;
+  }
+  a {
+    border: 2px solid var(--blue);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2em;
+    color: var(--colorC);
+    z-index: 2;
+  }
+  a:hover {
+    animation: bounce 0.4s ease-in-out;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
+    }
+    25% {
+      transform: scale(1) translateY(3px);
+    }
+    50% {
+      transform: scale(1) translateY(-1px);
+    }
+    75% {
+      transform: scale(1) translateY(2px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
   section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    background-color: var(--colorO);
+    /* background-color: var(--colorO); */
     height: 100%;
     width: 100%;
-    font-size: 16px;
     margin-top: 30px;
- 
+    margin-bottom: 50px;
   }
-  .container{
-    z-index: 0;
-    position: relative;
-    grid-column: 2/12;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1;
-    border-radius: 20px;
-    padding: 20px;
-    border: solid 1px rgb(55, 55, 55);
-    height: 100%;
-  }
-    .container::after {
-        border-radius: 20px;
-        z-index: 1;
-    position: absolute;
-    content: "";
-    background-color: rgba(12, 12, 27, 0.66);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .wrapper{
-    grid-column: 2/12;
+  .wrapper {
+    grid-column: 1/13;
     grid-row: 1;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
     height: 100%;
-    background-image: url(../../Assets/png-gralypho/uuundulate.svg);
+    position: relative;
+    padding: 30px;
+  }
+  .wrapper::after {
+    position: absolute;
+    content: "";
+    background-color: #1a1c2186;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   section h1 {
-    word-wrap: break-word;
+    z-index: 2;
     text-align: left;
-    font-family: epilogue;
-    font-weight: 500;
-    font-size: 1.7em;
+    font-family: Kanit;
+    font-weight: 900;
+    font-size: 2.7em;
     color: white;
     margin-top: 50px;
     line-height: 37px;
-    z-index: 2;
-        margin-bottom: 50px;
   }
   section p span {
+    z-index: 2;
     color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: left;
     line-height: 30px;
     margin-top: 30px;
-        z-index: 2;
+    font-family: kanit;
   }
   section p {
+    z-index: 2;
     margin-top: 30px;
     color: var(--colorC);
     text-align: left;
     line-height: 30px;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family: epilogue;
-        z-index: 2;
   }
-  .bg{
+  /* .bg {
     z-index: 2;
     margin-top: 30px;
     border-radius: 20px;
+    height: 300px;
+    width: 300px;
+  } */
+  ol {
+    z-index: 2;
+    color: var(--colorC);
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 1.2em;
+    font-family: epilogue;
   }
-@media screen and (max-width: 768px){
-section{
-font-size: 10px
-  }
-}
-
 </style>

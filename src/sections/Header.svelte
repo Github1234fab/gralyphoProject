@@ -68,13 +68,13 @@
 
   a {
     color: white;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 300;
     text-decoration: none;
   }
 
   a:hover {
-    color: var(--colorD);
+    color: var(--blue);
   }
 
   .burger-menu {
@@ -119,6 +119,9 @@
     }
     .navigation{
       font-size: 12px
+    }
+    a{
+      font-size: 1.1em;
     }
   }
 </style>
