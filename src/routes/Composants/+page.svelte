@@ -158,13 +158,5 @@
     height: 300px;
     width: 300px;
   } */
-  ol {
-    z-index: 2;
-    color: var(--colorC);
-    text-align: left;
-    line-height: 30px;
-    font-weight: 300;
-    font-size: 1.2em;
-    font-family: epilogue;
-  }
+
 </style>

@@ -11,8 +11,8 @@
 <footer class="footer">
   <h1>Gralypho</h1>
   <div class="wrapper-contact">
- <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
-<a href="tel:0672901614" class="contact">06 72 90 16 14</a>
+    <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
+    <a href="tel:0672901614" class="contact">06 72 90 16 14</a>
   </div>
 
   <div class="wrapper-media">
@@ -38,9 +38,6 @@
 
 <style>
   .footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
     height: 100%;
     font-size: 16px;
     background-color: var(--colorO);
@@ -48,54 +45,38 @@
     text-align: center;
     font-family: epilogue;
     padding: 40px;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .footer h1 {
-    grid-column: 6;
-    grid-row: 1;
     font-weight: 800;
     font-size: 2.8em;
     color: transparent;
     font-family: kanit;
     -webkit-background-clip: text;
     background-clip: text;
-     -webkit-background-image: linear-gradient(to right, var(--colorD), var(--colorI));
-    background-image: linear-gradient(to right, var(--colorD), var(--colorI));
+      -webkit-background-image: linear-gradient(to left, var(--colorD), var(--colorI));
+    background-image: linear-gradient(to left, var(--colorD), var(--colorI));
   }
 
   .footer h4 {
-    grid-column: 1/12;
-    grid-row: 4;
     font-family: epilogue;
     font-weight: 300;
     font-size: 0.8em;
     color: var(--colorC);
     text-align: center;
   }
-  .wrapper-media {
-    display: flex;
-    grid-column: 6/10;
-    grid-row: 3;
-    gap: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    margin-left: 5px;
-
-  }
-  .wrapper-contact{
-    grid-column: 1/12;
-    grid-row: 2;
+  
+  .wrapper-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
-
   }
   .contact {
     text-decoration: none;
-    color:  var(--colorC);
+    color: var(--colorC);
     font-size: 1.3em;
     font-family: kanit;
     width: 100%;
@@ -103,7 +84,7 @@
     transition: 0.2s ease-in-out;
   }
   .contact:hover {
-animation: bounce 0.4s ease-in-out;
+    animation: bounce 0.4s ease-in-out;
   }
 
   a {

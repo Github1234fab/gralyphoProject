@@ -2,7 +2,6 @@
   import Dev from "../Assets/png-gralypho/Saly-11.png";
   import Carousel from "../Components/CarousselCards.svelte";
   import triangle from "../Assets/png-gralypho/nnneon (6).svg";
-  
 
   import { onMount } from "svelte";
 
@@ -25,8 +24,11 @@
     <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
     <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
     <h1>Exemples de réalisations d'outils digitaux</h1>
-    <h2>Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met l'accent sur un design, une fonctionnalité, etc Découvrez !</h2>
-<i class="fa-solid fa-arrows-left-right  arrow"></i>
+    <h2>
+      Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met
+      l'accent sur un design, une fonctionnalité, etc Découvrez !
+    </h2>
+    <i class="fa-solid fa-arrows-left-right arrow"></i>
     <Carousel />
   </div>
 </section>
@@ -40,7 +42,7 @@
     font-size: 16px;
     margin-top: 170px;
     background-color: white;
-     background-image: url(../Assets/png-gralypho/waves4.svg);
+    background-image: url(../Assets/png-gralypho/waves4.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -59,7 +61,7 @@
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
-      font-weight: 900;
+    font-weight: 900;
     font-size: 2.7em;
     color: var(--primary);
     margin-top: 50px;
@@ -98,7 +100,7 @@
     margin-top: -130px;
   }
 
-  .arrow{
+  .arrow {
     height: 40px;
     width: 40px;
     display: flex;
@@ -106,18 +108,18 @@
     align-items: center;
     padding: 25px;
     margin-top: 20px;
-   color: grey;
-font-size: 2em;
-opacity: 0.7;
-border-radius: 50%;
-border: solid grey 1px;
+    color: grey;
+    font-size: 2em;
+    opacity: 0.7;
+    border-radius: 50%;
+    border: solid grey 1px;
   }
 
   @media screen and (max-width: 768px) {
     .G-section {
       font-size: 14px;
     }
-        .wrapper-text{
+    .wrapper-text {
       background-size: 100%;
     }
   }
