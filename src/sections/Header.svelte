@@ -1,6 +1,7 @@
 <script>
   import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
   import { fade, slide } from "svelte/transition";
+  import Logo from "../Components/Gralypho.svelte";
 
   let toggle = false;
   function display() {
@@ -10,7 +11,8 @@
 </script>
 
 <nav class="navigation">
-  <h1>GRALYPHO</h1>
+  <a href="/" class="title-link"><Logo/></a>
+  <!-- <h1 class="title">GRALYPHO</h1> -->
   <button class="burger-menu" on:click={display}>
     <img src={burger} alt="" class="burger" class:visible={toggle} />
   </button>
@@ -18,7 +20,7 @@
   {#if toggle}
     <span class="span" transition:slide={{ duration: 1200 }}>
       <div in:fade={{ duration: 600 }} out:fade={{ duration: 600 }} class="wrapper-links">
-        <a href="/">Home</a>
+        <!-- <a href="/">Home</a> -->
         <a href="/Sites">Sites Web</a>
         <a href="/Applications">Applications</a>
         <a href="/Referencement">Référencement</a>
@@ -32,65 +34,50 @@
 
 <style>
   .navigation {
-    padding: 10px;
-    grid-column: 1/13;
-    padding: 10px;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    height: auto;
+    grid-template-rows: repeat(3, auto);
+    padding: 10px;
     margin-top: 30px;
-    margin-left: 0px;
     font-size: 16px;
   }
-  .span {
-    grid-row: 2;
-    grid-column: 2/12;
-  }
-
-  h1 {
-    grid-column: 1;
+  .title-link {
+    grid-column: 1/5;
     grid-row: 1;
-    color: transparent;
-    font-family: kanit;
-    font-size: 1.5em;
-    color: var(--colorC);
-    font-weight: 200;
-    margin-left: 50px;
+    margin-left: 20px;
+  }
+  .span {
+    grid-row: 3;
+    grid-column: 4/12;
   }
   .wrapper-links {
-    margin-top: 20px;
-    margin-left: 20px;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     opacity: 1;
+    margin-top: 20px;
   }
-
   a {
     color: white;
     font-size: 1em;
     font-weight: 300;
     text-decoration: none;
   }
-
-  a:hover {
-    color: var(--blue);
-  }
-
   .burger-menu {
     background-color: transparent;
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: 10px;
-    width: 50%;
     border: none;
-    border-left: 1px grey solid;
-    border-top: 1px grey solid;
-  }
+    grid-column: 11/12;
 
+    width: 50px;
+    border-radius: 8px;
+  }
+   .burger-menu:hover {
+    animation: bounce 0.4s ease-in-out;
+  }
   .burger {
-    height: 30px;
+    height: 40px;
     border: none;
+    padding: 5px;
   }
   .burger:hover {
     animation: bounce 0.4s ease-in-out;
@@ -117,10 +104,10 @@
     .wrapper-links {
       flex-direction: column;
     }
-    .navigation{
-      font-size: 12px
+    .navigation {
+      font-size: 12px;
     }
-    a{
+    a {
       font-size: 1.1em;
     }
   }

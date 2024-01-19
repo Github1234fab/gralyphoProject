@@ -1,5 +1,5 @@
 <script>
-  export let icon;
+  // export let icon;
   export let p;
   export let title;
   import { onMount } from "svelte";
@@ -22,7 +22,7 @@
 <div class="wrapper-list">
   <div class="wrapper-icon">
     <!-- <img src={icon} alt="" class="icon" /> -->
-<img src={icon} alt="" class="icon">
+<!-- <img src={icon} alt="" class="icon"> -->
   </div>
   <div class="p"><span>{title}</span>{p}</div>
 </div>
@@ -34,7 +34,7 @@
     margin: 20px;
     font-family: epilogue;
     color: var(--bg);
-    width: 100%;
+    width: 60%;
   }
   .wrapper-icon {
     display: flex;
@@ -43,16 +43,14 @@
     filter: drop-shadow(3px 6px 15px rgba(0, 0, 0, 0.406));
     margin-right: 20px;
   }
-  .icon {
+  /* .icon {
      filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.437));
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    /* background-color: var(--primary); */
-    /* clip-path: polygon(70% 0, 100% 11%, 85% 38%, 96% 67%, 82% 89%, 16% 99%, 0 65%, 11% 44%, 16% 15%); */
     transform: translateX(-300px);
     fill: blue;
-  }
+  } */
   @keyframes anim {
     from {
         stroke-dashoffset: 2000px;
@@ -68,6 +66,7 @@
     font-weight: 400;
     list-style: none;
     padding: 10px;
+    text-align: center;
   }
   .p span {
     font-weight: 800;

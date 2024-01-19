@@ -104,7 +104,7 @@
     font-weight: 900;
     text-align: left;
     color: var(--colorC);
-    margin-top: 50px;
+    margin-top: 70px;
   }
   .C-section h2 {
     font-size: 1.2em;

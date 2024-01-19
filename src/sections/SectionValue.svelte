@@ -64,24 +64,25 @@ icon: rocket,
   .section-value {
     display: flex;
     flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
     height: auto;
     font-size: 16px;
     z-index: 1;
-    background-color: white;
-    background-position: center;
     padding: 30px;
     gap: 0px;
     opacity: 0.2;
     background-image: url(../Assets/png-gralypho/waves4.svg);
     background-repeat: no-repeat;
     background-size: cover;
+        background-position: center;
   }
   .section-value h1 {
     font-family: epilogue;
     font-weight: 900;
     font-size: 2.8em;
     color: var(--primary);
-    text-align: left;
+    text-align: center;
     padding: 20px;
   }
 
@@ -90,6 +91,8 @@ icon: rocket,
     flex-direction: column;
     width: 100%;
     margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (max-width: 768px) {
     .section-value {

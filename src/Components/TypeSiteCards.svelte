@@ -16,21 +16,21 @@
  <a href={lien}><button class="button" >En savoir plus<button /></a> 
 </div>
 
+
 <style>
+
   .cards {
     display: flex;
     flex-direction: column;
-    width: calc(30% - 10px);
-    height: calc(50% - 10px);
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
     color: white;
     justify-content: center;
     align-items: center;
-    /* background: radial-gradient(circle at center, var(--gradient), var(--primary));
-    background-size: 130% 100%; */
-    background-color: var(--primary);
-    border: 2px solid var(--bg);
+    background-color: var(--bg);
+    border: 10px solid rgb(64, 64, 64);
+          width: calc(30% - 10px);
+    height: calc(50% - 10px);
   }
   .icon {
     height: 60px;
