@@ -57,7 +57,7 @@
         différents navigateurs et différents test utilisateurs.
       </li>
       <br />
-      <li>Lorsque votre site internet a passé les différents tests, il vous est enfin livré! 🍾.🍾.🍾.</li>
+      <li>Lorsque votre site internet a passé les différents tests, il vous est enfin livré! </li>
       <br />
     </ol>
     <h4>Vous souhaitez en savoir d'avantage ou nous parlez de votre projet?  <br>Nous sommes là pour vous écouter et vous apporter toutes nos solutions. <br><br>On en parle autour d'un café ?</h4>
@@ -127,7 +127,7 @@
     margin-bottom: 50px;
   }
   .wrapper {
-    grid-column: 1/13;
+    grid-column: 2/12;
     grid-row: 1;
     display: flex;
     flex-direction: column;
@@ -184,14 +184,17 @@
     height: 300px;
     width: 300px;
   } */
-
+ol{
+  z-index:2;
+  font-size: 1.2em;
+}
   li{
       z-index: 2;
     color: var(--colorC);
     text-align: left;
     line-height: 30px;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: epilogue;
   }
 </style>

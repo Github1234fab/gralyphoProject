@@ -87,7 +87,7 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     margin-bottom: 50px;
   }
   .wrapper {
-    grid-column: 1/13;
+    grid-column: 2/12;
     grid-row: 1;
     display: flex;
     flex-direction: column;

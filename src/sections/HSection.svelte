@@ -81,8 +81,6 @@
     line-height: 48px;
     font-weight: 900;
     color: transparent;
-    -webkit-background-image: inear-gradient(to left, var(--colorD), var(--colorI));
-    background-image: linear-gradient(to left, var(--colorD), var(--colorI));
     -webkit-background-clip: text;
     background-clip: text;
   }

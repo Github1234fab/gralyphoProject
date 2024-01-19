@@ -69,12 +69,13 @@
     text-align: center;
   }
   .p span {
-    font-weight: 800;
+    font-weight: 900;
     color: transparent;
     -webkit-background-image: linear-gradient(to left, var(--blue), var(--ca));
     background-image: linear-gradient(to left, var(--blue), var(--ca));
     -webkit-background-clip: text;
     background-clip: text;
+
   }
   @media screen and (max-width: 768px) {
     .wrapper-list {

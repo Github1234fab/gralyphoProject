@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import Gralypho from "../Components/Gralypho.svelte";
 
   let Year;
 
@@ -9,27 +10,28 @@
 </script>
 
 <footer class="footer">
-  <h1>Gralypho</h1>
+
   <div class="wrapper-contact">
+    <Gralypho/>
     <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
     <a href="tel:0672901614" class="contact">06 72 90 16 14</a>
   </div>
 
   <div class="wrapper-media">
     <a
-      href="https://facebook.com/intent/tweet?url=URL_DU_SITE&text=Texte_du_tweet&via=NomUtilisateurTwitter"
+      href="https://www.facebook.com/"
       target="_blank"><i class="fa-brands fa-square-facebook anim"></i></a
     >
     <a
-      href="https://twitter.com/intent/tweet?url=URL_DU_SITE&text=Texte_du_tweet&via=NomUtilisateurTwitter"
+      href="https://twitter.com/home?lang=fr"
       target="_blank"><i class="fa-brands fa-square-twitter anim"></i></a
     >
     <a
-      href="https://instagram.com/intent/tweet?url=URL_DU_SITE&text=Texte_du_tweet&via=NomUtilisateurTwitter"
+      href="https://www.instagram.com/"
       target="_blank"><i class="fa-brands fa-square-instagram anim"></i></a
     >
     <a
-      href="https://tiktok.com/intent/tweet?url=URL_DU_SITE&text=Texte_du_tweet&via=NomUtilisateurTwitter"
+      href="https://www.tiktok.com/fr/"
       target="_blank"><i class="fa-brands fa-tiktok anim"></i></a
     >
   </div>
@@ -49,7 +51,7 @@
     flex-direction: column;
     gap: 10px;
   }
-  .footer h1 {
+  /* .footer h1 {
     font-weight: 800;
     font-size: 2.8em;
     color: transparent;
@@ -58,7 +60,7 @@
     background-clip: text;
       -webkit-background-image: linear-gradient(to left, var(--colorD), var(--colorI));
     background-image: linear-gradient(to left, var(--colorD), var(--colorI));
-  }
+  } */
 
   .footer h4 {
     font-family: epilogue;
@@ -73,6 +75,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
   }
   .contact {
     text-decoration: none;

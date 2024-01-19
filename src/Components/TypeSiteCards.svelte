@@ -13,12 +13,10 @@
       {p}
     </p>
   </div>
- <a href={lien}><button class="button" >En savoir plus<button /></a> 
+  <a href={lien}><button class="button">En savoir plus<button /></button></a>
 </div>
 
-
 <style>
-
   .cards {
     display: flex;
     flex-direction: column;
@@ -28,8 +26,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--bg);
-    border: 10px solid rgb(64, 64, 64);
-          width: calc(30% - 10px);
+    border: 15px solid rgb(64, 64, 64);
+    width: calc(30% - 10px);
     height: calc(50% - 10px);
   }
   .icon {
@@ -37,7 +35,7 @@
     width: 60px;
     padding: 10px;
     color: blue;
-    border: 1px solid white;
+    border: 1px solid rgb(161, 161, 161);
     border-radius: 50%;
     text-align: center;
   }

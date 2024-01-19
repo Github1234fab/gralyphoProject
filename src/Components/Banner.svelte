@@ -29,7 +29,7 @@
     </div>
     <div class="card">
       <i class="fa-solid fa-sitemap icon"></i>
-      <h3>Développement d'<strong>Applications </strong> </h3>
+      <h3>Développement d'<strong>Applications </strong></h3>
       <a href="/Applications"><i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </div>
@@ -81,13 +81,12 @@
     flex-wrap: wrap;
     width: 100%;
   }
-
   .card {
     z-index: 0;
     background-color: var(--primary);
     width: 40%;
     height: auto;
-    box-shadow:  3px 4px 25px rgba(0, 0, 0, 0.27);
+    box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.27);
     display: flex;
     flex-direction: column;
     align-items: center;

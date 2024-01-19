@@ -43,7 +43,7 @@
     font-size: 16px;
   }
   .title-link {
-    grid-column: 1/5;
+    grid-column: 2;
     grid-row: 1;
     margin-left: 20px;
   }
@@ -63,10 +63,14 @@
     font-weight: 300;
     text-decoration: none;
   }
+   a:hover {
+    color:  #7f00fd;
+  }
   .burger-menu {
     background-color: transparent;
     border: none;
-    grid-column: 11/12;
+    grid-column: 3;
+    grid-row: 1;
 
     width: 50px;
     border-radius: 8px;
