@@ -13,7 +13,7 @@
     flex-shrink: 0;
     border-radius: 50px;
     margin: 8px;
-    height: 30em;
+    height: 20em;
     width: 20em;
     user-select: none;
     overflow: hidden;
@@ -26,11 +26,11 @@
     box-shadow: 3px 3px 25px rgba(1, 6, 27, 0.336);
     background-color: #152a37;
   }
-  .linear-gradient{
+  /* .linear-gradient{
     border-style: solid;
     border-width: 3px;
     border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
-  }
+  } */
   .button {
     padding: 30px;
     border-radius: 10px;
@@ -43,6 +43,7 @@
     font-weight: 400;
     font-size: 1em;
     transition: 0.4s ease-in-out;
+    background-color: var(--blue);
   }
   .button:hover {
     animation: bounce 0.4s ease-in-out;

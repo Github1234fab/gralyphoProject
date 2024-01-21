@@ -51,16 +51,7 @@
     flex-direction: column;
     gap: 10px;
   }
-  /* .footer h1 {
-    font-weight: 800;
-    font-size: 2.8em;
-    color: transparent;
-    font-family: kanit;
-    -webkit-background-clip: text;
-    background-clip: text;
-      -webkit-background-image: linear-gradient(to left, var(--colorD), var(--colorI));
-    background-image: linear-gradient(to left, var(--colorD), var(--colorI));
-  } */
+ 
 
   .footer h4 {
     font-family: epilogue;

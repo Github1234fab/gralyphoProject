@@ -20,37 +20,20 @@
 </script>
 
 <div class="wrapper-list">
-  <div class="wrapper-icon">
-    <!-- <img src={icon} alt="" class="icon" /> -->
-<!-- <img src={icon} alt="" class="icon"> -->
-  </div>
-  <div class="p"><span>{title}</span>{p}</div>
+  <p class="title"><span>{title}</span><br></p> 
+<p>{p}</p>
 </div>
 
 <style>
   .wrapper-list {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     margin: 20px;
     font-family: epilogue;
     color: var(--bg);
     width: 60%;
   }
-  .wrapper-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: drop-shadow(3px 6px 15px rgba(0, 0, 0, 0.406));
-    margin-right: 20px;
-  }
-  /* .icon {
-     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.437));
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    transform: translateX(-300px);
-    fill: blue;
-  } */
+ 
   @keyframes anim {
     from {
         stroke-dashoffset: 2000px;
@@ -59,22 +42,22 @@
         stroke-dashoffset: 0px;
     }
 }
-  .p {
+  p {
     font-size: 1.2em;
     font-family: epilogue;
     color: var(--bg);
-    font-weight: 400;
+    font-weight: 300;
     list-style: none;
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
-  .p span {
-    font-weight: 900;
-    color: transparent;
+  .title {
+    font-weight: 600;
+    /* color: transparent;
     -webkit-background-image: linear-gradient(to left, var(--blue), var(--ca));
     background-image: linear-gradient(to left, var(--blue), var(--ca));
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
 
   }
   @media screen and (max-width: 768px) {
@@ -84,8 +67,6 @@
       justify-content: center;
       margin: 0px;
     }
-    .wrapper-icon {
-      margin-bottom: 20px;
-    }
+
   }
 </style>

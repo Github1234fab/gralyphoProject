@@ -8,19 +8,79 @@
   import world from "../Assets/png-gralypho/Saly-44.png";
   import mediaTree from "../Assets/png-gralypho/applis.png";
   import Header from "../sections/Header.svelte";
+  import circle from"../Assets/png-gralypho/circleOne.svg";
+  import circleOne from"../Assets/png-gralypho/circlePrismOne.svg";
+  import circleTwo from"../Assets/png-gralypho/circlePrismTwo.svg";
+  import circleThree from"../Assets/png-gralypho/circlePrismThree.svg";
+    import circleFour from"../Assets/png-gralypho/circlePrismFour.svg";
+import { onMount } from "svelte";
+  
+  onMount(() => {
+    gsap.to(".circleOne", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".circleOne",
+        start: "top 700px",
+        end: "300px",
+        scrub: 3  ,
+   repeat: 3, 
+      },
+    });
+  });
+   onMount(() => {
+    gsap.to(".circleTwo", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".circleTwo",
+        start: "top 700px",
+        end: "300px",
+        scrub: 3  ,
+   repeat: 3, 
+      },
+    });
+  });
+   onMount(() => {
+    gsap.to(".circleThree", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".circleThree",
+        start: "top 700px",
+        end: "300px",
+        scrub: 3  ,
+   repeat: 3, 
+      },
+    });
+  });
+   onMount(() => {
+    gsap.to(".circleFour", {
+      rotate: 360,
+      scrollTrigger: {
+        trigger: ".circleFour",
+        start: "top 700px",
+        end: "300px",
+        scrub: 3  ,
+   repeat: 3, 
+      },
+    });
+  });
+
 </script>
 
-<section class="A-section">
+
   <Header />
-  <div class="wrapper-title">
-    <!-- <h1>Optez pour nos solutions digitales <span>100% </span>sur mesure.</h1> -->
+<section class="A-section">
+
+
     <h1>Chez <span>Gralypho</span>, <br />nous transformons l'ordinaire <br /> en extraordinaire !</h1>
     <h2>
       Augmentez votre visibilité, simplifiez vos opérations et offrez à vos clients une expérience exceptionnelle !
     </h2>
-
     <a class="link" href="/#sectionE">Découvrir</a>
-  </div>
+<img src={circleOne} alt="cercle décoré" class="circleOne opacity-circle">
+<img src={circleTwo} alt="cercle décoré" class="circleTwo opacity-circle">
+<!-- <img src={circleThree} alt="cercle décoré" class="circleThree"> -->
+<img src={circleFour} alt="cercle décoré" class="circleFour opacity-circle">
+
 </section>
 
 <style>
@@ -33,32 +93,17 @@
     z-index: 1;
     background-color: var(--primary);
   }
-  .wrapper-title {
-    grid-column: 1/12;
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    z-index: 0;
-    overflow: hidden;
-    margin-top: 30px;
-    z-index: 1;
-  }
-  /* .icon {
-    padding: 20px;
-    font-size: 2em;
-    color: var(--ca);
-    border-radius: 5px;
-  } */
   .A-section h1 {
     z-index: 1;
     text-align: left;
     font-family: epilogue;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.8em;
     color: white;
     line-height: 56px;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 60px;
+    grid-column: 2/13;
+    grid-row: 1;
   }
   .A-section h1 span {
     font-weight: 800;
@@ -77,28 +122,28 @@
     line-height: 20px;
     font-size: 1.1em;
     color: var(--colorC);
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 40px;
+     grid-column: 2/12;
+    grid-row: 2;
   }
 
   .link {
+     grid-column: 2/12;
+    grid-row: 3;
     display: flex;
     z-index: 3;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 3.1em;
-    /* background-color: #7f00fd; */
-    /* background: linear-gradient(to left, var(--colorJ), var(--colorI)); */
-    border: 2px solid #7f00fd;
     border-radius: 8px;
     color: white;
     text-decoration: none;
     font-family: epilogue;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1em;
     box-shadow: inset 2px 2px 5px var(--colorO);
-    margin-left: 50px;
+background-color:  var(--blue);
     margin-top: 100px;
     padding: 30px;
     transition: 0.4s ease-in-out;
@@ -124,12 +169,34 @@
       transform: scale(1) translateY(0);
     }
   }
+  .circleOne{
+    grid-column: 9;
+    grid-row: 3;
+    height: 100px;
+    z-index: 0;
+    margin-top: 30px;
+  }
+    .circleTwo{
+    grid-column: 10;
+    grid-row: 1;
+    height: 100px;
+    z-index: 0;
+    margin-top: 30px;
+  }
+
+    .circleFour{
+    grid-column: 7;
+    grid-row: 3;
+    height: 100px;
+    z-index: 0;
+    margin-top: 20px;
+  }
+  .opacity-circle{
+    opacity: 0.8;
+  }
 
   @media screen and (max-width: 768px) {
-    .wrapper-title {
-      overflow: hidden;
-      height: auto;
-    }
+   
     .A-section {
       font-size: 14px;
     }

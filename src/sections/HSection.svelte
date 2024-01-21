@@ -78,9 +78,10 @@
     line-height: 48px;
   }
   .H-section h1 span {
-    line-height: 48px;
     font-weight: 900;
     color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+    background-image: linear-gradient(to left, var(--ca), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }

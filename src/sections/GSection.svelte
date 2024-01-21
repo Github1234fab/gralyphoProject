@@ -28,7 +28,6 @@
       Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met
       l'accent sur un design, une fonctionnalité, etc Découvrez !
     </h2>
-    <i class="fa-solid fa-arrows-left-right arrow"></i>
     <Carousel />
   </div>
 </section>
@@ -100,20 +99,7 @@
     margin-top: -130px;
   }
 
-  .arrow {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    margin-top: 20px;
-    color: grey;
-    font-size: 2em;
-    opacity: 0.7;
-    border-radius: 50%;
-    border: solid grey 1px;
-  }
+
 
   @media screen and (max-width: 768px) {
     .G-section {

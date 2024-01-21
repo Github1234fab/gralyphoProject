@@ -57,10 +57,10 @@
     }
   }
   .button {
-    background-color: transparent;
-    border: 2px solid #7f00fd;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
     color: white;
     font-family: Kanit;
     font-size: 1em;

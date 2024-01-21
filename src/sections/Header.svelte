@@ -12,7 +12,6 @@
 
 <nav class="navigation">
   <a href="/" class="title-link"><Logo/></a>
-  <!-- <h1 class="title">GRALYPHO</h1> -->
   <button class="burger-menu" on:click={display}>
     <img src={burger} alt="" class="burger" class:visible={toggle} />
   </button>
@@ -38,48 +37,52 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, auto);
-    padding: 10px;
+    padding: 20px;
     margin-top: 30px;
     font-size: 16px;
+        background-color: var(--bg);
+
   }
   .title-link {
     grid-column: 2;
     grid-row: 1;
-    margin-left: 20px;
+    margin-left: -5px;
   }
   .span {
     grid-row: 3;
-    grid-column: 4/12;
+    grid-column: 2/12;
   }
   .wrapper-links {
     display: flex;
     gap: 40px;
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   a {
     color: white;
     font-size: 1em;
     font-weight: 300;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
   }
    a:hover {
-    color:  #7f00fd;
+color: grey;
   }
   .burger-menu {
     background-color: transparent;
     border: none;
     grid-column: 3;
     grid-row: 1;
-
     width: 50px;
     border-radius: 8px;
+    margin-top: -10px;
   }
    .burger-menu:hover {
     animation: bounce 0.4s ease-in-out;
   }
   .burger {
-    height: 40px;
+    height: 60px;
     border: none;
     padding: 5px;
   }

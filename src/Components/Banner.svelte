@@ -25,12 +25,12 @@
     <div class="card">
       <i class="fa-solid fa-desktop banner-icon icon"></i>
       <h3>Création de <strong>sites Internet</strong></h3>
-      <a href="/Sites"><i class="fa-solid fa-arrow-right arrow"></i></a>
+      <a href="/Sites" class="button">+ d'infos</a>
     </div>
     <div class="card">
       <i class="fa-solid fa-sitemap icon"></i>
       <h3>Développement d'<strong>Applications </strong></h3>
-      <a href="/Applications"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    <a href="/Sites" class="button">+ d'infos</a>
     </div>
   </div>
 
@@ -38,12 +38,12 @@
     <div class="card">
       <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
       <h3><strong>Référencement</strong></h3>
-      <a href="/Referencement"><i class="fa-solid fa-arrow-right arrow"></i></a>
+    <a href="/Sites" class="button">+ d'infos</a>
     </div>
     <div class="card">
       <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
       <h3><strong>Marketing & Communication</strong></h3>
-      <a href="/Marketing"><i class="fa-solid fa-arrow-right arrow"></i></a>
+<a href="/Sites" class="button">+ d'infos</a>
     </div>
   </div>
 
@@ -51,12 +51,12 @@
     <div class="card">
       <i class="fa-solid fa-recycle icon"></i>
       <h3><strong>Composants Web</strong></h3>
-      <a href="/Composants"><i class="fa-solid fa-arrow-right arrow"></i></a>
+<a href="/Sites" class="button">+ d'infos</a>
     </div>
     <div class="card">
       <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
       <h3><strong>Refonte</strong></h3>
-      <a href="/Refonte"><i class="fa-solid fa-arrow-right arrow"></i></a>
+  <a href="/Sites" class="button">+ d'infos</a>
     </div>
   </div>
 </div>
@@ -83,7 +83,7 @@
   }
   .card {
     z-index: 0;
-    background-color: var(--primary);
+    background-color: var(--bg);
     width: 40%;
     height: auto;
     box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.27);
@@ -93,26 +93,31 @@
     justify-content: center;
     padding: 40px;
     gap: 30px;
-    border: rgb(104, 104, 104) 1px solid;
+    border: rgb(104, 104, 104) 3px solid;
   }
-  .icon {
-    color: var(--blue);
-    font-size: 1.9em;
+  .button{
+    color: white;
+text-decoration: none;
+font-weight: 400;
+font-size: 1em;
+height: auto;
+border-radius: 8px;
+background-color: var(--blue);
+padding: 12px;
+font-family: kanit;
   }
-  .arrow {
-    z-index: 2;
-    color: var(--ca);
-    font-size: 2.5em;
-    transition: 0.1s ease-in-out;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: solid 1px white;
-    padding: 20px;
-  }
-  .arrow:hover {
+  .button:hover{
     animation: bounce 0.4s ease-in-out;
   }
+  .icon {
+    color: transparent;
+   background-image: linear-gradient(to bottom, var(--orange), var(--blue));
+   background-clip: text;
+    font-size: 2em;
+    z-index: 2;
+
+  }
+
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
@@ -133,7 +138,7 @@
   .card h3 {
     font-family: kanit;
     color: white;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.2em;
     text-align: center;
   }
