@@ -122,7 +122,7 @@
     margin-top: 40px;
   }
   .wrapper-link{
-       grid-column: 5/12;
+       grid-column: 10/12;
     grid-row: 3;
   }
 
