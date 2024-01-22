@@ -20,13 +20,13 @@
   .cards {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
     color: white;
     justify-content: center;
     align-items: center;
     background-color: var(--bg);
-    border: 15px solid rgb(64, 64, 64);
+    border: 5px solid rgb(64, 64, 64);
     width: calc(30% - 10px);
     height: calc(50% - 10px);
   }

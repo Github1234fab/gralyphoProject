@@ -57,7 +57,7 @@ html {
   --colorO2: rgba(17, 35, 46, 0.645);
  
   --primary: #1a1c21;
-   --bg: #23262b;
+   --bg: #1b1e22;
   --ca: #c97b1c;
   --gradient: #1d2f4f;
   --button: #6CA0DC;
@@ -65,4 +65,6 @@ html {
   --blue: #7f00fd;
   --blue2: #678BF6;
   --orange: #D1A617;
+  --alternate: #877455;
+  --newBlue: #2993FA;
 }

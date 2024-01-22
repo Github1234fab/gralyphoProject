@@ -62,10 +62,9 @@ icon: rocket,
 
 <style>
   .section-value {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    display: grid;
+   grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto;
     height: auto;
     font-size: 16px;
     z-index: 1;
@@ -78,6 +77,7 @@ icon: rocket,
         background-position: center;
   }
   .section-value h1 {
+    grid-column: 2/12;
     font-family: epilogue;
     font-weight: 900;
     font-size: 2.8em;
@@ -87,9 +87,10 @@ icon: rocket,
   }
 
   .wrapper-list {
-    display: flex;
+  grid-column: 2/12;
     flex-direction: column;
     width: 100%;
+    margin-top: 30px;
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;

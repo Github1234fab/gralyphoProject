@@ -76,13 +76,13 @@ color: grey;
     grid-row: 1;
     width: 50px;
     border-radius: 8px;
-    margin-top: -10px;
+    margin-top: 0px;
   }
    .burger-menu:hover {
     animation: bounce 0.4s ease-in-out;
   }
   .burger {
-    height: 60px;
+    height: 45px;
     border: none;
     padding: 5px;
   }
