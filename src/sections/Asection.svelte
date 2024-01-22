@@ -96,7 +96,7 @@
     text-align: left;
     font-family: epilogue;
     font-weight: 900;
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: clamp(2rem, 8vw, 5rem);
     color: white;
     grid-column: 2/13;
     grid-row: 1;
@@ -115,7 +115,7 @@
     font-family: epilogue;
     font-weight: 300;
     text-align: left;
-    font-size: clamp(1.2rem, 8vw, 1.3rem);
+    font-size: clamp(1.2rem, 8vw, 1.2rem);
     color: var(--colorC);
     grid-column: 2/12;
     grid-row: 2;
@@ -127,8 +127,6 @@
   }
 
   .link {
-    grid-column: 10/11;
-    grid-row: 3;
     display: flex;
      justify-content: center;
     align-items: center;
@@ -137,8 +135,8 @@
     color: white;
     text-decoration: none;
     font-family: epilogue;
-    font-weight: 600;
-    font-size: clamp(1.1rem, 8vw, 1.5rem);
+    font-weight: 400;
+    font-size: clamp(1.1rem, 8vw, 1.4rem);
     border: solid #2993fa 2px;
     transition: 0.4s ease-in-out;
     padding: 30px;
@@ -163,5 +161,11 @@
       transform: scale(1) translateY(0);
     }
   }
-
+@media screen and (max-width: 768px){
+ 
+  .wrapper-link{
+    grid-column: 7/12;
+    grid-row: 3;
+  }
+}
 </style>
