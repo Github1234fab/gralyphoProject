@@ -21,7 +21,7 @@
 		grid-row: 1;
 		font-family: epilogue;
 		 font-weight: 700;
-    font-size: 2.3em;
+    font-size: var(--xl);
 		color: white;
 		text-transform: uppercase;
 	}
@@ -31,7 +31,7 @@
 		margin-top: 100px;
 		font-family: epilogue;
 		font-weight: 300;
-		font-size: 1.2em;
+		font-size: var(--l);
 		color: var(--colorC);
 	}
         @media screen and (max-width: 768px) {

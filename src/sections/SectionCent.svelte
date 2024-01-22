@@ -85,7 +85,7 @@
     z-index: 1;
     font-family: kanit;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: var(--xl);
     color:  var(--primary);
   }
   .wrapper-text h2 {

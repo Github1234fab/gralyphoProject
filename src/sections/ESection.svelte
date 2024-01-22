@@ -71,7 +71,7 @@ opacity: 1,
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
-  font-size: 2.4em;
+  font-size: var(--xl);
     font-weight: 800;
     color: white;
     margin-top: 100px;
@@ -85,7 +85,7 @@ opacity: 1,
     margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: var(--l);
     color: var(--colorC);
     text-align: left;
     padding: 10px;

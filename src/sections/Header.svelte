@@ -38,7 +38,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, auto);
     padding: 20px;
-    margin-top: 30px;
     font-size: 16px;
         background-color: var(--bg);
 

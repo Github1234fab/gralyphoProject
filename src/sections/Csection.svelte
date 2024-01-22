@@ -100,14 +100,14 @@
     opacity: 0.2;
   }
   .C-section h1 {
-    font-size: 2.7em;
+    font-size: var(--xl);
     font-weight: 900;
     text-align: left;
     color: var(--colorC);
     margin-top: 70px;
   }
   .C-section h2 {
-    font-size: 1.2em;
+    font-size: var(--l);
     font-weight: 300;
     text-align: left;
     color: white;

@@ -69,8 +69,9 @@
 <section class="A-section">
   <h1>Chez <span>Gralypho</span>, <br />nous transformons l'ordinaire en <br /> extraordinaire !</h1>
   <h2>
-    Augmentez votre visibilité, simplifiez vos opérations <br />et offrez à vos clients <br />une expérience
-    exceptionnelle !
+    <!-- Augmentez votre visibilité, simplifiez vos opérations <br />et offrez à vos clients <br />une expérience <br>
+    exceptionnelle ! -->
+      Augmentez votre visibilité, simplifiez vos opérations <br />et touchez plus de clients.
   </h2>
   <div class="wrapper-link">
   <a class="link" href="/#sectionE">Découvrir</a>
@@ -85,8 +86,8 @@
   .A-section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: fit-content(100vh);
-    height: 100vh;
+    grid-template-rows: 0.333fr  0.333fr  0.333fr;
+height: 100vh;
     font-size: 16px;
     z-index: 1;
     background-color: var(--primary);
@@ -96,7 +97,7 @@
     text-align: left;
     font-family: epilogue;
     font-weight: 900;
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2.2rem, 8vw, 5rem);
     color: white;
     grid-column: 2/13;
     grid-row: 1;
@@ -113,16 +114,16 @@
   .A-section h2 {
     z-index: 1;
     font-family: epilogue;
-    font-weight: 300;
+    font-weight: 200;
     text-align: left;
-    font-size: clamp(1.2rem, 8vw, 1.2rem);
+    font-size: clamp(1.2rem, 8vw, 1.3rem);
     color: var(--colorC);
     grid-column: 2/12;
     grid-row: 2;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .wrapper-link{
-       grid-column: 10/12;
+       grid-column: 9/12;
     grid-row: 3;
   }
 
@@ -162,10 +163,22 @@
     }
   }
 @media screen and (max-width: 768px){
- 
+ .A-section h1{
+    grid-column: 1/12;
+    grid-row: 1;
+    margin-left: 40px;
+ }
+ .A-section h2{
+    grid-column: 1/12;
+    grid-row: 2;
+    margin-left: 40px;
+ }
   .wrapper-link{
     grid-column: 7/12;
     grid-row: 3;
+  }
+  .link{
+    font-size: 1.2em;
   }
 }
 </style>

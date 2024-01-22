@@ -4,10 +4,10 @@
   import rocket from "../Assets/png-gralypho/shuttle-space-solid.svg";
   import light from "../Assets/png-gralypho/lightbulb-solid.svg";
   import lock from "../Assets/png-gralypho/lock-solid.svg";
-    import heart from "../Assets/png-gralypho/heart-solid.svg";
-      import globe from "../Assets/png-gralypho/globe-solid.svg";
-        import hand from "../Assets/png-gralypho/handshake-regular.svg";
-   
+  import heart from "../Assets/png-gralypho/heart-solid.svg";
+  import globe from "../Assets/png-gralypho/globe-solid.svg";
+  import hand from "../Assets/png-gralypho/handshake-regular.svg";
+
   onMount(() => {
     gsap.to(".section-value", {
       opacity: 1,
@@ -21,12 +21,11 @@
     });
   });
 
-
   let values = [
     {
-icon: rocket,
+      icon: rocket,
       title: "Innovation Guidée par la Stratégie",
-      p: " Nous apportons une approche stratégique à chaque aspect de votre présence digitale, de la conception web à la stratégie marketing, en vous aidant à atteindre vos objectifs commerciaux. Nous vous aidons à définir votre stratégie digitale et à la mettre en œuvre pour obtenir des résultats tangibles.",
+      p: "Nous apportons une approche stratégique à chaque aspect de votre présence digitale, de la conception web à la stratégie marketing, en vous aidant à atteindre vos objectifs commerciaux. Nous vous aidons à définir votre stratégie digitale et à la mettre en œuvre pour obtenir des résultats tangibles.",
     },
     {
       icon: light,
@@ -35,7 +34,7 @@ icon: rocket,
     },
     {
       icon: globe,
-      title: "Expansion Digitale ",
+      title:"Expension Digitale",
       p: "Explorez de nouveaux horizons grâce à notre expertise en expansion digitale. Que vous soyez une start-up ambitieuse ou une entreprise établie, nous vous aidons à conquérir des marchés en ligne et à maximiser votre impact.",
     },
     {
@@ -63,8 +62,8 @@ icon: rocket,
 <style>
   .section-value {
     display: grid;
-   grid-template-columns: repeat(12, 1fr);
-grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     height: auto;
     font-size: 16px;
     z-index: 1;
@@ -74,20 +73,20 @@ grid-template-rows: auto;
     background-image: url(../Assets/png-gralypho/waves4.svg);
     background-repeat: no-repeat;
     background-size: cover;
-        background-position: center;
+    background-position: center;
   }
   .section-value h1 {
-    grid-column: 2/12;
+    grid-column: 1/12;
     font-family: epilogue;
     font-weight: 900;
-    font-size: 2.8em;
+     font-size: var(--xl);
     color: var(--primary);
-    text-align: center;
+    text-align: left;
     padding: 20px;
   }
 
   .wrapper-list {
-  grid-column: 2/12;
+    grid-column: 1/12;
     flex-direction: column;
     width: 100%;
     margin-top: 30px;
@@ -96,15 +95,13 @@ grid-template-rows: auto;
     align-items: center;
   }
   @media screen and (max-width: 768px) {
-    .section-value {
-      font-size: 14px;
+   
+    .wrapper-list {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      width: 100%;
+      margin-bottom: 50px;
     }
-     .wrapper-list {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width: 100%;
-    margin-bottom: 50px;
-  }
   }
 </style>

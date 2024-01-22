@@ -20,8 +20,8 @@
 </script>
 
 <div class="wrapper-list">
-  <p class="title"><span>{title}</span><br></p> 
-<p>{p}</p>
+  <h4 class="title">{title}</h4>
+  <p class="para">{p}</p>
 </div>
 
 <style>
@@ -31,6 +31,7 @@
     margin: 20px;
     font-family: epilogue;
     color: var(--bg);
+    text-align: left;
   }
  
   @keyframes anim {
@@ -41,8 +42,8 @@
         stroke-dashoffset: 0px;
     }
 }
-  p {
-    font-size: 1.2em;
+  .para {
+    font-size: var(--l);
     font-family: epilogue;
     color: var(--bg);
     font-weight: 300;
@@ -51,7 +52,8 @@
     text-align: left;
   }
   .title {
-    font-weight: 600;
+    font-weight: 800;
+        text-align: left;
   }
   @media screen and (max-width: 768px) {
     .wrapper-list {
@@ -59,6 +61,7 @@
       align-items: center;
       justify-content: center;
       margin: 0px;
+      text-align: left;
     }
 
   }

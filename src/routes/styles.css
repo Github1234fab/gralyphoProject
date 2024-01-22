@@ -67,4 +67,9 @@ html {
   --orange: #D1A617;
   --alternate: #877455;
   --newBlue: #2993FA;
+
+
+  --xl: clamp(2rem, 8vw, 5rem);
+--l:clamp(1.2rem, 8vw, 1.3rem);
+--button: clamp(1.1rem, 8vw, 1.4rem);
 }

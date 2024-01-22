@@ -108,7 +108,7 @@
     grid-column: 1/12;
     grid-row: 1;
     font-family: epilogue;
-    font-size: 2.7em;
+    font-size: var(--xl);
     font-weight: 800;
     color: var(--primay);
     margin-left: 100px;
@@ -120,7 +120,7 @@
     margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: var(--l);
     color: white;
     margin-left: 100px;
   }
