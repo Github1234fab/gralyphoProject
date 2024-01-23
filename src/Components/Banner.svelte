@@ -84,7 +84,7 @@
   }
   .card {
     z-index: 0;
-    background-color: var(--colorC);
+    background-color: var(--primary);
     width: calc(100% - 50px);
     height: 400px;
     /* box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.27); */
@@ -112,7 +112,7 @@ font-family: kanit;
   } */
   .icon {
     color: transparent;
-   background-image: linear-gradient(to bottom, var(--primary) , var(--blue) 50%);
+   background-image: linear-gradient(to right, var(--orange) , var(--blue) );
    background-clip: text;
     font-size: 9em;
     z-index: 2;
@@ -141,7 +141,7 @@ font-family: kanit;
   }
   .card h3 {
     font-family: epilogue;
-    color: var(--primary);
+    color: var(--colorC);
     font-weight: 800;
     font-size: var(--l);
     text-align: center;
