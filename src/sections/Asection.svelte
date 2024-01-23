@@ -7,7 +7,7 @@
   import dev from "../Assets/png-gralypho/Saly-15.png";
   import world from "../Assets/png-gralypho/Saly-44.png";
   import mediaTree from "../Assets/png-gralypho/applis.png";
-  import Header from "../sections/Header.svelte";
+ 
   import circle from "../Assets/png-gralypho/circleOne.svg";
   import circleOne from "../Assets/png-gralypho/brutalism/Frame (15).png";
   import circleTwo from "../Assets/png-gralypho/brutalism/Frame (16).png";
@@ -65,7 +65,7 @@
   });
 </script>
 
-<Header />
+
 <section class="A-section">
   <h1>Chez <span>Gralypho</span>, <br />nous transformons l'ordinaire en <br /> extraordinaire !</h1>
   <h2>

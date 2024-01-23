@@ -51,8 +51,6 @@
     flex-direction: column;
     gap: 10px;
   }
- 
-
   .footer h4 {
     font-family: epilogue;
     font-weight: 300;
@@ -60,7 +58,6 @@
     color: var(--colorC);
     text-align: center;
   }
-  
   .wrapper-contact {
     display: flex;
     flex-direction: column;

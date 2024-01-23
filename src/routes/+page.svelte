@@ -14,18 +14,21 @@
 </script>
 
 <main in:fade={{ duration: 2000 }}>
-  <section id="sectionA">
-    <Asection />
-  </section>
-  <SectionValue />
+
+  <HSection />
+    <DSection />
+  <!-- <SectionValue /> -->
   <Csection />
   <JSection />
   <section id="sectionE">
     <ESection />
   </section>
-  <DSection />
-  <HSection />
-  <GSection />
+
+      <GSection />
+
+  <section id="sectionA">
+    <Asection />
+  </section>
 </main>
 
 <style>

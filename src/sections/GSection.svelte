@@ -37,13 +37,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 100%;
+    height: auto;
     font-size: 16px;
-    margin-top: 170px;
-    background-color: white;
-    background-image: url(../Assets/png-gralypho/waves4.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--primary);
+
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -62,7 +59,7 @@
     font-family: epilogue;
     font-weight: 900;
     font-size: var(--xl);
-    color: var(--primary);
+    color: var(--colorC);
     margin-top: 50px;
     padding: 10px;
     line-height: 37px;
@@ -73,7 +70,7 @@
     font-family: epilogue;
     font-weight: 300;
     font-size: var(--l);
-    color: var(--bg);
+   color: var(--colorC);
     text-align: left;
     padding: 10px;
     line-height: 30px;
@@ -102,9 +99,7 @@
 
 
   @media screen and (max-width: 768px) {
-    .G-section {
-      font-size: 14px;
-    }
+    
     .wrapper-text {
       background-size: 100%;
     }

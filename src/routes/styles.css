@@ -11,6 +11,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 /* Désactiver le système de grille Bootstrap */
@@ -69,7 +70,7 @@ html {
   --newBlue: #2993FA;
 
 
-  --xl: clamp(2rem, 8vw, 5rem);
+  --xl: clamp(2rem, 8vw, 3.5rem);
 --l:clamp(1.2rem, 8vw, 1.3rem);
 --button: clamp(1.1rem, 8vw, 1.4rem);
 }

@@ -3,9 +3,9 @@
   import { onMount } from "svelte";
   import triangle from "../Assets/png-gralypho/nnneon (6).svg";
   import TypeSiteCards from "../Components/TypeSiteCards.svelte";
-  import vitrine from "../Assets/png-gralypho/store-solid.svg";
+  import vitrine from "../Assets/png-gralypho/vitrine.svg";
   import portfolio from "../Assets/png-gralypho/address-card-regular.svg";
-  import commerce from "../Assets/png-gralypho/euro-sign-solid.svg";
+  import commerce from "../Assets/png-gralypho/shopping.svg";
   import blog from "../Assets/png-gralypho/blog-solid.svg";
   import corporate from "../Assets/png-gralypho/user-tie-solid.svg";
   import institution from "../Assets/png-gralypho/building-columns-solid.svg";
@@ -18,7 +18,7 @@
       lien: "/Sites"
     },
     {
-      title: "Site e-commerce",
+      title: "E-commerce",
       icon: commerce,
       p: "Réaliser un site internet e-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne 24h/24. Les fonctionnalités clés d’un site e-commerce comprennent :...",
        lien: "/Sites"
@@ -76,10 +76,9 @@
 
 <section class="C-section" id="sectionC">
   <div class="wrapper-text">
-    <h1>Avec Gralypho, le futur de votre business commence maintenant.</h1>
+    <h1>Le futur de votre business commence par un <span>site Web</span>  à votre mesure.</h1>
     <h2>
-      Vous avez besoin d'un site Internet? Découvrez toutes nos solutions de sites Web et choisissez celui dont vous
-      avez besoin !
+    Selon votre besoin, nous vous proposons des solutions de sites internet sur mesure, adaptées à votre activité, à votre business et à votre budget.
     </h2>
   </div>
 
@@ -99,12 +98,20 @@
     font-size: 16px;
     opacity: 0.2;
   }
-  .C-section h1 {
+  .wrapper-text h1 {
     font-size: var(--xl);
     font-weight: 900;
     text-align: left;
     color: var(--colorC);
     margin-top: 70px;
+  }
+  .wrapper-text h1 span {
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .C-section h2 {
     font-size: var(--l);

@@ -4,18 +4,27 @@
   export let p;
   //   export let number;
   import { fade, slide } from "svelte/transition";
+  import arrowUp from "../Assets/png-gralypho/arrowup.svg";
+  import arrowDown from "../Assets/png-gralypho/arrowdown.svg";
 
   let close = false;
-  let buttonText = "+";
 
   function collapse() {
     close = !close;
-    buttonText = close ? "-" : "+";
   }
 </script>
 
 <div class="wrapper {close ? 'active' : ''}">
-  <button class="button" on:click={collapse}>{title} <span class="button-after" in:fade out:fade>{buttonText}</span></button>
+  <button class="button" on:click={collapse}>
+    {title}
+    <span class="button-after">
+      {#if close}
+        <img src={arrowUp} alt="Arrow Up" in:fade={{ duration: 1200 }} />
+      {:else}
+        <img src={arrowDown} alt="Arrow Down" in:fade={{ duration: 1200 }} />
+      {/if}
+    </span>
+  </button>
 
   {#if close}
     <span transition:slide={{ duration: 1200 }}>
@@ -35,25 +44,31 @@
   .button {
     position: relative;
     display: flex;
-    background-color: var(--colorO);
-    padding: 18px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.2em;
+    padding: 20px;
+    color: var(--primary);
+    font-size: 1.3em;
     font-weight: 500;
     cursor: pointer;
-    margin-bottom: 10px;
-    box-shadow: 3px 3px 15px rgba(1, 6, 27, 0.532);
-    border: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px rgb(219, 219, 219) solid;
+    width: 100vw;
+    background-color: transparent;
+    height: 100px;
   }
   .button-after {
     position: absolute;
     content: "{buttonText}";
     color: rgb(100, 100, 229);
-    font-size: 2em;
+    font-size: 1em;
     font-weight: bolder;
-    right: 30px;
+    right: 50px;
     align-self: center;
+    padding: 20px;
+  }
+  .button-after img {
+    height: 20px;
   }
   .content {
     width: 100%;
@@ -70,5 +85,21 @@
     font-weight: 300;
     color: var(--bg);
     border: none;
-  } 
+    margin: 30px;
+    background-color: rgb(228, 228, 228);
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 100%;
+    }
+  
+    .button-after {
+      right: 0px;
+      margin-top: -30px;
+    }
+    
+ 
+  }
 </style>

@@ -84,9 +84,9 @@
     margin-top: 0px;
     opacity: 0.2;
     background-color: var(--colorC);
-     background-image: url(../Assets/png-gralypho/waves4.svg);
+     /* background-image: url(../Assets/png-gralypho/waves4.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
   .gallery {
     overflow-x: auto;
@@ -134,9 +134,6 @@
   } */
 
   @media screen and (max-width: 768px) {
-    .J-section {
-      font-size: 14px;
-    }
     .gallery {
     overflow-x: auto;
     grid-column: 1/13;

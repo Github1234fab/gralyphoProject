@@ -7,13 +7,13 @@
 
 <div class="cards">
   <div class="wrapper-text">
-    <img src={icon} alt="icon de types de sites" class="icon" />
+    <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a>
     <h1>{title}</h1>
     <p>
       {p}
     </p>
   </div>
-  <a href={lien}><button class="button">En savoir plus<button /></button></a>
+  <!-- <a href={lien}><button class="button">En savoir plus<button /></button></a> -->
 </div>
 
 <style>
@@ -25,20 +25,22 @@
     color: white;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg);
-    border: 5px solid rgb(64, 64, 64);
+    background-color: var(--orange);
+    border: 1px solid #D1A617;
     width: calc(30% - 10px);
     height: calc(50% - 10px);
   }
   .icon {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     padding: 10px;
-    color: blue;
-    border: 1px solid rgb(161, 161, 161);
-    border-radius: 50%;
-    text-align: center;
+
   }
+  .icon:hover{
+    animation: bounce 0.4s ease-in-out;
+  }
+
+
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
@@ -56,7 +58,7 @@
       transform: scale(1) translateY(0);
     }
   }
-  .button {
+  /* .button {
     background-color: var(--blue);
     border: none;
     border-radius: 8px;
@@ -72,7 +74,7 @@
   }
   .button:hover {
     animation: bounce 0.4s ease-in-out;
-  }
+  } */
 
   .wrapper-text {
     display: flex;
@@ -86,11 +88,11 @@
   .wrapper-text h1 {
     font-weight: kanit;
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: var(--xl);
     /* text-transform: uppercase; */
   }
   .wrapper-text p {
-    font-size: 1em;
+    font-size: var(--l);
     color: var(--colorC);
     font-weight: 300;
     text-align: center;

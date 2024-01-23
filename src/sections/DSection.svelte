@@ -2,6 +2,7 @@
   import Check from "../Assets/png-gralypho/Saly-26.png";
   import CardsSectionB from "../Components/CardsSectionB.svelte";
   import { onMount } from "svelte";
+
   import circle from "../Assets/png-gralypho/circle.svg";
 
   onMount(() => {
@@ -21,7 +22,7 @@ opacity: 1,
       scrollTrigger: {
         trigger: ".D-section",
         start: "top 500px",
-        end: "-200px",
+        end: "-600px",
         scrub: 1,
       },
     });
@@ -30,29 +31,35 @@ opacity: 1,
   let infosCards = [
     {
       key: 1,
-      title: "Votre projet est unique",
-      p: "Toute réalisation, si nous souhaitons qu'elle aboutisse au résultat escompté, passe par l'écoute active de votre projet. C'est en vous écoutant attentivement et en analysant vos besoins précisément que nous pourrons déterminer le cahier des charges de votre outil digital.",
-      icon: "bi bi-megaphone",
+       title: "Innovation Guidée par la Stratégie",
+      p: "Nous apportons une approche stratégique à chaque aspect de votre présence digitale, de la conception web à la stratégie marketing, en vous aidant à atteindre vos objectifs commerciaux. Nous vous aidons à définir votre stratégie digitale et à la mettre en œuvre pour obtenir des résultats tangibles.",
       number: "1  ",
     },
     {
       key: 2,
-      title: "Cahier des charges.",
-      p: "À l'issue de notre premier rendez-vous, nous aurons recueillis assez d'informations pour définir les fondations de votre outil. Son Design, son Architecture, ses Fonctionnalités, sa Dynamique et sa Sécurité. Cette phase de créativité est trépidante et vous recevrez à chaque étape un compte rendu de l'avancée de votre projet.  ",
+        title: "Solutions Personnalisées ",
+      p: "Chaque entreprise est unique. Nous développons des solutions digitales sur mesure qui s'adaptent à vos besoins spécifiques, vous permettant de vous démarquer dans un monde en constante évolution. Design, Ux, Ui, contenu textuels (...), rien n'est laissé au hasard pour que vous puissiez réussir sur le Web.",
       icon: "bi bi-feather",
       number: "2",
     },
     {
       key: 3,
-      title: "Réalisation",
-      p: "Votre outil, Site internet ou Application est maintenant réalisé dans sa version Bêta. C'est à dire que votre outil Digital en est à l'étape de test juste avant sa mise en ligne! C'est l'occasion de le tester en grandeur nature et nous le testerons ensemble.",
+      title:"Expension Digitale",
+      p: "Explorez de nouveaux horizons grâce à notre expertise en expansion digitale. Que vous soyez une start-up ambitieuse ou une entreprise établie, nous vous aidons à conquérir des marchés en ligne et à maximiser votre impact.",
       icon: "bi bi-nut-fill",
       number: "3",
     },
     {
       key: 4,
-      title: "Validation",
-      p: "Après validation de la version bêta, c'est la fameuse étape de la mise en ligne et de la livraison de votre outil. C'est un rendez-vous palpitant, celui de l'utilisation de votre outil sous toutes ses coutures et de l'ultime mise en route. Ça y est! Vous possédez votre outil Digital!",
+          title: "Partenariat axé sur la collaboration ",
+      p: " Nous croyons en la co-création. En travaillant en étroite collaboration avec votre équipe, nous faisons de votre vision une réalité, offrant une expérience transparente et collaborative à chaque étape du processus.",
+      icon: "bi bi-hand-thumbs-up",
+      number: "4",
+    },
+      {
+      key: 5,
+        title: "Sécurité et Fiabilité ",
+      p: "La sécurité de vos données et la fiabilité de vos systèmes sont notre priorité. Nous adoptons les normes les plus strictes pour assurer la protection de votre entreprise dans l'univers digital.",
       icon: "bi bi-hand-thumbs-up",
       number: "4",
     },
@@ -61,12 +68,9 @@ opacity: 1,
 
 <section class="D-section">
   <div class="wrapper-text">
-
-    <h1>Du Concept à la Concrétisation : Les 4 Étapes de la Création Digitale"!</h1>
+     <h1><span>Réinventez </span>aujourd'hui,  <br><span>Exceller </span> <br> demain.</h1>
     <h2>
-      Notre expertise dans le domaine digital nous permet aujourdhui de construire des sites webs et des applications
-      gagnantes sur le Web, en suivant un process de création optimal. Nous gagnons ainsi du temps et vous économisez de
-      l'argent !.
+Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </strong>qui vous accompagne dans votre croissance.
     </h2>
     <div class="wrapper-accordeon">
       {#each infosCards as card}
@@ -82,22 +86,16 @@ opacity: 1,
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: auto;
-    margin-top: 150px;
     font-size: 16px;
-background-image: url(../Assets/png-gralypho/waves4.svg );
+    background-color: white;
+/* background-image: url(../Assets/png-gralypho/waves4.svg ); */
     opacity: 0.2;
   }
   .wrapper-text {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 20%;
-    grid-column: 2/12;
+    grid-column: 1/12;
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--colorN); */
-    border-radius: 20px;
-    padding: 20px;
   }
   .D-section h1 {
     grid-column: 2/12;
@@ -110,10 +108,18 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
     margin-top: 50px;
     padding: 10px;
     line-height: 45px;
+    margin-left: 10px;
+  }
+  .D-section h1 span {
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 
   .D-section h2 {
-  
     grid-column: 2/12;
     grid-row: 3;
     margin-top: 10px;
@@ -124,33 +130,17 @@ background-image: url(../Assets/png-gralypho/waves4.svg );
     text-align: left;
     padding: 10px;
     line-height: 30px;
+        margin-left: 10px;
   }
   .wrapper-accordeon {
-    grid-column: 2/12;
+    grid-column: 1/12;
     grid-row: 4;
-    height: 100%;
-    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 1em;
-    /* background-color: var(--colorD); */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    align-items: center; */
   }
 
-  @media screen and (max-width: 768px) {
-    .D-section {
-      font-size: 14px;
-    }
-    .wrapper-text {
-      background-size: 100%;
-      grid-column: 1/13;
-    }
-      .wrapper-accordeon {
-    margin-bottom: 60px;
-    
-  }
-  }
 </style>

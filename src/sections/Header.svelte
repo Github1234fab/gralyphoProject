@@ -71,7 +71,7 @@ color: grey;
   .burger-menu {
     background-color: transparent;
     border: none;
-    grid-column: 3;
+    grid-column: 11;
     grid-row: 1;
     width: 50px;
     border-radius: 8px;
