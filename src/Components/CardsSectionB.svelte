@@ -56,6 +56,7 @@
     width: 100vw;
     background-color: transparent;
     height: 100px;
+    text-align: left;
   }
   .button-after {
     position: absolute;

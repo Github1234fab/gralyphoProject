@@ -11,15 +11,22 @@
   import JSection from "../sections/JSection.svelte";
   import SectionValue from "../sections/SectionValue.svelte";
   import { fade, slide } from "svelte/transition";
+  import SectionSocial from "../sections/SectionSocial.svelte";
+  import BeneficeSection from "../sections/BeneficeSection.svelte";
 </script>
 
 <main in:fade={{ duration: 2000 }}>
 
   <HSection />
-    <DSection />
-  <!-- <SectionValue /> -->
+<SectionSocial/>
+ <BeneficeSection />
+   <JSection />
   <Csection />
-  <JSection />
+    <DSection />
+   
+  <!-- <SectionValue /> -->
+ 
+
   <section id="sectionE">
     <ESection />
   </section>

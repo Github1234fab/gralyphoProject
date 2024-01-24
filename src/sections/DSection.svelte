@@ -68,7 +68,7 @@ opacity: 1,
 
 <section class="D-section">
   <div class="wrapper-text">
-     <h1><span>Réinventez </span>aujourd'hui,  <br><span>Exceller </span> <br> demain.</h1>
+     <h1><span>Réinventez </span>aujourd'hui,  <br><span>Exceller </span> demain.</h1>
     <h2>
 Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </strong>qui vous accompagne dans votre croissance.
     </h2>

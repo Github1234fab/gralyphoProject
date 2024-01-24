@@ -65,16 +65,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0px;
+    gap: 5px;
   }
   .contact {
     text-decoration: none;
     color: var(--colorC);
     font-size: 1.3em;
-    font-family: kanit;
+    font-family: poppins;
     width: 100%;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
+    border: 1px var(--orange) solid;
+    padding: 15px;
+    border-radius: 8px;
   }
   .contact:hover {
     animation: bounce 0.4s ease-in-out;

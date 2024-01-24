@@ -6,7 +6,9 @@
 
 <main>
   <slot />
+  <div id="footer">
   <Footer />
+  </div>
 </main>
 
 

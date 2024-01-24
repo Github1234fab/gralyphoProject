@@ -107,7 +107,7 @@
     color: transparent;
     background-image: linear-gradient(to right, var(--orange), var(--blue));
     background-clip: text;
-    font-size: 7em;
+    font-size: 6em;
     z-index: 2;
   }
   .icon:hover {
