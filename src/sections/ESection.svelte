@@ -14,7 +14,7 @@
         trigger: ".gsap2",
         start: "top 700px",
         end: "-200px",
-        scrub: 1,
+        scrub: 3,
       },
     });
         gsap.to(".E-section", {
@@ -24,7 +24,7 @@ opacity: 1,
         trigger: ".gsap2",
         start: "top 700px",
         end: "-200px",
-        scrub: 1,
+        scrub: 3,
       },
     });
   });
@@ -34,11 +34,11 @@ opacity: 1,
   <div class="wrapper-text">
     <img src={SpaceShip} alt="" class="space-ship gsap2" />
     <img src={square} alt="" class="square gsap2" />
-    <h1>Grâce à nos <span>solutions Digitales</span>, déclenchez enfin la révolution dans votre stratégie Numérique ! </h1>
-    <h2>
+    <h1>Grâce à nos <span>Solutions Digitales</span>, déclenchez enfin la révolution dans votre stratégie Numérique ! </h1>
+    <!-- <h2>
       Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans
       débourser une fortune, le relooker serait plutôt sympa ?! <br />Trouvez la bonne solution par gagner du temps et de l'argent, grâce à nos solutions digitales, livrées clefs en main !
-    </h2>
+    </h2> -->
     <Banner />
   </div>
 </section>
@@ -49,7 +49,6 @@ opacity: 1,
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-top: 150px;
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
@@ -62,8 +61,8 @@ opacity: 1,
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
     padding: 20px;
+    margin-top: 100px;
   }
 
   .E-section h1 {
@@ -74,7 +73,7 @@ opacity: 1,
   font-size: var(--xl);
     font-weight: 900;
     color: white;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 10px;
     line-height: 53px;
   }
@@ -119,9 +118,7 @@ opacity: 1,
   }
 
   @media screen and (max-width: 768px) {
-    .E-section {
-      font-size: 14px;
-    }
+    
     .wrapper-text {
       background-size: 100%;
     }

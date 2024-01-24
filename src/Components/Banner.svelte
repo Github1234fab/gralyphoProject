@@ -23,40 +23,46 @@
 <div class="cont">
   <div class="wrapper-by-3-Cards">
     <div class="card">
+      <h3>Création de <br /> <strong>sites Internet</strong></h3>
       <i class="fa-solid fa-desktop banner-icon icon"></i>
-      <h3>Création de <strong>sites Internet</strong></h3>
+
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
+      <h3>Développement <br /> d'<strong>Applications </strong></h3>
       <i class="fa-solid fa-sitemap icon"></i>
-      <h3>Développement d'<strong>Applications </strong></h3>
-    <!-- <a href="/Sites" class="button">+ d'infos</a> -->
+
+      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
   </div>
 
   <div class="wrapper-by-3-Cards">
     <div class="card">
+            <h3><strong>Référencement</strong></h3>
       <i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i>
-      <h3><strong>Référencement</strong></h3>
-    <!-- <a href="/Sites" class="button">+ d'infos</a> -->
+
+      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
+      <h3><strong>Marketing <br>& <br> Communication</strong></h3>
       <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
-      <h3><strong>Marketing & Communication</strong></h3>
-<!-- <a href="/Sites" class="button">+ d'infos</a> -->
+      
+      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
   </div>
 
   <div class="wrapper-by-3-Cards">
     <div class="card">
+        <h3><strong>Composants Web</strong></h3>
       <i class="fa-solid fa-recycle icon"></i>
-      <h3><strong>Composants Web</strong></h3>
-<!-- <a href="/Sites" class="button">+ d'infos</a> -->
+    
+      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
+            <h3><strong>Refonte</strong></h3>
       <i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i>
-      <h3><strong>Refonte</strong></h3>
-  <!-- <a href="/Sites" class="button">+ d'infos</a> -->
+
+      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
   </div>
 </div>
@@ -66,59 +72,45 @@
     background-color: transparent;
     grid-column: 1/12;
     grid-row: 3;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 50px;
     /* gap: 60px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-        gap: 10px;
+    gap: 10px;
   }
   .wrapper-by-3-Cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-     gap: 10px;
+    gap: 10px;
   }
   .card {
     z-index: 0;
-    background-color: var(--primary);
-    width: calc(100% - 50px);
+    background-color: transparent;
+    width: calc(80% - 50px);
     height: 400px;
-    /* box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.27); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px;
-    gap: 100px;
-  
+    gap: 20px;
+    border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
   }
-  /* .button{
-    color: white;
-text-decoration: none;
-font-weight: 400;
-font-size: 1em;
-height: auto;
-border-radius: 8px;
-background-color: var(--blue);
-padding: 12px;
-font-family: kanit;
-  }
-  .button:hover{
-    animation: bounce 0.4s ease-in-out;
-  } */
+
   .icon {
     color: transparent;
-   background-image: linear-gradient(to right, var(--orange) , var(--blue) );
-   background-clip: text;
-    font-size: 9em;
+    background-image: linear-gradient(to right, var(--orange), var(--blue));
+    background-clip: text;
+    font-size: 7em;
     z-index: 2;
-
   }
-  .icon:hover{
+  .icon:hover {
     animation: bounce 0.4s ease-in-out;
   }
 
@@ -142,11 +134,11 @@ font-family: kanit;
   .card h3 {
     font-family: epilogue;
     color: var(--colorC);
-    font-weight: 800;
+    font-weight: 500;
     font-size: var(--l);
     text-align: center;
   }
-/* 
+  /* 
   @media screen and (max-width: 800px) {
     .wrapper-by-3-Cards {
       display: flex;

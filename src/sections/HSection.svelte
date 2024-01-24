@@ -111,7 +111,7 @@
 
     display: flex;
     gap: 40px;
-    border: 1px solid var(--orange);
+    border: 1px solid rgb(103, 103, 103);
     padding: 20px;
     border-radius: 8px;
   }

@@ -7,13 +7,13 @@
 
   onMount(() => {
     gsap.to(".gsap4", {
-      scale: 1.2,
+      scale: 1.3,
       opacity: 1,
       scrollTrigger: {
         trigger: ".gsap4",
-        start: "top 440px",
+        start: "top 740px",
         end: "-300px",
-        scrub: 1,
+        scrub: 3,
       },
     });
   });
@@ -23,7 +23,7 @@
   <div class="wrapper-text">
     <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
     <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
-    <h1>Exemples de réalisations d'outils digitaux</h1>
+    <h1>Exemples de réalisations <span>d'outils digitaux</span></h1>
     <h2>
       Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met
       l'accent sur un design, une fonctionnalité, etc Découvrez !
@@ -64,6 +64,15 @@
     padding: 10px;
     line-height: 37px;
   }
+.G-section h1 span{
+  font-weight: 900;
+  color: transparent;
+  -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+  background-image: linear-gradient(to left, var(--ca), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
   .G-section h2 {
     word-wrap: break-word;
     margin-top: 10px;

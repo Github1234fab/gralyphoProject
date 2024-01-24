@@ -5,13 +5,13 @@
 
 <div class="card">
   <h2>{title}</h2>
-  <a href={link} target="_blank" class="button linear-gradient">Go</a>
+  <a href={link} target="_blank" class="button linear-gradient">Découvrir</a>
 </div>
 
 <style>
   .card {
     flex-shrink: 0;
-    border-radius: 50px;
+    border-radius: 8px;
     margin: 8px;
     height: 20em;
     width: 20em;
@@ -22,9 +22,9 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border: 1px solid rgb(60, 60, 60);
-    box-shadow: 3px 3px 25px rgba(1, 6, 27, 0.336);
-    background-color: #152a37;
+    border: 1px solid rgb(105, 105, 105);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+    background-color: var(--bg);
   }
   /* .linear-gradient{
     border-style: solid;
@@ -36,14 +36,16 @@
     border-radius: 10px;
     width: auto;
     height: auto;
-    color: white;
+    color: var(--orange);
     text-decoration: none;
     margin-bottom: 30px;
     margin-top: 20px;
-    font-weight: 400;
-    font-size: 1em;
+    font-weight: 300;
+    font-size: 1.5em;
     transition: 0.4s ease-in-out;
-    background-color: var(--blue);
+    background-color: var(--bg);
+    border: 1px solid rgb(167, 167, 167);
+    font-family: kanit;
   }
   .button:hover {
     animation: bounce 0.4s ease-in-out;
@@ -66,13 +68,20 @@
     }
   }
   .card h2 {
-    word-wrap: break-word;
     z-index: 1;
-    font-family: kanit;
-    font-weight: 500;
-    font-size: 1.1em;
-    color: white;
+    font-family: epilogue;
+    font-weight: 300;
+    font-size: var(--l);
+    color: var(--colorC);
     padding: 10px;
     text-align: center;
+  }
+  .card h2 span {
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 </style>

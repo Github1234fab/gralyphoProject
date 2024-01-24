@@ -66,7 +66,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".wrapper-cards",
-        start: "top 600px",
+        start: "top 1000px",
         end: "-200px",
         scrub: 4,
       },

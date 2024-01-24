@@ -10,9 +10,9 @@
 </script>
 
 <footer class="footer">
-
+<Gralypho/>
   <div class="wrapper-contact">
-    <Gralypho/>
+    
     <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
     <a href="tel:0672901614" class="contact">06 72 90 16 14</a>
   </div>
@@ -40,16 +40,17 @@
 
 <style>
   .footer {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     font-size: 16px;
     background-color: var(--colorO);
     color: white;
-    text-align: center;
     font-family: epilogue;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 70px;
+
+    gap: 30px;
   }
   .footer h4 {
     font-family: epilogue;
@@ -63,7 +64,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    text-align: center;
+    gap: 0px;
   }
   .contact {
     text-decoration: none;
@@ -104,5 +106,9 @@
     100% {
       transform: scale(1) translateY(0);
     }
+  }
+  .wrapper-media {
+    display: flex;
+    gap: 20px;
   }
 </style>
