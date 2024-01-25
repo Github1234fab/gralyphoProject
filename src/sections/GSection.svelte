@@ -23,7 +23,7 @@
   <div class="wrapper-text">
     <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
     <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
-    <h1>Exemples de réalisations <span>d'outils digitaux</span></h1>
+    <h1>Découvrez nos <span>réalisations </span></h1>
     <h2>
       Voici des sites témoins...comme des appartement témoins. Chaque projet utilise une technique particulière ou met
       l'accent sur un design, une fonctionnalité, etc. Découvrez vite le potentiel des animations, des applications de météo, des jeux, des composants... !
@@ -93,15 +93,15 @@
     align-self: center;
     transform: scale(0.4);
     opacity: 0.2;
-    margin-left: 17px;
+    margin-left: 26px;
   }
   .triangle {
     height: 150px;
     z-index: 1;
-    transform: scale(0.4) rotate(180deg);
+    transform: scale(0.4) rotate(0deg);
     opacity: 0.2;
     align-self: center;
-    margin-top: -130px;
+    margin-top: -140px;
   }
 
 

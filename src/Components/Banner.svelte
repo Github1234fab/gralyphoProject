@@ -107,7 +107,9 @@
 
   .icon {
     color: transparent;
+      -webkit-background-image: linear-gradient(to right, var(--orange), var(--blue));
     background-image: linear-gradient(to right, var(--orange), var(--blue));
+      -webkit-background-clip: text;
     background-clip: text;
     font-size: 3em;
     z-index: 2;

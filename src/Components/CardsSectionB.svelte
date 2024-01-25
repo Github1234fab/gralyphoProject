@@ -39,7 +39,8 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+
+ 
   }
   .button {
     position: relative;
@@ -54,7 +55,7 @@
     border-left: none;
     border-bottom: 1px rgb(219, 219, 219) solid;
     width: 100vw;
-    background-color: transparent;
+    background: linear-gradient(to left, rgb(192, 191, 191), rgb(228, 228, 228));
     height: 100px;
     text-align: left;
   }
@@ -76,7 +77,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   text-align: center;
+    text-align: center;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -97,12 +98,10 @@
     .wrapper {
       width: 100%;
     }
-  
+
     .button-after {
       right: 0px;
       margin-top: -30px;
     }
-    
- 
   }
 </style>

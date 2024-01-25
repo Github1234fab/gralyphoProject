@@ -16,8 +16,8 @@
         scrub: 1,
       },
     });
-       gsap.to(".D-section", {
-opacity: 1,
+    gsap.to(".D-section", {
+      opacity: 1,
       ease: "D-section",
       scrollTrigger: {
         trigger: ".D-section",
@@ -31,34 +31,34 @@ opacity: 1,
   let infosCards = [
     {
       key: 1,
-       title: "Innovation Guidée par la Stratégie",
+      title: "Innovation Guidée par la Stratégie",
       p: "Nous apportons une approche stratégique à chaque aspect de votre présence digitale, de la conception web à la stratégie marketing, en vous aidant à atteindre vos objectifs commerciaux. Nous vous aidons à définir votre stratégie digitale et à la mettre en œuvre pour obtenir des résultats tangibles.",
       number: "1  ",
     },
     {
       key: 2,
-        title: "Solutions Personnalisées ",
+      title: "Solutions Personnalisées ",
       p: "Chaque entreprise est unique. Nous développons des solutions digitales sur mesure qui s'adaptent à vos besoins spécifiques, vous permettant de vous démarquer dans un monde en constante évolution. Design, Ux, Ui, contenu textuels (...), rien n'est laissé au hasard pour que vous puissiez réussir sur le Web.",
       icon: "bi bi-feather",
       number: "2",
     },
     {
       key: 3,
-      title:"Expension Digitale",
+      title: "Expension Digitale",
       p: "Explorez de nouveaux horizons grâce à notre expertise en expansion digitale. Que vous soyez une start-up ambitieuse ou une entreprise établie, nous vous aidons à conquérir des marchés en ligne et à maximiser votre impact.",
       icon: "bi bi-nut-fill",
       number: "3",
     },
     {
       key: 4,
-          title: "Partenariat axé sur la collaboration ",
+      title: "Partenariat axé sur la collaboration ",
       p: " Nous croyons en la co-création. En travaillant en étroite collaboration avec votre équipe, nous faisons de votre vision une réalité, offrant une expérience transparente et collaborative à chaque étape du processus.",
       icon: "bi bi-hand-thumbs-up",
       number: "4",
     },
-      {
+    {
       key: 5,
-        title: "Sécurité et Fiabilité ",
+      title: "Sécurité et Fiabilité ",
       p: "La sécurité de vos données et la fiabilité de vos systèmes sont notre priorité. Nous adoptons les normes les plus strictes pour assurer la protection de votre entreprise dans l'univers digital.",
       icon: "bi bi-hand-thumbs-up",
       number: "4",
@@ -68,9 +68,10 @@ opacity: 1,
 
 <section class="D-section">
   <div class="wrapper-text">
-     <h1>Réinventez <span>Aujourd'hui, </span> <br>Exceller <span>Demain.</span></h1>
+    <h1>Réinventez <span>Aujourd'hui, </span> <br />Exceller <span>Demain.</span></h1>
     <h2>
-Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </strong>qui vous accompagne dans votre croissance.
+      Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </strong>qui vous accompagne dans
+      votre croissance.
     </h2>
     <div class="wrapper-accordeon">
       {#each infosCards as card}
@@ -88,7 +89,7 @@ Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </s
     height: auto;
     font-size: 16px;
     background-color: white;
-/* background-image: url(../Assets/png-gralypho/waves4.svg ); */
+    /* background-image: url(../Assets/png-gralypho/waves4.svg ); */
     opacity: 0.2;
   }
   .wrapper-text {
@@ -102,9 +103,9 @@ Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </s
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
-     font-size: var(--xl);
+    font-size: var(--xl);
     font-weight: 900;
-    color:  var(--primary);
+    color: var(--primary);
     margin-top: 50px;
     padding: 10px;
     line-height: 45px;
@@ -130,7 +131,7 @@ Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </s
     text-align: left;
     padding: 10px;
     line-height: 30px;
-        margin-left: 10px;
+    margin-left: 10px;
   }
   .wrapper-accordeon {
     grid-column: 1/12;
@@ -142,5 +143,4 @@ Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </s
     flex-direction: column;
     align-items: center; */
   }
-
 </style>
