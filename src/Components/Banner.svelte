@@ -91,7 +91,7 @@
   .card {
     z-index: 0;
     background-color: transparent;
-    width: calc(80% - 50px);
+    width: calc(40% - 50px);
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -99,8 +99,10 @@
     justify-content: center;
     padding: 40px;
     gap: 20px;
-    border-top: 1px solid grey;
+    border-top: 1px solid var(--blue);
         border-bottom: 1px solid grey;
+                border-right: 1px solid var(--blue);
+                        border-left: 1px solid grey
   }
 
   .icon {
@@ -138,7 +140,7 @@
     font-size: var(--l);
     text-align: center;
   }
-  /* 
+
   @media screen and (max-width: 800px) {
     .wrapper-by-3-Cards {
       display: flex;
@@ -151,7 +153,7 @@
     .card {
       z-index: 0;
       background-color: transparent;
-      width: 100vw;
+      width: 90%;
       height: auto;
       box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
       display: flex;
@@ -161,5 +163,5 @@
       padding: 40px;
       border: 1px solid grey;
     }
-  } */
+  } 
 </style>

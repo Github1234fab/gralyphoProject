@@ -42,7 +42,7 @@
        lien: "/Sites"
     },
     {
-      title: "Insitutionnel",
+      title: "Institutionnel",
       icon: institution,
       p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
        lien: "/Sites"
@@ -55,9 +55,9 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".C-section",
-        start: "top 500px",
+        start: "top 600px",
         end: "-200px",
-        scrub: 1,
+        scrub: 3,
       },
     });
     gsap.to(".wrapper-cards", {
@@ -66,7 +66,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".wrapper-cards",
-        start: "top 1000px",
+        start: "top 900px",
         end: "-200px",
         scrub: 4,
       },

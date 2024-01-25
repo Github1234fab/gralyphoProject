@@ -76,12 +76,12 @@
     padding: 10px;
     text-align: center;
   }
-  .card h2 span {
+  /* .card h2 span {
     font-weight: 900;
     color: transparent;
     -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
     background-image: linear-gradient(to left, var(--ca), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
-  }
+  } */
 </style>

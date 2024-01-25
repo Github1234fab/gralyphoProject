@@ -11,9 +11,10 @@
 </script>
 
 <nav class="navigation">
-  <a href="/" class="title-link"><Logo/></a>
+  <a href="/" class="title-link"><Logo /></a>
   <button class="burger-menu" on:click={display}>
-    <img src={burger} alt="" class="burger" class:visible={toggle} />
+    <!-- <img src={burger} alt="" class="burger" class:visible={toggle} /> -->
+    <i class="fa-solid fa-bars burger " class:visible={toggle}></i>
   </button>
 
   {#if toggle}
@@ -39,8 +40,7 @@
     grid-template-rows: repeat(3, auto);
     padding: 20px;
     font-size: 16px;
-        background-color: var(--bg);
-
+    background-color: var(--bg);
   }
   .title-link {
     grid-column: 2;
@@ -65,25 +65,27 @@
     text-decoration: none;
     transition: 0.3s ease-in-out;
   }
-   a:hover {
-color: grey;
+  a:hover {
+    color: grey;
   }
   .burger-menu {
     background-color: transparent;
     border: none;
     grid-column: 11;
     grid-row: 1;
-    width: 50px;
-    border-radius: 8px;
-    margin-top: 0px;
+    width: 70px;
+    border-radius: 4px;
+       border: solid 1px grey;
+       padding:   5px;
   }
-   .burger-menu:hover {
+  .burger-menu:hover {
     animation: bounce 0.4s ease-in-out;
   }
   .burger {
-    height: 45px;
+    font-size: 2em;
     border: none;
-    padding: 5px;
+    color: var(--ca);
+ 
   }
   .burger:hover {
     animation: bounce 0.4s ease-in-out;

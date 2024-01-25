@@ -49,7 +49,6 @@
     color: white;
     font-family: epilogue;
     padding: 70px;
-
     gap: 30px;
   }
   .footer h4 {
@@ -65,7 +64,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 5px;
   }
   .contact {
     text-decoration: none;
@@ -75,7 +73,6 @@
     width: 100%;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
-    border: 1px var(--orange) solid;
     padding: 15px;
     border-radius: 8px;
   }

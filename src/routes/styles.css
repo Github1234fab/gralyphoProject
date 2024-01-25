@@ -59,13 +59,16 @@ html {
  
   --primary: #1a1c21;
    --bg: #1b1e22;
-  --ca: #c97b1c;
+  --ca:  #4d3d3d;
+    --ca1: #006666;
+      --ca2: #004d66;
   --gradient: #1d2f4f;
   --button: #6CA0DC;
   --blueGradient: linear-gradient(to right,#3f00e6, #7f00fd);
   --blue: #7f00fd;
   --blue2: #678BF6;
-  --orange: #D1A617;
+    --orange: #b49633;
+  /* --orange: #D1A617; */
   --alternate: #877455;
   --newBlue: #2993FA;
 

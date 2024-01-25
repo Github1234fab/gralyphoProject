@@ -21,29 +21,13 @@
     <img src={six} alt="" class="six gsap5" />
   </div>
   <div class="wrapper-text">
-    <h1><span>Gralypho</span> <br>Expertise et Expérience: <br />Votre victoire Digitale assurée !</h1>
+    <h1><span>Gralypho</span></h1>
+    <h2><span>Expertise </span>et <span>Expérience </span><br />Votre victoire Digitale assurée !</h2>
   </div>
   <div class="wrapper-contact">
-    <a href="/#footer">Contactez-nous</a>
-    <!-- <div class="wrapper-media-contact">
-      <div class="mail">
-        <a href="mailto:gralypho@gmail.com "> <i class="fa-regular fa-envelope contact-icon"></i></a>
-      </div>
-      <div class="tel"><a href="tel:0672901614" ><i class="fa-solid fa-phone contact-icon"></i></a></div>
-    </div> -->
+    <a href="/#footer">Nous contactez</a>
   </div>
 </section>
-
-<!-- <h2>
-      Le web c'est avant tout une passion. <br />Le code informatique c'est avant tout le langage créatif par
-      excellence. Celui qui permet de tout faire et dont la seule limite est notre propre connaissance. <br /> Créer un
-      service digital est avant tout une vocation. Aider, apporter des solutions, permettre à chaque entreprise de
-      grandir et de se développer. <br /> Écouter est avant tout une qualité, chercher à comprendre l'histoire de
-      l'entrepreneur, de l'indépendant, de la société, du collectif (...). <br />
-      Gralypho est une agence Digitale éthique et responsable. Les tarifs, les délais, les objectifs sont toujours au coeur
-      même de nos priorités et nous apprécions plus que tout de travailler dans la plus constructive des collaborations,
-      à travers un échange sincère et enrichissant.
-    </h2> -->
 
 <style>
   .H-section {
@@ -91,10 +75,23 @@
   .H-section h1 span {
     font-weight: 900;
     color: transparent;
-    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
-    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-image: linear-gradient(to left, var(--orange), var(--blue));
+    background-image: linear-gradient(to left, var(--orange), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
+  }
+  .H-section h2 {
+    font-family: epilogue;
+    font-weight: 300;
+    font-size: var(--l);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+  }
+  .H-section h2 span {
+    font-weight: 600;
+    color: white;
   }
 
   .wrapper-contact {
@@ -106,39 +103,21 @@
     height: auto;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 4px;
     gap: 10px;
-    background-color: var(--orange);
-    font-family: poppins;
+    background-color: var(--ca);
   }
   .wrapper-contact:hover {
     animation: bounce 0.4s ease-in-out;
   }
-  /* .wrapper-contact h5 {
-    font-family: epilogue;
-    color: white;
-    font-family: poppins;
-    font-size: var(--m);
-  } */
+
   .wrapper-contact a {
     text-decoration: none;
-    color: white;
+    color: var(--colorC);
+    font-family: kanit;
+    font-weight: 500;
   }
-  /* .wrapper-media-contact {
 
-    display: flex;
-    gap: 40px;
-    border: 1px solid rgb(103, 103, 103);
-    padding: 20px;
-    border-radius: 8px;
-  }
-  .contact-icon {
-    color: var(--orange);
-    font-size: 1.5em;
-  }
-  .contact-icon:hover{
-    animation: bounce 0.4s ease-in-out;
-  } */
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);

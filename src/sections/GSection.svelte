@@ -25,8 +25,8 @@
     <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
     <h1>Exemples de réalisations <span>d'outils digitaux</span></h1>
     <h2>
-      Voici des sites témoins, comme des appartement témoins ! Chaque projet utilise une technique particulière ou met
-      l'accent sur un design, une fonctionnalité, etc Découvrez !
+      Voici des sites témoins...comme des appartement témoins. Chaque projet utilise une technique particulière ou met
+      l'accent sur un design, une fonctionnalité, etc. Découvrez vite le potentiel des animations, des applications de météo, des jeux, des composants... !
     </h2>
     <Carousel />
   </div>

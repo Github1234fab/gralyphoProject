@@ -1,30 +1,44 @@
-<script></script>
+<script>
+  import { onMount } from "svelte";
 
-<section class="section">
+  onMount(() => {
+    gsap.to(".section-ben", {
+      opacity: 1,
+      ease: "expoScale",
+      scrollTrigger: {
+        trigger: ".section-ben",
+        start: "top 500px",
+        end: "100px",
+        scrub: 3,
+      },
+    });
+  });
+</script>
+
+<section class="section-ben">
   <h1>Automatisez <br /> Économisez <br /> Augmentez</h1>
   <div class="wrapper-benef">
-    <h3>Travaillez en dormant!</h3>
     <span>8h</span>
-
+    <h3>Travaillez tout en dormant!</h3>
     <p>
-      Pendant lesquelles vous dormez. <br />8h pendant lesquelles votre outil Digital travaille pour vous et partout
-      dans le monde !
+      8 heures, pendant lesquelles vous dormez. <br />8 heures pendant lesquelles votre outil Digital travaille pour
+      vous et partout dans le monde !
     </p>
   </div>
   <div class="wrapper-benef">
-    <h3>Économisez votre temps</h3>
     <span>50%</span>
-    <p>De votre temps optimisé grâce à votre site Web ou votre Application.</p>
+    <h3>Économisez votre temps</h3>
+    <p>50% de votre temps optimisé grâce à votre site Web ou votre Application.</p>
   </div>
   <div class="wrapper-benef">
+    <span>+€</span>
     <h3>Gagner de l'argent</h3>
-    <span>€€€</span>
     <p>Plus de visibilité, plus de prospects, plus de clients, plus d'argent!</p>
   </div>
 </section>
 
 <style>
-  .section {
+  .section-ben {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -33,27 +47,30 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    opacity: 0.2;
   }
-  .section h1 {
+  .section-ben h1 {
     font-size: var(--xl);
     font-weight: 900;
     color: var(--colorC);
     font-family: epilogue;
     margin-top: 50px;
+
   }
-  .section span {
+  .section-ben span {
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
     border: 1px solid rgb(76, 76, 76);
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.454) inset;
+    box-shadow:
+      2px 3px 10px rgba(0, 0, 0, 0.454) inset,
+      -2px -3px 10px rgba(0, 0, 0, 0.454) inset;
     height: 200px;
     width: 200px;
     border-radius: 50%;
     font-family: epilogue;
-    font-weight: 400;
+    font-weight: 600;
     color: transparent;
     font-size: 3em;
     -webkit-background-image: linear-gradient(to left, var(--orange) 40%, var(--blue));
@@ -70,7 +87,7 @@
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    gap: 20px;
+    gap: 40px;
   }
   .wrapper-benef h3 {
     font-size: var(--m);
@@ -79,6 +96,7 @@
     font-family: epilogue;
   }
   .wrapper-benef p {
+    margin-top: -20px;
     font-size: var(--m);
     font-weight: 300;
     color: var(--colorC);

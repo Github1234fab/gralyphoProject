@@ -22,7 +22,7 @@ opacity: 1,
       scrollTrigger: {
         trigger: ".D-section",
         start: "top 500px",
-        end: "-600px",
+        end: "-200px",
         scrub: 1,
       },
     });
@@ -113,8 +113,8 @@ Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </s
   .D-section h1 span {
     font-weight: 900;
     color: transparent;
-    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
-    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-image: linear-gradient(to left, var(--ORANGE), var(--blue));
+    background-image: linear-gradient(to left, var(--orange), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }

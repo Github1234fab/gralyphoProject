@@ -25,8 +25,8 @@
     color: white;
     justify-content: center;
     align-items: center;
-    background-color: var(--orange);
-    border: 1px solid #D1A617;
+    background-color: var(--ca);
+    border: 1px solid grey;
     width: calc(30% - 10px);
     height: calc(50% - 10px);
   }
