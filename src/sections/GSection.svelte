@@ -39,8 +39,7 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    background-color: var(--primary);
-
+    background-color: var(--colorC);
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -59,7 +58,7 @@
     font-family: epilogue;
     font-weight: 900;
     font-size: var(--xl);
-    color: var(--colorC);
+    color: var(--primary);
     margin-top: 50px;
     padding: 10px;
     line-height: 37px;
@@ -79,7 +78,7 @@
     font-family: epilogue;
     font-weight: 300;
     font-size: var(--l);
-   color: var(--colorC);
+   color: var(--primary);
     text-align: left;
     padding: 10px;
     line-height: 30px;

@@ -89,7 +89,7 @@
 <style>
 	.wrapper-caroussel {
 		width: 100%;
-		height: 600px;
+		height: 400px;
 		overflow: hidden;
 		cursor: grab;
 		position: relative;
@@ -99,6 +99,7 @@
 		z-index: 5;
 		margin-top: 0px;
 		border-radius: 10px;
+		border-right: 10px rgb(29, 29, 29) solid;
 	}
 	.wrapper-caroussel ::-webkit-scrollbar {
 		background-color: transparent;
@@ -112,7 +113,7 @@
 		display: flex;
 		overflow-x: auto;
 		scroll-behavior: smooth;
-		margin-top: 50px;
+		margin-top: 30px;
 		gap: 30px;
 	}
 </style>

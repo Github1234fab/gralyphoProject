@@ -63,7 +63,7 @@
 </script>
 
 <section class="J-section">
-  <h1>Témoignages de nos clients</h1>
+  <h1>Nos <span>clients</span> racontent</h1>
   <h2>Collaborations, Missions, Partenariats.</h2>
   <div class="gallery">
     <div class="wrapper-contain">
@@ -114,6 +114,14 @@
     margin-left: 100px;
     margin-top: 100px;
   }
+  .J-section h1 span{
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--orange), var(--blue));
+    background-image: linear-gradient(to left, var(--orange), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
   .J-section h2 {
     grid-column: 2/12;
     grid-row: 1;
@@ -144,7 +152,6 @@
     grid-column: 1/12;
     grid-row: 1;
     font-family: epilogue;
-    font-size: 2.7em;
     font-weight: 800;
     color: var(--primay);
     margin-left: 50px;

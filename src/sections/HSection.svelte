@@ -21,7 +21,7 @@
     <img src={six} alt="" class="six gsap5" />
   </div>
   <div class="wrapper-text">
-    <h1><span>Gralypho</span>. Expertise et Expérience: <br />votre victoire Digitale assurée !</h1>
+    <h1><span>Gralypho</span> <br>Expertise et Expérience: <br />Votre victoire Digitale assurée !</h1>
   </div>
   <div class="wrapper-contact">
     <a href="/#footer">Contactez-nous</a>
@@ -60,7 +60,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1;
-    margin-top: -120px;
+    margin-top: -140px;
   }
   .climb {
     grid-column: 6 / span 6;

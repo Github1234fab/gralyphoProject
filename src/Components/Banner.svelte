@@ -23,13 +23,13 @@
 <div class="cont">
   <div class="wrapper-by-3-Cards">
     <div class="card">
-      <h3>Création de <br /> <strong>sites Internet</strong></h3>
+      <h3> <strong>sites Internet</strong></h3>
       <i class="fa-solid fa-desktop banner-icon icon"></i>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
-      <h3>Développement <br /> d'<strong>Applications </strong></h3>
+      <h3><strong>Applications </strong></h3>
       <i class="fa-solid fa-sitemap icon"></i>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
@@ -44,7 +44,7 @@
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
-      <h3><strong>Marketing <br>& <br> Communication</strong></h3>
+      <h3><strong>Marketing</strong></h3>
       <i class="fa-solid fa-comments-dollar banner-icon icon"></i>
       
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
@@ -53,7 +53,7 @@
 
   <div class="wrapper-by-3-Cards">
     <div class="card">
-        <h3><strong>Composants Web</strong></h3>
+        <h3><strong>Composants</strong></h3>
       <i class="fa-solid fa-recycle icon"></i>
     
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
@@ -92,7 +92,7 @@
     z-index: 0;
     background-color: transparent;
     width: calc(80% - 50px);
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +107,7 @@
     color: transparent;
     background-image: linear-gradient(to right, var(--orange), var(--blue));
     background-clip: text;
-    font-size: 6em;
+    font-size: 3em;
     z-index: 2;
   }
   .icon:hover {

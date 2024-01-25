@@ -1,13 +1,14 @@
 <script></script>
 
 <section class="section">
-  <h1>Automatisez <br> Économisez <br> Augmentez</h1>
+  <h1>Automatisez <br /> Économisez <br /> Augmentez</h1>
   <div class="wrapper-benef">
     <h3>Travaillez en dormant!</h3>
     <span>8h</span>
+
     <p>
-      Pendant lesquelles vous dormez, 8h pendant lesquelles votre outil Digital travaille pour vous et partout dans le
-      monde !
+      Pendant lesquelles vous dormez. <br />8h pendant lesquelles votre outil Digital travaille pour vous et partout
+      dans le monde !
     </p>
   </div>
   <div class="wrapper-benef">
@@ -17,8 +18,8 @@
   </div>
   <div class="wrapper-benef">
     <h3>Gagner de l'argent</h3>
-    <span>$</span>
-    <p>Plus de prospects, plus de clients, plus d'argent!</p>
+    <span>€€€</span>
+    <p>Plus de visibilité, plus de prospects, plus de clients, plus d'argent!</p>
   </div>
 </section>
 
@@ -42,20 +43,21 @@
     margin-top: 50px;
   }
   .section span {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        text-align: center;
-        border: 3px solid grey;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-    font-family: poppins;
-    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border: 1px solid rgb(76, 76, 76);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.454) inset;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    font-family: epilogue;
+    font-weight: 400;
     color: transparent;
-    font-size: var(--xl);
-    -webkit-background-image: linear-gradient(to left, var(--orange), var(--blue));
-    background-image: linear-gradient(to left, var(--orange), var(--blue));
+    font-size: 3em;
+    -webkit-background-image: linear-gradient(to left, var(--orange) 40%, var(--blue));
+    background-image: linear-gradient(to left, var(--orange) 40%, var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -71,9 +73,9 @@
     gap: 20px;
   }
   .wrapper-benef h3 {
-    font-size: var(--l);
-    font-weight: 600;
-    color: var(--colorC);
+    font-size: var(--m);
+    font-weight: 700;
+    color: rgb(172, 172, 172);
     font-family: epilogue;
   }
   .wrapper-benef p {

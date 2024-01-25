@@ -31,6 +31,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: epilogue;
+    margin-bottom: 50px;
   }
 
 

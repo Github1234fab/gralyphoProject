@@ -41,7 +41,7 @@
     margin-bottom: 30px;
     margin-top: 20px;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.2em;
     transition: 0.4s ease-in-out;
     background-color: var(--bg);
     border: 1px solid rgb(167, 167, 167);

@@ -72,9 +72,11 @@
     height: 20px;
   }
   .content {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+   text-align: center;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -86,9 +88,9 @@
     font-weight: 300;
     color: var(--bg);
     border: none;
-    margin: 30px;
+    margin: 0px;
     background-color: rgb(228, 228, 228);
-    padding: 30px;
+    padding: 20px;
   }
 
   @media screen and (max-width: 768px) {

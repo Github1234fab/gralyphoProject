@@ -34,7 +34,8 @@ opacity: 1,
   <div class="wrapper-text">
     <img src={SpaceShip} alt="" class="space-ship gsap2" />
     <img src={square} alt="" class="square gsap2" />
-    <h1>Grâce à nos <span>Solutions Digitales</span>, déclenchez enfin la révolution dans votre stratégie Numérique ! </h1>
+    <h1>Déclenchez enfin la révolution dans votre <span>stratégie Numérique !</span>  </h1>
+    <h2>Découvrez nos Solutions <span>100% </span>Digitales</h2>
     <!-- <h2>
       Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans
       débourser une fortune, le relooker serait plutôt sympa ?! <br />Trouvez la bonne solution par gagner du temps et de l'argent, grâce à nos solutions digitales, livrées clefs en main !
@@ -97,6 +98,14 @@ opacity: 1,
     text-align: left;
     padding: 10px;
     line-height: 30px;
+  }
+  .E-section h2 span {
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .space-ship {
     height: 170px;
