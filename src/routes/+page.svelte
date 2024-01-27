@@ -13,6 +13,7 @@
   import { fade, slide } from "svelte/transition";
   import SectionSocial from "../sections/SectionSocial.svelte";
   import BeneficeSection from "../sections/BeneficeSection.svelte";
+  import ActionSection from "../sections/ActionSection.svelte";
 </script>
 
 <main in:fade={{ duration: 2000 }}>
@@ -34,7 +35,7 @@
       <GSection />
 
   <section id="sectionA">
-    <Asection />
+    <ActionSection />
   </section>
 </main>
 

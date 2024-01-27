@@ -99,7 +99,7 @@
 		z-index: 5;
 		margin-top: 0px;
 		border-radius: 10px;
-		border-right: 10px rgb(29, 29, 29) solid;
+	
 	}
 	.wrapper-caroussel ::-webkit-scrollbar {
 		background-color: transparent;

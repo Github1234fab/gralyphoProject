@@ -115,7 +115,7 @@
     text-decoration: none;
     color: var(--colorC);
     font-family: kanit;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   @keyframes bounce {

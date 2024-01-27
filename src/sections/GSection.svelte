@@ -22,7 +22,7 @@
 <section class="G-section">
   <div class="wrapper-text">
     <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
-    <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" />
+    <!-- <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" /> -->
     <h1>Découvrez nos <span>réalisations </span></h1>
     <h2>
       Voici des sites témoins...comme des appartement témoins. Chaque projet utilise une technique particulière ou met
@@ -95,14 +95,14 @@
     opacity: 0.2;
     margin-left: 26px;
   }
-  .triangle {
+  /* .triangle {
     height: 150px;
     z-index: 1;
     transform: scale(0.4) rotate(0deg);
     opacity: 0.2;
     align-self: center;
     margin-top: -140px;
-  }
+  } */
 
 
 
