@@ -3,12 +3,13 @@
   export let icon;
   export let p;
   export let lien;
+  export let lien2;
 </script>
 
 <div class="cards">
   <div class="wrapper-text">
     <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a>
-    <h1>{title}</h1>
+    <a href={lien2} class="title">{title}</a>
     <p>
       {p}
     </p>
@@ -58,23 +59,7 @@
       transform: scale(1) translateY(0);
     }
   }
-  /* .button {
-    background-color: var(--blue);
-    border: none;
-    border-radius: 8px;
-    padding: 14px;
-    color: white;
-    font-family: Kanit;
-    font-size: 1em;
-    font-weight: 400;
-    transition: 0.4s ease-in-out;
-    text-align: center;
-    width: 150px;
-    margin-bottom: 50px;
-  }
-  .button:hover {
-    animation: bounce 0.4s ease-in-out;
-  } */
+
 
   .wrapper-text {
     display: flex;
@@ -85,14 +70,21 @@
     height: 100%;
     padding: 30px;
   }
-  .wrapper-text h1 {
+  .title {
     font-weight: kanit;
-    font-weight: 800;
-    font-size: var(--xl);
-    /* text-transform: uppercase; */
+    font-weight: 900;
+    font-size: var(--m);
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none ;
+    color: var(--colorC);
+  }
+  .title:hover{
+    animation: bounce 0.4s ease-in-out;
   }
   .wrapper-text p {
-    font-size: var(--l);
+    font-size: var(--m);
     color: var(--colorC);
     font-weight: 300;
     text-align: center;

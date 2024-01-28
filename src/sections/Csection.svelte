@@ -1,7 +1,7 @@
 <script>
-  import Robot from "../Assets/png-gralypho/Saly-39.png";
+  // import Robot from "../Assets/png-gralypho/Saly-39.png";
   import { onMount } from "svelte";
-  import triangle from "../Assets/png-gralypho/nnneon (6).svg";
+  // import triangle from "../Assets/png-gralypho/nnneon (6).svg";
   import TypeSiteCards from "../Components/TypeSiteCards.svelte";
   import vitrine from "../Assets/png-gralypho/vitrine.svg";
   import portfolio from "../Assets/png-gralypho/address-card-regular.svg";
@@ -9,43 +9,50 @@
   import blog from "../Assets/png-gralypho/blog-solid.svg";
   import corporate from "../Assets/png-gralypho/user-tie-solid.svg";
   import institution from "../Assets/png-gralypho/building-columns-solid.svg";
+  import Cards from "../Components/Cards.svelte";
 
   let SiteCards = [
     {
       title: "Site vitrine",
       icon: vitrine,
       p: "Créer un site internet vitrine permet de présenter la société, ses produits et ses services. Il permet de fournir des informations aux clients potentiels et de les diriger vers les canaux de vente de l’entreprise..",
-      lien: "/Sites"
+      lien: "/Sites",
+      lien2: "/Sites",
     },
     {
       title: "E-commerce",
       icon: commerce,
       p: "Réaliser un site internet e-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne 24h/24. Les fonctionnalités clés d’un site e-commerce comprennent :...",
-       lien: "/Sites"
+      lien: "/Sites",
+      lien2: "/Sites",
     },
     {
       title: "Blog",
       icon: blog,
       p: "Le blog d’entreprise est un site éditorial animé par un ou plusieurs auteurs qui publient des articles et des contenus sur des sujets spécifiques B2C ou B2B. ",
-       lien: "/Sites"
+      lien: "/Sites",
+      lien2: "/Sites",
     },
     {
       title: "Portfolio",
       icon: portfolio,
       p: "Le portfolio est une plateforme internet professionnelle qui permet aux créatifs de présenter leurs travaux et leurs réalisations. ",
-       lien: "/Sites"
+      lien: "/Sites",
+      lien2: "/Sites",
     },
     {
       title: "Corporate",
       icon: corporate,
       p: "Les grandes entreprises, institutions ou organisations ont besoin de présenter leurs activités. Un site web corporate apporte les réponses nécessaires de ce point de vue.",
-       lien: "/Sites"
+      lien: "/Sites",
+      lien2: "/Sites",
     },
     {
       title: "Institutionnel",
       icon: institution,
       p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
-       lien: "/Sites"
+      lien: "/Sites",
+      lien2: "/Sites",
     },
   ];
 
@@ -76,15 +83,16 @@
 
 <section class="C-section" id="sectionC">
   <div class="wrapper-text">
-    <h1>Le futur de votre business commence par un <span>site Web</span>  à votre mesure.</h1>
+    <h1>Le futur de votre business commence par un <span>site Web</span> à votre mesure.</h1>
     <h2>
-    Selon votre besoin, nous vous proposons des solutions de sites internet sur mesure, adaptées à votre activité, à votre business et à votre budget.
+      Selon votre besoin, nous vous proposons des solutions de sites internet sur mesure, adaptées à votre activité, à
+      votre business et à votre budget.
     </h2>
   </div>
 
   <div class="wrapper-cards">
     {#each SiteCards as Cards}
-      <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p}  lien={Cards.lien}/>
+      <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p} lien={Cards.lien}  lien2={Cards.lien2}/>
     {/each}
   </div>
 </section>
@@ -145,7 +153,6 @@
     .wrapper-cards {
       margin-top: 65px;
       margin-bottom: 300px;
-
     }
   }
 
