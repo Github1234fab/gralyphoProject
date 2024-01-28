@@ -34,7 +34,7 @@ opacity: 1,
   <div class="wrapper-text">
     <img src={SpaceShip} alt="" class="space-ship gsap2" />
     <img src={square} alt="" class="square gsap2" />
-    <h1>Déclenchez enfin la révolution dans votre <span>stratégie Numérique !</span>  </h1>
+    <h1>Déclenchez enfin la révolution dans votre <span>Stratégie Numérique !</span>  </h1>
     <h2>Découvrez nos Solutions <span>100% </span>Digitales</h2>
     <!-- <h2>
       Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans
@@ -81,8 +81,8 @@ opacity: 1,
   .E-section h1 span {
     font-weight: 900;
     color: transparent;
-    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
-    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-image: linear-gradient(to left, var(--blue2), var(--blue));
+    background-image: linear-gradient(to left, var(--blue2), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -102,8 +102,8 @@ opacity: 1,
   .E-section h2 span {
     font-weight: 900;
     color: transparent;
-    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
-    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-image: linear-gradient(to left, var(--blue2), var(--blue));
+    background-image: linear-gradient(to left, var(--blue2), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }

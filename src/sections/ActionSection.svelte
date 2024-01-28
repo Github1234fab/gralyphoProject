@@ -49,7 +49,7 @@
     </div>
   </div>
 
-    <a href="#contact" class="cta-button">Commencez <br />votre <br /> aventure digitale</a>
+    <!-- <a href="#contact" class="cta-button">Commencez <br />votre <br /> aventure digitale</a> -->
 
 </div>
 
@@ -92,12 +92,14 @@
         margin-left: 20px;
   }
   .wrapper-action {
-    grid-column: 2/12;
-    grid-row: 2;
+    grid-column: 1/13;
+    grid-row: 2/3;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0px;
+    margin-top: 30px;
+    margin-left: 50px;
     
   }
   .card-action {
@@ -106,8 +108,7 @@
     justify-content: left;
     align-items: left;
     gap: 20px;
-    width: 100%;
-    max-width: 350px;
+    width: calc(30%-10px);
     padding: 20px;
     color: white;
 
@@ -140,10 +141,11 @@
     max-height: 100px;
   }
   
-  .cta-button {
+  /* .cta-button {
           grid-column: span 12;
-          margin-right: 500px;
-          margin-left: 500px;
+          grid-row: 4;
+          margin-right: 300px;
+          margin-left: 300px;
     border-radius: 8px;
     background-color: var(--ca);
     color: white;
@@ -152,7 +154,8 @@
     text-decoration: none;
     padding: 20px;
     text-align: center;
-  }
+    margin-bottom: 50px;
+  } */
 
   @media screen and (max-width: 768px) {
     .wrapper-action {

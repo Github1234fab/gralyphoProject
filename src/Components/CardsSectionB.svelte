@@ -39,14 +39,15 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-
- 
-  }
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  } 
   .button {
     position: relative;
     display: flex;
     padding: 20px;
-    color: var(--primary);
+    color: var(--colorC);
     font-size: 1.3em;
     font-weight: 500;
     cursor: pointer;
@@ -54,8 +55,9 @@
     border-right: none;
     border-left: none;
     border-bottom: 1px rgb(219, 219, 219) solid;
-    width: 100vw;
-    background: linear-gradient(to left, rgb(192, 191, 191), rgb(228, 228, 228));
+    background-color: var(--ca);
+    width: 80%;
+    /* background: linear-gradient(to left, rgb(192, 191, 191), rgb(228, 228, 228)); */
     height: 100px;
     text-align: left;
   }
@@ -73,7 +75,7 @@
     height: 20px;
   }
   .content {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +98,14 @@
 
   @media screen and (max-width: 768px) {
     .wrapper {
-      width: 100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    }
+    .button{
+      font: var(--m);
     }
 
     .button-after {

@@ -23,14 +23,16 @@
 <div class="cont">
   <div class="wrapper-by-3-Cards">
     <div class="card">
-      <h3> <strong>sites Internet</strong></h3>
-     <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a> 
+            <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a>
+      <h3><strong>sites Internet</strong></h3>
+
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
+            <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
       <h3><strong>Applications </strong></h3>
-      <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
+
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
@@ -38,29 +40,32 @@
 
   <div class="wrapper-by-3-Cards">
     <div class="card">
-            <h3><strong>Référencement</strong></h3>
-      <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
+            <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
+
+      <h3><strong>Référencement</strong></h3>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
+            <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a>
+
       <h3><strong>Marketing</strong></h3>
-     <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a> 
-      
+
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
   </div>
 
   <div class="wrapper-by-3-Cards">
     <div class="card">
-        <h3><strong>Composants</strong></h3>
-     <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a> 
-    
+      <h3><strong>Composants</strong></h3>
+      <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a>
+
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
     <div class="card">
-            <h3><strong>Refonte</strong></h3>
-      <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
+            <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
+
+      <h3><strong>Refonte</strong></h3>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
@@ -100,16 +105,16 @@
     padding: 40px;
     gap: 20px;
     border-top: 1px solid var(--blue);
-        border-bottom: 1px solid var(--blue2);
-                border-right: 1px solid var(--blue);
-                        border-left: 1px solid var(--blue2);
+    border-bottom: 1px solid var(--blue2);
+    border-right: 1px solid var(--blue);
+    border-left: 1px solid var(--blue2);
   }
 
   .icon {
     color: transparent;
-      -webkit-background-image: linear-gradient(to right, var(--ca), var(--blue));
-    background-image: linear-gradient(to right, var(--ca), var(--blue));
-      -webkit-background-clip: text;
+    -webkit-background-image: linear-gradient(to top, var(--blue2), var(--blue));
+    background-image: linear-gradient(to top, var(--blue2), var(--blue));
+    -webkit-background-clip: text;
     background-clip: text;
     font-size: 3em;
     z-index: 2;
@@ -163,7 +168,7 @@
       align-items: center;
       justify-content: center;
       padding: 40px;
-      border: 1px solid grey;
+
     }
-  } 
+  }
 </style>
