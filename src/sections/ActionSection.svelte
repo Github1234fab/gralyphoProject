@@ -144,7 +144,7 @@
 
   }
   .cta-button {
-    border-radius: 8px;
+    border-radius: 7px;
     background-color: var(--ca);
     color: white;
     font-size: var(--m);
