@@ -62,10 +62,10 @@
     align-items: center;
     display: flex;
     text-align: center;
-    border: 1px solid rgb(76, 76, 76);
+    border: 1px solid rgb(95, 95, 95);
     box-shadow:
-      2px 3px 10px rgba(0, 0, 0, 0.454) inset,
-      -2px -3px 10px rgba(0, 0, 0, 0.454) inset;
+      2px 3px 5px rgba(0, 0, 0, 0.587) inset,
+      -2px -3px 5px rgba(0, 0, 0, 0.647) inset;
     height: 200px;
     width: 200px;
     border-radius: 50%;

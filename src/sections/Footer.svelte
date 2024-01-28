@@ -12,7 +12,6 @@
 <footer class="footer">
 <Gralypho/>
   <div class="wrapper-contact">
-    
     <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
     <a href="tel:0672901614" class="contact">06 72 90 16 14</a>
   </div>
@@ -64,16 +63,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: var(--ca);
+    border-radius: 8px;
+    padding: 20px;
   }
   .contact {
     text-decoration: none;
     color: var(--colorC);
-    font-size: 1.3em;
+    font-size: var(--m);
     font-family: poppins;
     width: 100%;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
-    padding: 15px;
     border-radius: 8px;
   }
   .contact:hover {

@@ -22,14 +22,14 @@
 
 <div class="cont">
   <div class="wrapper-by-3-Cards">
-    <div class="card">
+    <div class="card linear-gradient">
             <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a>
       <h3><strong>sites Internet</strong></h3>
 
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
-    <div class="card">
+    <div class="card linear-gradient">
             <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
       <h3><strong>Applications </strong></h3>
 
@@ -39,14 +39,14 @@
   </div>
 
   <div class="wrapper-by-3-Cards">
-    <div class="card">
+    <div class="card linear-gradient">
             <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
 
       <h3><strong>Référencement</strong></h3>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
-    <div class="card">
+    <div class="card linear-gradient">
             <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a>
 
       <h3><strong>Marketing</strong></h3>
@@ -56,16 +56,17 @@
   </div>
 
   <div class="wrapper-by-3-Cards">
-    <div class="card">
+    <div class="card linear-gradient">
       <h3><strong>Composants</strong></h3>
       <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
-    <div class="card">
+    <div class="card linear-gradient">
+       <h3><strong>Refonte</strong></h3>
             <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
 
-      <h3><strong>Refonte</strong></h3>
+     
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
@@ -104,11 +105,15 @@
     justify-content: center;
     padding: 40px;
     gap: 20px;
-    border-top: 1px solid var(--blue);
-    border-bottom: 1px solid var(--blue2);
-    border-right: 1px solid var(--blue);
-    border-left: 1px solid var(--blue2);
+    border-radius: 8px;
   }
+
+.linear-gradient {
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(to bottom,  var(--blue), var(--blue2) )1;
+
+}
 
   .icon {
     color: transparent;
@@ -143,8 +148,8 @@
   .card h3 {
     font-family: epilogue;
     color: var(--colorC);
-    font-weight: 500;
-    font-size: var(--l);
+    font-weight: 300;
+    font-size: var(--m);
     text-align: center;
   }
 

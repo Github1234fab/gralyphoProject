@@ -1,6 +1,6 @@
 <script>
   import billy from "../Assets/png-gralypho/Billy 33.png";
-  // import billy2 from "../Assets/png-gralypho/Billy 52.png";
+  import billy2 from "../Assets/png-gralypho/Billy 52.png";
   import billy3 from "../Assets/png-gralypho/Billy 53.png";
   import billy4 from "../Assets/png-gralypho/Billy 56.png";
 </script>
@@ -18,38 +18,48 @@
       <div class="wrapper-img">
         <img src={billy4} alt="" class="billy" />
       </div>
+      <div class="wrapper-text-cards">
       <h3>Captez</h3>
       <p>
         Boostez votre visibilité en ligne et captez l'attention de vos prospects potentiels. Grâce à des stratégies
         numériques efficaces et une présence web percutante, nous mettons en avant votre entreprise là où se trouvent
         vos clients.
       </p>
+      </div>
     </div>
     <div class="card-action">
       <div class="wrapper-img">
         <img src={billy} alt="" class="billy" />
       </div>
+        <div class="wrapper-text-cards">
       <h3>Optimisez</h3>
       <p>
         Optimisez votre présence en ligne avec des sites web performants et conviviaux. Nous travaillons sur
         l'optimisation de votre site pour garantir une expérience utilisateur exceptionnelle et assurer que vos futurs
         clients trouvent rapidement et facilement les informations dont ils ont besoin.
       </p>
+      </div>
     </div>
     <div class="card-action">
-      <div class="wrapper-img">
-        <img src={billy3} alt="" class="billy" />
+      <div class="wrapper-img"> 
+        <img src={billy3} alt="" class="billy" /> 
       </div>
+       <div class="wrapper-text-cards">
       <h3>Gagnez</h3>
       <p>
         Gagnez en ventes, en visibilité et en influence grâce à une stratégie de marketing digital bien élaborée. Notre
         approche centrée sur le client vous permet de conquérir de nouveaux marchés, fidéliser votre clientèle et
         augmenter vos résultats en ligne. Ensemble, gagnons le succès digital !
       </p>
+      </div>
     </div>
   </div>
 
-    <!-- <a href="#contact" class="cta-button">Commencez <br />votre <br /> aventure digitale</a> -->
+   <div class="wrapper-contactez">
+      <a href="mailto:gralypho@gmail.com " class="contactez"><i class="fa-regular fa-envelope"></i></a>
+      <a href="tel:0672901614" class="contactez"><i class="fa-solid fa-phone-volume"></i></a>
+      <a href="tel:0672901614" class="contactez"><i class="fa-solid fa-mug-hot"></i></a>
+    </div> 
 
 </div>
 
@@ -98,20 +108,24 @@
     justify-content: center;
     align-items: center;
     gap: 0px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 50px;
-    
   }
   .card-action {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+  }
+  .wrapper-text-cards {
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
     gap: 20px;
-    width: calc(30%-10px);
-    padding: 20px;
-    color: white;
-
+    width: 100%;
+    height: 350px;
   }
   .card-action h3 {
     font-size: var(--l);
@@ -126,13 +140,17 @@
     font-family: epilogue;
   }
   .wrapper-img {
+    padding: 10px;
     width: 100%;
     max-width: 150px;
     height: 100%;
     max-height: 150px;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    clip-path: polygon(51% 12%, 64% 0, 100% 36%, 81% 91%, 6% 99%, 14% 71%, 10% 2%);
+
   }
   .billy {
     width: 100%;
@@ -141,26 +159,55 @@
     max-height: 100px;
   }
   
-  /* .cta-button {
-          grid-column: span 12;
-          grid-row: 4;
-          margin-right: 300px;
-          margin-left: 300px;
-    border-radius: 8px;
-    background-color: var(--ca);
-    color: white;
-    font-size: var(--m);
-    font-weight: 400;
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 50px;
-  } */
+.wrapper-contactez{
+  grid-column: span 12;
+  margin-left: 350px;
+  margin-right: 350px;
+  grid-row: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: -50px;
+
+}
+.contactez{
+  text-decoration: none;
+  color: var(--colorC);
+  font-size: var(--xl);
+  font-family: epilogue;
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
+  margin-bottom: 40px;
+      border: 1px solid grey;
+      padding: 20px;
+
+}
 
   @media screen and (max-width: 768px) {
-    .wrapper-action {
-      flex-direction: column;
-      gap: 50px;
-    }
+      .wrapper-action {
+    grid-column: 1/12;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    margin-top: 50px;
+    margin-left: 10px;
+
   }
+     .wrapper-text {
+    margin-left: 0px;
+  }
+  .wrapper-contactez{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+  
 </style>

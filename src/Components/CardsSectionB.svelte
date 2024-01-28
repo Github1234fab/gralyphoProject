@@ -74,10 +74,31 @@
   .button-after img {
     height: 20px;
   }
+  .button-after img:hover{
+animation: bounce 0.4s;
+  }
+    @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
+    }
+    25% {
+      transform: scale(1) translateY(3px);
+    }
+    50% {
+      transform: scale(1) translateY(-1px);
+    }
+    75% {
+      transform: scale(1) translateY(2px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
   .content {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10px;
@@ -94,6 +115,7 @@
     margin: 0px;
     background-color: rgb(228, 228, 228);
     padding: 20px;
+    width: 80%;
   }
 
   @media screen and (max-width: 768px) {
