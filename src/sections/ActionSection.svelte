@@ -8,10 +8,10 @@
 <div class="action-section">
   <div class="wrapper-text">
     <h1>Prêt à démarrer <br /> votre <span>projet ?</span></h1>
-    <p>
+    <h2>
       Découvrez comment nous pouvons renforcer votre marque, <br /> améliorer votre visibilité, <br /> et générer des résultats
       tangibles.
-    </p>
+    </h2>
   </div>
   <div class="wrapper-action">
     <div class="card-action">
@@ -48,9 +48,9 @@
       </p>
     </div>
   </div>
-  <div class="wrapper-link">
+
     <a href="#contact" class="cta-button">Commencez <br />votre <br /> aventure digitale</a>
-  </div>
+
 </div>
 
 <style>
@@ -75,6 +75,7 @@
     font-weight: 900;
     color: white;
     font-family: Epilogue;
+    margin-left: 20px;
   }
   .wrapper-text h1 span {
     color: transparent;
@@ -83,11 +84,12 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
-  .wrapper-text p {
+  .wrapper-text h2 {
     font-size: var(--l);
     font-weight: 300;
     color: white;
     font-family: epilogue;
+        margin-left: 20px;
   }
   .wrapper-action {
     grid-column: 2/12;
@@ -96,6 +98,7 @@
     justify-content: center;
     align-items: center;
     gap: 0px;
+    
   }
   .card-action {
     display: flex;
@@ -107,6 +110,7 @@
     max-width: 350px;
     padding: 20px;
     color: white;
+
   }
   .card-action h3 {
     font-size: var(--l);
@@ -135,16 +139,12 @@
     height: 100%;
     max-height: 100px;
   }
-  .wrapper-link {
-    grid-column: span 12;
-    grid-row: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
+  
   .cta-button {
-    border-radius: 7px;
+          grid-column: span 12;
+          margin-right: 500px;
+          margin-left: 500px;
+    border-radius: 8px;
     background-color: var(--ca);
     color: white;
     font-size: var(--m);

@@ -54,7 +54,7 @@
     font-weight: 900;
     color: var(--colorC);
     font-family: epilogue;
-    margin-top: 50px;
+    margin-top: 70px;
 
   }
   .section-ben span {
