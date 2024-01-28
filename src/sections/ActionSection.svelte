@@ -1,6 +1,6 @@
 <script>
   import billy from "../Assets/png-gralypho/Billy 33.png";
-  import billy2 from "../Assets/png-gralypho/Billy 52.png";
+  // import billy2 from "../Assets/png-gralypho/Billy 52.png";
   import billy3 from "../Assets/png-gralypho/Billy 53.png";
   import billy4 from "../Assets/png-gralypho/Billy 56.png";
 </script>
