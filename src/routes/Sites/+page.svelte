@@ -159,7 +159,7 @@
     line-height: 37px;
   }
   section p span {
-    z-index: 2;
+    z-index: 3;
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
