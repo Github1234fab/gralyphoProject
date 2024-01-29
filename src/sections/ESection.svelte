@@ -1,5 +1,5 @@
 <script>
-  import SpaceShip from "../Assets/png-gralypho/Saly-43.png";
+  import SpaceShip from "../Assets/png-gralypho/rocketShip.png";
   import Banner from "../Components/Banner.svelte";
 
   import square from "../Assets/png-gralypho/square.svg";
@@ -32,8 +32,8 @@ opacity: 1,
 
 <section class="E-section" id="sectionE">
   <div class="wrapper-text">
-    <img src={SpaceShip} alt="" class="space-ship gsap2" />
-    <img src={square} alt="" class="square gsap2" />
+    <img src={SpaceShip} alt="illustration cartoon d'une fusée" class="space-ship gsap2" />
+    <img src={square} alt="illustration cartoon d'un carré formant un cadre autour de la fusée" class="square gsap2" />
     <h1>Déclenchez enfin la révolution dans votre <span>Stratégie Numérique !</span>  </h1>
     <h2>Découvrez nos Solutions <span>100% </span>Digitales</h2>
     <!-- <h2>

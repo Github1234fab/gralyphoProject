@@ -1,5 +1,5 @@
 <script>
-  import Climber from "../Assets/png-gralypho/Saly-15.png";
+  import Climber from "../Assets/png-gralypho/climber.png";
   import six from "../Assets/png-gralypho/six.svg";
   import Header from "../sections/Header.svelte";
 
@@ -17,8 +17,8 @@
 <Header />
 <section class="H-section">
   <div class="wrapper-png">
-    <img src={Climber} alt="" class="climb gsap5" />
-    <img src={six} alt="" class="six gsap5" />
+    <img src={Climber} alt="illustration d'un personnage cartoon, un grimpeur" class="climb gsap5" />
+    <img src={six} alt="icon d'un carré lumineux, entourant le personnage grimpeur" class="six gsap5" />
   </div>
   <div class="wrapper-text">
     <h1><span>Gralypho</span></h1>
@@ -49,6 +49,7 @@
   .climb {
     grid-column: 6 / span 6;
     grid-row: 1;
+    width: 100%;
     height: 160px;
     z-index: 2;
     align-self: center;
@@ -56,6 +57,7 @@
   .six {
     grid-column: 6 / span 6;
     grid-row: 1;
+        width: 100%;
     height: 115px;
     z-index: 1;
     margin-top: 90px;

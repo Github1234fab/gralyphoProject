@@ -76,6 +76,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    width: 100%;
   }
   h4 {
     z-index: 2;
@@ -127,7 +128,7 @@
     margin-bottom: 50px;
   }
   .wrapper {
-    grid-column: 2/12;
+    grid-column: 1/13;
     grid-row: 1;
     display: flex;
     flex-direction: column;

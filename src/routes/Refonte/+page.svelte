@@ -11,7 +11,7 @@
     <!-- <img src={bg} alt="" class="bg" /> -->
 
     <p>
-     <span><strong>REFONTE ?</strong><br><br> </span>
+     <span><strong>REFONTE ?!</strong><br><br> </span>
 Le terme refonte signifie un relooking de votre site actuel!<br> <br>
      Il y a des modes, des courants, des tendances, des styles, des couleurs, des formes, des typographies, des images, des animations, des effets, des transitions, des sons, des vidéos, des illustrations, des photos, des dessins, des graphiques, des logos, des icônes, des boutons, des menus (...)  qui évoluent avec le temps. <br><br>
      Et parfois votre site web est un peu dépassé, voir obsolète. Alors, plutôt que de refaire un site de A à Z, il peut être pus intéressant et moins onéreux de le relooker, de le refondre, de le moderniser, de le mettre au goût du jour. <br><br>
@@ -87,7 +87,7 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     margin-bottom: 50px;
   }
   .wrapper {
-    grid-column: 2/12;
+    grid-column: 1/13;
     grid-row: 1;
     display: flex;
     flex-direction: column;

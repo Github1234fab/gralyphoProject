@@ -93,7 +93,7 @@ Le marketing digital va au-delà de la simple visibilité en ligne ; c'est un mo
     margin-bottom: 50px;
   }
   .wrapper {
-    grid-column: 2/12;
+    grid-column: 1/13;
     grid-row: 1;
     display: flex;
     flex-direction: column;

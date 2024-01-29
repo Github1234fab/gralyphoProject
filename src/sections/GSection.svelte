@@ -1,5 +1,5 @@
 <script>
-  import Dev from "../Assets/png-gralypho/Saly-11.png";
+  import Dev from "../Assets/png-gralypho/dev.png";
   import Carousel from "../Components/CarousselCards.svelte";
   import triangle from "../Assets/png-gralypho/nnneon (6).svg";
 
@@ -21,7 +21,7 @@
 
 <section class="G-section">
   <div class="wrapper-text">
-    <img src={Dev} alt="icon de developpeur informatique" class="dev gsap4" />
+    <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev gsap4" />
     <!-- <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" /> -->
     <h1>Découvrez nos <span>réalisations </span></h1>
     <h2>

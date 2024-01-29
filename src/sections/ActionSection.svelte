@@ -1,8 +1,8 @@
 <script>
-  import billy from "../Assets/png-gralypho/Billy 33.png";
-  import billy2 from "../Assets/png-gralypho/Billy 52.png";
-  import billy3 from "../Assets/png-gralypho/Billy 53.png";
-  import billy4 from "../Assets/png-gralypho/Billy 56.png";
+  import billy from "../Assets/png-gralypho/BillyMagnet.png";
+  import billy2 from "../Assets/png-gralypho/BillySpace.png";
+  import billy3 from "../Assets/png-gralypho/BillyWinner.png";
+  import billy4 from "../Assets/png-gralypho/BillyXcel.png";
   import { onMount } from "svelte";
 
   onMount(() => {
@@ -30,7 +30,7 @@
   <div class="wrapper-action">
     <div class="card-action">
       <div class="wrapper-img">
-        <img src={billy4} alt="" class="billy" />
+        <img src={billy} alt="illustration cartoon personnage business" class="billy" />
       </div>
       <div class="wrapper-text-cards">
         <h3>Captez</h3>
@@ -43,7 +43,7 @@
     </div>
     <div class="card-action">
       <div class="wrapper-img">
-        <img src={billy} alt="" class="billy" />
+        <img src={billy4} alt="illustration cartoon personnage business" class="billy" />
       </div>
       <div class="wrapper-text-cards">
         <h3>Optimisez</h3>
@@ -56,7 +56,7 @@
     </div>
     <div class="card-action">
       <div class="wrapper-img">
-        <img src={billy3} alt="" class="billy" />
+        <img src={billy3} alt="illustration cartoon personnage business" class="billy" />
       </div>
       <div class="wrapper-text-cards">
         <h3>Gagnez</h3>
@@ -155,7 +155,7 @@
     font-family: epilogue;
   }
   .wrapper-img {
-    padding: 10px;
+    padding: 30px;
     width: 100%;
     max-width: 150px;
     height: 100%;
@@ -196,6 +196,26 @@
     margin-bottom: 40px;
     border: 1px solid grey;
     padding: 20px;
+  }
+  .contactez:hover{
+    animation: bounce 0.4s ease-in-out;
+  }
+    @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
+    }
+    25% {
+      transform: scale(1) translateY(3px);
+    }
+    50% {
+      transform: scale(1) translateY(-1px);
+    }
+    75% {
+      transform: scale(1) translateY(2px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
   }
 
   @media screen and (max-width: 768px) {
