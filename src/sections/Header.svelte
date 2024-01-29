@@ -12,7 +12,7 @@
 
 <nav class="navigation">
   <a href="/" class="title-link"><Logo /></a>
-  <button class="burger-menu" on:click={display}>
+  <button class="burger-menu" aria-label="Menu" on:click={display}>
     <!-- <img src={burger} alt="" class="burger" class:visible={toggle} /> -->
     <i class="fa-solid fa-bars burger " class:visible={toggle}></i>
   </button>
