@@ -24,37 +24,42 @@
   let dataCard = [
     {
       img: profilTwo,
+            alt: "Photo d'identité de client, femme",
       title: "Mademoiselle G.",
       job: "Marjolaine - Directrice de la communicaiton",
       p: "Délai respecté, composants fonctionnels avec une très bonne intégration. Nous recommandons Gralypho! ",
     },
     {
       img: profilFive,
-      alt: "Photo de profil client",
+      alt: "Photo d'identité de client, homme",
       title: "ElectriKcity",
       job: "Damien - Électricien indépendant",
       p: "L'ajout de fonctionnalité comme la prise de RV et les paiements en ligne m'ont grandement faciliter la tâche et fait gagner beaucoup de temps et de l'argent! Merci encore pour l'accompagnement.",
     },
     {
       img: profilThree,
+            alt: "Photo d'identité de client, femme",
       title: "Green NRJ",
       job: "Asha Ramanujan - Project Manager",
       p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! ",
     },
     {
       img: profilFour,
+            alt: "Photo d'identité de client, homme",
       title: "Sepocat",
       job: "Christophe Muun - Styliste",
       p: "Enfin un professionnel ! Merci pour notre application, elle est parfaite! ",
     },
     {
       img: profilSix,
+            alt: "Photo d'identité de client, homme",
       title: "Le Marminot",
       job: "Hugo Hervé - Restaurateur",
       p: "Merci pour toutes les idées qui permettent à nos clients de découvrir notre restauration, comme jamais!",
     },
     {
       img: profilOne,
+            alt: "Photo d'identité de client, femme",
       title: "Inès Marjot",
       job: "Photographe",
       p: "Plus de clients, moins de temps perdu, plus d'argent.... it's perfect Gralypho!!",
