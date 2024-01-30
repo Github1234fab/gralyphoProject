@@ -22,7 +22,7 @@
   </div>
   <div class="wrapper-text">
     <h1><span>Gralypho</span></h1>
-    <h2><span>Expertise </span>et <span>Expérience </span><br />Votre victoire Digitale assurée !</h2>
+    <h2><span>Expertise </span>et <span>Expérience </span><br />Votre victoire <strong>Digitale</strong> assurée !</h2>
   </div>
   <div class="wrapper-contact">
     <a href="/#footer">Nous contactez</a>

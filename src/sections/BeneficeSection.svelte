@@ -31,7 +31,7 @@
     <p>50% de votre temps optimisé grâce à votre site Web ou votre Application.</p>
   </div>
   <div class="wrapper-benef">
-    <span>+€</span>
+    <span>€€€ <br> </span>
     <h3>Gagner de l'argent</h3>
     <p>Plus de visibilité, plus de prospects, plus de clients, plus d'argent!</p>
   </div>
@@ -72,7 +72,7 @@
     font-family: epilogue;
     font-weight: 600;
     color: transparent;
-    font-size: 3em;
+    font-size: 4em;
     -webkit-background-image: linear-gradient(to left, var(--orange) 40%, var(--blue));
     background-image: linear-gradient(to left, var(--orange) 40%, var(--blue));
     -webkit-background-clip: text;
