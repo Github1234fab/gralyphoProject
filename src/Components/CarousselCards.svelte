@@ -41,7 +41,7 @@
 		{
 			key: 7,
 			title: 'Composant web. Horloge',
-			link: 'https://codepen.io/fab-marceau/full/abPQKbZ'
+			link: 'https://fabienmarceau.com/horloge/index.html'
 		},
 		{
 			key: 8,
