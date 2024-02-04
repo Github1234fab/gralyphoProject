@@ -10,7 +10,7 @@
     <h1>Développement d'Application</h1>
     <!-- <img src={bg} alt="" class="bg" /> -->
     <p>
-    "Propulsez votre entreprise vers l'avenir avec nos services de conception et de développement d'applications sur mesure. Chez Gralypho, nous créons des solutions innovantes qui répondent parfaitement à vos besoins. De la planification initiale à la mise en œuvre et au-delà, notre équipe d'experts assure un processus transparent et efficace. Découvrez comment nous pouvons transformer vos idées en applications exceptionnelles, prêtes à conquérir le marché."<br /><br />    </p>
+    "Propulsez votre entreprise vers l'avenir avec nos services de conception et de développement d'applications sur mesure. Chez Gralypho, nous créons des solutions innovantes qui répondent parfaitement à vos besoins. De la planification initiale à la mise en œuvre et au-delà, notre équipe d'experts assure un processus transparent et efficace. Découvrez comment nous pouvons transformer vos idées en applications exceptionnelles, prêtes à conquérir le marché."<br /><br /> </p>
     <p>
       <span>Quelle est la durée estimée pour le développement d'une application' ?</span> <br /><br />
       <li>
@@ -137,12 +137,9 @@
     font-size: 1.2em;
     font-family: epilogue;
   }
-  /* .bg {
-    z-index: 2;
-    margin-top: 30px;
-    border-radius: 20px;
-    height: 300px;
-    width: 300px;
-  } */
+ .wrapper li{
+      z-index: 2;
+    color: var(--colorC);
+ }
 
 </style>
