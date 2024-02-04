@@ -10,14 +10,16 @@
     <h1>Développement d'Application</h1>
     <!-- <img src={bg} alt="" class="bg" /> -->
     <p>
-    "Propulsez votre entreprise vers l'avenir avec nos services de conception et de développement d'applications sur mesure. Chez Gralypho, nous créons des solutions innovantes qui répondent parfaitement à vos besoins. De la planification initiale à la mise en œuvre et au-delà, notre équipe d'experts assure un processus transparent et efficace. Découvrez comment nous pouvons transformer vos idées en applications exceptionnelles, prêtes à conquérir le marché."<br /><br />
+    "Propulsez votre entreprise vers l'avenir avec nos services de conception et de développement d'applications sur mesure. Chez Gralypho, nous créons des solutions innovantes qui répondent parfaitement à vos besoins. De la planification initiale à la mise en œuvre et au-delà, notre équipe d'experts assure un processus transparent et efficace. Découvrez comment nous pouvons transformer vos idées en applications exceptionnelles, prêtes à conquérir le marché."<br /><br />    </p>
+    <p>
       <span>Quelle est la durée estimée pour le développement d'une application' ?</span> <br /><br />
       <li>
         La durée de développement d'une application dépend de la complexité de votre projet. <br />
         S'il s'agit  d'une application simple, le délai peut varier entre 1 et deux mois. Au-delà, il s'agit d'application plus complexes, le délai peut varier entre 3 et 6 mois.
       </li>
       <br><br>
-    </p>
+      </p>
+
   
       <h4>  Pour le développement d'application, il est essentiel que nous puissions vous recontrez. <br>Alors parlez nous de votre projet, autour d'un café!</h4>
     <div class="wrapper-contact">

@@ -16,6 +16,7 @@
       présence en ligne vers de nouveaux sommets. Choisissez Gralypho pour un site web qui va au-delà de l'esthétique,
       créant des expériences en ligne alignées sur vos objectifs commerciaux. <br /><br />
       <span>Quelle est la durée estimée pour la création et la livraison de votre site web ?</span> <br /><br />
+          </p>
       <li>
         La durée de création et de livraison de votre site web dépend de la complexité de votre projet. <br />
         S'il s'agit d'un site vitrine simple, sans base de données, ni gestion complexe, le délai de création et de livraison
@@ -32,12 +33,15 @@
         exigence en Design, en UI et UX, en contenu et gestion de données.
       </li>
       <br /><br />
+      <p>
       <span>Quel est le tarif pour un site internet ?</span> <br /><br />
-      Les tarifs peuvent se situer entre 1000€ et 10 000€ euros. <br /><br />
+    
+     <p> Les tarifs peuvent se situer entre 1000€ et 10 000€ euros. <br /><br />
       Ce budget variera en fonction du nombre de pages, de fonctionnalité de gestion des stocks, de base de données, de paiement,
-      de gestion de planning (...). <br /><br />
+      de gestion de planning (...). <br /><br /></p>
+      <p>
       <span>Comment se déroule la création de votre site internet?</span> <br /><br />
-    </p>
+  
     <ol>
       <li>Nous vous posons de nombreuses questions ciblées sur votre projet afin d'en comprendre la finalité.</li>
       <br />
@@ -60,6 +64,7 @@
       <li>Lorsque votre site internet a passé les différents tests, il vous est enfin livré! </li>
       <br />
     </ol>
+ 
     <h4>Vous souhaitez en savoir d'avantage ou nous parlez de votre projet?  <br>Nous sommes là pour vous écouter et vous apporter toutes nos solutions. <br><br>On en parle autour d'un café ?</h4>
     <div class="wrapper-contact">
       <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
@@ -178,13 +183,6 @@
     font-size: 1.2em;
     font-family: epilogue;
   }
-  /* .bg {
-    z-index: 2;
-    margin-top: 30px;
-    border-radius: 20px;
-    height: 300px;
-    width: 300px;
-  } */
 ol{
   z-index:2;
   font-size: 1.2em;
@@ -198,4 +196,5 @@ ol{
     font-size: 1em;
     font-family: epilogue;
   }
+ 
 </style>
