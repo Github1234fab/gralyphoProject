@@ -62,7 +62,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".C-section",
-        start: "top 600px",
+        start: "top 800px",
         end: "-200px",
         scrub: 3,
       },

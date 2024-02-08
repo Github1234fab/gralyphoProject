@@ -11,7 +11,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".action-section",
-        start: "top 700px",
+        start: "top 900px",
         end: "100px",
         scrub: 3,
       },
@@ -91,7 +91,7 @@
     width: 100%;
     flex-direction: column;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 20px;
   }
   .wrapper-text h1 {
@@ -116,12 +116,12 @@
     margin-left: 20px;
   }
   .wrapper-action {
-    grid-column: 1/13;
+    grid-column: 1/12;
     grid-row: 2/3;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 30px;
     margin-top: 50px;
     margin-left: 50px;
   }
@@ -129,8 +129,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
     color: white;
+        background-color: var(--ca);
   }
   .wrapper-text-cards {
     display: flex;
@@ -143,8 +144,8 @@
     margin-top: 10px;
   }
   .card-action h3 {
-    font-size: var(--l);
-    font-weight: 600;
+    font-size: var(--xl);
+    font-weight: 900;
     color: var(--colorC);
     font-family: epilogue;
   }
@@ -155,22 +156,25 @@
     font-family: epilogue;
   }
   .wrapper-img {
-    padding: 30px;
-    width: 100%;
-    max-width: 150px;
+    padding: 20px;
+    width: auto;
     height: 100%;
-    max-height: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background-color: var(--orange);
-    clip-path: polygon(51% 12%, 64% 0, 100% 36%, 81% 91%, 6% 99%, 14% 71%, 10% 2%);
+
+    /* clip-path: polygon(51% 12%, 64% 0, 100% 36%, 81% 91%, 6% 99%, 14% 71%, 10% 2%); */
   }
   .billy {
-    width: 100%;
-    max-width: 100px;
-    height: 100%;
-    max-height: 100px;
+    width: 200px;
+    /* max-width: 100px; */
+    height: 200px;
+    /* max-height: 100px; */
+    background-color: rgb(4, 10, 37);
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: inset 3px 4px 15px var(--primary);
+
   }
 
   .wrapper-contactez {
@@ -183,7 +187,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: -50px;
+    margin-top: 70px;
   }
   .contactez {
     text-decoration: none;
@@ -220,19 +224,34 @@
 
   @media screen and (max-width: 768px) {
     .wrapper-action {
-      grid-column: 1/12;
+      grid-column: 2/12;
       grid-row: 2/3;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
       margin-top: 50px;
       margin-left: 10px;
+    }
+    .card-action{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .wrapper-text {
       margin-left: 0px;
     }
+      .wrapper-text-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+  }
     .wrapper-contactez {
       margin-left: 0px;
       margin-right: 0px;

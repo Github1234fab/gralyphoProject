@@ -14,7 +14,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".J-section",
-        start: "top 400px",
+        start: "top 800px",
         end: "-200px",
         scrub: 4,
       },

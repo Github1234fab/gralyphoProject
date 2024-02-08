@@ -22,7 +22,7 @@ opacity: 1,
       ease: "E-section",
       scrollTrigger: {
         trigger: ".gsap2",
-        start: "top 700px",
+        start: "top 800px",
         end: "-200px",
         scrub: 3,
       },

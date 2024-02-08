@@ -7,7 +7,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".section-ben",
-        start: "top 500px",
+        start: "top 850px",
         end: "100px",
         scrub: 3,
       },

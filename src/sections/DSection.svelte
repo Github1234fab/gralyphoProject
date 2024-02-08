@@ -21,7 +21,7 @@
       ease: "D-section",
       scrollTrigger: {
         trigger: ".D-section",
-        start: "top 500px",
+        start: "top 700px",
         end: "-200px",
         scrub: 1,
       },

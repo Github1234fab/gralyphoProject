@@ -35,12 +35,10 @@
     height: 100px;
     width: 100px;
     padding: 10px;
-
   }
-  .icon:hover{
+  .icon:hover {
     animation: bounce 0.4s ease-in-out;
   }
-
 
   @keyframes bounce {
     0% {
@@ -60,7 +58,6 @@
     }
   }
 
-
   .wrapper-text {
     display: flex;
     flex-direction: column;
@@ -73,18 +70,18 @@
   .title {
     font-weight: kanit;
     font-weight: 900;
-    font-size: var(--m);
+    font-size: var(--l);
     border: 1px solid grey;
     padding: 20px;
     border-radius: 8px;
-    text-decoration: none ;
+    text-decoration: none;
     color: var(--colorC);
   }
-  .title:hover{
+  .title:hover {
     animation: bounce 0.4s ease-in-out;
   }
   .wrapper-text p {
-    font-size: var(--m);
+    font-size: 1.3em;
     color: var(--colorC);
     font-weight: 300;
     text-align: center;

@@ -22,14 +22,14 @@
 
 <div class="cont">
   <div class="wrapper-by-3-Cards">
-    <div class="card linear-gradient">
+    <div class="card ">
             <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a>
       <h3><strong>sites Internet</strong></h3>
 
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
-    <div class="card linear-gradient">
+    <div class="card ">
             <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
       <h3><strong>Applications </strong></h3>
 
@@ -39,14 +39,14 @@
   </div>
 
   <div class="wrapper-by-3-Cards">
-    <div class="card linear-gradient">
+    <div class="card ">
             <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
 
       <h3><strong>Référencement</strong></h3>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
-    <div class="card linear-gradient">
+    <div class="card ">
             <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a>
 
       <h3><strong>Marketing</strong></h3>
@@ -56,13 +56,13 @@
   </div>
 
   <div class="wrapper-by-3-Cards">
-    <div class="card linear-gradient">
+    <div class="card ">
       <h3><strong>Composants</strong></h3>
       <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a>
 
       <!-- <a href="/Sites" class="button">+ d'infos</a> -->
     </div>
-    <div class="card linear-gradient">
+    <div class="card ">
        <h3><strong>Refonte</strong></h3>
             <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
 
@@ -106,14 +106,15 @@
     padding: 40px;
     gap: 20px;
     border-radius: 8px;
+          box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.999);
   }
 
-.linear-gradient {
+/* .linear-gradient {
   border-style: solid;
   border-width: 1px;
   border-image: linear-gradient(to bottom,  var(--blue), var(--blue2) )1;
 
-}
+} */
 
   .icon {
     color: transparent;
@@ -167,7 +168,7 @@
       background-color: transparent;
       width: 90%;
       height: auto;
-      box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.264);
+
       display: flex;
       flex-direction: column;
       align-items: center;

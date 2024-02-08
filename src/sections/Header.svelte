@@ -84,7 +84,7 @@
   .burger {
     font-size: 2em;
     border: none;
-    color: var(--ca);
+    color: var(--ca1);
  
   }
   .burger:hover {

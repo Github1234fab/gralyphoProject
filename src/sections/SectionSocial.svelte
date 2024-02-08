@@ -26,7 +26,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".section-social",
-        start: "top 700px",
+        start: "top 850px",
         end: "-200px",
         scrub: 3,
       },
