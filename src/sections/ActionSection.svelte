@@ -85,7 +85,7 @@
     opacity: 0.2;
   }
   .wrapper-text {
-    grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 1;
     display: flex;
     width: 100%;
@@ -116,14 +116,13 @@
     margin-left: 20px;
   }
   .wrapper-action {
-    grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 2/3;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     margin-top: 50px;
-    margin-left: 50px;
   }
   .card-action {
     display: flex;
@@ -222,7 +221,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .wrapper-action {
       grid-column: 2/12;
       grid-row: 2/3;
