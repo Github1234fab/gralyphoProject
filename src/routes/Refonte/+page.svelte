@@ -6,7 +6,7 @@
 
 <Header />
 <section class="" in:fade={{ duration: 3000 }}>
-  <div class="wrapper">
+  <div class="wrapper background-animated">
     <h1>Refonte</h1>
     <!-- <img src={bg} alt="" class="bg" /> -->
 
@@ -18,7 +18,7 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     </p>
 
     <h4>
-      Vous êtes intéressé par une refonte ou vous souhaitez en savoir d'avantage? <br>Alors parlons en ensemble autour d'un petit café?!
+      Vous êtes intéressé par une refonte ou vous souhaitez en savoir d'avantage? <br>Alors parlons en ensemble autour d'un petit café.
     </h4>
     <div class="wrapper-contact">
       <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
@@ -43,7 +43,7 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     color: var(--colorC);
     text-align: left;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2em;
     font-family: epilogue;
     text-align: center;
@@ -85,6 +85,7 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     width: 100%;
     margin-top: 30px;
     margin-bottom: 50px;
+
   }
   .wrapper {
     grid-column: 1/13;
@@ -110,8 +111,8 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     z-index: 2;
     text-align: left;
     font-family: Kanit;
-    font-weight: 900;
-    font-size: 2.7em;
+    font-weight: 600;
+    font-size: var(--xl);
     color: white;
     margin-top: 50px;
     line-height: 37px;
@@ -119,8 +120,8 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
   section p span {
     z-index: 2;
     color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: var(--l);
+    font-weight: 400;
     text-align: left;
     line-height: 30px;
     margin-top: 30px;
@@ -133,23 +134,8 @@ Le terme refonte signifie un relooking de votre site actuel!<br> <br>
     text-align: left;
     line-height: 30px;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: var(--m);
     font-family: epilogue;
   }
-  /* .bg {
-    z-index: 2;
-    margin-top: 30px;
-    border-radius: 20px;
-    height: 300px;
-    width: 300px;
-  } */
-  /* ol {
-    z-index: 2;
-    color: var(--colorC);
-    text-align: left;
-    line-height: 30px;
-    font-weight: 300;
-    font-size: 1.2em;
-    font-family: epilogue;
-  } */
+  
 </style>

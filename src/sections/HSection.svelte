@@ -1,31 +1,27 @@
 <script>
-
   import { onMount } from "svelte";
   import Header from "../sections/Header.svelte";
   import Engrenage from "../Components/Engrenages.svelte";
-
-
 </script>
 
 <Header />
 <section class="H-section">
-    <div class="wrapper-text">
-      <h1><span>Imaginer, <br> Développer,<br>  Créer.</span></h1>
-              <h2>
-                <span>Gralypho</span> est une agence <span>WEB </span>qui aide les entreprises <br> à accéder à <span>plus de visibilité</span> et <span>plus de clients sur internet</span>, <br> grâce à des solutions digitales adaptées à leur <span>besoin.</span> 
-
-      </h2>
+  <div class="wrapper-text">
+    <h1><span>Imaginer, <br /> Développer,<br /> Créer.</span></h1>
+    <h2>
+      <span>Gralypho</span> est une agence <span>WEB </span>qui aide les entreprises <br /> à accéder à
+      <span>plus de visibilité</span>
+      et <span>plus de clients sur internet</span>, <br /> grâce à des solutions digitales adaptées à leur
+      <span>besoin.</span>
+    </h2>
     <div class="wrapper-contact">
       <a href="/#footer">Contactez-nous</a>
     </div>
-    </div>
+  </div>
 
-    <div class="wrapper-visuel">
-    
-      <Engrenage />
- 
-    </div>
-
+  <div class="wrapper-visuel">
+    <Engrenage />
+  </div>
 </section>
 
 <style>
@@ -37,7 +33,7 @@
     font-size: 16px;
     opacity: 1;
   }
-  
+
   .wrapper-text {
     grid-column: 2 / span 12;
     grid-row: 1;
@@ -84,14 +80,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg);
     height: auto;
     width: 200px;
     padding: 20px;
     text-align: center;
     border-radius: 4px;
     gap: 10px;
-    background-color: var(--ca);
   }
   .wrapper-contact:hover {
     animation: bounce 0.4s ease-in-out;
@@ -100,8 +94,13 @@
   .wrapper-contact a {
     text-decoration: none;
     color: var(--colorC);
+    background-color: var(--ca);
     font-family: kanit;
     font-weight: 400;
+    margin-left: 500px;
+    width: 200px;
+    padding: 30px;
+    border-radius: 6px;
   }
 
   .wrapper-visuel {
@@ -113,7 +112,6 @@
     gap: 0px;
     margin-top: 200px;
   }
- 
 
   @keyframes bounce {
     0% {

@@ -6,7 +6,7 @@
 
 <Header />
 <section class="" in:fade={{ duration: 3000 }}>
-  <div class="wrapper">
+  <div class="wrapper background-animated">
     <h1>Développement d'Application</h1>
     <!-- <img src={bg} alt="" class="bg" /> -->
     <p>
@@ -21,7 +21,7 @@
       </p>
 
   
-      <h4>  Pour le développement d'application, il est essentiel que nous puissions vous recontrez. <br>Alors parlez nous de votre projet, autour d'un café!</h4>
+      <h4>  Pour le développement d'application, il est essentiel que nous puissions nous rencontrez. <br>Alors parlez nous de votre projet, autour d'un café!</h4>
     <div class="wrapper-contact">
       <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
       <a href="tel:0672901614" class="contact"><i class="fa-solid fa-phone-volume"></i></a>
@@ -44,7 +44,7 @@
     color: var(--colorC);
     text-align: left;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2em;
     font-family: epilogue;
     text-align: center;
@@ -111,8 +111,8 @@
     z-index: 2;
     text-align: left;
     font-family: Kanit;
-    font-weight: 900;
-    font-size: 2.7em;
+    font-weight: 600;
+    font-size: var(--xl);
     color: white;
     margin-top: 50px;
     line-height: 37px;
@@ -120,8 +120,8 @@
   section p span {
     z-index: 2;
     color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: var(--l);
+    font-weight: 400;
     text-align: left;
     line-height: 30px;
     margin-top: 30px;
@@ -134,7 +134,7 @@
     text-align: left;
     line-height: 30px;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: var(--m);
     font-family: epilogue;
   }
  .wrapper li{

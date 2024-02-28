@@ -6,7 +6,7 @@
 
 <Header />
 <section class="" in:fade={{ duration: 3000 }}>
-  <div class="wrapper">
+  <div class="wrapper background-animated">
     <h1>Référencement.</h1>
     <!-- <img src={bg} alt="" class="bg" /> -->
 
@@ -43,7 +43,7 @@
     color: var(--colorC);
     text-align: left;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2em;
     font-family: epilogue;
     text-align: center;
@@ -110,8 +110,8 @@
     z-index: 2;
     text-align: left;
     font-family: Kanit;
-    font-weight: 900;
-    font-size: 2.7em;
+    font-weight: 600;
+    font-size: var(--xl);
     color: white;
     margin-top: 50px;
     line-height: 37px;
@@ -119,8 +119,8 @@
   section p span {
     z-index: 2;
     color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: var(--l);
+    font-weight: 500;
     text-align: left;
     line-height: 30px;
     margin-top: 30px;
@@ -133,7 +133,7 @@
     text-align: left;
     line-height: 30px;
     font-weight: 300;
-    font-size: 1.2em;
+      font-size: var(--m);
     font-family: epilogue;
   }
   /* .bg {
