@@ -67,7 +67,6 @@
     background-image: url(../Assets/png-gralypho/waves4.svg);
     background-position: center;
     background-size: 100%;
-
     background-repeat: no-repeat;
     opacity: 0.2;
   }

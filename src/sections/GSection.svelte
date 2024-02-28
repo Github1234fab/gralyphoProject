@@ -1,19 +1,18 @@
 <script>
   import Dev from "../Assets/png-gralypho/dev.png";
   import Carousel from "../Components/CarousselCards.svelte";
-  import triangle from "../Assets/png-gralypho/nnneon (6).svg";
+  import skate from "../Assets/png-gralypho/skateboard.png";
 
   import { onMount } from "svelte";
 
   onMount(() => {
-    gsap.to(".gsap4", {
-      scale: 1.3,
-      opacity: 1,
+    gsap.to(".wrapper-developpeur", {
+      x:700,
       scrollTrigger: {
-        trigger: ".gsap4",
+        trigger: ".wrapper-developpeur",
         start: "top 720px",
-        end: "-300px",
-        scrub: 3,
+        end: "-100px",
+        scrub: 5,
       },
     });
   });
@@ -21,8 +20,10 @@
 
 <section class="G-section">
   <div class="wrapper-text">
-    <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev gsap4" />
-    <!-- <img src={triangle} alt="icon de developpeur informatique" class="triangle gsap4" /> -->
+    <div class="wrapper-developpeur">
+    <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev" />
+    <img src={skate} alt="" class="skate" /> 
+    </div>
     <h1>Découvrez nos <span>réalisations </span></h1>
     <h2>
       Voici des sites témoins...comme des appartement témoins. Chaque projet utilise une technique particulière ou met
@@ -39,7 +40,7 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    background-color: var(--colorC);
+    background-color: rgb(239, 237, 237);
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -59,7 +60,7 @@
     font-weight: 900;
     font-size: var(--xl);
     color: var(--primary);
-    margin-top: 50px;
+    margin-top: -30px;
     padding: 10px;
     line-height: 37px;
   }
@@ -77,32 +78,35 @@
     margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
-    font-size: var(--l);
+    font-size: var(--m);
    color: var(--primary);
     text-align: left;
     padding: 10px;
     line-height: 30px;
   }
-  .gsap4 {
-    background-color: transparent;
+  .wrapper-developpeur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    transform: translateX(-300px);
+    width: 50px;
   }
   .dev {
     height: 150px;
     margin-top: 50px;
     z-index: 2;
     align-self: center;
-    transform: scale(0.4);
-    opacity: 0.2;
     margin-left: 26px;
   }
-  /* .triangle {
-    height: 150px;
+  .skate{
+    height: 50px;
     z-index: 1;
-    transform: scale(0.4) rotate(0deg);
-    opacity: 0.2;
+    opacity: 1;
     align-self: center;
-    margin-top: -140px;
-  } */
+    margin-top: -20px;
+  }
 
 
 

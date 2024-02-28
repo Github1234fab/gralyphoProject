@@ -81,7 +81,7 @@
     animation: bounce 0.4s ease-in-out;
   }
   .wrapper-text p {
-    font-size: 1.3em;
+    font-size: var(--m);
     color: var(--colorC);
     font-weight: 300;
     text-align: center;

@@ -28,10 +28,11 @@
     font-size: var(--m);
     font-weight: 300;
     color: var(--bg);
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-family: epilogue;
     margin-bottom: 50px;
+    width: 100%;
   }
 
 

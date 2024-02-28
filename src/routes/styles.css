@@ -73,7 +73,10 @@ html {
   --newBlue: #2993FA;
 
 
+    --xlhero: clamp(2rem, 8vw, 9rem);
+   --xxl: clamp(3rem, 8vw, 8rem);
   --xl: clamp(2rem, 8vw, 3.5rem);
---l:clamp(1.2rem, 8vw, 1.3rem);
+--l:clamp(1.2rem, 8vw, 2rem);
+--m:clamp(1rem, 8vw, 1rem);
 --button: clamp(1.1rem, 8vw, 1.4rem);
 }

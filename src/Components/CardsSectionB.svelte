@@ -51,6 +51,7 @@
     font-size: 1.3em;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 8px;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -109,13 +110,14 @@ animation: bounce 0.4s;
 
   .p {
     font-size: 1.2em;
-    font-weight: 300;
-    color: var(--bg);
+    font-weight: 400;
+    color: black;
     border: none;
     margin: 0px;
     background-color: rgb(228, 228, 228);
     padding: 20px;
     width: 80%;
+    border-radius: 14px 22px 17px 38px;
   }
 
   @media screen and (max-width: 768px) {

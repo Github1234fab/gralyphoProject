@@ -17,8 +17,8 @@
         scrub: 3,
       },
     });
-        gsap.to(".E-section", {
-opacity: 1,
+    gsap.to(".E-section", {
+      opacity: 1,
       ease: "E-section",
       scrollTrigger: {
         trigger: ".gsap2",
@@ -34,7 +34,7 @@ opacity: 1,
   <div class="wrapper-text">
     <img src={SpaceShip} alt="illustration cartoon d'une fusée" class="space-ship gsap2" />
     <img src={square} alt="illustration cartoon d'un carré formant un cadre autour de la fusée" class="square gsap2" />
-    <h1>Déclenchez enfin la révolution dans votre <span>Stratégie Numérique !</span>  </h1>
+    <h1>Déclenchez enfin la révolution dans votre <span>Stratégie Numérique !</span></h1>
     <h2>Découvrez nos Solutions <span>100% </span>Digitales</h2>
     <!-- <h2>
       Vous avez besoin d'un site vitrine, d'une application android? Ou alors, votre site internet date un peu et sans
@@ -53,7 +53,7 @@ opacity: 1,
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
-    background-size: 150% 100%; 
+    background-size: 150% 100%;
     shape-outside: circle(90%);
     opacity: 0.2;
   }
@@ -71,7 +71,7 @@ opacity: 1,
     text-align: left;
     grid-row: 2;
     font-family: epilogue;
-  font-size: var(--xl);
+    font-size: var(--xl);
     font-weight: 900;
     color: white;
     margin-top: 50px;
@@ -93,17 +93,17 @@ opacity: 1,
     margin-top: 10px;
     font-family: epilogue;
     font-weight: 300;
-    font-size: var(--l);
+    font-size: var(--m);
     color: var(--colorC);
     text-align: left;
     padding: 10px;
     line-height: 30px;
   }
   .E-section h2 span {
-    font-weight: 900;
+    font-weight: 700;
     color: transparent;
     -webkit-background-image: linear-gradient(to left, var(--blue2), var(--blue));
-    background-image: linear-gradient(to left, var(--blue2), var(--blue));
+    background-image: linear-gradient(to top, orange 50%, var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -127,7 +127,6 @@ opacity: 1,
   }
 
   @media screen and (max-width: 768px) {
-    
     .wrapper-text {
       background-size: 100%;
     }

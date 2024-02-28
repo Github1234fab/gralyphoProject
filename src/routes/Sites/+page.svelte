@@ -6,7 +6,7 @@
 
 <Header />
 <section class="" in:fade={{ duration: 3000 }}>
-  <div class="wrapper">
+  <div class="wrapper background-animated">
     <h1>Sites Web</h1>
     <!-- <img src={bg} alt="" class="bg" /> -->
     <p>
@@ -16,32 +16,34 @@
       présence en ligne vers de nouveaux sommets. Choisissez Gralypho pour un site web qui va au-delà de l'esthétique,
       créant des expériences en ligne alignées sur vos objectifs commerciaux. <br /><br />
       <span>Quelle est la durée estimée pour la création et la livraison de votre site web ?</span> <br /><br />
-          </p>
-      <li>
-        La durée de création et de livraison de votre site web dépend de la complexité de votre projet. <br />
-        S'il s'agit d'un site vitrine simple, sans base de données, ni gestion complexe, le délai de création et de livraison
-        peut être compris entre 2 et 3 semaines.
-      </li>
-      <br /><br />
-      <li>
-        Pour un site e-commerce avec des bases de données et des gestions complexes, le délai de création et de
-        livraison peut être compris entre 1 et 3 mois.
-      </li>
-      <br /><br />
-      <li>
-        Concernant les autres types de sites Portfolio, Corporate, institutionnel et Blog tout dépend du projet, de son
-        exigence en Design, en UI et UX, en contenu et gestion de données.
-      </li>
-      <br /><br />
-      <p>
+    </p>
+    <li>
+      La durée de création et de livraison de votre site web dépend de la complexité de votre projet. <br />
+      S'il s'agit d'un site vitrine simple, sans base de données, ni gestion complexe, le délai de création et de livraison
+      peut être compris entre 2 et 3 semaines.
+    </li>
+    <br /><br />
+    <li>
+      Pour un site e-commerce avec des bases de données et des gestions complexes, le délai de création et de livraison
+      peut être compris entre 1 et 3 mois.
+    </li>
+    <br /><br />
+    <li>
+      Concernant les autres types de sites Portfolio, Corporate, institutionnel et Blog tout dépend du projet, de son
+      exigence en Design, en UI et UX, en contenu et gestion de données.
+    </li>
+    <br /><br />
+    <p>
       <span>Quel est le tarif pour un site internet ?</span> <br /><br />
-    
-     <p> Les tarifs peuvent se situer entre 1000€ et 10 000€ euros. <br /><br />
+    </p>
+    <p>
+      Les tarifs peuvent se situer entre 1000€ et 10 000€ euros. <br /><br />
       Ce budget variera en fonction du nombre de pages, de fonctionnalité de gestion des stocks, de base de données, de paiement,
-      de gestion de planning (...). <br /><br /></p>
-      <p>
+      de gestion de planning (...). <br /><br />
+    </p>
+    <p>
       <span>Comment se déroule la création de votre site internet?</span> <br /><br />
-  
+    </p>
     <ol>
       <li>Nous vous posons de nombreuses questions ciblées sur votre projet afin d'en comprendre la finalité.</li>
       <br />
@@ -61,11 +63,14 @@
         différents navigateurs et différents test utilisateurs.
       </li>
       <br />
-      <li>Lorsque votre site internet a passé les différents tests, il vous est enfin livré! </li>
+      <li>Lorsque votre site internet a passé les différents tests, il vous est enfin livré!</li>
       <br />
     </ol>
- 
-    <h4>Vous souhaitez en savoir d'avantage ou nous parlez de votre projet?  <br>Nous sommes là pour vous écouter et vous apporter toutes nos solutions. <br><br>On en parle autour d'un café ?</h4>
+
+    <h4>
+      Vous souhaitez en savoir d'avantage ou nous parlez de votre projet? <br />Nous sommes là pour vous écouter et vous
+      apporter toutes nos solutions. <br /><br />On en parle autour d'un café ?
+    </h4>
     <div class="wrapper-contact">
       <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
       <a href="tel:0672901614" class="contact"><i class="fa-solid fa-phone-volume"></i></a>
@@ -146,7 +151,7 @@
   .wrapper::after {
     position: absolute;
     content: "";
-    background-color: #1a1c2186;
+    /* background-color: #1a1c2186; */
     top: 0;
     left: 0;
     right: 0;
@@ -157,8 +162,8 @@
     word-wrap: break-word;
     text-align: left;
     font-family: Kanit;
-    font-weight: 900;
-    font-size: 2.7em;
+    font-weight: 500;
+    font-size: var(--xl);
     color: white;
     margin-top: 50px;
     line-height: 37px;
@@ -166,7 +171,7 @@
   section p span {
     z-index: 3;
     color: white;
-    font-size: 1.5rem;
+    font-size: var(--l);
     font-weight: 600;
     text-align: left;
     line-height: 30px;
@@ -180,15 +185,15 @@
     text-align: left;
     line-height: 30px;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: var(--m);
     font-family: epilogue;
   }
-ol{
-  z-index:2;
-  font-size: 1.2em;
-}
-  li{
-      z-index: 2;
+  ol {
+    z-index: 2;
+    font-size: 1.2em;
+  }
+  li {
+    z-index: 2;
     color: var(--colorC);
     text-align: left;
     line-height: 30px;
@@ -196,5 +201,4 @@ ol{
     font-size: 1em;
     font-family: epilogue;
   }
- 
 </style>

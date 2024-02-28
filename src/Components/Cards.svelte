@@ -41,7 +41,7 @@
     margin-bottom: 30px;
     margin-top: 20px;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: var(--m);
     transition: 0.4s ease-in-out;
     background-color: var(--ca);
     font-family: kanit;

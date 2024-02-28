@@ -1,108 +1,92 @@
 <script>
-  import Climber from "../Assets/png-gralypho/climber.png";
-  import six from "../Assets/png-gralypho/six.svg";
-  import Header from "../sections/Header.svelte";
 
   import { onMount } from "svelte";
+  import Header from "../sections/Header.svelte";
+  import Engrenage from "../Components/Engrenages.svelte";
 
-  onMount(() => {
-    gsap.to(".gsap5", {
-      rotation: 730,
-      duration: 2,
-      scrub: 3,
-    });
-  });
+
 </script>
 
 <Header />
 <section class="H-section">
-  <div class="wrapper-png">
-    <img src={Climber} alt="illustration d'un personnage cartoon, un grimpeur" class="climb gsap5" />
-    <img src={six} alt="icon d'un carré lumineux, entourant le personnage grimpeur" class="six gsap5" />
-  </div>
-  <div class="wrapper-text">
-    <h1><span>Gralypho</span></h1>
-    <h2><span>Expertise </span>et <span>Expérience </span><br />Votre victoire <strong>Digitale</strong> assurée !</h2>
-  </div>
-  <div class="wrapper-contact">
-    <a href="/#footer">Nous contactez</a>
-  </div>
+    <div class="wrapper-text">
+      <h1><span>Imaginer, <br> Développer,<br>  Créer.</span></h1>
+              <h2>
+                <span>Gralypho</span> est une agence <span>WEB </span>qui aide les entreprises <br> à accéder à <span>plus de visibilité</span> et <span>plus de clients sur internet</span>, <br> grâce à des solutions digitales adaptées à leur <span>besoin.</span> 
+
+      </h2>
+    <div class="wrapper-contact">
+      <a href="/#footer">Contactez-nous</a>
+    </div>
+    </div>
+
+    <div class="wrapper-visuel">
+    
+      <Engrenage />
+ 
+    </div>
+
 </section>
 
 <style>
   .H-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     height: 100vh;
     font-size: 16px;
     opacity: 1;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
   }
-  .wrapper-png {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1;
-    margin-top: -140px;
-  }
-  .climb {
-    grid-column: 6 / span 6;
-    grid-row: 1;
-    width: 100%;
-    height: 160px;
-    z-index: 2;
-    align-self: center;
-  }
-  .six {
-    grid-column: 6 / span 6;
-    grid-row: 1;
-        width: 100%;
-    height: 115px;
-    z-index: 1;
-    margin-top: 90px;
-  }
+  
   .wrapper-text {
+    grid-column: 2 / span 12;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    align-items: baseline;
+    margin-top: 20px;
   }
   .H-section h1 {
-    text-align: center;
+    text-align: left;
     font-family: epilogue;
-    font-weight: 600;
-    font-size: var(--xl);
+    font-weight: 700;
+    font-size: var(--xlhero);
     color: white;
+    text-transform: capitalize;
+    letter-spacing: -8px;
   }
-  .H-section h1 span {
+  /* .H-section h1 span {
     font-weight: 900;
     color: transparent;
     -webkit-background-image: linear-gradient(to left, var(--orange), var(--blue));
     background-image: linear-gradient(to left, var(--orange), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
-  }
+  } */
   .H-section h2 {
-    font-family: epilogue;
+    font-family: poppins;
     font-weight: 300;
-    font-size: var(--l);
+    font-size: var(--m);
     color: white;
-    text-align: center;
-    line-height: 30px;
-    padding: 20px;
+    text-align: left;
+    line-height: 40px;
+    word-spacing: -2px;
   }
   .H-section h2 span {
-    font-weight: 600;
+    font-weight: 500;
     color: white;
   }
 
   .wrapper-contact {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--bg);
     height: auto;
+    width: 200px;
     padding: 20px;
     text-align: center;
     border-radius: 4px;
@@ -119,6 +103,17 @@
     font-family: kanit;
     font-weight: 400;
   }
+
+  .wrapper-visuel {
+    grid-column: 8/12;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-top: 200px;
+  }
+ 
 
   @keyframes bounce {
     0% {
@@ -137,7 +132,7 @@
       transform: scale(1) translateY(0);
     }
   }
-  .gsap5 {
+  /* .gsap5 {
     background-color: transparent;
-  }
+  } */
 </style>

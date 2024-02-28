@@ -23,7 +23,7 @@
   <div class="wrapper-text">
     <h1>Prêt à démarrer <br /> votre <span>projet ?</span></h1>
     <h2>
-      Découvrez comment nous pouvons renforcer votre marque, <br /> améliorer votre visibilité, <br /> et générer des résultats
+      Découvrez comment nous pouvons renforcer votre marque, améliorer votre visibilité, <br /> et générer des résultats
       tangibles.
     </h2>
   </div>
@@ -109,11 +109,12 @@
     background-clip: text;
   }
   .wrapper-text h2 {
-    font-size: var(--l);
+    font-size: var(--m);
     font-weight: 300;
     color: white;
     font-family: epilogue;
     margin-left: 20px;
+    line-height: 30px;
   }
   .wrapper-action {
     grid-column: 2/12;
@@ -130,13 +131,13 @@
     gap: 20px;
     padding: 30px;
     color: white;
-        background-color: var(--ca);
+    background-color: var(--ca);
   }
   .wrapper-text-cards {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     width: 100%;
     height: 350px;
@@ -159,21 +160,38 @@
     width: auto;
     height: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 
     /* clip-path: polygon(51% 12%, 64% 0, 100% 36%, 81% 91%, 6% 99%, 14% 71%, 10% 2%); */
   }
   .billy {
-    width: 200px;
+    width: 150px;
     /* max-width: 100px; */
-    height: 200px;
+    height: 150px;
     /* max-height: 100px; */
-    background-color: rgb(4, 10, 37);
+    background-color: rgb(213, 249, 10);
     padding: 20px;
     border-radius: 50%;
     box-shadow: inset 3px 4px 15px var(--primary);
-
+    animation: moveAround 11s infinite;
+  }
+  @keyframes moveAround{
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
   }
 
   .wrapper-contactez {
@@ -191,19 +209,19 @@
   .contactez {
     text-decoration: none;
     color: var(--colorC);
-    font-size: var(--xl);
+    font-size: var(--l);
     font-family: epilogue;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
     border-radius: 8px;
     margin-bottom: 40px;
     border: 1px solid grey;
-    padding: 20px;
+    padding: 10px;
   }
-  .contactez:hover{
+  .contactez:hover {
     animation: bounce 0.4s ease-in-out;
   }
-    @keyframes bounce {
+  @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
     }
@@ -233,7 +251,7 @@
       margin-top: 50px;
       margin-left: 10px;
     }
-    .card-action{
+    .card-action {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -241,16 +259,16 @@
     .wrapper-text {
       margin-left: 0px;
     }
-      .wrapper-text-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 350px;
-    margin-top: 10px;
-  }
+    .wrapper-text-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      height: 350px;
+      margin-top: 10px;
+    }
     .wrapper-contactez {
       margin-left: 0px;
       margin-right: 0px;

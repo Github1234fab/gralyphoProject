@@ -97,7 +97,7 @@
   .card {
     z-index: 0;
     background-color: transparent;
-    width: calc(40% - 50px);
+    width: calc(20% - 50px);
     height: 200px;
     display: flex;
     flex-direction: column;

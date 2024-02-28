@@ -122,7 +122,7 @@
     background-clip: text;
   }
   .C-section h2 {
-    font-size: var(--l);
+    font-size: var(--m);
     font-weight: 300;
     text-align: left;
     color: white;
@@ -140,7 +140,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 12px;
     margin-bottom: 100px;
     transform: translateX(-700px);
     opacity: 0.3;

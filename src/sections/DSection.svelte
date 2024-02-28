@@ -73,11 +73,12 @@
       Obtenez le meilleur de votre présence digitale avec <strong> une agence Web </strong>qui vous accompagne dans
       votre croissance.
     </h2>
+        </div>
     <div class="wrapper-accordeon">
       {#each infosCards as card}
         <CardsSectionB title={card.title} p={card.p} number={card.number} />
       {/each}
-    </div>
+
   </div>
 </section>
 
@@ -93,7 +94,7 @@
     opacity: 0.2;
   }
   .wrapper-text {
-    grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 2;
     display: flex;
     flex-direction: column;
@@ -108,7 +109,7 @@
     color: var(--primary);
     margin-top: 50px;
     padding: 10px;
-    line-height: 45px;
+    line-height: 60px;
     margin-left: 10px;
   }
   .D-section h1 span {
@@ -125,9 +126,9 @@
     grid-row: 3;
     margin-top: 10px;
     font-family: epilogue;
-    font-weight: 300;
-    font-size: var(--l);
-    color: var(--bg);
+    font-weight: 400;
+    font-size: var(--m);
+    color: black;
     text-align: left;
     padding: 10px;
     line-height: 30px;

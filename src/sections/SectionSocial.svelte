@@ -36,7 +36,7 @@
 
 <section class="section-social">
   <div class="wrapper-text">
-    <h1>Agence de conception Web <br /> <span> Ecoresponsable</span></h1>
+    <h1>Gralypho, une Agence de conception Web <br /> <span> Ecoresponsable</span></h1>
     <div class="wrapper-trees">
       <i class="fa-solid fa-tree-city tree-icon"></i>
       <i class="fa-solid fa-tree tree-icon"></i>
@@ -70,7 +70,9 @@
   }
   .wrapper-social {
     display: flex;
-    width: 100%;
+width: 90%;
+    margin: 0 auto; 
+
   }
   .wrapper-trees {
     display: flex;
