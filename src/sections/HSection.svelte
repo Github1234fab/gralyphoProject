@@ -31,7 +31,6 @@
     font-size: 16px;
     opacity: 1;
   }
-
   .wrapper-text {
     grid-column: 1 / 8;
     grid-row: 1/3;
@@ -40,6 +39,7 @@
     border-radius: 20px;
     margin-top: 40px;
     margin-left: 100px;
+      place-content: start;
   }
   .H-section h1 {
     text-align: left;
@@ -92,6 +92,7 @@
     align-items: center;
     gap: 0px;
     margin-top: 200px;
+        /* place-content: start; */
   }
 
   @keyframes bounce {
@@ -134,6 +135,8 @@
       gap: 0px;
       margin-top: 80px;
       z-index: 0;
+
+  
     }
     .contact {
       margin-top: 50px;
@@ -197,7 +200,7 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 300px;
+      margin-top: 100px;
       margin-left: -20px;
       z-index: 0;
     }
@@ -209,14 +212,14 @@
     }
   }
   @media only screen and (min-width: 576px) and (max-width: 768px) {
-     .wrapper-text {
+    .wrapper-text {
       margin-top: 10px;
       margin-bottom: 40px;
       z-index: 2;
       margin-left: 0px;
       grid-column: 1/13;
-      background-color: rgba(4, 8, 33, 0.182);
-      backdrop-filter: blur(8px);
+      /* background-color: rgba(4, 8, 33, 0.182);
+      backdrop-filter: blur(8px); */
       padding: 20px;
       border-radius: 0px;
     }
@@ -235,8 +238,8 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 360px;
-      margin-left: 40px;
+      margin-top: 60px;
+      margin-left: 340px;
       z-index: 0;
     }
     .contact {
@@ -251,31 +254,32 @@
       margin-top: 10px;
       margin-bottom: 40px;
       z-index: 2;
-      margin-left: 0px;
+      margin-left: -10px;
       grid-column: 1/13;
-      background-color: rgba(4, 8, 33, 0.182);
-      backdrop-filter: blur(8px);
+      /* background-color: rgba(4, 8, 33, 0.182);
+      backdrop-filter: blur(8px); */
       padding: 20px;
       border-radius: 0px;
     }
     .H-section h1 {
-      font-size: 3.3em;
+      font-size: 3.1em;
       line-height: 60px;
       letter-spacing: -3px;
     }
     .H-section h2 {
-      margin-top: 40px;
-         line-height: 25px;
+      margin-top: 120px;
+      line-height: 25px;
+      font-size: 1em;
     }
     .wrapper-visuel {
-      grid-column: 1/13;
+      grid-column: 5/13;
       grid-row: 1/3;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 360px;
-      margin-left: -45px;
+      margin-top: 0px;
+      margin-left: 100px;
       z-index: 0;
     }
     .contact {

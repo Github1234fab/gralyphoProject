@@ -128,8 +128,16 @@
     .B {
       top: 84px;
       left: 44px;
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
+    }
+  }
+   @media only screen and (min-width: 300px) and (max-width: 576px) {
+       .B {
+      top: 100px;
+      left: 45px;
+      width: 160px;
+      height: 160px;
     }
   }
 </style>

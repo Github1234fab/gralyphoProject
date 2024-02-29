@@ -147,8 +147,16 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
     .A {
       top: 204px;
       left: 0px;
-      width: 170px;
-      height: 170px;
+      width: 220px;
+      height: 220px;
+    }
+  }
+    @media only screen and (min-width: 300px) and (max-width: 576px) {
+       .A {
+      top: 150px;
+      left: 80px;
+      width: 150px;
+      height: 150px;
     }
   }
 </style>

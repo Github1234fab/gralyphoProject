@@ -92,10 +92,18 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
 }
   @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .C {
-      top: 174px;
-      left: 84px;
-      width: 190px;
-      height: 190px;
+      top: 190px;
+      left: 94px;
+      width: 290px;
+      height: 290px;
+    }
+  }
+  @media only screen and (min-width: 300px) and (max-width: 576px) {
+       .C {
+      top: 150px;
+      left: 30px;
+      width: 290px;
+      height: 290px;
     }
   }
 
