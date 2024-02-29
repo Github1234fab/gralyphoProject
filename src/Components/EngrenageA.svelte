@@ -1,20 +1,26 @@
-
-
 <script>
-export let fill;
-export let transition;
+  export let fill;
+  export let transition;
 </script>
 
-
-<svg class="A" version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="300px" height="300px" viewBox="0 0 1280.000000 1242.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.15, written by Peter Selinger 2001-2017
-</metadata>
-<g transform="translate(0.000000,1242.000000) scale(0.100000,-0.100000)"
-fill={fill} stroke="none"  style="transition: {transition}">
-<path d="M7167 11341 c-17 -77 -87 -236 -122 -276 -16 -19 -16 -18 0 8 9 16
+<svg
+  class="A"
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="300px"
+  height="300px"
+  viewBox="0 0 1280.000000 1242.000000"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <metadata> Created by potrace 1.15, written by Peter Selinger 2001-2017 </metadata>
+  <g
+    transform="translate(0.000000,1242.000000) scale(0.100000,-0.100000)"
+    {fill}
+    stroke="none"
+    style="transition: {transition}"
+  >
+    <path
+      d="M7167 11341 c-17 -77 -87 -236 -122 -276 -16 -19 -16 -18 0 8 9 16
 15 30 13 32 -2 2 -46 -30 -98 -72 -303 -241 -500 -323 -778 -323 -239 1 -425
 67 -687 244 -66 44 -122 83 -125 86 -3 3 -20 16 -39 29 -34 24 -34 21 1 -34
 l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
@@ -69,33 +75,80 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
 145 126 211 167 143 91 315 151 489 173 88 10 288 2 380 -17z m-383 -2100 c-3
 -3 -12 -4 -19 -1 -8 3 -5 6 6 6 11 1 17 -2 13 -5z m106 -11 c-13 -2 -33 -2
 -45 0 -13 2 -3 4 22 4 25 0 35 -2 23 -4z m114 1 c-3 -3 -12 -4 -19 -1 -8 3 -5
-6 6 6 11 1 17 -2 13 -5z"/>
-<path d="M10817 8229 c7 -7 15 -10 18 -7 3 3 -2 9 -12 12 -14 6 -15 5 -6 -5z"/>
-<path d="M10870 8205 c14 -8 30 -14 35 -14 6 0 -1 6 -15 14 -14 8 -29 14 -35
-14 -5 0 1 -6 15 -14z"/>
-<path d="M10935 8180 c27 -12 43 -12 25 0 -8 5 -22 9 -30 9 -10 0 -8 -3 5 -9z"/>
-<path d="M10988 8163 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/>
-<path d="M11028 8153 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/>
-<path d="M11068 8143 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/>
-</g>
+6 6 6 11 1 17 -2 13 -5z"
+    />
+    <path d="M10817 8229 c7 -7 15 -10 18 -7 3 3 -2 9 -12 12 -14 6 -15 5 -6 -5z" />
+    <path
+      d="M10870 8205 c14 -8 30 -14 35 -14 6 0 -1 6 -15 14 -14 8 -29 14 -35
+14 -5 0 1 -6 15 -14z"
+    />
+    <path d="M10935 8180 c27 -12 43 -12 25 0 -8 5 -22 9 -30 9 -10 0 -8 -3 5 -9z" />
+    <path d="M10988 8163 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+    <path d="M11028 8153 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+    <path d="M11068 8143 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+  </g>
 </svg>
 
-
 <style>
-   .A {
+  .A {
     top: 133px;
     left: 39px;
     position: absolute;
     width: 400px;
-    height:400px;
+    height: 400px;
     animation: rotation 12s linear infinite reverse;
-  } 
-    @keyframes rotation {
+  }
+  @keyframes rotation {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
+    }
+  }
+
+  /* ******************MEDIA************************ */
+
+
+      @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+    .A {
+      top: 103px;
+      left: -200px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+    @media only screen and (min-width: 1400px) and (max-width: 1900px) {
+    .A {
+      top: 233px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+    }
+  }
+  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
+    .A {
+      top: 133px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .A {
+      top: 133px;
+      left: -70px;
+      width: 300px;
+      height: 300px;
+    }
+  }
+    @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .A {
+      top: 204px;
+      left: 0px;
+      width: 170px;
+      height: 170px;
     }
   }
 </style>

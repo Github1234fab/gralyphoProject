@@ -1,18 +1,26 @@
-
 <script>
-        export let fill;
-        export let transition;
+  export let fill;
+  export let transition;
 </script>
 
-<svg class="B" version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="254.000000pt" height="280.000000pt" viewBox="0 0 1254.000000 1280.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.15, written by Peter Selinger 2001-2017
-</metadata>
-<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-fill={fill} stroke="none"  style="transition: {transition}">
-<path d="M5955 12789 c-230 -12 -515 -46 -520 -63 -2 -6 17 -159 43 -341 l48
+<svg
+  class="B"
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="254.000000pt"
+  height="280.000000pt"
+  viewBox="0 0 1254.000000 1280.000000"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <metadata> Created by potrace 1.15, written by Peter Selinger 2001-2017 </metadata>
+  <g
+    transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+    {fill}
+    stroke="none"
+    style="transition: {transition}"
+  >
+    <path
+      d="M5955 12789 c-230 -12 -515 -46 -520 -63 -2 -6 17 -159 43 -341 l48
 -330 -26 -7 c-14 -4 -113 -23 -220 -42 -236 -43 -403 -78 -490 -104 -36 -11
 -110 -32 -165 -47 -55 -15 -122 -35 -150 -45 -27 -11 -95 -35 -150 -55 -55
 -20 -134 -51 -176 -70 l-77 -33 -133 308 c-73 170 -135 314 -139 320 -8 12
@@ -67,20 +75,21 @@ fill={fill} stroke="none"  style="transition: {transition}">
 259 -721 460 -1115 863 -172 174 -292 315 -383 446 -217 315 -256 376 -368
 577 -232 418 -414 942 -499 1435 -91 535 -91 1115 0 1650 85 493 267 1017 499
 1435 112 201 151 262 368 577 91 131 211 272 383 446 303 310 504 478 806 679
-150 100 504 295 639 353 225 98 534 204 750 259 480 122 877 160 1395 136z"/>
-</g>
+150 100 504 295 639 353 225 98 534 204 750 259 480 122 877 160 1395 136z"
+    />
+  </g>
 </svg>
-               
-  <style>
-   .B {
+
+<style>
+  .B {
     top: 14px;
     left: 44px;
     position: absolute;
     width: 300px;
-    height:300px;
+    height: 300px;
     animation: rotation 15s linear infinite;
-  } 
-    @keyframes rotation {
+  }
+  @keyframes rotation {
     0% {
       transform: rotate(0deg);
     }
@@ -89,5 +98,38 @@ fill={fill} stroke="none"  style="transition: {transition}">
     }
   }
 
-</style>
+    @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+    .B {
+      top: 3px;
+      left: 20px;
+      width: 400px;
+      height: 400px;
+    }
+  }
 
+    @media only screen and (min-width: 1400px) and (max-width: 1900px) {
+    .B {
+      top: 133px;
+      left: -80px;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
+    .B {
+      top: 84px;
+      left: 44px;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .B {
+      top: 84px;
+      left: 44px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+</style>

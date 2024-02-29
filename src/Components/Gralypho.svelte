@@ -1,6 +1,5 @@
 <div class="rect">
   <div class="rec-left">G</div>
-  <!-- <div class="rec-right"></div> -->
 </div>
 
 <style>
@@ -9,9 +8,7 @@
     width: 130px;
     height: 40px;
     font-family: poppins;
-    font-weight: 500;
-    /* background-color: var(--bg); */
-    /* padding: 5px; */
+    font-weight: 600;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -21,7 +18,7 @@
   }
   .rec-left {
     width: 50%;
-    height: 45px;
+    height: 52px;
     color: #6CA0DC;
     font-size: 1.8em;
     display: flex;
@@ -31,15 +28,9 @@
     font-weight: 600;
     border-radius: 4px;
     border: solid 1px #6CA0DC;
+    margin-top: -3px;
   }
-  .rec-right {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    background-color: var(--bg);
-    text-align: center;
-  }
+  
     @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);

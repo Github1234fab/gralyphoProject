@@ -51,8 +51,8 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     top: 90px;
     left: 212px;
     position: absolute;
-    width: 400px;
-    height:400px;
+    width: 350px;
+    height:350px;
     animation: rotation 15s linear infinite;
   } 
     @keyframes rotation {
@@ -61,6 +61,41 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     }
     100% {
       transform: rotate(360deg);
+    }
+  }
+
+    @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+    .C {
+      top: 233px;
+      left: 80px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+    @media only screen and (min-width: 1400px) and (max-width: 1900px) {
+    .C {
+      top: 233px;
+      left: 80px;
+      width: 500px;
+      height: 500px;
+ 
+    }
+  }
+    @media only screen and (min-width: 1100px) and (max-width: 1400px)  {
+.C{
+      top: 194px;
+    left: 75px;
+     width: 450px;
+    height: 450px;
+}
+}
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .C {
+      top: 174px;
+      left: 84px;
+      width: 190px;
+      height: 190px;
     }
   }
 

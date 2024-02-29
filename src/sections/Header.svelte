@@ -11,10 +11,12 @@
 </script>
 
 <nav class="navigation">
+  <div class="wrapper-logo-burger">
   <a href="/" class="logo"><Logo /></a>
   <button class="burger-menu" aria-label="Menu" on:click={display}>
     <i class="fa-solid fa-bars burger" class:visible={toggle}></i>
   </button>
+  </div>
 
   {#if toggle}
     <span class="span" transition:slide={{ duration: 1900 }}>
@@ -43,30 +45,18 @@
     font-size: 16px;
         border-bottom: 1px rgb(74, 74, 74) solid;
   }
-  /* .navigation h1 {
-    grid-column: 2/11;
-    margin-left: 200px;
-    margin-right: 200px;
-    grid-row: 1;
-    font-size: var(--m);
-    color: rgb(218, 216, 216);
-    font-weight: 200;
-    text-align: center;
 
-  } */
   .navigation h1 span {
     color: rgb(218, 216, 216);
     font-weight: 900;
   }
-  /* .hills  {
-    margin-top: -20px;
-    width: 100vw;
-    height: 100px;
-   border-bottom: white 1px solid;
-    background-color: #1f2228;
-     /* background-image: linear-gradient(to top, rgb(66, 130, 64) , var(--orange) 30%);  */
-  /* clip-path: polygon(198px 45px, 274px 49px, 339px 23px, 354px 23px, 365px 23px, 462px 53px, 485px 49px, 529px 72px, 590px 50px, 672px 65px, 737px 53px, 779px 55px, 868px 49px, 885px 55px, 952px 41px, 1052px 55px, 1079px 55px, 1164px 72px, 1263px 55px, 1383px 41px, 1421px 28px, 1455px 23px, 1491px 23px, 1538px 15px, 1573px 4px, 1608px 0px, 1670px 23px, 1732px 49px, 1786px 65px, 1872px 55px, 1924px 82px, 2000px 100px, 0px 100px, 129px 72px) */
-  /* }  */
+.wrapper-logo-burger{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
   .logo {
     grid-column: 5;
     grid-row: 1;
