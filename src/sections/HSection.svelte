@@ -19,6 +19,7 @@
 
   <div class="wrapper-visuel">
     <Engrenage />
+
   </div>
 </section>
 
@@ -39,7 +40,7 @@
     border-radius: 20px;
     margin-top: 40px;
     margin-left: 100px;
-      place-content: start;
+      place-content: center;
   }
   .H-section h1 {
     text-align: left;
@@ -88,11 +89,10 @@
     grid-column: 8/12;
     grid-row: 1/3;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     gap: 0px;
     margin-top: 200px;
-        /* place-content: start; */
   }
 
   @keyframes bounce {
@@ -200,7 +200,7 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 100px;
+      margin-top: 300px;
       margin-left: -20px;
       z-index: 0;
     }
@@ -267,7 +267,7 @@
       letter-spacing: -3px;
     }
     .H-section h2 {
-      margin-top: 120px;
+      margin-top: 140px;
       line-height: 25px;
       font-size: 1em;
     }

@@ -1,18 +1,26 @@
-
 <script>
-        export let fill;
-        export let transition;
+  export let fill;
+  export let transition;
 </script>
 
-<svg class="C" version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="280.000000pt" height="280.000000pt" viewBox="0 0 1280.000000 1280.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.15, written by Peter Selinger 2001-2017
-</metadata>
-<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-fill={fill} stroke="none"  style="transition: {transition}">
-<path d="M6033 12790 c-409 -27 -913 -104 -973 -149 -61 -44 -60 -36 -60 -519
+<svg
+  class="C"
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="280.000000pt"
+  height="280.000000pt"
+  viewBox="0 0 1280.000000 1280.000000"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <metadata> Created by potrace 1.15, written by Peter Selinger 2001-2017 </metadata>
+  <g
+    transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+    {fill}
+    stroke="none"
+    style="transition: {transition}"
+  >
+    <path
+      d="M6033 12790 c-409 -27 -913 -104 -973 -149 -61 -44 -60 -36 -60 -519
 l-1 -443 -22 -9 c-12 -4 -98 -31 -192 -60 -190 -58 -383 -128 -555 -203 -136
 -58 -420 -199 -505 -250 l-60 -36 -310 308 c-170 170 -320 314 -332 320 -30
 15 -97 14 -136 -3 -41 -17 -256 -171 -412 -295 -394 -312 -817 -735 -1126
@@ -42,20 +50,21 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
 -715 283 -1118 41 -739 -194 -1457 -668 -2037 -471 -578 -1145 -953 -1901
 -1060 -208 -29 -572 -29 -780 0 -660 93 -1242 382 -1705 845 -463 463 -752
 1045 -845 1705 -29 208 -29 572 0 780 107 756 482 1430 1060 1901 619 505
-1364 731 2173 658z"/>
-</g>
+1364 731 2173 658z"
+    />
+  </g>
 </svg>
 
 <style>
-   .C {
+  .C {
     top: 90px;
     left: 212px;
     position: absolute;
     width: 350px;
-    height:350px;
+    height: 350px;
     animation: rotation 15s linear infinite;
-  } 
-    @keyframes rotation {
+  }
+  @keyframes rotation {
     0% {
       transform: rotate(0deg);
     }
@@ -64,7 +73,7 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     }
   }
 
-    @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+  @media only screen and (min-width: 1900px) and (max-width: 2500px) {
     .C {
       top: 233px;
       left: 80px;
@@ -73,23 +82,22 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     }
   }
 
-    @media only screen and (min-width: 1400px) and (max-width: 1900px) {
+  @media only screen and (min-width: 1400px) and (max-width: 1900px) {
     .C {
       top: 233px;
       left: 80px;
       width: 500px;
       height: 500px;
- 
     }
   }
-    @media only screen and (min-width: 1100px) and (max-width: 1400px)  {
-.C{
+  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
+    .C {
       top: 194px;
-    left: 75px;
-     width: 450px;
-    height: 450px;
-}
-}
+      left: 75px;
+      width: 450px;
+      height: 450px;
+    }
+  }
   @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .C {
       top: 190px;
@@ -99,12 +107,11 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     }
   }
   @media only screen and (min-width: 300px) and (max-width: 576px) {
-       .C {
+    .C {
       top: 150px;
       left: 30px;
-      width: 290px;
-      height: 290px;
+      width: 190px;
+      height: 190px;
     }
   }
-
 </style>

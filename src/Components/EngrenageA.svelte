@@ -154,7 +154,7 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
     @media only screen and (min-width: 300px) and (max-width: 576px) {
        .A {
       top: 150px;
-      left: 80px;
+      left: -70px;
       width: 150px;
       height: 150px;
     }

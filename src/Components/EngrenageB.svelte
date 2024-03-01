@@ -135,7 +135,7 @@
    @media only screen and (min-width: 300px) and (max-width: 576px) {
        .B {
       top: 100px;
-      left: 45px;
+      left: 25px;
       width: 160px;
       height: 160px;
     }

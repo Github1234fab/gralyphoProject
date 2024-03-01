@@ -142,7 +142,7 @@
        gap: 10px;
     }
     .navigation {
-      font-size: 12px;
+      font-size: 16px;
     }
     a {
       font-size: 1.1em;
