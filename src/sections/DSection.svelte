@@ -140,6 +140,10 @@
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 1em;
-
+  }
+    @media only screen and (min-width: 300px) and (max-width: 576px) {
+    .D-section h1{
+      line-height: 35px;
+    }
   }
 </style>

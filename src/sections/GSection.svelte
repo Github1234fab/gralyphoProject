@@ -2,20 +2,45 @@
   import Dev from "../Assets/png-gralypho/dev.png";
   import Carousel from "../Components/CarousselCards.svelte";
   import skate from "../Assets/png-gralypho/skateboard.png";
-
   import { onMount } from "svelte";
 
   onMount(() => {
-    gsap.to(".wrapper-developpeur", {
-      x:700,
-      scrollTrigger: {
-        trigger: ".wrapper-developpeur",
-        start: "top 720px",
-        end: "-100px",
-        scrub: 5,
-      },
-    });
+    function handleResize() {
+      if (window.innerWidth < 768) {
+        gsap.to(".wrapper-developpeur", {
+          x: 200,
+          scrollTrigger: {
+            trigger: ".wrapper-developpeur",
+            start: "top 720px",
+            end: "-100px",
+            scrub: 5,
+          },
+        });
+      } else {
+        gsap.to(".wrapper-developpeur", {
+          x: 700,
+          scrollTrigger: {
+            trigger: ".wrapper-developpeur",
+            start: "top 720px",
+            end: "-100px",
+            scrub: 5,
+          },
+        });
+      }
+    }
+
+    // Appeler la fonction de gestion de redimensionnement au chargement initial
+    handleResize();
+
+    // Ajouter un écouteur d'événement pour le redimensionnement de la fenêtre
+    window.addEventListener("resize", handleResize);
+
+    // Nettoyer l'écouteur d'événement lors de la destruction du composant
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   });
+
 </script>
 
 <section class="G-section">
@@ -54,14 +79,15 @@
     flex-direction: column;
   }
   .G-section h1 {
+    border: 1px solid rgb(221, 221, 221);
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
     font-weight: 900;
     font-size: var(--xl);
     color: var(--primary);
-    margin-top: -30px;
-    padding: 10px;
+    margin-top: -17px;
+    padding: 20px;
     line-height: 37px;
   }
 .G-section h1 span{
