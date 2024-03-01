@@ -126,4 +126,35 @@
     font-family: epilogue;
     margin-bottom: 50px;
   }
+
+    @media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .section-ben h1 {
+    font-size: var(--xxl);
+    font-weight: 900;
+    color: var(--colorC);
+    font-family: epilogue;
+    line-height: 40px;
+    margin-top: 90px;
+  }
+    }
+       @media only screen and (min-width: 576px) and (max-width: 768px) {
+  .section-ben h1 {
+    font-size: var(--xxl);
+    font-weight: 900;
+    color: var(--colorC);
+    font-family: epilogue;
+    line-height: 30px;
+    margin-top: 90px;
+  }
+}
+     @media only screen and (min-width: 300px) and (max-width: 576px) {
+  .section-ben h1 {
+    font-size: var(--xxl);
+    font-weight: 900;
+    color: var(--colorC);
+    font-family: epilogue;
+    line-height: 30px;
+    margin-top: 90px;
+  }
+}
 </style>

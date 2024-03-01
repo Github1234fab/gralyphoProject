@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 100vh;
+    height: 100dvh;
     font-size: 16px;
     opacity: 1;
   }
@@ -167,7 +167,7 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 150px;
+      margin-top: 80px;
       margin-left: -20px;
       z-index: 0;
     }
@@ -200,7 +200,7 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 300px;
+      margin-top: 100px;
       margin-left: -20px;
       z-index: 0;
     }
@@ -267,7 +267,7 @@
       letter-spacing: -3px;
     }
     .H-section h2 {
-      margin-top: 140px;
+      margin-top: 40px;
       line-height: 25px;
       font-size: 1em;
     }
