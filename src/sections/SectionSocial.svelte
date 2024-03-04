@@ -70,9 +70,8 @@
   }
   .wrapper-social {
     display: flex;
-width: 90%;
-    margin: 0 auto; 
-
+    width: 90%;
+    margin: 0 auto;
   }
   .wrapper-trees {
     display: flex;

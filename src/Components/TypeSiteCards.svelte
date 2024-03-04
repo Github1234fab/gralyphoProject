@@ -1,43 +1,37 @@
 <script>
   export let title;
-  export let icon;
+  // export let icon;
   export let p;
+  // export let lien;
   export let lien;
   export let lien2;
+    import { onMount } from "svelte";
 </script>
 
 <div class="cards">
   <div class="wrapper-text">
-    <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a>
+    <!-- <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a> -->
     <a href={lien2} class="title">{title}</a>
     <p>
       {p}
     </p>
   </div>
-  <!-- <a href={lien}><button class="button">En savoir plus<button /></button></a> -->
+  <a href={lien} class="link-decouvrir">Découvrir</a>
 </div>
 
 <style>
   .cards {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 3px;
     color: white;
     justify-content: center;
     align-items: center;
-    background-color: var(--ca);
-    border: 1px solid grey;
-    width: calc(30% - 10px);
-    height: calc(50% - 10px);
-  }
-  .icon {
-    height: 100px;
-    width: 100px;
+    width: 40%;
+    height: 52%;
+    border: 1px solid var(--CTA);
     padding: 10px;
-  }
-  .icon:hover {
-    animation: bounce 0.4s ease-in-out;
+    background-color: #4683b42b;
   }
 
   @keyframes bounce {
@@ -61,45 +55,81 @@
   .wrapper-text {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    align-items: center;
+    gap: 20px;
+    align-items: left;
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 10px;
   }
   .title {
-    font-weight: kanit;
-    font-weight: 900;
+    font-family: poppins;
+    font-weight: 600;
     font-size: var(--l);
-    border: 1px solid grey;
-    padding: 20px;
     border-radius: 8px;
     text-decoration: none;
-    color: var(--colorC);
+    color: var(--primary);
+    letter-spacing: -1px;
   }
   .title:hover {
     animation: bounce 0.4s ease-in-out;
   }
   .wrapper-text p {
     font-size: var(--m);
-    color: var(--colorC);
+    color: var(--primary);
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     line-height: 30px;
-    padding: 5px;
+    padding: 0px;
+  }
+  .link-decouvrir {
+    text-decoration: none;
+    color: white;
+    background-color: var(--CTA);
+    font-family: kanit;
+    font-weight: 400;
+    width: 160px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+     margin-right: auto;
+     margin-top: -80px;
+    box-shadow: 0px 0px 5px 0px var(--CTA);
+    font-size: var(--m);
+  }
+  .link-decouvrir:hover {
+    animation: bounce 0.4s ease-in-out;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1) translateY(-2px);
+    }
+    25% {
+      transform: scale(1) translateY(3px);
+    }
+    50% {
+      transform: scale(1) translateY(-1px);
+    }
+    75% {
+      transform: scale(1) translateY(2px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
   }
 
   @media screen and (max-width: 1116px) {
     .cards {
       width: calc(40% - 10px);
-      height: calc(37% - 10px);
+      height: calc(48% - 10px);
     }
   }
 
   @media screen and (max-width: 768px) {
     .cards {
-      width: calc(100% - 10px);
-      height: auto;
+      width: calc(100%);
+      height: 24%;
     }
   }
 </style>

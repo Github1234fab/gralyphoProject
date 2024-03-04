@@ -71,12 +71,13 @@ html {
   /* --orange: #D1A617; */
   --alternate: #877455;
   --newBlue: #2993FA;
+  --CTA: #4682b4;
 
 
     --xlhero: clamp(4.5rem, 8vw, 10rem);
    --xxl: clamp(3rem, 8vw, 8rem);
   --xl: clamp(2rem, 8vw, 3.5rem);
---l:clamp(1.2rem, 8vw, 2rem);
---m:clamp(1rem, 8vw, 1rem);
+--l:clamp(1.4rem, 8vw, 2rem);
+--m:clamp(1.2rem, 8vw, 1rem);
 --button: clamp(1.1rem, 8vw, 1.4rem);
 }

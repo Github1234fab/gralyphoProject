@@ -19,10 +19,11 @@
 <main in:fade={{ duration: 2000 }}>
 
   <HSection />
-<SectionSocial/>
+    <Csection />
+<!-- <SectionSocial/> -->
  <BeneficeSection />
    <JSection />
-  <Csection />
+
     <DSection />
   <section id="sectionE">
     <ESection />

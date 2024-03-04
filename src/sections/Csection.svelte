@@ -20,7 +20,7 @@
       lien2: "/Sites",
     },
     {
-      title: "E-commerce",
+      title: "Site E-commerce",
       icon: commerce,
       p: "Réaliser un site internet e-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne 24h/24. Les fonctionnalités clés d’un site e-commerce comprennent :...",
       lien: "/Sites",
@@ -41,14 +41,14 @@
       lien2: "/Sites",
     },
     {
-      title: "Corporate",
+      title: "Site Corporate",
       icon: corporate,
       p: "Les grandes entreprises, institutions ou organisations ont besoin de présenter leurs activités. Un site web corporate apporte les réponses nécessaires de ce point de vue.",
       lien: "/Sites",
       lien2: "/Sites",
     },
     {
-      title: "Institutionnel",
+      title: "Site Institutionnel",
       icon: institution,
       p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
       lien: "/Sites",
@@ -62,7 +62,7 @@
       ease: "expoScale",
       scrollTrigger: {
         trigger: ".C-section",
-        start: "top 800px",
+        start: "top 600px",
         end: "-200px",
         scrub: 3,
       },
@@ -70,7 +70,7 @@
     gsap.to(".wrapper-cards", {
       x: 0,
       opacity: 1,
-      ease: "expoScale",
+      ease: "power4",
       scrollTrigger: {
         trigger: ".wrapper-cards",
         start: "top 900px",
@@ -79,45 +79,49 @@
       },
     });
   });
+
+
 </script>
 
 <section class="C-section" id="sectionC">
   <div class="wrapper-text">
-    <h1>Le futur de votre business commence par un <span>site Web</span> à votre mesure.</h1>
-    <h2>
+    <h1>Le futur de votre business commence par un <span> site Web,</span> mais lequel?!</h1>
+    <!-- <h2>
       Selon votre besoin, nous vous proposons des solutions de sites internet sur mesure, adaptées à votre activité, à
       votre business et à votre budget.
-    </h2>
+    </h2> -->
   </div>
 
   <div class="wrapper-cards">
     {#each SiteCards as Cards}
-      <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p} lien={Cards.lien}  lien2={Cards.lien2}/>
+      <TypeSiteCards title={Cards.title} icon={Cards.icon} p={Cards.p} lien={Cards.lien} lien2={Cards.lien2} />
     {/each}
   </div>
-</section>
+</section>  
 
 <style>
   .C-section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1;
-    height: auto;
+    grid-template-rows: auto;
     font-size: 16px;
     opacity: 0.2;
+    background-color: rgb(236, 234, 234);
   }
   .wrapper-text h1 {
+    font-family: epilogue;
     font-size: var(--xl);
-    font-weight: 900;
+    font-weight: 700;
     text-align: left;
-    color: var(--colorC);
+    color: var(--primary);
     margin-top: 70px;
+    letter-spacing: -1px;
   }
   .wrapper-text h1 span {
     font-weight: 900;
     color: transparent;
-    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
-    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-image: linear-gradient(to left, var(--orange), var(--blue));
+    background-image: linear-gradient(to left, var(--orange), var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -125,7 +129,7 @@
     font-size: var(--m);
     font-weight: 300;
     text-align: left;
-    color: white;
+    color: var(--primary);
     margin-top: 20px;
   }
   .wrapper-text {
@@ -134,13 +138,13 @@
   }
   .wrapper-cards {
     grid-column: 1/13;
-    grid-row: 3;
+    grid-row: 2/3;
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 20px;
     margin-bottom: 100px;
     transform: translateX(-700px);
     opacity: 0.3;

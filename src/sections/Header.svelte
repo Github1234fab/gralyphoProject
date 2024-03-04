@@ -110,7 +110,7 @@
   .burger {
     font-size: var(--l);
     border: none;
-    color: rgb(218, 216, 216);
+    color: rgb(145, 145, 145);
 
   }
   .burger:hover {

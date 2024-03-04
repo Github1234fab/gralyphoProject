@@ -22,6 +22,7 @@
 
     </h2>
     <a class="contact" href="/#footer">Nous contacter</a>
+     <a class="contact2" href="/#footer">Devis gratuit</a>
   </div>
 
   <div class="wrapper-visuel">
@@ -76,7 +77,7 @@
   .contact {
     text-decoration: none;
     color: white;
-    background-color: #4682b4;
+    background-color: var(--CTA);
     font-family: kanit;
     font-weight: 400;
     margin-top: 30px;
@@ -86,7 +87,20 @@
     text-align: center;
     padding: 20px;
   }
-  .contact:hover {
+    .contact2{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to left, var(--orange), var(--CTA));
+    font-family: kanit;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 160px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+  }
+  .contact:hover, .contact2:hover {
     animation: bounce 0.4s ease-in-out;
   }
 
@@ -221,7 +235,7 @@
       margin-top: -50px;
       margin-bottom: 40px;
       z-index: 2;
-      margin-left: 0px;
+      margin-left: 5px;
       grid-column: 1/13;
       padding: 20px;
       border-radius: 0px;
@@ -253,13 +267,13 @@
   }
   @media only screen and (min-width: 300px) and (max-width: 576px) {
     .H-section{
-      height: 680px;
+      height: 720px;
     }
     .wrapper-text {
       margin-top: -50px;
       margin-bottom: 40px;
       z-index: 2;
-      margin-left: -10px;
+      margin-left: 0px;
       grid-column: 1/13;
       padding: 20px;
       border-radius: 0px;
@@ -281,14 +295,18 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 350px;
-      margin-left: 60px;
+      margin-top: 390px;
+      margin-left: 40px;
       z-index: 0;
     }
     .contact {
       margin-top: 50px;
       margin-left: 10px;
-
+      font-size: 1em;
+    }
+     .contact2 {
+      margin-top: 20px;
+      margin-left: 10px;
       font-size: 1em;
     }
   }

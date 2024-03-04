@@ -96,7 +96,7 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
     position: absolute;
     width: 400px;
     height: 400px;
-    animation: rotation 12s linear infinite reverse;
+    animation: rotation 17s linear infinite reverse;
   }
   @keyframes rotation {
     0% {
