@@ -106,12 +106,24 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
       height: 290px;
     }
   }
+      @media only screen and (min-width: 576px) and (max-width: 768px) {
+    .C {
+      top: 190px;
+      left: 94px;
+      width: 230px;
+      height: 230px;
+             opacity: 0.7;
+    }
+
+      }
+
   @media only screen and (min-width: 300px) and (max-width: 576px) {
     .C {
       top: 150px;
       left: 30px;
-      width: 190px;
-      height: 190px;
+      width: 130px;
+      height: 130px;
+            opacity: 0.7;
     }
   }
 </style>

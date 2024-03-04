@@ -11,7 +11,7 @@
     return color;
   }
 
-  let transition = "2.4s ease-in-out";
+  let transition = "2s ease-in-out";
   let colorA = randomColor();
   let colorB = randomColor();
   let colorC = randomColor();
@@ -23,7 +23,7 @@
   }
 
   onMount(() => {
-    setInterval(changeColor, 2400);
+    setInterval(changeColor, 1800);
   });
 </script>
 

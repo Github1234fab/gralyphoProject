@@ -132,12 +132,23 @@
       height: 250px;
     }
   }
+    @media only screen and (min-width: 576px) and (max-width: 768px) {
+          .B {
+      top: 84px;
+      left: 44px;
+      width: 250px;
+      height: 250px;
+             opacity: 0.7;
+    }
+  }
+      
    @media only screen and (min-width: 300px) and (max-width: 576px) {
        .B {
       top: 100px;
       left: 25px;
-      width: 160px;
-      height: 160px;
+      width: 140px;
+      height: 140px;
+      opacity: 0.6;
     }
   }
 </style>

@@ -7,19 +7,25 @@
 <Header />
 <section class="H-section">
   <div class="wrapper-text">
-    <h1><span>Imaginer, <br /> Développer,<br /> Créer.</span></h1>
-    <h2>
+    <h1>Imaginer, <br /> Développer,<br /> Créer.</h1>
+    <!-- <h2>
       <span>Gralypho</span> est une agence <span>WEB </span>qui aide les entreprises <br /> à accéder à
       <span>plus de visibilité</span>
       et <span>plus de clients sur internet</span>, <br /> grâce à des solutions digitales adaptées à leur
       <span>besoin.</span>
+    </h2> -->
+    <h2>
+      Accéder à
+        <span> plus de visibilité</span>
+        et <span>plus de clients</span>, <br /> grâce à nos solutions digitales adaptées à vos
+        <span>besoin et votre budget.</span>
+
     </h2>
     <a class="contact" href="/#footer">Nous contacter</a>
   </div>
 
   <div class="wrapper-visuel">
     <Engrenage />
-
   </div>
 </section>
 
@@ -28,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    height: 100dvh;
+    height: 900px;
     font-size: 16px;
     opacity: 1;
   }
@@ -38,9 +44,8 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    margin-top: 40px;
     margin-left: 100px;
-      place-content: center;
+  
   }
   .H-section h1 {
     text-align: left;
@@ -51,18 +56,18 @@
     text-transform: capitalize;
     letter-spacing: -8px;
     line-height: 135px;
+    margin-top: 70px;
   }
 
   .H-section h2 {
     font-family: poppins;
     font-weight: 300;
     font-size: var(--m);
-    color: white;
+    color:  rgb(235, 234, 234);
     text-align: left;
-    line-height: 40px;
-    word-spacing: -2px;
+    line-height: 30px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 10px;    
   }
   .H-section h2 span {
     font-weight: 500;
@@ -70,16 +75,16 @@
   }
   .contact {
     text-decoration: none;
-    color: var(--colorC);
-    background-color: var(--ca);
+    color: white;
+    background-color: #4682b4;
     font-family: kanit;
     font-weight: 400;
     margin-top: 30px;
     margin-left: 0px;
-    width: 200px;
-    padding: 25px;
+    width: 160px;
     border-radius: 6px;
     text-align: center;
+    padding: 20px;
   }
   .contact:hover {
     animation: bounce 0.4s ease-in-out;
@@ -114,6 +119,9 @@
   }
 
   @media only screen and (min-width: 1400px) and (max-width: 1900px) {
+    .H-section{
+      height: 900px;
+    }
     .wrapper-text {
       margin-top: 100px;
       z-index: 2;
@@ -135,13 +143,11 @@
       gap: 0px;
       margin-top: 80px;
       z-index: 0;
-
-  
     }
     .contact {
       margin-top: 50px;
       margin-left: 10px;
-      padding: 10px;
+
       font-size: 1em;
     }
   }
@@ -174,7 +180,7 @@
     .contact {
       margin-top: 50px;
       margin-left: 10px;
-      padding: 10px;
+
       font-size: 1em;
     }
   }
@@ -207,19 +213,16 @@
     .contact {
       margin-top: 50px;
       margin-left: 10px;
-      padding: 10px;
       font-size: 1em;
     }
   }
   @media only screen and (min-width: 576px) and (max-width: 768px) {
     .wrapper-text {
-      margin-top: 10px;
+      margin-top: -50px;
       margin-bottom: 40px;
       z-index: 2;
       margin-left: 0px;
       grid-column: 1/13;
-      /* background-color: rgba(4, 8, 33, 0.182);
-      backdrop-filter: blur(8px); */
       padding: 20px;
       border-radius: 0px;
     }
@@ -233,31 +236,31 @@
     }
     .wrapper-visuel {
       grid-column: 1/13;
-      grid-row: 1/3;
+      grid-row: 2/3;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 60px;
-      margin-left: 340px;
+      margin-top: -360px;
+      margin-left: 240px;
       z-index: 0;
     }
     .contact {
       margin-top: 50px;
       margin-left: 10px;
-      padding: 10px;
       font-size: 1em;
     }
   }
   @media only screen and (min-width: 300px) and (max-width: 576px) {
+    .H-section{
+      height: 680px;
+    }
     .wrapper-text {
-      margin-top: 10px;
+      margin-top: -50px;
       margin-bottom: 40px;
       z-index: 2;
       margin-left: -10px;
       grid-column: 1/13;
-      /* background-color: rgba(4, 8, 33, 0.182);
-      backdrop-filter: blur(8px); */
       padding: 20px;
       border-radius: 0px;
     }
@@ -267,25 +270,25 @@
       letter-spacing: -3px;
     }
     .H-section h2 {
-      margin-top: 40px;
+      margin-top: 30px;
       line-height: 25px;
       font-size: 1em;
     }
     .wrapper-visuel {
       grid-column: 5/13;
-      grid-row: 1/3;
+      grid-row: 1;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 0px;
-      margin-left: 100px;
+      margin-top: 350px;
+      margin-left: 60px;
       z-index: 0;
     }
     .contact {
       margin-top: 50px;
       margin-left: 10px;
-      padding: 10px;
+
       font-size: 1em;
     }
   }

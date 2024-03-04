@@ -151,12 +151,21 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
       height: 220px;
     }
   }
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    .A {
+      top: 204px;
+      left: 0px;
+      width: 220px;
+      height: 220px;
+    }
+  }
     @media only screen and (min-width: 300px) and (max-width: 576px) {
        .A {
-      top: 150px;
-      left: -70px;
-      width: 150px;
-      height: 150px;
+      top: 170px;
+      left: -20px;
+      width: 130px;
+      height: 130px;
+
     }
   }
 </style>

@@ -55,7 +55,7 @@
   flex-direction: row;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
   .logo {
     grid-column: 5;
@@ -108,7 +108,7 @@
     animation: bounce 0.4s ease-in-out;
   }
   .burger {
-    font-size: 3.6em;
+    font-size: var(--l);
     border: none;
     color: rgb(218, 216, 216);
 
@@ -138,7 +138,8 @@
     .wrapper-links {
       flex-direction: column;
       justify-content: center;
-      align-items: center;   
+      align-items: center;  
+      /* text-align: left;  */
        gap: 10px;
     }
     .navigation {

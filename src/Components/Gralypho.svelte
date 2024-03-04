@@ -12,13 +12,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin-left: -30px;
   }
   .rect:hover{
         animation: bounce 0.4s ease-in-out;
   }
   .rec-left {
-    width: 50%;
-    height: 52px;
+    width: 30%;
+    height: 90%;
     color: #6CA0DC;
     font-size: 1.8em;
     display: flex;
