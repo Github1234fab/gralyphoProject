@@ -1,26 +1,48 @@
 <script>
   export let title;
-  // export let icon;
+  export let icon;
   export let p;
   // export let lien;
   export let lien;
   export let lien2;
-    import { onMount } from "svelte";
+  import { onMount } from "svelte";
+  import Cards from "./Cards.svelte";
+
+  onMount(() => {
+    const Cards = document.querySelectorAll(".cards");
+
+    Cards.forEach((el) => {
+      gsap.to(el, {
+        y: 0,
+        opacity: 1,
+        ease: "power4",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 900px",
+          end: "-200px",
+          scrub: 5,
+        },
+      });
+    });
+  });
 </script>
 
 <div class="cards">
   <div class="wrapper-text">
-    <!-- <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a> -->
-    <a href={lien2} class="title">{title}</a>
+    <div class="wrapper-title-icon">
+      <a href={lien2} class="title">{title}</a>
+      <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a>
+    </div>
     <p>
       {p}
     </p>
+    <a href={lien} class="link-decouvrir">En savoir +</a>
   </div>
-  <a href={lien} class="link-decouvrir">Découvrir</a>
 </div>
 
 <style>
   .cards {
+    transform: translateY(200px);
     display: flex;
     flex-direction: column;
     border-radius: 3px;
@@ -28,38 +50,24 @@
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 52%;
-    border: 1px solid var(--CTA);
-    padding: 10px;
-    background-color: #4683b42b;
+    height: fit-content;
+    min-height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
+    background-color: white;
   }
-
-  @keyframes bounce {
-    0% {
-      transform: scale(1) translateY(-2px);
-    }
-    25% {
-      transform: scale(1) translateY(3px);
-    }
-    50% {
-      transform: scale(1) translateY(-1px);
-    }
-    75% {
-      transform: scale(1) translateY(2px);
-    }
-    100% {
-      transform: scale(1) translateY(0);
-    }
+  .wrapper-title-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
-
   .wrapper-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: left;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+    max-height: 500px;
+    padding: 20px;
   }
   .title {
     font-family: poppins;
@@ -92,13 +100,17 @@
     text-align: center;
     padding: 20px;
     margin-left: auto;
-     margin-right: auto;
-     margin-top: -80px;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
     box-shadow: 0px 0px 5px 0px var(--CTA);
     font-size: var(--m);
   }
   .link-decouvrir:hover {
     animation: bounce 0.4s ease-in-out;
+  }
+  .icon {
+    height: 30px;
   }
 
   @keyframes bounce {
@@ -121,15 +133,21 @@
 
   @media screen and (max-width: 1116px) {
     .cards {
-      width: calc(40% - 10px);
-      height: calc(48% - 10px);
+      width: calc(45% - 10px);
+      min-height: 500px;
+      height: fit-content;
     }
   }
 
   @media screen and (max-width: 768px) {
     .cards {
-      width: calc(100%);
-      height: 24%;
+      width: calc(90% - 20px);
+      height: fit-content;
+    }
+    .link-decouvrir {
+      padding: 13px;
+      width: auto;
+      font-size: 1.4em;
     }
   }
 </style>

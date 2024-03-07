@@ -10,36 +10,24 @@
 </script>
 
 <footer class="footer">
-<Gralypho/>
+  <Gralypho />
   <div class="wrapper-contact">
     <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
     <a href="tel:0672901614" class="contact">06 72 90 16 14</a>
   </div>
 
   <div class="wrapper-media">
-    <a
-      href="https://www.facebook.com/"
-      target="_blank"><i class="fa-brands fa-square-facebook anim"></i></a
-    >
-    <a
-      href="https://twitter.com/home?lang=fr"
-      target="_blank"><i class="fa-brands fa-square-twitter anim"></i></a
-    >
-    <a
-      href="https://www.instagram.com/"
-      target="_blank"><i class="fa-brands fa-square-instagram anim"></i></a
-    >
-    <a
-      href="https://www.tiktok.com/fr/"
-      target="_blank"><i class="fa-brands fa-tiktok anim"></i></a
-    >
+    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook anim"></i></a>
+    <a href="https://twitter.com/home?lang=fr" target="_blank"><i class="fa-brands fa-square-twitter anim"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram anim"></i></a>
+    <a href="https://www.tiktok.com/fr/" target="_blank"><i class="fa-brands fa-tiktok anim"></i></a>
   </div>
   <h4>© {Year} GRALYPHO. <br /> Tous droits réservés.</h4>
 </footer>
 
 <style>
   .footer {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
@@ -63,13 +51,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--ca);
+    /* background-color: var(--CTA); */
     border-radius: 8px;
     padding: 20px;
   }
   .contact {
     text-decoration: none;
-    color: var(--colorC);
+    color: var(--CTA);
     font-size: var(--m);
     font-family: poppins;
     width: 100%;
@@ -79,6 +67,7 @@
   }
   .contact:hover {
     animation: bounce 0.4s ease-in-out;
+    color: orange;
   }
 
   a {

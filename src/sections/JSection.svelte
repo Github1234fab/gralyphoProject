@@ -8,23 +8,23 @@
   import profilFive from "../Assets/Profils-gralypho/Ellipse 131.png";
   import profilSix from "../Assets/Profils-gralypho/Ellipse 220.png";
 
-  onMount(() => {
-    gsap.to(".J-section", {
-      opacity: 1,
-      ease: "expoScale",
-      scrollTrigger: {
-        trigger: ".J-section",
-        start: "top 800px",
-        end: "-200px",
-        scrub: 4,
-      },
-    });
-  });
+  // onMount(() => {
+  //   gsap.to(".J-section", {
+  //     opacity: 1,
+  //     ease: "expoScale",
+  //     scrollTrigger: {
+  //       trigger: ".J-section",
+  //       start: "top 800px",
+  //       end: "-200px",
+  //       scrub: 4,
+  //     },
+  //   });
+  // });
 
   let dataCard = [
     {
       img: profilTwo,
-            alt: "Photo d'identité de client, femme",
+      alt: "Photo d'identité de client, femme",
       title: "Mademoiselle G.",
       job: "Marjolaine - Directrice de la communicaiton",
       p: "Délai respecté, composants fonctionnels avec une très bonne intégration. Nous recommandons Gralypho! ",
@@ -38,28 +38,28 @@
     },
     {
       img: profilThree,
-            alt: "Photo d'identité de client, femme",
+      alt: "Photo d'identité de client, femme",
       title: "Green NRJ",
       job: "Asha Ramanujan - Project Manager",
       p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! The design is brilliant and the code is clean and super efficient. Our application is running at maximum! ",
     },
     {
       img: profilFour,
-            alt: "Photo d'identité de client, homme",
+      alt: "Photo d'identité de client, homme",
       title: "Sepocat",
       job: "Christophe Muun - Styliste",
       p: "Enfin un professionnel ! Merci pour notre application, elle est parfaite! ",
     },
     {
       img: profilSix,
-            alt: "Photo d'identité de client, homme",
+      alt: "Photo d'identité de client, homme",
       title: "Le Marminot",
       job: "Hugo Hervé - Restaurateur",
       p: "Merci pour toutes les idées qui permettent à nos clients de découvrir notre restauration, comme jamais!",
     },
     {
       img: profilOne,
-            alt: "Photo d'identité de client, femme",
+      alt: "Photo d'identité de client, femme",
       title: "Inès Marjot",
       job: "Photographe",
       p: "Plus de clients, moins de temps perdu, plus d'argent.... it's perfect Gralypho!!",
@@ -68,8 +68,10 @@
 </script>
 
 <section class="J-section">
-  <h1>Nos <span>clients</span> racontent</h1>
-  <h2>Collaborations, Missions, Partenariats.</h2>
+  <div class="wrapper-text">
+    <h1>Nos <span>clients</span> sont satisfaits.</h1>
+    <h2>Collaborations, Missions, Partenariats.</h2>
+  </div>
   <div class="gallery">
     <div class="wrapper-contain">
       {#each dataCard as card}
@@ -87,9 +89,9 @@
     height: auto;
     font-size: 16px;
     margin-top: 0px;
-    opacity: 0.2;
+
     background-color: var(--colorC);
-     /* background-image: url(../Assets/png-gralypho/waves4.svg);
+    /* background-image: url(../Assets/png-gralypho/waves4.svg);
     background-repeat: no-repeat;
     background-size: cover; */
   }
@@ -109,17 +111,25 @@
     margin-bottom: 30px;
     gap: 20px;
   }
-  .J-section h1 {
-    grid-column: 1/12;
+  .wrapper-text {
+    grid-column: 2/12;
     grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .J-section h1 {
     font-family: epilogue;
     font-size: var(--xl);
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primay);
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-left: 0px;
+    margin-top: 20px;
+    letter-spacing: -1px;
   }
-  .J-section h1 span{
+  .J-section h1 span {
     font-weight: 900;
     color: transparent;
     -webkit-background-image: linear-gradient(to left, var(--orange), var(--blue));
@@ -128,14 +138,12 @@
     background-clip: text;
   }
   .J-section h2 {
-    grid-column: 2/12;
-    grid-row: 1;
-    margin-top: 10px;
+    margin-top: 0px;
     font-family: epilogue;
     font-weight: 300;
-    font-size: var(--l);
-    color: white;
-    margin-left: 100px;
+    font-size: var(--m);
+    color: grey;
+    margin-left: 0px;
   }
   /* .wrapper-testimony {
     display: flex;
@@ -148,19 +156,19 @@
 
   @media screen and (max-width: 768px) {
     .gallery {
-    overflow-x: auto;
-    grid-column: 1/13;
-    grid-row: 2;
-    margin-left: 20px;
-  }
-  .J-section h1 {
-    grid-column: 1/12;
-    grid-row: 1;
-    font-family: epilogue;
-    font-weight: 800;
-    color: var(--primay);
-    margin-left: 50px;
-    margin-top: 100px;
-  }
+      overflow-x: auto;
+      grid-column: 1/13;
+      grid-row: 2;
+      margin-left: 20px;
+    }
+    .J-section h1 {
+      grid-column: 1/12;
+      grid-row: 1;
+      font-family: epilogue;
+      font-weight: 800;
+      color: var(--primay);
+      margin-left: 50px;
+      margin-top: 20px;
+    }
   }
 </style>

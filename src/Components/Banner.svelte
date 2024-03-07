@@ -1,127 +1,109 @@
 <script>
   import { onMount } from "svelte";
 
-  onMount(() => {
-    const timeline = gsap.timeline();
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
 
-    // Utilisez le sélecteur de classe directement
-    timeline.to(".banner-icon", {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".banner-icon", // Utilisez le sélecteur de classe ici aussi
-        start: "top 3500px",
-        // end: "-300px",
-        scrub: 1,
-      },
-    });
+  function randomColorCarte() {
+    const randomComponent = () => Math.floor(Math.random() * 256);
+    const color = `rgb(${randomComponent()}, ${randomComponent()}, ${randomComponent()})`;
+    return color;
+  }
+
+  onMount(() => {
+    let cards = document.querySelectorAll(".carte");
+    let index = 0;
+
+    const intervalId = setInterval(() => {
+      // Change la couleur de la carte actuelle
+      changeColor(cards[index]);
+
+      index++;
+
+      // Vérifie si toutes les cartes ont été traitées
+      if (index === cards.length) {
+        index = 0; // Réinitialise l'indice pour recommencer
+      }
+    }, 1000);
+
+    function changeColor(card) {
+      const color = randomColorCarte(); // Appel de la fonction pour obtenir une nouvelle couleur
+      card.style.backgroundColor = color;
+      card.style.transition = "1.5s ease-in-out";
+      // Vous pouvez ajouter d'autres animations ou styles si nécessaire
+      setTimeout(() => {
+        card.style.backgroundColor = ""; // Réinitialise à la couleur par défaut
+      }, 1200); // Attend 1,2 secondes avant de réinitialiser la couleur
+    }
   });
 </script>
 
-<div class="cont">
-  <div class="wrapper-by-3-Cards">
-    <div class="card ">
-            <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a>
-      <h3><strong>sites Internet</strong></h3>
-
-
-      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
-    </div>
-    <div class="card ">
-            <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
-      <h3><strong>Applications </strong></h3>
-
-
-      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
-    </div>
-  </div>
-
-  <div class="wrapper-by-3-Cards">
-    <div class="card ">
-            <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
-
-      <h3><strong>Référencement</strong></h3>
-
-      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
-    </div>
-    <div class="card ">
-            <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a>
-
-      <h3><strong>Marketing</strong></h3>
-
-      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
-    </div>
-  </div>
-
-  <div class="wrapper-by-3-Cards">
-    <div class="card ">
-      <h3><strong>Composants</strong></h3>
-      <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a>
-
-      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
-    </div>
-    <div class="card ">
-       <h3><strong>Refonte</strong></h3>
-            <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
-
-     
-
-      <!-- <a href="/Sites" class="button">+ d'infos</a> -->
-    </div>
-  </div>
+<div class="carte">
+  Site Internet
+  <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a>
 </div>
 
+<div class="carte">
+  Applications
+  <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
+</div>
+
+<div class="carte">
+  Référencement
+  <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
+</div>
+
+<div class="carte">
+  Réseaux Sociaux
+  <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a>
+</div>
+
+<div class="carte">
+  <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a>
+  Composants
+</div>
+
+<div class="carte">
+  <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
+  Design
+</div>
+
+<!-- </div> -->
+
 <style>
-  .cont {
-    background-color: transparent;
-    grid-column: 1/12;
-    grid-row: 3;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    /* gap: 60px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .wrapper-by-3-Cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    gap: 10px;
-  }
-  .card {
+  .carte {
     z-index: 0;
     background-color: transparent;
-    width: calc(20% - 50px);
-    height: 200px;
+    width: calc(40% - 10px);
+    max-width: 300px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-    gap: 20px;
+    padding: 20px;
+    gap: 30px;
     border-radius: 8px;
-          box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.999);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.514);
+    font-family: epilogue;
+    color: white;
+    font-size: var(--m);
+    transition: 0.7s ease-in-out;
+    text-transform: capitalize;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .carte:hover .icon {
+    font-size: 5em;
   }
 
-/* .linear-gradient {
-  border-style: solid;
-  border-width: 1px;
-  border-image: linear-gradient(to bottom,  var(--blue), var(--blue2) )1;
-
-} */
-
   .icon {
-    color: transparent;
-    -webkit-background-image: linear-gradient(to top, var(--blue2), var(--blue));
-    background-image: linear-gradient(to top, var(--blue2), var(--blue));
-    -webkit-background-clip: text;
-    background-clip: text;
+    transition: 0.7s ease-in-out;
+    color: white;
     font-size: 3em;
     z-index: 2;
   }
@@ -146,35 +128,32 @@
       transform: scale(1) translateY(0);
     }
   }
-  .card h3 {
-    font-family: epilogue;
-    color: var(--colorC);
-    font-weight: 300;
-    font-size: var(--m);
-    text-align: center;
-  }
 
-  @media screen and (max-width: 800px) {
-    .wrapper-by-3-Cards {
+  @media screen and (min-width: 801px) and (max-width: 2500px) {
+    .carte {
+      z-index: 0;
+      background-color: transparent;
+      width: calc(50% - 10px);
+      height: auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100vw;
+      padding: 20px;
     }
-    .card {
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 800px) {
+    .carte {
       z-index: 0;
       background-color: transparent;
       width: 90%;
       height: auto;
-
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 40px;
-
+      padding: 20px;
     }
   }
 </style>

@@ -14,7 +14,7 @@
     flex-shrink: 0;
     border-radius: 8px;
     margin: 8px;
-    height: 20em;
+    height: 18em;
     width: 20em;
     user-select: none;
     overflow: hidden;
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.119),  -3px -3px 15px rgba(0, 0, 0, 0.165) ;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.105);
     background-color: var(--colorC);
   }
   /* .linear-gradient{
@@ -32,20 +32,18 @@
     border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
   } */
   .button {
-    padding: 20px;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    color: var(--colorC);
     text-decoration: none;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-weight: 300;
-    font-size: var(--m);
-    transition: 0.4s ease-in-out;
-    background-color: var(--ca);
+    color: white;
+    background-color: var(--CTA);
     font-family: kanit;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 160px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
   }
   .button:hover {
     animation: bounce 0.4s ease-in-out;
@@ -69,12 +67,13 @@
   }
   .card h2 {
     z-index: 1;
-    font-family: epilogue;
+    font-family: poppins;
     font-weight: 400;
     font-size: var(--m);
     color: var(--primary);
     padding: 10px;
     text-align: center;
+    letter-spacing: 0px;
   }
   /* .card h2 span {
     font-weight: 900;

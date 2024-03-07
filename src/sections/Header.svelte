@@ -12,10 +12,11 @@
 
 <nav class="navigation">
   <div class="wrapper-logo-burger">
-  <a href="/" class="logo"><Logo /></a>
-  <button class="burger-menu" aria-label="Menu" on:click={display}>
-    <i class="fa-solid fa-bars burger" class:visible={toggle}></i>
-  </button>
+    <a href="/" class="logo"><Logo /></a>
+    <h1 class="title">Gralypho, créateur de site Web & Application</h1>
+    <button class="burger-menu" aria-label="Menu" on:click={display}>
+      <i class="fa-solid fa-bars burger" class:visible={toggle}></i>
+    </button>
   </div>
 
   {#if toggle}
@@ -43,20 +44,21 @@
     justify-content: center;
     padding: 10px;
     font-size: 16px;
-        border-bottom: 1px rgb(74, 74, 74) solid;
+    border-bottom: 1px rgb(74, 74, 74) solid;
+    background-color: var(--primary);
   }
 
   .navigation h1 span {
     color: rgb(218, 216, 216);
     font-weight: 900;
   }
-.wrapper-logo-burger{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
+  .wrapper-logo-burger {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
   .logo {
     grid-column: 5;
     grid-row: 1;
@@ -71,6 +73,13 @@
     grid-row: 3;
     grid-column: 2/12;
   }
+  .title {
+    font-family: poppins;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(209, 205, 205);
+  }
+
   .wrapper-links {
     /* grid-column: span 12;
     grid-row: 2; */
@@ -102,7 +111,6 @@
     /* border-radius: 4px; */
     /* border: solid 1px grey; */
     padding: 5px;
-  
   }
   .burger-menu:hover {
     animation: bounce 0.4s ease-in-out;
@@ -111,7 +119,6 @@
     font-size: var(--l);
     border: none;
     color: rgb(145, 145, 145);
-
   }
   .burger:hover {
     animation: bounce 0.4s ease-in-out;
@@ -138,9 +145,9 @@
     .wrapper-links {
       flex-direction: column;
       justify-content: center;
-      align-items: center;  
+      align-items: center;
       /* text-align: left;  */
-       gap: 10px;
+      gap: 10px;
     }
     .navigation {
       font-size: 16px;
@@ -148,5 +155,8 @@
     a {
       font-size: 1.1em;
     }
+    .title {
+display: none;
+  }
   }
 </style>

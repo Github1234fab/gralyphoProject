@@ -105,12 +105,13 @@
     grid-row: 2;
     font-family: epilogue;
     font-size: var(--xl);
-    font-weight: 900;
+    font-weight: 700;
     color: var(--primary);
     margin-top: 50px;
     padding: 10px;
     line-height: 60px;
     margin-left: 10px;
+        letter-spacing: -1px;
   }
   .D-section h1 span {
     font-weight: 900;

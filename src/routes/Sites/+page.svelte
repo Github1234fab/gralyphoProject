@@ -131,7 +131,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    /* background-color: var(--colorO); */
+    background-color: var(--colorO);
     height: 100%;
     width: 100%;
     margin-top: 30px;

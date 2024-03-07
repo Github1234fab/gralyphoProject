@@ -11,7 +11,15 @@
   height="280.000000pt"
   viewBox="0 0 1280.000000 1280.000000"
   preserveAspectRatio="xMidYMid meet"
+
 >
+  <defs>
+    <filter id="shadow" x="-20" y="-20" height="150" width="150">
+      <feOffset result="offset" in="SourceAlpha" dx="0" dy="0" />
+      <feGaussianBlur result="blur" in="offset" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blur" mode="normal" />
+    </filter>
+  </defs>
   <metadata> Created by potrace 1.15, written by Peter Selinger 2001-2017 </metadata>
   <g
     transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
@@ -57,12 +65,12 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
 
 <style>
   .C {
-    top: 90px;
-    left: 212px;
+    top: 100px;
+    left: 220px;
     position: absolute;
-    width: 350px;
-    height: 350px;
-    animation: rotation 15s linear infinite;
+    width: 230px;
+    height: 230px;
+    animation: rotation 17s linear infinite ;
   }
   @keyframes rotation {
     0% {
@@ -73,7 +81,7 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     }
   }
 
-  @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+  /* @media only screen and (min-width: 1900px) and (max-width: 2500px) {
     .C {
       top: 233px;
       left: 80px;
@@ -86,16 +94,16 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     .C {
       top: 233px;
       left: 80px;
-      width: 500px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
     }
   }
   @media only screen and (min-width: 1100px) and (max-width: 1400px) {
     .C {
       top: 194px;
       left: 75px;
-      width: 450px;
-      height: 450px;
+      width: 350px;
+      height: 350px;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 1100px) {
@@ -106,24 +114,29 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
       height: 290px;
     }
   }
-      @media only screen and (min-width: 576px) and (max-width: 768px) {
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
     .C {
       top: 190px;
       left: 94px;
       width: 230px;
       height: 230px;
-             opacity: 0.7;
     }
-
-      }
+  }
 
   @media only screen and (min-width: 300px) and (max-width: 576px) {
     .C {
-      top: 150px;
-      left: 30px;
+      top: 170px;
+      left: 60px;
       width: 130px;
       height: 130px;
-            opacity: 0.7;
     }
-  }
+  } */
+    @media only screen and (min-width: 300px) and (max-width: 576px) {
+    .C {
+      top: 200px;
+      left: 110px;
+      width: 110px;
+      height: 110px;
+    }
+  } 
 </style>

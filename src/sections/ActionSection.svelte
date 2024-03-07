@@ -23,8 +23,8 @@
   <div class="wrapper-text">
     <h1>Prêt à démarrer <br /> votre <span>projet ?</span></h1>
     <h2>
-      Découvrez comment nous pouvons renforcer votre marque, améliorer votre visibilité, <br /> et générer des résultats
-      tangibles.
+      Découvrez comment nous pouvons renforcer votre <span>marque</span>, développer votre <span>visibilité,</span>  <br /> et générer des  <span> résultats
+      tangibles.</span>
     </h2>
   </div>
   <div class="wrapper-action">
@@ -91,15 +91,17 @@
     width: 100%;
     flex-direction: column;
     gap: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 20px;
   }
   .wrapper-text h1 {
     font-size: var(--xl);
-    font-weight: 900;
+    font-weight: 700;
     color: white;
     font-family: Epilogue;
     margin-left: 20px;
+    letter-spacing: -1px;
+    line-height: 53px;
   }
   .wrapper-text h1 span {
     color: transparent;
@@ -116,6 +118,9 @@
     margin-left: 20px;
     line-height: 30px;
   }
+    .wrapper-text h2 span {
+    font-weight: 800;
+  }
   .wrapper-action {
     grid-column: 2/12;
     grid-row: 2/3;
@@ -128,10 +133,13 @@
   .card-action {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 30px;
     color: white;
     background-color: var(--ca);
+    height: 100%;
   }
   .wrapper-text-cards {
     display: flex;
@@ -145,7 +153,7 @@
   }
   .card-action h3 {
     font-size: var(--xl);
-    font-weight: 900;
+    font-weight: 800;
     color: var(--colorC);
     font-family: epilogue;
   }
@@ -154,11 +162,12 @@
     font-weight: 300;
     color: var(--colorC);
     font-family: epilogue;
+    text-align: center;
   }
   .wrapper-img {
-    padding: 20px;
-    width: auto;
-    height: 100%;
+    /* padding: 20px; */
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,34 +175,13 @@
     /* clip-path: polygon(51% 12%, 64% 0, 100% 36%, 81% 91%, 6% 99%, 14% 71%, 10% 2%); */
   }
   .billy {
-    width: 150px;
-    /* max-width: 100px; */
-    height: 150px;
-    /* max-height: 100px; */
+    width: 70%;
+    height: 70%;
     background-color: rgb(213, 249, 10);
     padding: 20px;
     border-radius: 50%;
     box-shadow: inset 3px 4px 15px var(--primary);
-    animation: moveAround 11s infinite;
   }
-  @keyframes moveAround{
-    0% {
-      transform: translateX(0px);
-    }
-    25% {
-      transform: translateX(10px);
-    }
-    50% {
-      transform: translateX(0px);
-    }
-    75% {
-      transform: translateX(-10px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
-
   .wrapper-contactez {
     grid-column: span 12;
     margin-left: 350px;
@@ -239,7 +227,7 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     .wrapper-action {
       grid-column: 2/12;
       grid-row: 2/3;
@@ -275,5 +263,5 @@
       margin-top: 50px;
       margin-bottom: 20px;
     }
-  }
+  } */
 </style>

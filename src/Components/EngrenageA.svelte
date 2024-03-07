@@ -12,6 +12,13 @@
   viewBox="0 0 1280.000000 1242.000000"
   preserveAspectRatio="xMidYMid meet"
 >
+  <!-- <defs>
+    <filter id="shadow" x="-20" y="-20" height="150" width="150">
+      <feOffset result="offset" in="SourceAlpha" dx="0" dy="0" />
+      <feGaussianBlur result="blur" in="offset" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blur" mode="normal" />
+    </filter>
+  </defs> -->
   <metadata> Created by potrace 1.15, written by Peter Selinger 2001-2017 </metadata>
   <g
     transform="translate(0.000000,1242.000000) scale(0.100000,-0.100000)"
@@ -91,12 +98,12 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
 
 <style>
   .A {
-    top: 133px;
-    left: 39px;
+    top: 175px;
+    left: -20px;
     position: absolute;
-    width: 400px;
-    height: 400px;
-    animation: rotation 17s linear infinite reverse;
+    width: 290px;
+    height: 290px;
+    animation: rotation 19s linear infinite reverse;
   }
   @keyframes rotation {
     0% {
@@ -109,8 +116,7 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
 
   /* ******************MEDIA************************ */
 
-
-      @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+   /* @media only screen and (min-width: 1900px) and (max-width: 2500px) {
     .A {
       top: 103px;
       left: -200px;
@@ -134,24 +140,17 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
       width: 400px;
       height: 400px;
     }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+  } */
+  /* @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .A {
       top: 133px;
       left: -70px;
       width: 300px;
       height: 300px;
     }
-  }
-    @media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .A {
-      top: 204px;
-      left: 0px;
-      width: 220px;
-      height: 220px;
-    }
-  }
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
+  } */
+
+  /* @media only screen and (min-width: 576px) and (max-width: 768px) {
     .A {
       top: 204px;
       left: 0px;
@@ -167,5 +166,16 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
       height: 130px;
 
     }
+  }  */
+    @media only screen and (min-width: 300px) and (max-width: 576px) {
+       .A {
+      top: 160px;
+      left: -50px;
+      width: 180px;
+      height: 180px;
+
+    }
   }
+   
+  
 </style>

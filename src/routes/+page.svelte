@@ -17,19 +17,18 @@
 </script>
 
 <main in:fade={{ duration: 2000 }}>
-
   <HSection />
-    <Csection />
-<!-- <SectionSocial/> -->
- <BeneficeSection />
-   <JSection />
-
-    <DSection />
+  <Csection />
   <section id="sectionE">
     <ESection />
   </section>
-      <GSection />
-    <ActionSection />
+  <!-- <SectionSocial/>  -->
+  <JSection />
+  <!-- <ActionSection />
+  <DSection /> -->
+
+    <BeneficeSection />
+  <GSection />
 </main>
 
 <style>

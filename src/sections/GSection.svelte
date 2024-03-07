@@ -3,15 +3,17 @@
   import Carousel from "../Components/CarousselCards.svelte";
   import skate from "../Assets/png-gralypho/skateboard.png";
   import { onMount } from "svelte";
+  import { bounceIn } from "svelte/easing";
 
   onMount(() => {
     function handleResize() {
       if (window.innerWidth < 768) {
         gsap.to(".wrapper-developpeur", {
-          x: 200,
+          x: 400,
+          // ease: power4,
           scrollTrigger: {
             trigger: ".wrapper-developpeur",
-            start: "top 720px",
+            start: "top 920px",
             end: "-100px",
             scrub: 5,
           },
@@ -19,9 +21,10 @@
       } else {
         gsap.to(".wrapper-developpeur", {
           x: 700,
+          // ease: power4,
           scrollTrigger: {
             trigger: ".wrapper-developpeur",
-            start: "top 720px",
+            start: "top 920px",
             end: "-100px",
             scrub: 5,
           },
@@ -40,19 +43,19 @@
       window.removeEventListener("resize", handleResize);
     };
   });
-
 </script>
 
 <section class="G-section">
   <div class="wrapper-text">
     <div class="wrapper-developpeur">
-    <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev" />
-    <img src={skate} alt="" class="skate" /> 
+      <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev" />
+      <img src={skate} alt="" class="skate" />
     </div>
     <h1>Découvrez nos <span>réalisations </span></h1>
     <h2>
       Voici des sites témoins...comme des appartement témoins. Chaque projet utilise une technique particulière ou met
-      l'accent sur un design, une fonctionnalité, etc. Découvrez vite le potentiel des animations, des applications de météo, des jeux, des composants... !
+      l'accent sur un design, une fonctionnalité, etc. Découvrez vite le potentiel des animations, des applications de
+      météo, des jeux, des composants... !
     </h2>
     <Carousel />
   </div>
@@ -65,7 +68,7 @@
     grid-template-rows: auto;
     height: auto;
     font-size: 16px;
-    background-color: rgb(239, 237, 237);
+    background-color: rgb(255, 255, 255);
   }
   .wrapper-text {
     grid-column: 2/12;
@@ -79,7 +82,8 @@
     flex-direction: column;
   }
   .G-section h1 {
-    border: 1px solid rgb(221, 221, 221);
+    border: 3px solid rgb(221, 221, 221);
+    border-radius: 20px;
     word-wrap: break-word;
     text-align: left;
     font-family: epilogue;
@@ -87,17 +91,22 @@
     font-size: var(--xl);
     color: var(--primary);
     margin-top: -17px;
-    padding: 20px;
-    line-height: 37px;
+    line-height: 47px;
+    width: 100%;
+    padding: 40px;
+    letter-spacing: -1px;
+    box-shadow:
+      inset 2px 3px 5px 4px rgba(0, 0, 0, 0.146),
+      inset -2px -3px 5px 4px rgba(0, 0, 0, 0.137);
   }
-.G-section h1 span{
-  font-weight: 900;
-  color: transparent;
-  -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
-  background-image: linear-gradient(to left, var(--ca), var(--blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+  .G-section h1 span {
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-image: linear-gradient(to left, var(--ca), var(--blue));
+    background-image: linear-gradient(to left, var(--ca), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 
   .G-section h2 {
     word-wrap: break-word;
@@ -105,7 +114,7 @@
     font-family: epilogue;
     font-weight: 300;
     font-size: var(--m);
-   color: var(--primary);
+    color: var(--primary);
     text-align: left;
     padding: 10px;
     line-height: 30px;
@@ -121,23 +130,20 @@
   }
   .dev {
     height: 150px;
-    margin-top: 50px;
+    margin-top: 48px;
     z-index: 2;
     align-self: center;
     margin-left: 26px;
   }
-  .skate{
+  .skate {
     height: 50px;
     z-index: 1;
     opacity: 1;
     align-self: center;
-    margin-top: -20px;
+    margin-top: -24px;
   }
 
-
-
   @media screen and (max-width: 768px) {
-    
     .wrapper-text {
       background-size: 100%;
     }

@@ -15,14 +15,17 @@
       <span>besoin.</span>
     </h2> -->
     <h2>
-      Accéder à
-        <span> plus de visibilité</span>
-        et <span>plus de clients</span>, <br /> grâce à nos solutions digitales adaptées à vos
-        <span>besoin et votre budget.</span>
-
+      Nous créeons des sites Web et des Applications sur mesure pour tous les professionnels souhaitant obtenir plus <span
+      >
+        de visibilité</span
+      >
+      et
+      <span>plus de clients</span>.<br />
     </h2>
-    <a class="contact" href="/#footer">Nous contacter</a>
-     <a class="contact2" href="/#footer">Devis gratuit</a>
+    <div class="wrapper-contact">
+      <a class="contact" href="/#footer">Nous contacter</a>
+      <a class="contact2" href="/#footer">Devis gratuit</a>
+    </div>
   </div>
 
   <div class="wrapper-visuel">
@@ -38,6 +41,7 @@
     height: 900px;
     font-size: 16px;
     opacity: 1;
+    background-color: white;
   }
   .wrapper-text {
     grid-column: 1 / 8;
@@ -46,14 +50,13 @@
     flex-direction: column;
     border-radius: 20px;
     margin-left: 100px;
-  
   }
   .H-section h1 {
     text-align: left;
     font-family: epilogue;
-    font-weight: 700;
+    font-weight: 900;
     font-size: var(--xlhero);
-    color: white;
+    color: var(--primary);
     text-transform: capitalize;
     letter-spacing: -8px;
     line-height: 135px;
@@ -64,15 +67,15 @@
     font-family: poppins;
     font-weight: 300;
     font-size: var(--m);
-    color:  rgb(235, 234, 234);
+    color: grey;
     text-align: left;
     line-height: 30px;
     margin-top: 20px;
-    margin-left: 10px;    
+    margin-left: 10px;
   }
   .H-section h2 span {
     font-weight: 500;
-    color: white;
+    color: rgb(84, 84, 84);
   }
   .contact {
     text-decoration: none;
@@ -86,8 +89,9 @@
     border-radius: 6px;
     text-align: center;
     padding: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
   }
-    .contact2{
+  .contact2 {
     text-decoration: none;
     color: white;
     background-image: linear-gradient(to left, var(--orange), var(--CTA));
@@ -99,9 +103,21 @@
     border-radius: 6px;
     text-align: center;
     padding: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
   }
-  .contact:hover, .contact2:hover {
+  .contact:hover {
     animation: bounce 0.4s ease-in-out;
+  }
+  .contact2:hover {
+    animation: bounce 0.4s ease-in-out;
+  }
+  .wrapper-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: baseline;
+    justify-content: flex-start;
   }
 
   .wrapper-visuel {
@@ -111,7 +127,8 @@
     /* justify-content: center;
     align-items: center; */
     gap: 0px;
-    margin-top: 200px;
+    margin-top: 530px;
+    margin-left: 0px;
   }
 
   @keyframes bounce {
@@ -133,11 +150,11 @@
   }
 
   @media only screen and (min-width: 1400px) and (max-width: 1900px) {
-    .H-section{
+    .H-section {
       height: 900px;
     }
     .wrapper-text {
-      margin-top: 100px;
+      margin-top: 0px;
       z-index: 2;
     }
     .H-section h1 {
@@ -155,7 +172,8 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 80px;
+      margin-top: 530px;
+      margin-left: 0px;
       z-index: 0;
     }
     .contact {
@@ -168,13 +186,13 @@
 
   @media only screen and (min-width: 1100px) and (max-width: 1400px) {
     .wrapper-text {
-      margin-top: 50px;
+      margin-top: 0px;
       z-index: 2;
       margin-left: 30px;
     }
     .H-section h1 {
       font-size: 8em;
-      line-height: 120px;
+      line-height: 113px;
       letter-spacing: -7px;
     }
     .H-section h2 {
@@ -187,8 +205,8 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 80px;
-      margin-left: -20px;
+      margin-top: 530px;
+      margin-left: 0px;
       z-index: 0;
     }
     .contact {
@@ -200,7 +218,7 @@
   }
   @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .wrapper-text {
-      margin-top: 100px;
+      margin-top: 0px;
       z-index: 2;
       margin-left: 30px;
       grid-column: 1/9;
@@ -220,8 +238,8 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 100px;
-      margin-left: -20px;
+      margin-top: 570px;
+      margin-left: -230px;
       z-index: 0;
     }
     .contact {
@@ -255,7 +273,7 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: -360px;
+      margin-top: -260px;
       margin-left: 240px;
       z-index: 0;
     }
@@ -266,7 +284,7 @@
     }
   }
   @media only screen and (min-width: 300px) and (max-width: 576px) {
-    .H-section{
+    .H-section {
       height: 720px;
     }
     .wrapper-text {
@@ -280,7 +298,7 @@
     }
     .H-section h1 {
       font-size: 3.1em;
-      line-height: 60px;
+      line-height: 45px;
       letter-spacing: -3px;
     }
     .H-section h2 {
@@ -295,8 +313,8 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 390px;
-      margin-left: 40px;
+      margin-top: 450px;
+      margin-left: 27px;
       z-index: 0;
     }
     .contact {
@@ -304,7 +322,7 @@
       margin-left: 10px;
       font-size: 1em;
     }
-     .contact2 {
+    .contact2 {
       margin-top: 20px;
       margin-left: 10px;
       font-size: 1em;

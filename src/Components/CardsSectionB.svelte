@@ -47,7 +47,7 @@
     position: relative;
     display: flex;
     padding: 20px;
-    color: var(--colorC);
+    color: var(--primary);
     font-size: 1.3em;
     font-weight: 500;
     cursor: pointer;
@@ -56,7 +56,7 @@
     border-right: none;
     border-left: none;
     border-bottom: 1px rgb(219, 219, 219) solid;
-    background-color: var(--ca);
+    background-color: var(--bgAssets);
     width: 80%;
     /* background: linear-gradient(to left, rgb(192, 191, 191), rgb(228, 228, 228)); */
     height: 100px;
