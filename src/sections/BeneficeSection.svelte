@@ -31,7 +31,7 @@
         vous et partout dans le monde !
       </p>
     </div>
-    <div class="wrapper-benef">
+    <div class="wrapper-benef2 wrapper-benef">
       <span>50%</span>
       <!-- <h3>Économisez votre temps</h3> -->
       <p>50% de votre temps optimisé grâce à votre site Web ou votre Application.</p>
@@ -115,6 +115,7 @@
     padding: 10px;
     gap: 40px;
   }
+  
 
   .wrapper-benef p {
     margin-top: 0px;
@@ -162,5 +163,26 @@
 .container-wrapper-benef {
   flex-direction: column;
   }
+     .wrapper-benef2{
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 40px;
+  }
+    .wrapper-benef2 p {
+    margin-top: 0px;
+    font-size: var(--m);
+    font-weight: 300;
+    color: rgb(210, 210, 210);
+    font-family: poppins;
+    margin-bottom: 50px;
+    text-align: right;
+  }
+
 }
 </style>

@@ -10,10 +10,14 @@
 </script>
 
 <footer class="footer">
-  <Gralypho />
+  <div class="wrapper-gralypho">
+    <div class="gralypho">
+      <Gralypho />
+    </div>
+  </div>
   <div class="wrapper-contact">
-    <a href="mailto:gralypho@gmail.com " class="contact">gralypho@gmail.com</a>
-    <a href="tel:0672901614" class="contact">06 72 90 16 14</a>
+    <a href="mailto:gralypho@gmail.com " class="contact">contact@gralypho.com</a>
+    <a href="tel:0672901614" class="contact">0672 901 614</a>
   </div>
 
   <div class="wrapper-media">
@@ -30,20 +34,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100%;
     font-size: 16px;
-    background-color: var(--colorO);
+    background-color: var(--primary);
     color: white;
     font-family: epilogue;
     padding: 70px;
-    gap: 30px;
+    gap: 0px;
   }
   .footer h4 {
+    margin-top: 30px;
     font-family: epilogue;
-    font-weight: 300;
-    font-size: 0.8em;
+    font-weight: 400;
+    font-size: 0.6em;
     color: var(--colorC);
     text-align: center;
+  }
+  .wrapper-gralypho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .gralypho {
+    margin-left: 30px;
   }
   .wrapper-contact {
     display: flex;
@@ -54,20 +69,25 @@
     /* background-color: var(--CTA); */
     border-radius: 8px;
     padding: 20px;
+    gap: 4px;
   }
   .contact {
     text-decoration: none;
-    color: var(--CTA);
-    font-size: var(--m);
+    color: white;
+    font-size: 1em;
     font-family: poppins;
     width: 100%;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
     border-radius: 8px;
+    border: 1px solid var(--CTA);
+    padding: 8px;
+    background-color: var(--CTA);
+
   }
   .contact:hover {
     animation: bounce 0.4s ease-in-out;
-    color: orange;
+font-weight: 800;
   }
 
   a {

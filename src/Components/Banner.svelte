@@ -15,7 +15,9 @@
   }
 
   onMount(() => {
-    let cards = document.querySelectorAll(".carte");
+    let cards = Array.from(document.querySelectorAll(".carte"));
+    shuffleArray(cards); // Mélanger l'ordre des cartes
+
     let index = 0;
 
     const intervalId = setInterval(() => {
@@ -27,20 +29,22 @@
       // Vérifie si toutes les cartes ont été traitées
       if (index === cards.length) {
         index = 0; // Réinitialise l'indice pour recommencer
+        shuffleArray(cards); // Mélanger à nouveau pour la prochaine itération
       }
-    }, 1000);
+    }, 400);
 
     function changeColor(card) {
       const color = randomColorCarte(); // Appel de la fonction pour obtenir une nouvelle couleur
       card.style.backgroundColor = color;
-      card.style.transition = "1.5s ease-in-out";
+      card.style.transition = "1.2s ease-in-out";
       // Vous pouvez ajouter d'autres animations ou styles si nécessaire
       setTimeout(() => {
         card.style.backgroundColor = ""; // Réinitialise à la couleur par défaut
-      }, 1200); // Attend 1,2 secondes avant de réinitialiser la couleur
+      }, 1000); // Attend 1,2 secondes avant de réinitialiser la couleur
     }
   });
 </script>
+
 
 <div class="carte">
   Site Internet

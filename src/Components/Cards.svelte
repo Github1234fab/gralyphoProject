@@ -68,12 +68,12 @@
   .card h2 {
     z-index: 1;
     font-family: poppins;
-    font-weight: 400;
+    font-weight: 500;
     font-size: var(--m);
-    color: var(--primary);
+    color: var(--CTA);
     padding: 10px;
     text-align: center;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
   }
   /* .card h2 span {
     font-weight: 900;
