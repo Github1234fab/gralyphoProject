@@ -31,7 +31,7 @@
         index = 0; // Réinitialise l'indice pour recommencer
         shuffleArray(cards); // Mélanger à nouveau pour la prochaine itération
       }
-    }, 400);
+    }, 800);
 
     function changeColor(card) {
       const color = randomColorCarte(); // Appel de la fonction pour obtenir une nouvelle couleur
@@ -40,7 +40,7 @@
       // Vous pouvez ajouter d'autres animations ou styles si nécessaire
       setTimeout(() => {
         card.style.backgroundColor = ""; // Réinitialise à la couleur par défaut
-      }, 1000); // Attend 1,2 secondes avant de réinitialiser la couleur
+      }, 900); // Attend 1,2 secondes avant de réinitialiser la couleur
     }
   });
 </script>

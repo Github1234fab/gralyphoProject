@@ -91,7 +91,7 @@ font-weight: 800;
   }
 
   a {
-    color: rgb(100, 100, 229);
+    color: var(--CTA);
     font-size: 1.8em;
     margin: 0 0px;
     transition: 0.4s ease-in-out;
@@ -119,6 +119,6 @@ font-weight: 800;
   }
   .wrapper-media {
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
 </style>

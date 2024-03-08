@@ -127,7 +127,7 @@
     color: var(--primay);
     margin-left: 0px;
     margin-top: 20px;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
   }
   .J-section h1 span {
     font-weight: 900;

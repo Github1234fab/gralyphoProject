@@ -4,10 +4,10 @@
   import skate from "../Assets/png-gralypho/skateboard.png";
   import { onMount } from "svelte";
   import { bounceIn } from "svelte/easing";
-  import Ville from "../Assets/png-gralypho/ville.png";
+  import Ville from "../Assets/png-gralypho/applis.png";
 
   onMount(() => {
-    function handleResize() {
+    // function handleResize() {
       if (window.innerWidth < 576) {
         gsap.to(".wrapper-developpeur", {
           x: 200,
@@ -43,26 +43,26 @@
           },
         });
       }
-    }
+    });
 
-    // Appeler la fonction de gestion de redimensionnement au chargement initial
-    handleResize();
+    // // Appeler la fonction de gestion de redimensionnement au chargement initial
+    // handleResize();
 
-    // Ajouter un écouteur d'événement pour le redimensionnement de la fenêtre
-    window.addEventListener("resize", handleResize);
+    // // Ajouter un écouteur d'événement pour le redimensionnement de la fenêtre
+    // window.addEventListener("resize", handleResize);
 
-    // Nettoyer l'écouteur d'événement lors de la destruction du composant
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
+    // // Nettoyer l'écouteur d'événement lors de la destruction du composant
+    // return () => {
+    //   window.removeEventListener("resize", handleResize);
+    // };
+  
 </script>
 
 <section class="G-section">
-  <div class="wrapper-developpeur">
+  <!-- <div class="wrapper-developpeur">
     <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev" />
     <img src={skate} alt="" class="skate" />
-  </div>
+  </div> -->
   <img src={Ville} alt="png d'une ville en frise" class="ville" />
   <div class="pavement"></div>
   <div class="wrapper-text">
@@ -121,24 +121,29 @@
     line-height: 25px;
     letter-spacing: -1px;
   }
-  .wrapper-developpeur {
+  /* .wrapper-developpeur {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
-    transform: translateX(-300px);
+    margin-top: 116px;
+    margin-left: -50px;
     width: 50px;
-  }
+    z-index: 2;
+  } */
   .ville {
     grid-column: 1/12;
     grid-row: 1;
     width: auto;
     height: 500px;
     margin: 0 auto;
-    margin-top: -150px;
+    margin-top: 0px;
+    z-index: 0;
+    /* opacity: 0.5; */
   }
-  .dev {
+  /* .dev {
     height: 150px;
     margin-top: 48px;
     z-index: 2;
@@ -151,20 +156,30 @@
     opacity: 1;
     align-self: center;
     margin-top: -24px;
-  }
+  } */
   .pavement {
     grid-column: 1/12;
     grid-row: 2;
     width: 100vw;
     background-image: linear-gradient(to right, var(--blue2), var(--orange));
     height: 5px;
-    margin-top: -16px;
+    margin-top: -8px;
     box-shadow: 0px 10px 10px 2px rgba(76, 76, 76, 0.35);
+    z-index: 2;
   }
 
   @media screen and (max-width: 768px) {
     .wrapper-text {
       background-size: 100%;
     }
+  }
+  .G-section h1 {
+    text-align: left;
+    font-family: epilogue;
+    font-weight: 900;
+    font-size: var(--xl);
+    color: var(--primary);
+    letter-spacing: -1px;
+    line-height: 40px;
   }
 </style>
