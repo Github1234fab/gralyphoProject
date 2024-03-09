@@ -13,6 +13,7 @@
     align-items: center;
     border-radius: 5px;
     margin-left: -30px;
+     
   }
   .rect:hover{
         animation: bounce 0.4s ease-in-out;

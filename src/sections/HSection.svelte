@@ -2,12 +2,23 @@
   import { onMount } from "svelte";
   import Header from "../sections/Header.svelte";
   import Engrenage from "../Components/Engrenages.svelte";
+  import { fade } from "svelte/transition";
+
+  let textIndex = 0;
+  let textTab = ["Conception de Site Internet", "Conception d'Application Web"];
+
+  onMount(() => {
+    setInterval(() => {
+      textIndex = (textIndex + 1) % textTab.length;
+    }, 2000);
+  });
 </script>
 
 <Header />
 <section class="H-section">
   <div class="wrapper-text">
-    <h1>Imaginer, <br /> Développer,<br /> Créer.</h1>
+    <h1>Imaginer, <br /> Développer,<br /> Créer. <br /></h1>
+    <h3>{textTab[textIndex]}</h3>
     <!-- <h2>
       <span>Gralypho</span> est une agence <span>WEB </span>qui aide les entreprises <br /> à accéder à
       <span>plus de visibilité</span>
@@ -62,7 +73,14 @@
     line-height: 135px;
     margin-top: 70px;
   }
-
+  .H-section h3 {
+    font-family: poppins;
+    font-weight: 500;
+    font-size: var(--l);
+    letter-spacing: -2px;
+    color: grey;
+    transition: 1s ease-in-out;
+  }
   .H-section h2 {
     font-family: poppins;
     font-weight: 300;

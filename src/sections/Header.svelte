@@ -23,12 +23,12 @@
     <span class="span" transition:slide={{ duration: 1900 }}>
       <div in:fade={{ duration: 600 }} out:fade={{ duration: 600 }} class="wrapper-links">
         <!-- <a href="/">Home</a> -->
-        <a href="/Sites">Sites Web</a>
-        <a href="/Applications">Applications</a>
-        <a href="/Referencement">Référencement</a>
-        <a href="/Marketing">Marketing</a>
-        <a href="/Composants">Composants</a>
-        <a href="/Refonte">Refonte</a>
+        <a class="link-contact" href="/Sites">Sites Web</a>
+        <a class="link-contact" href="/Applications">Applications</a>
+        <a class="link-contact" href="/Referencement">Référencement</a>
+        <a class="link-contact" href="/Marketing">Media Sociaux</a>
+        <a class="link-contact" href="/Composants">Composants</a>
+        <a class="link-contact" href="/Refonte">Design</a>
       </div>
     </span>
   {/if}
@@ -37,6 +37,8 @@
 <!-- <div class="hills"></div> -->
 <style>
   .navigation {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -53,11 +55,14 @@
     font-weight: 900;
   }
   .wrapper-logo-burger {
+    grid-column: 1/13;
+    grid-row: 1;
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
+    z-index: 3;
   }
   .logo {
     grid-column: 5;
@@ -68,6 +73,7 @@
     align-items: center;
     margin-top: 10px;
     margin-bottom: 5px;
+
   }
   .span {
     grid-row: 3;
@@ -81,18 +87,19 @@
   }
 
   .wrapper-links {
-    /* grid-column: span 12;
-    grid-row: 2; */
-    margin-left: 200px;
-    margin-right: 200px;
+    grid-column: 1/13;
+    grid-row: 2;
     display: flex;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
     opacity: 1;
     margin-top: 50px;
     margin-bottom: 40px;
-    margin-left: 200px;
+    width: 100vw;
+    z-index: 0;
   }
-  a {
+   a{
     color: white;
     font-size: 1em;
     font-weight: 300;
@@ -100,7 +107,9 @@
     transition: 0.4s ease-in-out;
   }
   a:hover {
+    transition: 0.4s ease-in-out;
     color: grey;
+
   }
   .burger-menu {
     background-color: transparent;
@@ -108,8 +117,6 @@
     grid-column: 6;
     grid-row: 1;
     width: 70px;
-    /* border-radius: 4px; */
-    /* border: solid 1px grey; */
     padding: 5px;
   }
   .burger-menu:hover {
@@ -118,7 +125,7 @@
   .burger {
     font-size: var(--l);
     border: none;
-    color: rgb(145, 145, 145);
+    color: var(--CTA);
   }
   .burger:hover {
     animation: bounce 0.4s ease-in-out;
@@ -146,17 +153,20 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* text-align: left;  */
       gap: 10px;
     }
-    .navigation {
+    .title {
+      width: 0px;
+      display: none;
+    }
+   .navigation {
       font-size: 16px;
     }
-    a {
+    .link-contact {
       font-size: 1.1em;
     }
-    .title {
-display: none;
-  }
-  }
+    .burger-menu {
+      z-index: 2;
+    }
+  } 
 </style>

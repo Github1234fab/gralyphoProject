@@ -100,7 +100,7 @@
     color: rgb(243, 240, 240);
     margin-top: 70px;
     letter-spacing: -2px;
-    line-height: 50px;
+    line-height: 55px;
   }
   .E-section h1 span {
     font-weight: 900;

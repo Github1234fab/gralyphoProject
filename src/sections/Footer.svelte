@@ -81,7 +81,7 @@
     transition: 0.2s ease-in-out;
     border-radius: 8px;
     border: 1px solid var(--CTA);
-    padding: 8px;
+    padding: 15px;
     background-color: var(--CTA);
 
   }

@@ -6,44 +6,44 @@
   import { bounceIn } from "svelte/easing";
   import Ville from "../Assets/png-gralypho/applis.png";
 
-  onMount(() => {
-    // function handleResize() {
-      if (window.innerWidth < 576) {
-        gsap.to(".wrapper-developpeur", {
-          x: 200,
-          // ease: power4,
-          scrollTrigger: {
-            trigger: ".wrapper-developpeur",
-            start: "top 920px",
-            end: "-100px",
-            scrub: 5,
-          },
-        });
-      }
-      else if (window.innerWidth < 768) {
-        gsap.to(".wrapper-developpeur", {
-          x: 400,
-          // ease: power4,
-          scrollTrigger: {
-            trigger: ".wrapper-developpeur",
-            start: "top 920px",
-            end: "-100px",
-            scrub: 5,
-          },
-        });
-      } else {
-        gsap.to(".wrapper-developpeur", {
-          x: 700,
-          // ease: power4,
-          scrollTrigger: {
-            trigger: ".wrapper-developpeur",
-            start: "top 920px",
-            end: "-100px",
-            scrub: 5,
-          },
-        });
-      }
-    });
+  // onMount(() => {
+  //   // function handleResize() {
+  //     if (window.innerWidth < 576) {
+  //       gsap.to(".wrapper-developpeur", {
+  //         x: 200,
+  //         // ease: power4,
+  //         scrollTrigger: {
+  //           trigger: ".wrapper-developpeur",
+  //           start: "top 920px",
+  //           end: "-100px",
+  //           scrub: 5,
+  //         },
+  //       });
+  //     }
+  //     else if (window.innerWidth < 768) {
+  //       gsap.to(".wrapper-developpeur", {
+  //         x: 400,
+  //         // ease: power4,
+  //         scrollTrigger: {
+  //           trigger: ".wrapper-developpeur",
+  //           start: "top 920px",
+  //           end: "-100px",
+  //           scrub: 5,
+  //         },
+  //       });
+  //     } else {
+  //       gsap.to(".wrapper-developpeur", {
+  //         x: 700,
+  //         // ease: power4,
+  //         scrollTrigger: {
+  //           trigger: ".wrapper-developpeur",
+  //           start: "top 920px",
+  //           end: "-100px",
+  //           scrub: 5,
+  //         },
+  //       });
+  //     }
+  //   });
 
     // // Appeler la fonction de gestion de redimensionnement au chargement initial
     // handleResize();
