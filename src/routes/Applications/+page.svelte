@@ -30,22 +30,11 @@
       Pour le développement d'application, il est essentiel que nous puissions nous rencontrez. <br />Alors parlez nous
       de votre projet, autour d'un café!
     </h4>
-    <div class="wrapper-contact">
-      <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
-      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-phone-volume"></i></a>
-      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-mug-hot"></i></a>
-    </div>
+    
   </div>
 </section>
 
 <style>
-  .wrapper-contact {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
   h4 {
     z-index: 2;
     margin-top: 30px;
@@ -57,17 +46,7 @@
     font-family: epilogue;
     text-align: center;
   }
-  a {
-    border: 2px solid var(--blue);
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 2em;
-    color: var(--colorC);
-    z-index: 2;
-  }
-  a:hover {
-    animation: bounce 0.4s ease-in-out;
-  }
+
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
