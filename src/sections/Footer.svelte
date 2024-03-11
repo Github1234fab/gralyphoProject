@@ -15,10 +15,16 @@
       <Gralypho />
     </div>
   </div>
-  <div class="wrapper-contact">
+  <!-- <div class="wrapper-contact">
     <a href="mailto:gralypho@gmail.com " class="contact">contact@gralypho.com</a>
     <a href="tel:0672901614" class="contact">0672 901 614</a>
-  </div>
+  </div> -->
+  <div class="wrapper-contactez">
+      <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
+      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-phone-volume"></i></a>
+      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-mug-hot"></i></a>
+    </div>
+
 
   <div class="wrapper-media">
     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook anim"></i></a>
@@ -60,15 +66,15 @@
   .gralypho {
     margin-left: 30px;
   }
-  .wrapper-contact {
+  .wrapper-contactez{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     /* background-color: var(--CTA); */
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px;
     gap: 4px;
   }
   .contact {

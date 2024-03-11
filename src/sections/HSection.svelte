@@ -19,19 +19,10 @@
   <div class="wrapper-text">
     <h1>Imaginer, <br /> Développer,<br /> Créer. <br /></h1>
     <h3>{textTab[textIndex]}</h3>
-    <!-- <h2>
-      <span>Gralypho</span> est une agence <span>WEB </span>qui aide les entreprises <br /> à accéder à
-      <span>plus de visibilité</span>
-      et <span>plus de clients sur internet</span>, <br /> grâce à des solutions digitales adaptées à leur
-      <span>besoin.</span>
-    </h2> -->
     <h2>
-      Nous créeons des sites Web et des Applications sur mesure pour tous les professionnels souhaitant obtenir plus <span
-      >
-        de visibilité</span
-      >
-      et
-      <span>plus de clients</span>.<br />
+      Nous créeons des sites Web et des Applications sur mesure pour tous les professionnels souhaitant obtenir des
+      résultats tangibles à propos du <span> gain de productivité et de temps</span>, et de
+      <span>la conversion de clients</span>.<br />
     </h2>
     <div class="wrapper-contact">
       <a class="contact" href="/#footer">Nous contacter</a>
@@ -101,7 +92,7 @@
     background-color: var(--CTA);
     font-family: kanit;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 0px;
     width: 160px;
     border-radius: 6px;
@@ -112,10 +103,10 @@
   .contact2 {
     text-decoration: none;
     color: white;
-    background-image: linear-gradient(to left, var(--orange), var(--CTA));
+    background-color: var(--CTA2);
     font-family: kanit;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
     width: 160px;
     border-radius: 6px;
@@ -132,7 +123,7 @@
   .wrapper-contact {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     margin-top: 20px;
     align-items: baseline;
     justify-content: flex-start;
@@ -243,7 +234,7 @@
     }
     .H-section h1 {
       font-size: 6em;
-      line-height: 100px;
+      line-height: 0.9em;
       letter-spacing: -5px;
     }
     .H-section h2 {
@@ -256,7 +247,7 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 570px;
+      margin-top: 630px;
       margin-left: -230px;
       z-index: 0;
     }
@@ -278,7 +269,7 @@
     }
     .H-section h1 {
       font-size: 6em;
-      line-height: 100px;
+      line-height: 0.9em;
       letter-spacing: -5px;
     }
     .H-section h2 {
@@ -316,14 +307,21 @@
     }
     .H-section h1 {
       font-size: 3.1em;
-      line-height: 45px;
-      letter-spacing: -3px;
+      line-height: 0.9em;
+      letter-spacing: -0.05em;
+    }
+    .H-section h3 {
+      margin-top: 10px;
+      font-size: 1.4em;
+      line-height: 0.9em;
+      letter-spacing: -0.04em;
     }
     .H-section h2 {
       margin-top: 30px;
       line-height: 25px;
       font-size: 1em;
     }
+
     .wrapper-visuel {
       grid-column: 5/13;
       grid-row: 1;
@@ -331,17 +329,17 @@
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 450px;
+      margin-top: 530px;
       margin-left: 27px;
       z-index: 0;
     }
     .contact {
-      margin-top: 50px;
+      margin-top: 30px;
       margin-left: 10px;
       font-size: 1em;
     }
     .contact2 {
-      margin-top: 20px;
+      margin-top: 10px;
       margin-left: 10px;
       font-size: 1em;
     }

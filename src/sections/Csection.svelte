@@ -15,42 +15,42 @@
     {
       title: "Site vitrine",
       icon: vitrine,
-      p: "Créer un site internet vitrine permet de présenter la société, ses produits et ses services. Il permet de fournir des informations aux clients potentiels et de les diriger vers les canaux de vente ...",
+      // p: "Créer un site internet vitrine permet de présenter la société, ses produits et ses services. Il permet de fournir des informations aux clients potentiels et de les diriger vers les canaux de vente ...",
       lien: "/Sites",
       lien2: "/Sites",
     },
     {
       title: "Site E-commerce",
       icon: commerce,
-      p: "Réaliser un site internet E-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne, en restant ouverte 24h/24 et 7/7.",
+      // p: "Réaliser un site internet E-commerce permet à une entreprise de vendre des produits, des contenus ou des services en ligne, en restant ouverte 24h/24 et 7/7.",
       lien: "/Sites",
       lien2: "/Sites",
     },
     {
       title: "Blog",
       icon: blog,
-      p: "Le blog d’entreprise est un site éditorial animé par un ou plusieurs auteurs qui publient des articles et des contenus sur des sujets spécifiques B2C ou B2B. ",
+      // p: "Le blog d’entreprise est un site éditorial animé par un ou plusieurs auteurs qui publient des articles et des contenus sur des sujets spécifiques B2C ou B2B. ",
       lien: "/Sites",
       lien2: "/Sites",
     },
     {
       title: "Portfolio",
       icon: portfolio,
-      p: "Le portfolio est une plateforme internet professionnelle qui permet aux créatifs, photographes, designers, indépendants (...) de présenter leurs travaux et leurs réalisations. ",
+      // p: "Le portfolio est une plateforme internet professionnelle qui permet aux créatifs, photographes, designers, indépendants (...) de présenter leurs travaux et leurs réalisations. ",
       lien: "/Sites",
       lien2: "/Sites",
     },
     {
       title: "Site Corporate",
       icon: corporate,
-      p: "Les grandes entreprises, institutions ou organisations ont besoin de présenter leurs activités. Un site web corporate apporte les réponses nécessaires de ce point de vue.",
+      // p: "Les grandes entreprises, institutions ou organisations ont besoin de présenter leurs activités. Un site web corporate apporte les réponses nécessaires de ce point de vue.",
       lien: "/Sites",
       lien2: "/Sites",
     },
     {
       title: "Site Institutionnel",
       icon: institution,
-      p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
+      // p: "Le site institutionnel est destiné à promouvoir l’image d’une organisation telle que les établissements d’enseignement, les associations et les organismes à but non lucratif. ",
       lien: "/Sites",
       lien2: "/Sites",
     },
@@ -66,25 +66,25 @@
   //       scrub: 3,
   //     },
   //   });
-  // onMount(() => {
-  // gsap.to(".wrapper-cards", {
-  //   y: 0,
-  //   opacity: 1,
-  //   ease: "power4",
-  //   scrollTrigger: {
-  //     trigger: ".wrapper-cards",
-  //     start: "top 800px",
-  //     end: "-200px",
-  //     scrub: 5,
-  //   },
-  // });
-  //  });
+  onMount(() => {
+  gsap.to(".wrapper-cards", {
+    y: 0,
+    opacity: 1,
+    ease: "power4",
+    scrollTrigger: {
+      trigger: ".wrapper-cards",
+      start: "top 800px",
+      end: "-200px",
+      scrub: 5,
+    },
+  });
+   });
 </script>
 
 <section class="C-section" id="sectionC">
   <div class="wrapper-text">
     <h1>Le futur de votre business commence par un <span> site Web.</span></h1>
-    <h2>Il existe <span>6 types de site web</span>. Quel est le type qui correspond le plus à <span>votre activité?</span></h2>
+    <h2>Il existe couramment <span>6 types de site web</span>. Choisissez quel est le type de site correspond le plus à <span>votre activité?</span></h2>
   </div>
 
   <div class="wrapper-cards">
@@ -101,7 +101,8 @@
     grid-template-rows: auto;
     font-size: 16px;
     background-color: rgb(255, 255, 255);
-    margin-top: 100px;
+    margin-top: 0px;
+    margin-bottom: 200px;
   }
   .wrapper-text h1 {
     font-family: epilogue;

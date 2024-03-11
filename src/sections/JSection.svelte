@@ -89,17 +89,14 @@
     height: auto;
     font-size: 16px;
     margin-top: 0px;
-
-    background-color: var(--colorC);
-    /* background-image: url(../Assets/png-gralypho/waves4.svg);
-    background-repeat: no-repeat;
-    background-size: cover; */
+    background-color: rgb(250, 250, 250);
   }
   .gallery {
     overflow-x: auto;
     grid-column: 1/13;
     grid-row: 2;
     margin-left: 200px;
+
   }
   .wrapper-contain {
     display: flex;
@@ -126,7 +123,7 @@
     font-weight: 700;
     color: var(--primay);
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 100px;
     letter-spacing: -2px;
   }
   .J-section h1 span {

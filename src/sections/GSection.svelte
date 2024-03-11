@@ -4,7 +4,10 @@
   import skate from "../Assets/png-gralypho/skateboard.png";
   import { onMount } from "svelte";
   import { bounceIn } from "svelte/easing";
-  import Ville from "../Assets/png-gralypho/applis.png";
+  import Ville from "../Assets/png-gralypho/05.png";
+    import Visuel from "../Assets/png-gralypho/05.png";
+        import VisuelB from "../Assets/png-gralypho/21.png";
+            import VisuelC from "../Assets/png-gralypho/36.png";
 
   // onMount(() => {
   //   // function handleResize() {
@@ -59,19 +62,23 @@
 </script>
 
 <section class="G-section">
-  <!-- <div class="wrapper-developpeur">
-    <img src={Dev} alt="illustration cartoon d'un développeur informatique" class="dev" />
-    <img src={skate} alt="" class="skate" />
-  </div> -->
-  <img src={Ville} alt="png d'une ville en frise" class="ville" />
-  <div class="pavement"></div>
-  <div class="wrapper-text">
-    <h1>Découvrez nos <span>réalisations </span></h1>
-    <h2>
+    <div class="wrapper-title-img">
+      <div class="wrapper-visuels">
+     <!-- <img src={Ville} alt="png d'une illustration d'environnement média Web" class="ville" /> -->
+          <!-- <img src={VisuelB} alt="png d'une illustration d'environnement média Web" class="ville" /> -->
+          </div>
+      <div class="wrapper-text">
+        <h1>Découvrez nos <span>réalisations </span></h1>
+         <h2>
       Découvrez ici des projets témoins utilisant chacun une technique particulière. Découvrez vite le potentiel des
       animations, des applications, des requêtes API, des jeux, des composants. (...) !
     </h2>
-  </div>
+    </div> 
+          <div class="wrapper-visuels">
+         <img src={Visuel} alt="png d'une illustration d'environnement média Web" class="ville" />
+              <!-- <img src={VisuelC} alt="png d'une illustration d'environnement média Web" class="ville" /> -->
+              </div>
+     </div>
   <Carousel />
 </section>
 
@@ -81,26 +88,40 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     height: auto;
+    width: 100%;
     font-size: 16px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 250, 250);
+  }
+    .wrapper-title-img {
+   grid-column: 1/12;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;  
+  margin: 80px auto;
+  gap: 30px;
   }
   .wrapper-text {
-    grid-column: 2/12;
-    grid-row: 2;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: baseline;
-    margin-top: 50px;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
   }
+  .wrapper-visuels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .G-section h1 {
-    text-align: left;
+    text-align: center;
     font-family: epilogue;
     font-weight: 900;
     font-size: var(--xl);
     color: var(--primary);
     letter-spacing: -1px;
-    line-height: 50px;
+    line-height: 1em;
   }
   .G-section h1 span {
     font-weight: 900;
@@ -112,7 +133,6 @@
   }
 
   .G-section h2 {
-    margin-top: 10px;
     font-family: poppins;
     font-weight: 300;
     font-size: var(--m);
@@ -120,59 +140,21 @@
     text-align: left;
     line-height: 25px;
     letter-spacing: -1px;
-  }
-  /* .wrapper-developpeur {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 116px;
-    margin-left: -50px;
-    width: 50px;
-    z-index: 2;
-  } */
-  .ville {
-    grid-column: 1/12;
-    grid-row: 1;
-    width: auto;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 0px;
-    z-index: 0;
-    /* opacity: 0.5; */
-  }
-  /* .dev {
-    height: 150px;
-    margin-top: 48px;
-    z-index: 2;
-    align-self: center;
-    margin-left: 26px;
-  }
-  .skate {
-    height: 50px;
-    z-index: 1;
-    opacity: 1;
-    align-self: center;
-    margin-top: -24px;
-  } */
-  .pavement {
-    grid-column: 1/12;
-    grid-row: 2;
-    width: 100vw;
-    background-image: linear-gradient(to right, var(--blue2), var(--orange));
-    height: 5px;
-    margin-top: -8px;
-    box-shadow: 0px 10px 10px 2px rgba(76, 76, 76, 0.35);
-    z-index: 2;
+    width: 70%;
+    text-align: center;
   }
 
-  @media screen and (max-width: 768px) {
-    .wrapper-text {
-      background-size: 100%;
-    }
+  .ville {
+    width: auto;
+    height: 250px;
+    /* margin: 0 auto; */
+    /* margin-top: 0px; */
+    z-index: 0;
+    border-radius: 20px;
   }
+
+
+  @media screen and (max-width: 768px) {
   .G-section h1 {
     text-align: left;
     font-family: epilogue;
@@ -182,4 +164,5 @@
     letter-spacing: -1px;
     line-height: 40px;
   }
+}
 </style>

@@ -9,12 +9,11 @@
 
 <div class="card">
   <div class="wrapper-img">
-  
     <div class="wrapper-text-img">
-        <img src={img} {alt} class="img" />
+      <img src={img} {alt} class="img" />
       <h3>{title}</h3>
       <h4>{job}</h4>
-      <img src={stars} alt="icon d'étoiles d'appréciation" class ="stars">
+      <img src={stars} alt="icon d'étoiles d'appréciation" class="stars" />
     </div>
   </div>
   <div class="wrapper-text">
@@ -29,7 +28,7 @@
     align-items: center;
     gap: 15px;
     width: 500px;
-height: 550px;
+    height: 550px;
     font-family: epilogue;
     background-color: transparent;
     margin-top: 30px;
@@ -51,11 +50,10 @@ height: 550px;
     text-align: left;
     line-height: 30px;
     padding: 5px;
-  width: 70%;
-  margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
   }
   .card h5 span {
-
     font-size: 2em;
     font-family: "Times New Roman", Times, serif;
   }
@@ -67,12 +65,10 @@ height: 550px;
     font-size: 0.8em;
     color: var(--bg);
     text-align: left;
-  
   }
   .wrapper-text {
     flex-direction: column;
     padding: 10px;
-   
   }
   .wrapper-img {
     display: flex;
@@ -90,11 +86,11 @@ height: 550px;
     align-items: flex-start;
     margin-left: 10px;
   }
-.stars{
-  background-color: rgb(206, 206, 206);
-  border-radius: 8px;
-  max-width: 100%;
-  height: 30px;
-  margin-top: 10px;
-}
+  .stars {
+    background-color: rgb(206, 206, 206);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 30px;
+    margin-top: 10px;
+  }
 </style>

@@ -59,10 +59,10 @@
     </h1>
 
     <h2>Découvrez ici toutes <span>les solutions </span>que nous pouvons vous apporter.</h2>
-    <div class="wrapper-buttons">
+    <!-- <div class="wrapper-buttons">
       <a class="contact-E" href="/#footer">Nous contacter</a>
       <a class="contact2-E" href="/#footer">Devis gratuit</a>
-    </div>
+    </div> -->
     <div class="wrapper-banner">
       <Banner />
     </div>
@@ -71,11 +71,10 @@
 
 <style>
   .E-section {
-    /* scroll-margin-top: 100px; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
@@ -99,8 +98,8 @@
     text-align: left;
     color: rgb(243, 240, 240);
     margin-top: 70px;
-    letter-spacing: -2px;
-    line-height: 55px;
+    letter-spacing: -0.030em;
+    line-height: 1.2em;
   }
   .E-section h1 span {
     font-weight: 900;
@@ -145,11 +144,11 @@
     align-self: center;
     margin-top: -150px;
   } */
-  .wrapper-buttons {
+  /* .wrapper-buttons {
     margin-top: 50px;
     display: flex;
-  }
-  .contact-E {
+  } */
+  /* .contact-E {
     text-decoration: none;
     color: white;
     background-color: var(--CTA);
@@ -180,7 +179,7 @@
   .contact-E:hover,
   .contact2-E:hover {
     animation: bounce 0.4s ease-in-out;
-  }
+  } */
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);

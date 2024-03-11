@@ -33,9 +33,9 @@
       <a href={lien2} class="title">{title}</a>
       <a href={lien}><img src={icon} alt="icon de types de sites" class="icon" /></a>
     </div>
-    <p>
+    <!-- <p>
       {p}
-    </p>
+    </p> -->
     <a href={lien} class="link-decouvrir">En savoir +</a>
   </div>
 </div>
@@ -51,7 +51,7 @@
     align-items: center;
     width: 40%;
     height: fit-content;
-    min-height: 400px;
+    min-height: 200px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
     background-color: white;
   }
@@ -81,14 +81,14 @@
   .title:hover {
     animation: bounce 0.4s ease-in-out;
   }
-  .wrapper-text p {
+  /* .wrapper-text p {
     font-size: var(--m);
     color: var(--primary);
     font-weight: 300;
     text-align: left;
     line-height: 30px;
     padding: 0px;
-  }
+  } */
   .link-decouvrir {
     text-decoration: none;
     color: white;
@@ -134,7 +134,7 @@
   @media screen and (max-width: 1116px) {
     .cards {
       width: calc(45% - 10px);
-      min-height: 500px;
+      min-height: 200px;
       height: fit-content;
     }
   }

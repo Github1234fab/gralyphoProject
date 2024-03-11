@@ -39,13 +39,14 @@
 
 <style>
   .wrapper-text {
-        grid-column: 2/12;
-    grid-row: 4;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     font-size: 16px;
+    background-color: white;
+    margin: 0 100px;
+    height: 100%;
   }
   .wrapper-text h1 {
     text-align: left;
@@ -69,6 +70,21 @@
     text-align: left;
     line-height: 30px;
     margin-top: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper-text {
+      margin: 0 20px;
+    }
+    .wrapper-text h1 {
+      font-size: var(--xl);
+      line-height: 40px;
+    }
+    .wrapper-text h2 {
+      column-count: 1;
+      font-size: 1em;
+      line-height: 30px;
+    }
   }
 
 

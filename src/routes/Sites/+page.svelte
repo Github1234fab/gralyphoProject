@@ -8,20 +8,54 @@
   import blog from "../../Assets/png-gralypho/blog-solid.svg";
   import corporate from "../../Assets/png-gralypho/user-tie-solid.svg";
   import institution from "../../Assets/png-gralypho/building-columns-solid.svg";
-  import Engrenages from "../../Components/Engrenages.svelte";
   import imgHero from "../../Assets/png-gralypho/webExplosion.png";
   import CardsSites from "../../Components/CardsSites.svelte";
   import FSection from "../../sections/FSection.svelte";
   import Profits from "../../sections/SectionProfitsSite.svelte";
+  import Service from "../../Components/Services.svelte";
+  import imgDesign from "../../Assets/png-gralypho/30.png";
+  import imgSeo from "../../Assets/png-gralypho/05.png";
+  import imgWeb from "../../Assets/png-gralypho/Web.png";
+  import imgConception from "../../Assets/png-gralypho/WebDesign.png";
+  import Banner from "../../Components/Banner.svelte";
+  import BeneficeSection from "../../sections/BeneficeSection.svelte";
+  import CardsSectionB from "../../Components/CardsSectionB.svelte";
+  import vitrineA from "../../Assets/png-gralypho/vitrineB.png";
+  import ecommerce from "../../Assets/png-gralypho/ecommerceA.png";
+  import Blogger from "../../Assets/png-gralypho/blogA.png";
+  import Portfolio from "../../Assets/png-gralypho/portfolio.png";
+  import Corporated from "../../Assets/png-gralypho/corporate.png";
+  import institutionnel from "../../Assets/png-gralypho/institutionnel.png"
+  import Form from "../../Components/Form.svelte";
+
+  let accordeonTab = [
+    {
+      title: "Tarifs",
+      p: "Nos tarifs démarrent à 500 euros pour un blog, 1000 euros pour une landing page (site page unique), 1500 euros pour un site vitrine, 2000 euros pour un site corporate, 2500 euros pour un site e-commerce, 3000 euros pour un site institutionnel, 3500 euros pour un site sur mesure entièrement codé (garantie sécurité et design innovant et sur mesure).",
+    },
+    {
+      title: "Délai de conception et de mise en ligne",
+      p: "Le délai de conception et de mise en ligne dépend du type de site internet que vous souhaitez. En règle général, le délai de conception et de mise en ligne est de 2 semaines pour un blog, 3 semaines pour une landing page, 4 semaines pour un site vitrine, 5 semaines pour un site corporate, 6 semaines pour un site e-commerce, 7 semaines pour un site institutionnel, 8 semaines pour un site sur mesure entièrement codé (garantie sécurité et design innovant et sur mesure).",
+    },
+    {
+      title: "Sites Dynamiques - Possibilités et fonctionnalités",
+      p: "Nos clients sont parfois surpris de découvir tout ce qu'un site internet peut contenir comme fonctionnalité et possibilité. En effet, un site internet peut contenir un blog, un portfolio, un formulaire de contact, un chatbot, un espace membre, un espace client, un espace administrateur, un espace de paiement, de réservation, de commande (etc)?.  Mais nous pouvons également collecter des données, les stocker, les consulter, les anaylser et s'en serivir pour orienter votre activité. Nous pouvons également établir des requêtes API. C'est à dire que nous pouvons consulter des données externes contenues dans un autre site, une autre application que la vôtre et les rapatrier dans votre site pour les afficher. Par exemple, nous pouvons établir une requête auprès d'un service météo et afficher toutes les données métérologiques de votre localité en temps réel ou s'en servir pour valider l'ouverture d'une activité d'accrobranche par exemple, etc.",
+    },
+    {
+      title: "Propriété, hébergement, nom de domaine et abonnement",
+      p: "Nos clients se posent souvent la question de la propriété de leur site. À qui appartient-il? Il vous appartient, parce que vous allez souscrire auprès d'un hebergeur et bien souvent cet hébergeur sera également la plateforme sur laquelle votre site sera réalisée et sur laquelle votre nom de domaine sera acheté. Cet souscription est à votre nom dès lors, vous êtes propriétaire de votre site. ",
+    },
+  ];
 
   let sitesTab = [
     {
       type: "Site Vitrine",
       description:
         "Le site Vitrine a pour objectif de présenter votre entreprise, vos services, vos produits, vos valeurs, votre équipe, vos actualités,  etc. Mis à part un formulaire de contact, ce type de site ne propose pas de fonctionnalités avancées. Il est idéal pour les petites entreprises, les artisans, les professions libérales, les associations, les artistes, etc.",
-      delai: "Délai de lancement: En règle général, le délai de création et lancement est compris entre 2 et 4 semaines, selon la complexité du projet",
-      tarif:
-        "Tarif: À partir de 1500 euros.",
+      delai:
+        "Délai de lancement: En règle général, le délai de création et lancement est compris entre 2 et 4 semaines, selon la complexité du projet",
+      tarif: "Tarif: À partir de 1500 euros.",
+      img: vitrineA,
     },
     {
       type: "Site E-Commerce",
@@ -29,94 +63,148 @@
         "Le E-commerce vous permet de vendre vos produits 24/7. C'est une hyper présence en ligne nécessitant un travail soigneux aussi bien dans la gestion du front-end, comme sur la partie back-end et notamment sur la sécurité au niveau de la gestion des stocks et des paiements.",
       delai:
         "Délai de lancement: En règle général, le délai de lancement est au minimum de 4 semaines, ce délai peut se rallonger selon la complexité du projet",
-      tarif:
-        "Tarif: À partir de 2500 euros.",
+      tarif: "Tarif: À partir de 2500 euros.",
+      img: ecommerce,
     },
     {
       type: "Blog",
-      description: "Un Blog vous permet de créer et de poster des articles et d'ouvrir ces posts à des retours de commentaires de vos utilisateurs. Idéal pour obtenir des prospects et les convertir. Idéal pour les entreprises qui souhaitent partager leur expertise, leur actualité, leur veille, etc.",
+      description:
+        "Un Blog vous permet de créer et de poster des articles et d'ouvrir ces posts à des retours de commentaires de vos utilisateurs. Idéal pour obtenir des prospects et les convertir. Idéal pour les entreprises qui souhaitent partager leur expertise, leur actualité, leur veille, etc.",
       delai:
         "Délai de lancement: En règle général, le délai de lancement est de 2 semaines. Le blog peut également être ajouté à un autre type de site.",
-      tarif:
-        "Tarif:  À partir de 500 euros pour un simple Blog",
+      tarif: "Tarif:  À partir de 500 euros pour un simple Blog",
+      img: Blogger,
     },
     {
       type: "Portfolio",
-      description: "Un Portfolio est idéal pour les artistes, les photographes, les graphistes, les designers, les architectes, les créateurs, les illustrateurs, les musiciens, les écrivains, etc. Il permet de présenter vos réalisations, vos créations, vos projets, vos oeuvres, etc.",
+      description:
+        "Un Portfolio est idéal pour les artistes, les photographes, les graphistes, les designers, les architectes, les créateurs, les illustrateurs, les musiciens, les écrivains, etc. Il permet de présenter vos réalisations, vos créations, vos projets, vos oeuvres, etc.",
       delai:
         "Délai de lancement: En règle général, le délai de lancement débute autour de 4 semaines, ce délai peut se rallonger selon la complexité du projet",
-      tarif:
-        "Tarif: À partir de 1500 euros.",
+      tarif: "Tarif: À partir de 1500 euros.",
+      img: Portfolio,
     },
     {
       type: "Site Corporate",
-      description: "Un site Corporate vous permet de présenter votre entreprise, vos services, vos produits, vos valeurs, votre équipe, vos actualités, etc. Il est idéal pour les entreprises, les PME, les TPE, les grandes entreprises, les multinationales, etc.",
-      delai: "Délai de lancement: En règle général, le délai de lancement débute autour de 4 semaines, ce délai peut se rallonger selon la complexite du projet",
-      tarif:
-        "Tarif: À partir de 2000 euros.",
+      description:
+        "Un site Corporate vous permet de présenter votre entreprise, vos services, vos produits, vos valeurs, votre équipe, vos actualités, etc. Il est idéal pour les entreprises, les PME, les TPE, les grandes entreprises, les multinationales, etc.",
+      delai:
+        "Délai de lancement: En règle général, le délai de lancement débute autour de 4 semaines, ce délai peut se rallonger selon la complexite du projet",
+      tarif: "Tarif: À partir de 2000 euros.",
+      img: Corporated,
     },
     {
       type: "Site Institutionnel",
-      description: "Un site institutionnel vous permet de présenter votre institution, vos services, vos produits, vos valeurs, votre équipe, vos actualités, etc. Il est idéal pour les institutions, les écoles, les universités, les collectivités, les mairies, les associations, les ONG, etc.",
-      delai: "Délai de lancement: En règle général, le délai de lancement débute autour de 4 semaines, ce délai peut se rallong",
-      tarif:
-        "Tarif: À partir de 2000 euros.",
+      description:
+        "Un site institutionnel vous permet de présenter votre institution, vos services, vos produits, vos valeurs, votre équipe, vos actualités, etc. Il est idéal pour les institutions, les écoles, les universités, les collectivités, les mairies, les associations, les ONG, etc.",
+      delai:
+        "Délai de lancement: En règle général, le délai de lancement débute autour de 4 semaines, ce délai peut se rallong",
+      tarif: "Tarif: À partir de 2000 euros.",
+      img: institutionnel,
     },
   ];
 </script>
 
 <Header />
 
+<!-- ***************HERO*************** -->
+
 <section class="sites-section" in:fade={{ duration: 1000 }}>
   <div class="hero">
-    <img src={imgHero} alt="" class="imgHero" />
+    <!-- <img src={imgHero} alt="" class="imgHero" /> -->
     <h1>Création de <br /><span>Site Web</span></h1>
     <h3>
-      Grâce à notre expertise dans la création de sites Internets, nous mettons en oeuvre notre savoir-faire pour...
+      L'agence Gralypho crée vos sites Webs sur mesure en les adpatant à vos besoins, votre business et vos objectifs.
     </h3>
-    <div class="wrapper-contact">
+    <!-- <div class="wrapper-contact">
       <a class="contact" href="/#footer">Nous contacter</a>
       <a class="contact2" href="/#footer">Devis gratuit</a>
+    </div> -->
+  </div>
+
+  <!-- ***************SERVICES*************** -->
+
+  <div class="container-service">
+    <h1>Nos services Web</h1>
+    <div class="wrapper-service">
+      <Service
+        text="Design UX/UI"
+        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
+        img={imgDesign}
+      />
+      <Service
+        text="Rédaction"
+        img={imgSeo}
+        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
+      />
+    </div>
+    <div class="wrapper-service">
+      <Service
+        text="SEO"
+        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
+        img={imgWeb}
+      />
+      <Service
+        text="Formation"
+        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
+        img={imgConception}
+      />
     </div>
   </div>
 
-  <Profits />
+  <!-- ***************SITES TYPES*************** -->
+
+  <!-- <Profits /> -->
 
   <div class="section-slider">
-    <h1>Nous maîtrisons la conception de tous les types de site Internet.</h1>
-    <h3>Découvrez les différents types de sites internet, nos délais de lancement et nos tarifs.</h3>
+    <h1>Conception de site Web</h1>
+    <h3>Découvrez les différents types de sites internet que nous concevons.</h3>
     <div class="container-slider">
       <div class="wrapper-slider">
         {#each sitesTab as site}
-          <CardsSites type={site.type} description={site.description} delai={site.delai} tarif={site.tarif} />
+          <CardsSites
+            type={site.type}
+            description={site.description}
+            delai={site.delai}
+            tarif={site.tarif}
+            img={site.img}
+          />
         {/each}
       </div>
     </div>
   </div>
-  <FSection />
 
-  <div class="wrapper-conclusion">
-    <h4>
-      Vous souhaitez en savoir d'avantage ou nous parlez de votre projet? <br />Nous sommes là pour vous écouter et vous
-      apporter toutes nos solutions. <br /><br />On en parle autour d'un café ?
-    </h4>
-    <div class="wrapper-contactez">
-      <a href="mailto:gralypho@gmail.com " class="contact"><i class="fa-regular fa-envelope"></i></a>
-      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-phone-volume"></i></a>
-      <a href="tel:0672901614" class="contact"><i class="fa-solid fa-mug-hot"></i></a>
-    </div>
+   <!-- ***************COLLAPSES*************** -->
+
+   <div class="testimonial">
+    <h2>"Je n'aurais jamais pensé en apprendre autant sur toutes les fonctionnalités que peut contenir un site Web !!  <br>L'expertise de l'agence Gralypho nous a permis d'augmenter de 60% nos ventes en ligne ! "</h2>
+      <h4>"Éloïse Humbert - CTO Rodiggia"</h4>
+   </div>
+
+
+
+  <!-- ***************COLLAPSES*************** -->
+
+  <div class="wrapper-SectionB">
+    <h1>Tarifs, Délais ...</h1>
+    {#each accordeonTab as tab}
+      <CardsSectionB title={tab.title} p={tab.p} />
+    {/each}
   </div>
+
+  <!-- ***************SEO/SEA*************** -->
+
+  <div class="wrapper-Fsection">
+    <FSection />
+  </div>
+
+  <!-- ***************CONTACT*************** -->
+
+  
+<div class="wrapper-form">
+<Form/>
+</div>
 </section>
-
-<!-- <div class="wrapper-text-intro">
-  <h1>
-    Votre futur site internet est un outil. Et cet outil doit vous servir à atteindre votre objectifs. Qu'il s'agisse
-    d'atteindre vos clients, de vendre vos produits, de proposer vos services, de communiquer, de toucher vos prospects,
-    de développer votre activité, votre rayonnement, votre notoriété (...), tout cela repose sur trois piliers: Un
-    design réussi, un contenu pertinent, un référencement optimisé
-  </h1>
-</div> -->
-
 <style>
   .sites-section {
     display: grid;
@@ -158,57 +246,47 @@
     color: rgb(224, 222, 222);
     text-align: center;
   }
-  .imgHero {
-    width: 50%;
-    height: 50%;
-    margin-top: 30px;
-  }
-  .wrapper-contact{
+  .container-service {
+    grid-column: 2/12;
+    grid-row: 2;
     display: flex;
-    gap: 0px;
-    margin: 40 auto;
-    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
   }
-  .contact {
-    text-decoration: none;
-    color: white;
-    background-color: var(--CTA);
-    font-family: kanit;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-left: 0px;
-    width: 160px;
-    border-radius: 6px;
+  .container-service h1 {
     text-align: center;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
-  }
-  .contact2 {
-    text-decoration: none;
-    color: white;
-    background-image: linear-gradient(to left, var(--orange), var(--CTA));
-    font-family: kanit;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 160px;
-    border-radius: 6px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
-  }
-  .contact:hover {
-    animation: bounce 0.4s ease-in-out;
-  }
-  .contact2:hover {
-    animation: bounce 0.4s ease-in-out;
-  }
+    font-family: epilogue;
+    font-size: var(--xl);
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 20px;
+    letter-spacing: -3px;
 
-  .container-slider {
+  }
+  .wrapper-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+
+  }
+    .container-slider {
     overflow-x: auto;
-    margin-left: 0px;
+    margin-left: 100px;
     border-right: 3px double var(--primary);
     width: 100vw;
+    background-color: white;
+  }
+  .section-slider {
+    grid-column: 1/13;
+    grid-row: 3;
+    margin-top: 50px;
+    margin-left: 0px;
+    background-color: white;
   }
   .wrapper-slider {
     display: flex;
@@ -220,22 +298,20 @@
     margin-bottom: 30px;
     gap: 20px;
   }
-  .section-slider {
-    grid-column: 1/12;
-    grid-row: 3;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
+
   .section-slider h1 {
     text-align: left;
     font-family: epilogue;
     font-size: var(--xl);
     font-weight: 700;
     color: var(--primary);
-    margin-top: 20px;
+    margin-top: 100px;
     letter-spacing: -3px;
+    margin-left: 70px;
+    width: 80%;
   }
   .section-slider h3 {
+    margin-left: 70px;
     text-align: left;
     font-family: poppins;
     font-weight: 300;
@@ -245,45 +321,77 @@
     margin-bottom: 50px;
   }
 
-  .wrapper-conclusion {
-    grid-column: 2/12;
-    grid-row: 6;
+  .wrapper-SectionB {
+    grid-column: 1/13;
+    grid-row: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
   }
-  h4 {
-    z-index: 2;
-    margin-top: 30px;
-    color: grey;
-    text-align: left;
-    line-height: 30px;
-    font-weight: 600;
-    font-size: 1.2em;
-    font-family: poppins;
+  .wrapper-SectionB h1 {
     text-align: center;
+    font-family: epilogue;
+    font-size: var(--xl);
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 60px;
+    letter-spacing: -3px;
+    margin-bottom: 50px;
   }
-  a {
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 2em;
-    color: white;
-    background-color: var(--CTA);
-    z-index: 2;
-    box-shadow: 0px 0px 10px 0px #0000004d;
-  }
-  a:hover {
-    animation: bounce 0.4s ease-in-out;
-  }
-  .wrapper-contactez {
+  .wrapper-Fsection {
+    grid-column: 1/13;
+    grid-row: 5;
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 40px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+  }
+
+  .wrapper-form {
+    grid-column: 2/12;
+    grid-row: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .testimonial {
+    grid-column: 1/13;
+    grid-row: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+height: 130%;
+    background-color: var(--colorL);
+    padding: 100px;
+    gap: 20px;
+  }
+  .testimonial h2 {
+    font-family: "architects daughter";
+    font-weight: 700;
+    font-size: var(--l);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0px;
+  }
+  .testimonial h4{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: var(--m);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: -1px;
   }
   @keyframes bounce {
     0% {
@@ -305,7 +413,7 @@
 
   @media screen and (min-width: 1224px) and (max-width: 2500px) {
     .hero h1 {
-      line-height: 130px;
+      line-height: 1em;
     }
     .hero h3 {
       line-height: 30px;
@@ -314,15 +422,11 @@
       margin-bottom: 50px;
       width: 60%;
     }
-    .contact,
-    .contact2 {
-      font-size: 1.3em;
-      width: auto;
-    }
+   
   }
   @media screen and (min-width: 768px) and (max-width: 1224px) {
     .hero h1 {
-      line-height: 70px;
+      line-height: 1em;
     }
     .hero h3 {
       line-height: 30px;
@@ -331,23 +435,13 @@
       margin-bottom: 50px;
       width: 60%;
     }
-      .contact,
-    .contact2 {
-      font-size: 1em;
-    }
-  
+    
     .section-slider h1 {
       line-height: 55px;
       letter-spacing: -2px;
     }
   }
   @media screen and (min-width: 300px) and (max-width: 768px) {
-    .imgHero {
-      width: 110%;
-      height: 110%;
-      margin-top: 50px;
-      margin-right: 20px;
-    }
     .hero h1 {
       line-height: 50px;
       font-size: 3.1em;
@@ -363,9 +457,15 @@
       line-height: 40px;
       letter-spacing: -1px;
     }
-    .contact,
-    .contact2 {
-      font-size: 1em;
+    .wrapper-service {
+      grid-column: 1/13;
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      gap: 10px;
     }
   }
 </style>

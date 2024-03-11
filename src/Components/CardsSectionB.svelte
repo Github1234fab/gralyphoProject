@@ -46,18 +46,19 @@
   .button {
     position: relative;
     display: flex;
-    padding: 20px;
-    color: var(--primary);
-    font-size: 1.3em;
-    font-weight: 500;
+    align-items: center;
+    padding: 40px;
+    color: var(--colorH);
+    font-size: var(--m);
+    font-weight: 800;
     cursor: pointer;
     border-radius: 8px;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px rgb(219, 219, 219) solid;
-    background-color: var(--bgAssets);
-    width: 80%;
+    background-color: white;
+    width: 90%;
     /* background: linear-gradient(to left, rgb(192, 191, 191), rgb(228, 228, 228)); */
     height: 100px;
     text-align: left;
@@ -69,11 +70,14 @@
     font-size: 1em;
     font-weight: bolder;
     right: 50px;
-    align-self: center;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
   .button-after img {
-    height: 20px;
+        margin-top: 12px;
+    height: 23px;
   }
   .button-after img:hover{
 animation: bounce 0.4s;
@@ -129,7 +133,7 @@ animation: bounce 0.4s;
     width: 100vw;
     }
     .button{
-      font: var(--m);
+      font-size: 1.2em;
     }
 
     .button-after {

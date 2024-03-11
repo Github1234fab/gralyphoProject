@@ -14,13 +14,17 @@
   import SectionSocial from "../sections/SectionSocial.svelte";
   import BeneficeSection from "../sections/BeneficeSection.svelte";
   import ActionSection from "../sections/ActionSection.svelte";
+  import Difference from "../sections/Difference.svelte";
+    import Form from "../Components/Form.svelte";
 </script>
 
 <main in:fade={{ duration: 2000 }}>
   <HSection />
-  <Csection />
+
   <section id="sectionE">
     <ESection />
+    <Difference/>
+
   </section>
   <!-- <SectionSocial/>  -->
   <JSection />
@@ -28,7 +32,9 @@
   <DSection /> -->
 
     <BeneficeSection />
+      <Csection />
   <GSection />
+  <Form />
 </main>
 
 <style>
