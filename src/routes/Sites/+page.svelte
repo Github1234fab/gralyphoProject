@@ -15,8 +15,8 @@
   import Service from "../../Components/Services.svelte";
   import imgDesign from "../../Assets/png-gralypho/30.png";
   import imgSeo from "../../Assets/png-gralypho/05.png";
-  import imgWeb from "../../Assets/png-gralypho/Web.png";
-  // import Conception from "../../Assets/png-gralypho/WebExplosion.png";
+  import imgWeb from "../../Assets/png-gralypho/36.png";
+  import imgFormation from "../../Assets/png-gralypho/Web.png";
   import Banner from "../../Components/Banner.svelte";
   import BeneficeSection from "../../sections/BeneficeSection.svelte";
   import CardsSectionB from "../../Components/CardsSectionB.svelte";
@@ -146,7 +146,8 @@
       />
       <Service
         text="Formation"
-        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
+        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique.",
+        img={imgFormation}
  
       />
     </div>
@@ -234,7 +235,7 @@
     letter-spacing: -1px;
     padding: 0px;
     line-height: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .hero h1 span {
     color: yellow;
@@ -262,7 +263,7 @@
     font-weight: 700;
     color: var(--primary);
     margin-top: 100px;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
 
   }
   .wrapper-service {
@@ -372,7 +373,7 @@
     margin-top: 50px;
 height: 130%;
     background-color: var(--colorL);
-    padding: 100px;
+    padding: 50px;
     gap: 20px;
   }
   .testimonial h2 {
@@ -383,6 +384,7 @@ height: 130%;
     text-align: center;
     line-height: 40px;
     letter-spacing: 0px;
+    margin-top: 0px;
   }
   .testimonial h4{
     font-family: poppins;

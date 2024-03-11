@@ -24,9 +24,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    max-width: 450px;
-    min-height: 700px;
+    max-width: 400px;
+    min-height: 400px;
     font-family: epilogue;
     background-color: transparent;
     margin-top: 30px;
@@ -39,9 +38,9 @@
   .wrapper-text {
     display: flex;
     flex-direction: column;
-    align-items: first baseline;
-    justify-content: first baseline;
-    padding: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
     gap: 30px;
   }
   .wrapper-text h2 {
@@ -50,7 +49,7 @@
     font-weight: 700;
     font-family: epilogue;
     text-align: left;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
   .wrapper-text p {
     font-family: poppins;
@@ -59,17 +58,16 @@
     font-weight: 400;
     text-align: left;
     line-height: 30px;
-    padding: 20px;
+    padding: 0px;
     border: none;
     border-radius: 20px;
     z-index: 2;
   }
   .img-card {
-    margin-top: 50px;
+    margin-top: -30px;
     max-width: 500px;
     max-height: 150px;
-    object-fit: 100%;
-    border-radius: 10px;
+    object-fit: contain;
   }
   /* .wrapper-text h4 {
     font-family: epilogue;

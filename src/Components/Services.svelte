@@ -29,9 +29,8 @@
   .wrapper-text {
     display: flex;
     flex-direction: column;
-    align-items: first baseline;
-    justify-content: first baseline;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 20px;
   }
   .text-services {
@@ -40,7 +39,6 @@
     color: var(--primary);
     font-size: var(--l);
     text-align: left;
-    padding: 20px;
     letter-spacing: -0.050em;
   }
   .description-services{
@@ -50,10 +48,11 @@
     font-size: var(--m);
     text-align: left;
     letter-spacing: -0.00em;
+    margin-top: 20px;
   }
   .img-services {
     max-width: 400px;
-    min-height: 300px;
+    max-height: 200px;
     background-color: var(--CTA);
     object-fit: 100%;
     object-position: center;
@@ -63,7 +62,7 @@
   @media screen and (max-width: 768px) {
     .card-services {
       width: 220px;
-      min-height: 650px;
+      min-height: 350px;
     }
   }
 </style>
