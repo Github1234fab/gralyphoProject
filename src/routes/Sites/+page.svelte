@@ -16,7 +16,7 @@
   import imgDesign from "../../Assets/png-gralypho/30.png";
   import imgSeo from "../../Assets/png-gralypho/05.png";
   import imgWeb from "../../Assets/png-gralypho/Web.png";
-  import imgConception from "../../Assets/png-gralypho/WebExplosion.png";
+  // import Conception from "../../Assets/png-gralypho/WebExplosion.png";
   import Banner from "../../Components/Banner.svelte";
   import BeneficeSection from "../../sections/BeneficeSection.svelte";
   import CardsSectionB from "../../Components/CardsSectionB.svelte";
@@ -147,7 +147,7 @@
       <Service
         text="Formation"
         description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
-        img={imgConception}
+ 
       />
     </div>
   </div>
