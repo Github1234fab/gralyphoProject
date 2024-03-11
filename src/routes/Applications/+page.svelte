@@ -5,47 +5,47 @@
 </script>
 
 <Header />
-<section class="" in:fade={{ duration: 3000 }}>
-  <div class="wrapper background-animated">
-    <h1>Développement d'Application</h1>
-    <!-- <img src={bg} alt="" class="bg" /> -->
-    <p>
-      "Propulsez votre entreprise vers l'avenir avec nos services de conception et de développement d'applications sur
-      mesure. Chez Gralypho, nous créons des solutions innovantes qui répondent parfaitement à vos besoins. De la
-      planification initiale à la mise en œuvre et au-delà, notre équipe d'experts assure un processus transparent et
-      efficace. Découvrez comment nous pouvons transformer vos idées en applications exceptionnelles, prêtes à conquérir
-      le marché."<br /><br />
-    </p>
-    <p>
-      <span>Quelle est la durée estimée pour le développement d'une application' ?</span> <br /><br />
-      <li>
-        La durée de développement d'une application dépend de la complexité de votre projet. <br />
-        S'il s'agit d'une application simple, le délai peut varier entre 1 et deux mois. Au-delà, il s'agit d'application
-        plus complexes, le délai peut varier entre 3 et 6 mois.
-      </li>
-      <br /><br />
-    </p>
+<section class="application-section" in:fade={{ duration: 3000 }}>
 
-    <h4>
-      Pour le développement d'application, il est essentiel que nous puissions nous rencontrez. <br />Alors parlez nous
-      de votre projet, autour d'un café!
-    </h4>
-    
-  </div>
+<div class="wrapper-testimonial">
+<h2>"La seule limite à ce que vous pouvez réaliser est celle que vous imaginez." </h2>
+<h3>Roy T. Bennett</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 <style>
-  h4 {
-    z-index: 2;
-    margin-top: 30px;
-    color: var(--colorC);
-    text-align: left;
-    line-height: 30px;
-    font-weight: 400;
-    font-size: 1.2em;
-    font-family: epilogue;
-    text-align: center;
+.application-section {
+ display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  height: auto;
+  font-size: 16px;
+
+  } 
+
+  
+  .wrapper-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
+
 
   @keyframes bounce {
     0% {
@@ -74,58 +74,38 @@
     margin-top: 30px;
     margin-bottom: 50px;
   }
-  .wrapper {
-    grid-column: 1/13;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    height: 100%;
-    position: relative;
-    padding: 30px;
-  }
-  .wrapper::after {
-    position: absolute;
-    content: "";
-    background-color: #1a1c2186;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  section h1 {
-    z-index: 2;
-    text-align: left;
-    font-family: Kanit;
-    font-weight: 600;
-    font-size: var(--xl);
-    color: white;
-    margin-top: 50px;
-    line-height: 37px;
-  }
-  section p span {
-    z-index: 2;
-    color: white;
-    font-size: var(--l);
-    font-weight: 400;
-    text-align: left;
-    line-height: 30px;
-    margin-top: 30px;
-    font-family: kanit;
-  }
-  section p {
-    z-index: 2;
-    margin-top: 30px;
-    color: var(--colorC);
-    text-align: left;
-    line-height: 30px;
-    font-weight: 300;
-    font-size: var(--m);
-    font-family: epilogue;
-  }
-  .wrapper li {
-    z-index: 2;
-    color: var(--colorC);
-  }
+ 
+
+@media screen and (min-width: 1400px) and (max-width: 2500px){
+
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 575px){
+
+
+}
+
+
 </style>

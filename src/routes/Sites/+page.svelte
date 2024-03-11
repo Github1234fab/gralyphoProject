@@ -261,7 +261,7 @@
     font-size: var(--xl);
     font-weight: 700;
     color: var(--primary);
-    margin-top: 20px;
+    margin-top: 100px;
     letter-spacing: -3px;
 
   }
