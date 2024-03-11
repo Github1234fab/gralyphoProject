@@ -16,7 +16,7 @@
   import imgDesign from "../../Assets/png-gralypho/30.png";
   import imgSeo from "../../Assets/png-gralypho/05.png";
   import imgWeb from "../../Assets/png-gralypho/Web.png";
-  import imgConception from "../../Assets/png-gralypho/WebDesign.png";
+  import imgConception from "../../Assets/png-gralypho/WebExplosion.png";
   import Banner from "../../Components/Banner.svelte";
   import BeneficeSection from "../../sections/BeneficeSection.svelte";
   import CardsSectionB from "../../Components/CardsSectionB.svelte";
