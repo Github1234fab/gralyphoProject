@@ -24,17 +24,21 @@
   // });
 
   onMount(() => {
-    gsap.to(".space-ship", {
-      scale: 1,
-      duration: 5,
-      y: -300,
-      ease: "expoScale",
-      scrollTrigger: {
-        trigger: ".space-ship",
-        start: "top 400px",
-        end: "-200px",
-        scrub: 3,
-      },
+    let cards = document.querySelectorAll(".color");
+
+    cards.forEach((card) => {
+      gsap.to(card, {
+        scale: 1,
+        duration: 1,
+
+        ease: "expoScale",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 400px",
+          end: "-200px",
+          scrub: 3,
+        },
+      });
     });
   });
   //   gsap.to(".E-section", {
@@ -54,11 +58,9 @@
   <!-- <img src={SpaceShip} alt="illustration cartoon d'une fusée" class="space-ship" /> -->
   <div class="wrapper-text">
     <!-- <img src={square} alt="illustration cartoon d'un carré formant un cadre autour de la fusée" class="square gsap2" /> -->
-    <h1>
-      Nous créeons vos outils digitaux, vos designs, votre stratégie sur les réseaux et votre référencement.<br />
-    </h1>
+    <h1>Nos Services</h1>
 
-    <h2>Découvrez ici toutes <span>les solutions </span>que nous pouvons vous apporter.</h2>
+    <h2>Nous créeons vos outils digitaux, vos designs, votre stratégie sur les réseaux et votre référencement.</h2>
     <!-- <div class="wrapper-buttons">
       <a class="contact-E" href="/#footer">Nous contacter</a>
       <a class="contact2-E" href="/#footer">Devis gratuit</a>
@@ -98,17 +100,8 @@
     text-align: left;
     color: rgb(243, 240, 240);
     margin-top: 70px;
-    letter-spacing: -0.030em;
+    letter-spacing: -0.03em;
     line-height: 1.2em;
-  }
-  .E-section h1 span {
-    font-weight: 900;
-    color: transparent;
-    -webkit-background-image: linear-gradient(to left, var(--blue2), var(--orange));
-    background-image: linear-gradient(to left, var(--blue2), var(--orange));
-    -webkit-background-clip: text;
-    background-clip: text;
-    letter-spacing: 0px;
   }
   .E-section h2 {
     font-family: poppins;
@@ -117,12 +110,8 @@
     color: rgb(174, 173, 173);
     text-align: left;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 0px;
-  }
-  .E-section h2 span {
-    font-weight: 800;
-    color: rgb(193, 193, 193);
   }
   /* .space-ship {
     height: 150px;

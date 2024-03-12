@@ -5,12 +5,12 @@
   import { fade } from "svelte/transition";
 
   let textIndex = 0;
-  let textTab = ["Conception de Site Internet", "Conception d'Application Web"];
+  let textTab = [" de Site Internet", "d'Application Web"];
 
   onMount(() => {
     setInterval(() => {
       textIndex = (textIndex + 1) % textTab.length;
-    }, 2000);
+    }, 1200);
   });
 </script>
 
@@ -18,7 +18,7 @@
 <section class="H-section">
   <div class="wrapper-text">
     <h1>Imaginer, <br /> Développer,<br /> Créer. <br /></h1>
-    <h3>{textTab[textIndex]}</h3>
+    <h3>Conception <span>{textTab[textIndex]}</span> </h3>
     <h2>
       Nous créeons des sites Web et des Applications sur mesure pour tous les professionnels souhaitant obtenir des
       résultats tangibles à propos du <span> gain de productivité et de temps</span>, et de
@@ -71,6 +71,10 @@
     letter-spacing: -2px;
     color: grey;
     transition: 1s ease-in-out;
+    margin-left: 5px;
+  }
+    .H-section h3 span {
+color: var(--colorI);
   }
   .H-section h2 {
     font-family: poppins;
@@ -82,8 +86,8 @@
     margin-top: 20px;
     margin-left: 10px;
   }
-  .H-section h2 span {
-    font-weight: 500;
+  .H-section h2 span {      
+    font-weight: 600;
     color: rgb(84, 84, 84);
   }
   .contact {

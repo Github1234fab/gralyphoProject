@@ -41,9 +41,9 @@
     font-size: 16px;
     opacity: 1;
     background-color: white;
-    padding: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: 10px;
+margin: 50px auto;
+    width: 100vw;
   }
   .difference h1 {
     font-family: epilogue;
@@ -52,7 +52,7 @@
     font-weight: 700;
     margin-bottom: 40px;
     letter-spacing: -0.040em;
-    margin-top: -60px;
+    margin-top: 20px;
   }
   .difference p {
         font-family: poppins;
@@ -62,7 +62,7 @@
     color: #2d2d2d;
     font-weight: 400;
     line-height: 1.5em;
-    width: 80%;
+    width: 100%;
   }
   .contact {
     font-family: kanit;

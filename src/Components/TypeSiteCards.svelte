@@ -1,7 +1,7 @@
 <script>
   export let title;
   export let icon;
-  export let p;
+  // export let p;
   // export let lien;
   export let lien;
   export let lien2;

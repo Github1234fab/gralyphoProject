@@ -1,77 +1,90 @@
 <script>
   import { onMount } from "svelte";
 
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-
-  function randomColorCarte() {
-    const randomComponent = () => Math.floor(Math.random() * 256);
-    const color = `rgb(${randomComponent()}, ${randomComponent()}, ${randomComponent()})`;
-    return color;
-  }
-
   onMount(() => {
-    let cards = Array.from(document.querySelectorAll(".carte"));
-    shuffleArray(cards); // Mélanger l'ordre des cartes
-
-    let index = 0;
-
-    const intervalId = setInterval(() => {
-      // Change la couleur de la carte actuelle
-      changeColor(cards[index]);
-
-      index++;
-
-      // Vérifie si toutes les cartes ont été traitées
-      if (index === cards.length) {
-        index = 0; // Réinitialise l'indice pour recommencer
-        shuffleArray(cards); // Mélanger à nouveau pour la prochaine itération
-      }
-    }, 800);
-
-    function changeColor(card) {
-      const color = randomColorCarte(); // Appel de la fonction pour obtenir une nouvelle couleur
-      card.style.backgroundColor = color;
-      card.style.transition = "1.2s ease-in-out";
-      // Vous pouvez ajouter d'autres animations ou styles si nécessaire
-      setTimeout(() => {
-        card.style.backgroundColor = ""; // Réinitialise à la couleur par défaut
-      }, 900); // Attend 1,2 secondes avant de réinitialiser la couleur
-    }
+    let cards = document.querySelectorAll(".carte");
+    cards.forEach((card) => {
+      gsap.to(card, {
+        backgroundColor: "orange",
+        y: 0,
+        ease: "power4",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 950px",
+          end: "-200px",
+          scrub: 3,
+        },
+      });
+    });
   });
+  // function shuffleArray(array) {
+  //   for (let i = array.length - 1; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     [array[i], array[j]] = [array[j], array[i]];
+  //   }
+  // }
+
+  // function randomColorCarte() {
+  //   const randomComponent = () => Math.floor(Math.random() * 256);
+  //   const color = `rgb(${randomComponent()}, ${randomComponent()}, ${randomComponent()})`;
+  //   return color;
+  // }
+
+  // onMount(() => {
+  //   let cards = Array.from(document.querySelectorAll(".carte"));
+  //   shuffleArray(cards);
+
+  //   let index = 0;
+
+  //   const intervalId = setInterval(() => {
+  //     changeColor(cards[index]);
+
+  //     index++;
+
+  //     if (index === cards.length) {
+
+  //       shuffleArray(cards);
+  //     }
+  //   }, 800);
+
+  //   function changeColor(card) {
+  //     const color = randomColorCarte();
+  //     card.style.backgroundColor = color;
+  //     card.style.transition = "1.2s ease-in-out";
+
+  //     setTimeout(() => {
+  //       card.style.backgroundColor = "";
+  //     }, 900);
+  //   }
+  // });
 </script>
 
-
-<div class="carte">
+<div class="carte color">
   Site Internet
   <a href="/Sites"><i class="fa-solid fa-desktop banner-icon icon"></i></a>
 </div>
 
-<div class="carte">
+<div class="carte color">
   Applications
   <a href="/Applications"><i class="fa-solid fa-sitemap icon"></i></a>
 </div>
 
-<div class="carte">
+<div class="carte color">
   Référencement
   <a href="/Referencement"><i class="fa-solid fa-magnifying-glass-chart banner-icon icon"></i></a>
 </div>
 
-<div class="carte">
+<div class="carte color">
   Réseaux Sociaux
   <a href="/Marketing"><i class="fa-solid fa-comments-dollar banner-icon icon"></i></a>
 </div>
 
-<div class="carte">
+<div class="carte color">
   <a href="/Composants"><i class="fa-solid fa-recycle icon"></i></a>
   Composants
 </div>
 
-<div class="carte">
+<div class="carte color">
   <a href="/Refonte"><i class="fa-solid fa-wand-magic-sparkles banner-icon icon"></i></a>
   Design
 </div>
@@ -80,9 +93,10 @@
 
 <style>
   .carte {
+    transform: translateY(600px);
     z-index: 0;
     background-color: transparent;
-    width: calc(40% - 10px);
+    width: calc(45% - 10px);
     max-width: 300px;
     min-height: 200px;
     display: flex;
@@ -104,7 +118,6 @@
   .carte:hover .icon {
     font-size: 5em;
   }
-
   .icon {
     transition: 0.7s ease-in-out;
     color: white;

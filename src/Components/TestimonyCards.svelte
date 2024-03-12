@@ -27,8 +27,8 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 500px;
-    height: 550px;
+    max-width: 350px;
+    height: 530px;
     font-family: epilogue;
     background-color: transparent;
     margin-top: 30px;
@@ -60,6 +60,7 @@
   .img {
     width: 130px;
     height: 130px;
+    margin-bottom: 20px;
   }
   .card h4 {
     font-size: 0.8em;
