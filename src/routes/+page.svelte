@@ -32,7 +32,7 @@
   <DSection /> -->
 
     <BeneficeSection />
-      <Csection />
+      <!-- <Csection /> -->
   <GSection />
   <Form />
 </main>

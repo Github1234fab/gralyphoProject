@@ -1,73 +1,50 @@
 <script>
-  import SpaceShip from "../Assets/png-gralypho/rocketShip.png";
-  import Banner from "../Components/Banner.svelte";
+  import CardServices from "../Components/CardServices.svelte";
 
-  import square from "../Assets/png-gralypho/square.svg";
-
-  import { onMount } from "svelte";
-
-  // import { tweened } from 'svelte/motion';
-  // import { cubicOut } from 'svelte/easing';
-
-  // let text = 'Découvrez toutes nos solutions 100% digitalisées';
-  // let textArray = text.split('');
-  // let displayText = '';
-  // let delay = 100; // Délai entre chaque lettre en millisecondes
-
-  // const count = tweened(0, {
-  //   duration: textArray.length * delay,
-  //   easing: cubicOut
-  // });
-
-  // count.subscribe(value => {
-  //   displayText = textArray.slice(0, Math.floor(value / delay)).join('');
-  // });
-
-  onMount(() => {
-    let cards = document.querySelectorAll(".color");
-
-    cards.forEach((card) => {
-      gsap.to(card, {
-        scale: 1,
-        duration: 1,
-
-        ease: "expoScale",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 400px",
-          end: "-200px",
-          scrub: 3,
-        },
-      });
-    });
-  });
-  //   gsap.to(".E-section", {
-  //     opacity: 1,
-  //     ease: "E-section",
-  //     scrollTrigger: {
-  //       trigger: ".gsap2",
-  //       start: "top 800px",
-  //       end: "-200px",
-  //       scrub: 3,
-  //     },
-  //   });
-  // });
+  const servicesTab = [
+    {
+      title: "Site internet",
+      lien: "/Siteq",
+      i: "🌐",
+    },
+    {
+      title: "Application Web",
+      lien: "/Application",
+      i: "📱",
+    },
+    {
+      title: "Design",
+      lien: "/Refonte",
+      i: "🎨",
+    },
+    {
+      title: "Référencement",
+      lien: "/Referencement",
+      i: "🔍",
+    },
+    {
+      title: "Réseaux Sociaux",
+      lien: "/Marketing",
+      i: "📢",
+    },
+    {
+      title: "Stratégie",
+      lien: "/Composants",
+      i: "📈",
+    },
+  ];
 </script>
 
-<section class="E-section" id="sectionE">
-  <!-- <img src={SpaceShip} alt="illustration cartoon d'une fusée" class="space-ship" /> -->
+<section class="E-section">
   <div class="wrapper-text">
-    <!-- <img src={square} alt="illustration cartoon d'un carré formant un cadre autour de la fusée" class="square gsap2" /> -->
     <h1>Nos Services</h1>
-
     <h2>Nous créeons vos outils digitaux, vos designs, votre stratégie sur les réseaux et votre référencement.</h2>
-    <!-- <div class="wrapper-buttons">
-      <a class="contact-E" href="/#footer">Nous contacter</a>
-      <a class="contact2-E" href="/#footer">Devis gratuit</a>
-    </div> -->
-    <div class="wrapper-banner">
-      <Banner />
-    </div>
+  </div>
+
+  <div class="wrapper-cards-services">
+    {#each servicesTab as service}
+      <CardServices title={service.title} lien={service.lien} i={service.i} />
+    {/each}
   </div>
 </section>
 
@@ -76,21 +53,17 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-top: 200px;
     margin-bottom: 50px;
     height: auto;
     font-size: 16px;
-    background-size: 150% 100%;
-    shape-outside: circle(90%);
     background-color: var(--primary);
   }
   .wrapper-text {
-    grid-column: 2/12;
+    grid-column: 2/ 12;
     grid-row: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin-top: 0px;
+    border-radius: 20px;
   }
 
   .E-section h1 {
@@ -110,65 +83,21 @@
     color: rgb(174, 173, 173);
     text-align: left;
     line-height: 30px;
-    margin-top: 0px;
-    margin-left: 0px;
   }
-  /* .space-ship {
-    height: 150px;
-    transform: rotate(22deg) translateX(600px);
-    z-index: 2;
-    align-self: center;
-    grid-column: 12;
-    grid-row: 1;
-  } */
-  /* .wrapper-banner {
-    grid-column: 1/13;
+
+  .wrapper-cards-services {
+     grid-column: 1/12;
     grid-row: 2;
-    margin: 0 auto;
-  } */
-  /* .square {
-    height: 150px;
-    transform: scale(0.7) rotate(0deg);
-    z-index: 1;
-    align-self: center;
-    margin-top: -150px;
-  } */
-  /* .wrapper-buttons {
-    margin-top: 50px;
     display: flex;
-  } */
-  /* .contact-E {
-    text-decoration: none;
-    color: white;
-    background-color: var(--CTA);
-    font-family: kanit;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-left: 0px;
-    width: 160px;
-    border-radius: 6px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+
   }
-  .contact2-E {
-    text-decoration: none;
-    color: white;
-    background-image: linear-gradient(to left, var(--orange), var(--CTA));
-    font-family: kanit;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 160px;
-    border-radius: 6px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(76, 76, 76, 0.35);
-  }
-  .contact-E:hover,
-  .contact2-E:hover {
-    animation: bounce 0.4s ease-in-out;
-  } */
+
   @keyframes bounce {
     0% {
       transform: scale(1) translateY(-2px);
@@ -187,26 +116,5 @@
     }
   }
 
-  .wrapper-banner {
-    grid-column: 1/12;
-    grid-row: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 100px;
-    /* margin-left: auto;
-    margin-right: auto; */
-  }
-
-  @media only screen and (min-width: 300px) and (max-width: 576px) {
-    /* .E-section {
-      font-size: 12px;
-    } */
-    .E-section h1 {
-      line-height: 50px;
-    }
-  }
+    
 </style>

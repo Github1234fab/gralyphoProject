@@ -9,16 +9,15 @@
   import Cards from "./Cards.svelte";
 
   onMount(() => {
-    const Cards = document.querySelectorAll(".cards");
+    const catalog = document.querySelectorAll(".card-type-site");
 
-    Cards.forEach((el) => {
+    catalog.forEach((el) => {
       gsap.to(el, {
         y: 0,
-        opacity: 1,
         ease: "power4",
         scrollTrigger: {
           trigger: el,
-          start: "top 900px",
+          start: "top 600px",
           end: "-200px",
           scrub: 5,
         },
@@ -27,7 +26,7 @@
   });
 </script>
 
-<div class="cards">
+<div class="card-type-site">
   <div class="wrapper-text">
     <div class="wrapper-title-icon">
       <a href={lien2} class="title">{title}</a>
@@ -41,7 +40,7 @@
 </div>
 
 <style>
-  .cards {
+  .card-type-site {
     transform: translateY(200px);
     display: flex;
     flex-direction: column;
@@ -54,6 +53,7 @@
     min-height: 200px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
   }
   .wrapper-title-icon {
     display: flex;
@@ -132,7 +132,7 @@
   }
 
   @media screen and (max-width: 1116px) {
-    .cards {
+    .card-type-site {
       width: calc(45% - 10px);
       min-height: 200px;
       height: fit-content;
@@ -140,7 +140,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    .cards {
+    .card-type-site {
       width: calc(90% - 20px);
       height: fit-content;
     }

@@ -44,6 +44,7 @@
     font-size: 16px;
     opacity: 1;
     background-color: white;
+    margin-bottom: 200px;
   }
   .wrapper-text {
     grid-column: 1 / 8;

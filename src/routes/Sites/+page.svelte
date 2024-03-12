@@ -25,8 +25,9 @@
   import Blogger from "../../Assets/png-gralypho/blogA.png";
   import Portfolio from "../../Assets/png-gralypho/portfolio.png";
   import Corporated from "../../Assets/png-gralypho/corporate.png";
-  import institutionnel from "../../Assets/png-gralypho/institutionnel.png"
+  import institutionnel from "../../Assets/png-gralypho/institutionnel.png";
   import Form from "../../Components/Form.svelte";
+  import Csection from "../../sections/Csection.svelte";
 
   let accordeonTab = [
     {
@@ -146,17 +147,19 @@
       />
       <Service
         text="Formation"
-        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique.",
+        description="Nous designons vos sites internet de A à Z. Nous élaborons votre UX/UI sur mesure pour garantir à vos utilisateurs une expérience unique."
+        ,
         img={imgFormation}
- 
       />
     </div>
   </div>
 
   <!-- ***************SITES TYPES*************** -->
 
-  <!-- <Profits /> -->
-
+  <div class="wrapper-Csection">
+    <Csection />
+  </div>
+<!-- 
   <div class="section-slider">
     <h1>Conception de site Web</h1>
     <h3>Découvrez les différents types de sites internet que nous concevons.</h3>
@@ -173,16 +176,17 @@
         {/each}
       </div>
     </div>
+  </div> -->
+
+  <!-- ***************COLLAPSES*************** -->
+
+  <div class="testimonial">
+    <h2>
+      "Je n'aurais jamais pensé en apprendre autant sur toutes les fonctionnalités que peut contenir un site Web !! <br
+      />L'expertise de l'agence Gralypho nous a permis d'augmenter de 60% nos ventes en ligne ! "
+    </h2>
+    <h4>"Éloïse Humbert - CTO Rodiggia"</h4>
   </div>
-
-   <!-- ***************COLLAPSES*************** -->
-
-   <div class="testimonial">
-    <h2>"Je n'aurais jamais pensé en apprendre autant sur toutes les fonctionnalités que peut contenir un site Web !!  <br>L'expertise de l'agence Gralypho nous a permis d'augmenter de 60% nos ventes en ligne ! "</h2>
-      <h4>"Éloïse Humbert - CTO Rodiggia"</h4>
-   </div>
-
-
 
   <!-- ***************COLLAPSES*************** -->
 
@@ -201,11 +205,11 @@
 
   <!-- ***************CONTACT*************** -->
 
-  
-<div class="wrapper-form">
-<Form/>
-</div>
+  <div class="wrapper-form">
+    <Form />
+  </div>
 </section>
+
 <style>
   .sites-section {
     display: grid;
@@ -247,6 +251,15 @@
     color: rgb(224, 222, 222);
     text-align: center;
   }
+  .wrapper-Csection {
+    grid-column: 1/13;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
   .container-service {
     grid-column: 2/12;
     grid-row: 2;
@@ -264,7 +277,6 @@
     color: var(--primary);
     margin-top: 100px;
     letter-spacing: -1px;
-
   }
   .wrapper-service {
     display: flex;
@@ -273,9 +285,8 @@
     align-items: center;
     gap: 10px;
     margin-top: 30px;
-
   }
-    .container-slider {
+  .container-slider {
     overflow-x: auto;
     margin-left: 100px;
     border-right: 3px double var(--primary);
@@ -371,7 +382,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-height: 130%;
+    height: 130%;
     background-color: var(--colorL);
     padding: 50px;
     gap: 20px;
@@ -386,7 +397,7 @@ height: 130%;
     letter-spacing: 0px;
     margin-top: 0px;
   }
-  .testimonial h4{
+  .testimonial h4 {
     font-family: poppins;
     font-weight: 400;
     font-size: var(--m);
@@ -424,7 +435,6 @@ height: 130%;
       margin-bottom: 50px;
       width: 60%;
     }
-   
   }
   @media screen and (min-width: 768px) and (max-width: 1224px) {
     .hero h1 {
@@ -437,7 +447,7 @@ height: 130%;
       margin-bottom: 50px;
       width: 60%;
     }
-    
+
     .section-slider h1 {
       line-height: 55px;
       letter-spacing: -2px;

@@ -55,17 +55,6 @@
       lien2: "/Sites",
     },
   ];
-
-  //   gsap.to(".C-section", {
-  //     opacity: 1,
-  //     ease: "expoScale",
-  //     scrollTrigger: {
-  //       trigger: ".C-section",
-  //       start: "top 600px",
-  //       end: "-200px",
-  //       scrub: 3,
-  //     },
-  //   });
   onMount(() => {
   gsap.to(".wrapper-cards", {
     y: 0,
@@ -81,7 +70,7 @@
    });
 </script>
 
-<section class="C-section" id="sectionC">
+<section class="C-section">
   <div class="wrapper-text">
     <h1>Le futur de votre business commence par un <span> site Web.</span></h1>
     <h2>Il existe couramment <span>6 types de site web</span>. Choisissez quel est le type de site correspond le plus à <span>votre activité?</span></h2>

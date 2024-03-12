@@ -1,22 +1,34 @@
 <script>
   import { onMount } from "svelte";
 
-  onMount(() => {
-    let cards = document.querySelectorAll(".carte");
-    cards.forEach((card) => {
-      gsap.to(card, {
-        backgroundColor: "orange",
+  // onMount(() => {
+  //   let cards = document.querySelectorAll(".color");
+  //   cards.forEach((card) => {
+  //     gsap.to(card, {
+  //       backgroundColor: "orange",
+  //       ease: "power4",
+  //       scrollTrigger: {
+  //         trigger: card,
+  //         start: "top 950px",
+  //         end: "-200px",
+  //         scrub: 3,
+  //       },
+  //     });
+  //   });
+  // });
+   onMount(() => {
+      gsap.to(".carte", {
         y: 0,
         ease: "power4",
         scrollTrigger: {
-          trigger: card,
+          trigger: ".carte",
           start: "top 950px",
           end: "-200px",
           scrub: 3,
         },
       });
     });
-  });
+
   // function shuffleArray(array) {
   //   for (let i = array.length - 1; i > 0; i--) {
   //     const j = Math.floor(Math.random() * (i + 1));
@@ -93,10 +105,9 @@
 
 <style>
   .carte {
-    transform: translateY(600px);
+    transform: translateY(200px);
     z-index: 0;
     background-color: transparent;
-    width: calc(45% - 10px);
     max-width: 300px;
     min-height: 200px;
     display: flex;

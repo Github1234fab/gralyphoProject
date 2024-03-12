@@ -119,9 +119,9 @@
   .J-section h1 {
     font-family: epilogue;
     font-size: var(--xl);
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primay);
-    margin-left: 0px;
+    margin-left: 50px;
     margin-top: 100px;
     letter-spacing: -2px;
   }
