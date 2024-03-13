@@ -5,9 +5,9 @@
   import { onMount } from "svelte";
   import { bounceIn } from "svelte/easing";
   import Ville from "../Assets/png-gralypho/05.png";
-    import Visuel from "../Assets/png-gralypho/05.png";
-        import VisuelB from "../Assets/png-gralypho/21.png";
-            import VisuelC from "../Assets/png-gralypho/36.png";
+  import Visuel from "../Assets/png-gralypho/05.png";
+  import VisuelB from "../Assets/png-gralypho/21.png";
+  import VisuelC from "../Assets/png-gralypho/36.png";
 
   // onMount(() => {
   //   // function handleResize() {
@@ -48,38 +48,33 @@
   //     }
   //   });
 
-    // // Appeler la fonction de gestion de redimensionnement au chargement initial
-    // handleResize();
+  // // Appeler la fonction de gestion de redimensionnement au chargement initial
+  // handleResize();
 
-    // // Ajouter un écouteur d'événement pour le redimensionnement de la fenêtre
-    // window.addEventListener("resize", handleResize);
+  // // Ajouter un écouteur d'événement pour le redimensionnement de la fenêtre
+  // window.addEventListener("resize", handleResize);
 
-    // // Nettoyer l'écouteur d'événement lors de la destruction du composant
-    // return () => {
-    //   window.removeEventListener("resize", handleResize);
-    // };
-  
+  // // Nettoyer l'écouteur d'événement lors de la destruction du composant
+  // return () => {
+  //   window.removeEventListener("resize", handleResize);
+  // };
 </script>
 
 <section class="G-section">
-    <div class="wrapper-title-img">
-      <div class="wrapper-visuels">
-     <!-- <img src={Ville} alt="png d'une illustration d'environnement média Web" class="ville" /> -->
-          <!-- <img src={VisuelB} alt="png d'une illustration d'environnement média Web" class="ville" /> -->
-          </div>
-      <div class="wrapper-text">
-        <h1>Découvrez nos <span>réalisations </span></h1>
-         <h2>
-      Découvrez ici des projets témoins utilisant chacun une technique particulière. Découvrez vite le potentiel des
-      animations, des applications, des requêtes API, des jeux, des composants. (...) !
-    </h2>
-    </div> 
-          <div class="wrapper-visuels">
-         <img src={Visuel} alt="png d'une illustration d'environnement média Web" class="ville" />
-              <!-- <img src={VisuelC} alt="png d'une illustration d'environnement média Web" class="ville" /> -->
-              </div>
-     </div>
-  <Carousel />
+  <div class="wrapper-text-img">
+    <div class="wrapper-text">
+      <h1>Découvrez nos <span>réalisations </span></h1>
+      <h2>
+        Découvrez ici des projets témoins utilisant chacun une technique particulière. <br />Découvrez vite le potentiel
+        des animations, des applications, des requêtes API, des jeux, des composants. (...) !
+      </h2>
+    </div>
+    <div class="wrapper-visuels"></div>
+  </div>
+
+  <div class="wrapper-carousel">
+    <Carousel />
+  </div>
 </section>
 
 <style>
@@ -92,36 +87,40 @@
     font-size: 16px;
     background-color: rgb(250, 250, 250);
   }
-    .wrapper-title-img {
-   grid-column: 1/12;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;  
-  margin: 80px auto;
-  gap: 30px;
+  .wrapper-text-img {
+    grid-column: 1/12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row: auto;
+    margin: 80px;
   }
   .wrapper-text {
+    grid-column: 1/8;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
   }
   .wrapper-visuels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-column: 9/13;
+        grid-row: 1;
+    background-image: url("../Assets/png-gralypho/05.png");
+    background-size: clamp(400px, 50%, 700px);
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 50%;
   }
 
   .G-section h1 {
-    text-align: center;
+    text-align: left;
     font-family: epilogue;
     font-weight: 900;
     font-size: var(--xl);
     color: var(--primary);
     letter-spacing: -1px;
-    line-height: 1em;
+    line-height: clamp(5px, 40px 60px);
   }
   .G-section h1 span {
     font-weight: 900;
@@ -140,29 +139,40 @@
     text-align: left;
     line-height: 25px;
     letter-spacing: -1px;
-    width: 70%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
   }
 
-  .ville {
-    width: auto;
-    height: 250px;
-    /* margin: 0 auto; */
-    /* margin-top: 0px; */
-    z-index: 0;
-    border-radius: 20px;
+  .wrapper-carousel {
+    grid-column: 1/12;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
   }
-
 
   @media screen and (max-width: 768px) {
-  .G-section h1 {
-    text-align: left;
-    font-family: epilogue;
-    font-weight: 900;
-    font-size: var(--xl);
-    color: var(--primary);
-    letter-spacing: -1px;
-    line-height: 40px;
+    .G-section h1 {
+      text-align: left;
+      font-family: epilogue;
+      font-weight: 900;
+      font-size: var(--xl);
+      color: var(--primary);
+      letter-spacing: -1px;
+      line-height: 40px;
+    }
+      .wrapper-text {
+    grid-column: 1/12;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
   }
-}
+  .wrapper-visuels {
+display: none;
+  }
+  }
 </style>

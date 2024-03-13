@@ -53,10 +53,12 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     height: auto;
     font-size: 16px;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    background-color: var(--greyBg);  
+    overflow: hidden;
   }
   .wrapper-text {
     grid-column: 2/ 12;
@@ -71,7 +73,7 @@
     font-size: var(--xl);
     font-weight: 800;
     text-align: left;
-    color: rgb(243, 240, 240);
+    color:  var(--primary);
     margin-top: 70px;
     letter-spacing: -0.03em;
     line-height: 1.2em;
@@ -80,22 +82,21 @@
     font-family: poppins;
     font-weight: 300;
     font-size: var(--m);
-    color: rgb(174, 173, 173);
+    color: grey;
     text-align: left;
     line-height: 30px;
   }
 
   .wrapper-cards-services {
-     grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0px;
-    margin-bottom: 200px;
-    margin-top: 50px;
-
+    gap: 15px;
+    margin-bottom: 100px;
+    margin-top: 80px;
   }
 
   @keyframes bounce {
@@ -115,6 +116,4 @@
       transform: scale(1) translateY(0);
     }
   }
-
-    
 </style>

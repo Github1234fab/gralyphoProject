@@ -26,14 +26,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 0px;
     max-width: 350px;
-    height: 530px;
+    min-height: 360px;
     font-family: epilogue;
     background-color: transparent;
     margin-top: 30px;
     margin-bottom: 20px;
     flex-shrink: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.135);
   }
   .card h3 {
     font-size: 1.3em;
@@ -47,9 +48,8 @@
     font-size: 1em;
     color: var(--bg);
     font-weight: 500;
-    text-align: left;
-    line-height: 30px;
-    padding: 5px;
+    text-align: center;
+    line-height: 20px;
     width: 70%;
     margin: 0 auto;
   }
@@ -58,9 +58,9 @@
     font-family: "Times New Roman", Times, serif;
   }
   .img {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 20px;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 4px;
   }
   .card h4 {
     font-size: 0.8em;
@@ -91,7 +91,7 @@
     background-color: rgb(206, 206, 206);
     border-radius: 8px;
     max-width: 100%;
-    height: 30px;
+    height: 20px;
     margin-top: 10px;
   }
 </style>

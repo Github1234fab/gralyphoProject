@@ -13,7 +13,7 @@
         scrub: 5,
         scrollTrigger: {
           trigger: el,
-          start: "top 700px",
+          start: "top 900px",
           end: "-1000px",
           scrub: 5,
         },
@@ -34,14 +34,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--primary);
-    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
     width: 400px;
-    height: 300px;
+    height: 200px;
+    border-radius: 8px;
   }
   .card-services h2 {
     font-family: epilogue;
-    color: white;
+    font-weight: 600;
+    color: var(--primary);
     font-size: var(--m);
     text-transform: capitalize;
     text-align: center;
@@ -51,6 +53,7 @@
     color: white;
     font-size: 3.4em;
     z-index: 2;
+    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.235);
   }
   .icon:hover {
     animation: bounce 0.4s ease-in-out;

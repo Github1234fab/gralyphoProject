@@ -27,8 +27,8 @@
         <a class="link-contact" href="/Applications">Applications</a>
         <a class="link-contact" href="/Referencement">Référencement</a>
         <a class="link-contact" href="/Marketing">Media Sociaux</a>
-        <a class="link-contact" href="/Composants">Composants</a>
         <a class="link-contact" href="/Refonte">Design</a>
+        <a class="link-contact" href="/Composants">Stratégie</a>
       </div>
     </span>
   {/if}
@@ -73,7 +73,6 @@
     align-items: center;
     margin-top: 10px;
     margin-bottom: 5px;
-
   }
   .span {
     grid-row: 3;
@@ -99,7 +98,7 @@
     width: 100vw;
     z-index: 0;
   }
-   a{
+  a {
     color: white;
     font-size: 1em;
     font-weight: 300;
@@ -109,7 +108,6 @@
   a:hover {
     transition: 0.4s ease-in-out;
     color: grey;
-
   }
   .burger-menu {
     background-color: transparent;
@@ -159,7 +157,7 @@
       width: 0px;
       display: none;
     }
-   .navigation {
+    .navigation {
       font-size: 16px;
     }
     .link-contact {
@@ -168,5 +166,5 @@
     .burger-menu {
       z-index: 2;
     }
-  } 
+  }
 </style>

@@ -34,14 +34,14 @@
       alt: "Photo d'identité de client, homme",
       title: "ElectriKcity",
       job: "Damien - Électricien indépendant",
-      p: "L'ajout de fonctionnalité comme la prise de RV et les paiements en ligne m'ont grandement faciliter la tâche! Merci encore pour l'accompagnement.",
+      p: "L'ajout de fonctionnalité comme la prise de RV et les paiements en ligne m'ont grandement faciliter la tâche.",
     },
     {
       img: profilThree,
       alt: "Photo d'identité de client, femme",
       title: "Green NRJ",
       job: "Asha Ramanujan - Project Manager",
-      p: "Hello Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge! Our application is running at maximum! ",
+      p: "Hi Gralypho! It was great working with you. Our specifications were complicated, but you met the challenge. ",
     },
     {
       img: profilFour,
@@ -55,7 +55,7 @@
       alt: "Photo d'identité de client, homme",
       title: "Le Marminot",
       job: "Hugo Hervé - Restaurateur",
-      p: "Merci pour toutes les idées qui permettent à nos clients de découvrir notre restauration, comme jamais!",
+      p: "Merci pour toutes les idées  novatrices apportées à notre site internet.",
     },
     {
       img: profilOne,
@@ -95,7 +95,8 @@
     overflow-x: auto;
     grid-column: 1/13;
     grid-row: 2;
-    margin-left: 200px;
+    margin-left: 100px;
+        margin-bottom: 100px;
   }
   .wrapper-contain {
     display: flex;

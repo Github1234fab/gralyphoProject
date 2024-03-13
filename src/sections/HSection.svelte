@@ -18,7 +18,7 @@
 <section class="H-section">
   <div class="wrapper-text">
     <h1>Imaginer, <br /> Développer,<br /> Créer. <br /></h1>
-    <h3>Conception <span>{textTab[textIndex]}</span> </h3>
+    <h3>Conception <span>{textTab[textIndex]}</span></h3>
     <h2>
       Nous créeons des sites Web et des Applications sur mesure pour tous les professionnels souhaitant obtenir des
       résultats tangibles à propos du <span> gain de productivité et de temps</span>, et de
@@ -44,7 +44,7 @@
     font-size: 16px;
     opacity: 1;
     background-color: white;
-    margin-bottom: 200px;
+    margin-bottom: 270px;
   }
   .wrapper-text {
     grid-column: 1 / 8;
@@ -74,8 +74,8 @@
     transition: 1s ease-in-out;
     margin-left: 5px;
   }
-    .H-section h3 span {
-color: var(--colorI);
+  .H-section h3 span {
+    color: var(--colorI);
   }
   .H-section h2 {
     font-family: poppins;
@@ -87,7 +87,7 @@ color: var(--colorI);
     margin-top: 20px;
     margin-left: 10px;
   }
-  .H-section h2 span {      
+  .H-section h2 span {
     font-weight: 600;
     color: rgb(84, 84, 84);
   }
@@ -186,7 +186,7 @@ color: var(--colorI);
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 530px;
+      margin-top: 650px;
       margin-left: 0px;
       z-index: 0;
     }
@@ -219,7 +219,7 @@ color: var(--colorI);
       justify-content: center;
       align-items: center;
       gap: 0px;
-      margin-top: 530px;
+      margin-top: 630px;
       margin-left: 0px;
       z-index: 0;
     }
