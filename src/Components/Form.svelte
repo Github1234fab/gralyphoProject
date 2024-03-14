@@ -73,14 +73,14 @@
     <input type="email" id="email" bind:value={email} placeholder="johndoe@gmail.com" />
 
     <label for="telephone">Téléphone </label>
-    <input type="tel" id="telephone" bind:value={telephone} placeholder="0606070707" />
+    <input type="tel" id="telephone" bind:value={telephone} placeholder="01020304" />
 
     <label for="demande">Votre demande </label>
     <textarea
       id="demande"
       bind:value={demande}
       class="demande"
-      placeholder="Votre projet, votre idée, vos questions ..."
+      placeholder="Votre projet, vos idées, vos questions ..."
     ></textarea>
 
     <button type="submit">Envoyer</button>
@@ -97,7 +97,7 @@
     padding: 20px;
   }
   .section-form h1 {
-    grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 1;
     margin: 0 auto;
     text-align: center;
@@ -109,7 +109,7 @@
     margin-top: 50px;
   }
   .form {
-    grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 3;
     display: flex;
     flex-direction: column;
@@ -130,6 +130,7 @@
   }
   input::placeholder {
     color: rgb(187, 183, 183);
+        font-size: 0.7em;
   }
   .demande {
     border: 1px solid rgb(223, 218, 218);
@@ -143,6 +144,7 @@
   }
   .demande::placeholder {
     color: rgb(187, 183, 183);
+    font-size: 0.7em;
   }
   label {
     border: none;
@@ -164,7 +166,7 @@
     box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.14);
   }
   .coordonnees {
-    grid-column: 1/12;
+    grid-column: 2/12;
     grid-row: 2;
     margin-top: 20px;
     display: flex;
@@ -183,5 +185,13 @@
     font-size: var(--m);
     text-align: center;
     word-spacing: 6px;
+  }
+
+  @media screen and (max-width: 768px){
+    .coordonnees {
+     flex-direction: column;
+     margin-top: 20px;
+     gap: 5px;
+    }
   }
 </style>

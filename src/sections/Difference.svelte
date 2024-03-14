@@ -26,9 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: auto;
     font-size: 16px;
-    opacity: 1;
     background-color: white;
     padding: 40px;
     margin: 0px auto;
@@ -44,6 +43,7 @@
     margin-top: 20px;
   }
   .difference p {
+    margin-top: 40px;
     font-family: poppins;
     color: grey;
     column-count: 2;

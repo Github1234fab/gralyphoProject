@@ -46,20 +46,20 @@
 <style>
   .section-benefices {
     display: flex;
-    height: 600px;
+    height: auto;
     gap: 0px;
     background-color: var(--primary);
     align-items: center;
     justify-content: center;
-    height: auto;
+    background: radial-gradient(ellipse at center, rgb(4, 20, 73) 10%, var(--primary));
   }
   .container-benefices {
     margin-top: 100px;
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: fit-content;
     align-items: center;
-    justify-content: center;
+    justify-content: auto;
     margin-left: 50px;
     margin-right: 50px;
     gap: 20px;
@@ -69,29 +69,28 @@
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    width: 80%;
-    min-height: 550px;
-        max-height: 350px;
-    box-shadow: 0px 0px 2px rgb(69, 68, 68);
-     padding: 20px;
+    width: 100%;
+    min-height: 420px;
+    box-shadow: 0px 0px 2px rgb(127, 124, 124);
+    padding: 20px;
     margin-bottom: 100px;
   }
   .title-yellow {
     color: yellow;
-    font-size: 2.2em;
+    font-size: clamp(1.5em, 2.5vw, 2.5em);
     font-weight: 900;
     font-family: epilogue;
     letter-spacing: -1px;
   }
   .section-benefices h1 {
-    font-size: var(--m);
+    font-size: var(--l);
     font-weight: 600;
     color: rgb(223, 222, 222);
     font-family: poppins;
   }
   .section-benefices p {
     font-size: var(--m);
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(210, 210, 210);
     font-family: poppins;
     text-align: left;
@@ -110,5 +109,22 @@
     background-image: linear-gradient(to left, var(--orange) 40%, var(--blue));
     -webkit-background-clip: text;
     background-clip: text;
+  }
+
+  @media screen and (max-width: 1205px) {
+    .container-benefices {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+      margin-right: 0px;
+      gap: 0px;
+    }
+    .wrapper-blocks {
+      width: 70%;
+      min-height: 200px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 </style>

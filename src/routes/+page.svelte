@@ -23,9 +23,8 @@
 
   <section id="sectionE">
     <ESection />
-    <Difference/>
-
   </section>
+    <Difference/>
   <!-- <SectionSocial/>  -->
 
   <!-- <ActionSection />
@@ -33,8 +32,9 @@
 
     <BeneficeSection />
       <!-- <Csection /> -->
-        <JSection />
+   
   <GSection />
+       <JSection />
   <Form />
 </main>
 
