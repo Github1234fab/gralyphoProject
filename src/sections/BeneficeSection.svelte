@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import video from "../assets/video/web2.mp4";
 </script>
 
 <section class="section-benefices">
