@@ -27,12 +27,13 @@
 
   </section>
   <!-- <SectionSocial/>  -->
-  <JSection />
+
   <!-- <ActionSection />
   <DSection /> -->
 
     <BeneficeSection />
       <!-- <Csection /> -->
+        <JSection />
   <GSection />
   <Form />
 </main>

@@ -13,7 +13,19 @@
 </div>
 
 
-
+Tout à chacun peut effectivement réaliser un site internet en quelques clics, mais qu'en est-il
+    sous le capot? Et qu'en est-il en matière de SEO pour votre référencement? Du point de vue de l'UX et de l'UI,
+    est-ce que la navigation de votre site est facile, compréhensible, intuitive? Est-ce que vos fonctionnalité sont
+    sécurisées? Est-ce que votre conception respecte les normes imposées par le W3C? <br /><br />
+    Nous sommes passionnés par le Web et par la création d'outils digitaux. Un site internet ou une application sont censés
+    améliorer et faciliter la vie d'un utilisateur. Ce sont de véritable outils qui permettent d'obtenir un gain de temps
+    et un gain de productivité. Pendant que vous travailler à autre chose ou que vous vous occupez de votre vie sociale et
+    personnelle, votre outil travaille pour vous sur le Web, avec une hyper présence. Une site E-commerce est ouvert 24/7
+    et mis à part l'envoi du produit, aucun travaux ne sont nécessaires. <br /> <br /> Une Visibilité accrue sur le web nourrie
+    par un exellent référencement, vous permet de trouver des prospects et de les convertir en clients. <br /> Une
+    application ouvre les portes d'une infiinité de solutions pour tout utilisateurs et dans tous les domaines et même
+    si ne nombreuses application existent déjà, les possibilités de création sont énormes car le monde évolue et les
+    besoins des utilisateurs sont toujours naissants. <br /><br>
 
 
 

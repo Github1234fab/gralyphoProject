@@ -61,15 +61,13 @@
 </script>
 
 <section class="G-section">
-  <div class="wrapper-text-img">
     <div class="wrapper-text">
       <h1>Découvrez nos <span>réalisations </span></h1>
       <h2>
         Découvrez ici des projets témoins utilisant chacun une technique particulière. <br />Découvrez vite le potentiel
         des animations, des applications, des requêtes API, des jeux, des composants. (...) !
       </h2>
-    </div>
-    <div class="wrapper-visuels"></div>
+ 
   </div>
 
   <div class="wrapper-carousel">
@@ -85,34 +83,16 @@
     height: auto;
     width: 100%;
     font-size: 16px;
-    background-color: rgb(250, 250, 250);
-  }
-  .wrapper-text-img {
-    grid-column: 1/12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-row: auto;
-    margin: 80px;
+    background-color: rgb(255, 255, 255);
   }
   .wrapper-text {
-    grid-column: 1/8;
+    grid-column: 2/12;
     grid-row: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 10px;
+    margin-top: 50px;
   }
-  .wrapper-visuels {
-    grid-column: 9/13;
-        grid-row: 1;
-    background-image: url("../Assets/png-gralypho/05.png");
-    background-size: clamp(400px, 50%, 700px);
-    background-repeat: no-repeat;
-    background-position: top;
-    border-radius: 50%;
-  }
-
   .G-section h1 {
     text-align: left;
     font-family: epilogue;
@@ -121,6 +101,7 @@
     color: var(--primary);
     letter-spacing: -1px;
     line-height: clamp(5px, 40px 60px);
+    text-align: left;
   }
   .G-section h1 span {
     font-weight: 900;
@@ -142,14 +123,14 @@
     width: 100%;
     text-align: left;
   }
-
+   
   .wrapper-carousel {
     grid-column: 1/12;
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    margin-top: 0px;
   }
 
   @media screen and (max-width: 768px) {
@@ -163,16 +144,14 @@
       line-height: 40px;
     }
       .wrapper-text {
-    grid-column: 1/12;
-    grid-row: 2;
+    grid-column: 2/12;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 10px;
   }
-  .wrapper-visuels {
-display: none;
-  }
+
   }
 </style>
