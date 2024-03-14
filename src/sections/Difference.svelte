@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 700px;
     font-size: 16px;
     opacity: 1;
     background-color: white;

@@ -52,32 +52,36 @@
 <section class="section-form">
   <h1>Contactez-nous dès aujourdhui!</h1>
   <div class="coordonnees">
-    <h4>Téléphone: <br> 0672 901 614</h4>
-    <h4>Mail:  <br>contact@gralypho.com</h4>
+    <a href="mailto:gralypho@gmail.com " class="contact-form">
+      <i class="fa-regular fa-envelope icon-coordonnees"></i> contact@gralypho.com</a
+    >
+    <a href="tel:0672901614" class="contact-form"
+      ><i class="fa-solid fa-phone-volume icon-coordonnees"></i> 0672 901 614</a
+    >
   </div>
   <form on:submit={handleSubmit} class="form">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" bind:value={nom} />
+    <label for="nom">Nom </label>
+    <input type="text" id="nom" bind:value={nom} placeholder="John" />
 
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" bind:value={prenom} />
+    <label for="prenom">Prénom </label>
+    <input type="text" id="prenom" bind:value={prenom} placeholder="Doe" />
 
-    <label for="societe">Société (optionnel):</label>
-    <input
-      type="text"
-      id="societe"
-      bind:value={societe}
-      placeholder="Champ vide si vous n'avez pas de nom de société"
-    />
+    <label for="societe">Société (optionnel)</label>
+    <input type="text" id="societe" bind:value={societe} placeholder="ikea" />
 
-    <label for="email">Email :</label>
-    <input type="email" id="email" bind:value={email} />
+    <label for="email">Email </label>
+    <input type="email" id="email" bind:value={email} placeholder="johndoe@gmail.com" />
 
-    <label for="telephone">Téléphone :</label>
-    <input type="tel" id="telephone" bind:value={telephone} />
+    <label for="telephone">Téléphone </label>
+    <input type="tel" id="telephone" bind:value={telephone} placeholder="0606070707" />
 
-    <label for="demande">Votre demande : </label>
-    <textarea id="demande" bind:value={demande} class="demande"></textarea>
+    <label for="demande">Votre demande </label>
+    <textarea
+      id="demande"
+      bind:value={demande}
+      class="demande"
+      placeholder="Votre projet, votre idée, vos questions ..."
+    ></textarea>
 
     <button type="submit">Envoyer</button>
   </form>
@@ -92,7 +96,7 @@
     background-color: white;
     padding: 20px;
   }
-.section-form h1 {
+  .section-form h1 {
     grid-column: 1/12;
     grid-row: 1;
     margin: 0 auto;
@@ -109,26 +113,36 @@
     grid-row: 3;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
     margin-top: 50px;
   }
   input {
-  border: 1px solid var(--primary);
+    border: 1px solid rgb(223, 218, 218);
     font-family: epilogue;
     font-weight: 400;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0px 0px 15px 0px rgba(186, 185, 185, 0.478);
+    box-shadow: 0px 0px 8px 0px rgba(186, 185, 185, 0.478);
+    width: clamp(300px, 35%, 400px);
+    text-align: left;
+  }
+  input::placeholder {
+    color: rgb(187, 183, 183);
   }
   .demande {
-    border: 1px solid var(--primary);
+    border: 1px solid rgb(223, 218, 218);
     font-family: epilogue;
     font-weight: 400;
     padding: 10px;
     border-radius: 8px;
+    width: clamp(300px, 35%, 400px);
     min-height: 200px;
     box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.14);
+  }
+  .demande::placeholder {
+    color: rgb(187, 183, 183);
   }
   label {
     border: none;
@@ -153,14 +167,21 @@
     grid-column: 1/12;
     grid-row: 2;
     margin-top: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
-  .coordonnees h4 {
+  .icon-coordonnees {
+    color: orange;
+  }
+  .contact-form {
     font-family: epilogue;
     font-weight: 500;
     color: var(--CTA);
     letter-spacing: -0.05em;
     font-size: var(--m);
     text-align: center;
+    word-spacing: 6px;
   }
 </style>
