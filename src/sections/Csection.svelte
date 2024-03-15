@@ -91,7 +91,8 @@
     font-size: 16px;
     background-color: rgb(255, 255, 255);
     margin-top: 0px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    overflow:hidden;
   }
   .wrapper-text h1 {
     font-family: epilogue;
@@ -137,6 +138,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 100px;
   }
 
   @media screen and (max-width: 1120px) {

@@ -1,36 +1,35 @@
 <script>
   import CardServices from "../Components/CardServices.svelte";
-
   const servicesTab = [
     {
       title: "Site internet",
-      lien: "/Siteq",
-      i: "🌐",
+      lien: "/Sites",
+        i:   "fa-solid fa-globe",
     },
     {
       title: "Application Web",
-      lien: "/Application",
-      i: "📱",
+      lien: "/Applications",
+      i: "fa-solid fa-mobile-screen",
     },
     {
       title: "Design",
       lien: "/Refonte",
-      i: "🎨",
+      i: "fa-solid fa-wand-magic-sparkles",
     },
     {
       title: "Référencement",
       lien: "/Referencement",
-      i: "🔍",
+      i: "fa-solid fa-magnifying-glass",
     },
     {
       title: "Réseaux Sociaux",
       lien: "/Marketing",
-      i: "📢",
+      i: "fa-solid fa-hashtag",
     },
     {
       title: "Stratégie",
       lien: "/Composants",
-      i: "📈",
+      i: "fa-solid fa-chart-simple",
     },
   ];
 </script>

@@ -9,7 +9,7 @@
     <div class="text-services">{text}</div>
     <p class="description-services">{description}</p>
   </div>
-  <img src={img} alt="" class="img-services" />
+<img class="img-services"src={img} alt="">
 </div>
 
 <style>
@@ -51,12 +51,8 @@
     margin-top: 20px;
   }
   .img-services {
-    max-width: 400px;
-    max-height: 200px;
-    background-color: var(--CTA);
-    object-fit: 100%;
-    object-position: center;
-       border-radius: 10px;
+width: auto;
+height: 200px;
   }
 
   @media screen and (max-width: 768px) {

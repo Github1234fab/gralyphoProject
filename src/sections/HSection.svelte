@@ -322,7 +322,7 @@
       letter-spacing: -0.04em;
     }
     .H-section h2 {
-      margin-top: 30px;
+      margin-top: 40px;
       line-height: 25px;
       font-size: 1em;
     }

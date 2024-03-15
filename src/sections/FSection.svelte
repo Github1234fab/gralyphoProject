@@ -47,6 +47,7 @@
     background-color: white;
     margin: 0 100px;
     height: 100%;
+    margin-bottom: 100px;
   }
   .wrapper-text h1 {
     text-align: left;
@@ -75,6 +76,7 @@
   @media screen and (max-width: 768px) {
     .wrapper-text {
       margin: 0 20px;
+          margin-bottom: 100px;
     }
     .wrapper-text h1 {
       font-size: var(--xl);

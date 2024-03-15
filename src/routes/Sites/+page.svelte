@@ -180,16 +180,6 @@
 
   <!-- ***************COLLAPSES*************** -->
 
-  <div class="testimonial">
-    <h2>
-      "Je n'aurais jamais pensé en apprendre autant sur toutes les fonctionnalités que peut contenir un site Web !! <br
-      />L'expertise de l'agence Gralypho nous a permis d'augmenter de 60% nos ventes en ligne ! "
-    </h2>
-    <h4>"Éloïse Humbert - CTO Rodiggia"</h4>
-  </div>
-
-  <!-- ***************COLLAPSES*************** -->
-
   <div class="wrapper-SectionB">
     <h1>Tarifs, Délais ...</h1>
     {#each accordeonTab as tab}
@@ -202,6 +192,18 @@
   <div class="wrapper-Fsection">
     <FSection />
   </div>
+
+
+  <!-- ***************TESTIMONIAL*************** -->
+
+  <div class="testimonial">
+    <h2>
+      "Je n'aurais jamais pensé en apprendre autant sur toutes les fonctionnalités que peut contenir un site Web !! <br
+      />L'expertise de l'agence Gralypho nous a permis d'augmenter de 60% nos ventes en ligne ! "
+    </h2>
+    <h4>"Éloïse Humbert - CTO Rodiggia"</h4>
+  </div>
+
 
   <!-- ***************CONTACT*************** -->
 
@@ -286,7 +288,7 @@
     gap: 10px;
     margin-top: 30px;
   }
-  .container-slider {
+  /* .container-slider {
     overflow-x: auto;
     margin-left: 100px;
     border-right: 3px double var(--primary);
@@ -331,7 +333,7 @@
     color: grey;
     margin-top: 20px;
     margin-bottom: 50px;
-  }
+  } */
 
   .wrapper-SectionB {
     grid-column: 1/13;
@@ -340,7 +342,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .wrapper-SectionB h1 {
     text-align: center;
@@ -348,8 +350,8 @@
     font-size: var(--xl);
     font-weight: 700;
     color: var(--primary);
-    margin-top: 60px;
-    letter-spacing: -3px;
+    margin-top: 0px;
+    letter-spacing: -1px;
     margin-bottom: 50px;
   }
   .wrapper-Fsection {
@@ -360,7 +362,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     background-color: white;
   }
 
@@ -381,7 +383,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
     height: 130%;
     background-color: var(--colorL);
     padding: 50px;
@@ -395,7 +397,8 @@
     text-align: center;
     line-height: 40px;
     letter-spacing: 0px;
-    margin-top: 0px;
+    margin-top: -30px;
+
   }
   .testimonial h4 {
     font-family: poppins;
@@ -405,6 +408,7 @@
     text-align: center;
     line-height: 40px;
     letter-spacing: -1px;
+        margin-bottom: 100px;
   }
   @keyframes bounce {
     0% {
@@ -448,10 +452,6 @@
       width: 60%;
     }
 
-    .section-slider h1 {
-      line-height: 55px;
-      letter-spacing: -2px;
-    }
   }
   @media screen and (min-width: 300px) and (max-width: 768px) {
     .hero h1 {
@@ -465,10 +465,7 @@
       margin-bottom: 50px;
       width: 60%;
     }
-    .section-slider h1 {
-      line-height: 40px;
-      letter-spacing: -1px;
-    }
+
     .wrapper-service {
       grid-column: 1/13;
       grid-row: 2;

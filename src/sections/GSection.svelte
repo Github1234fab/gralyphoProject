@@ -83,7 +83,7 @@
     height: auto;
     width: 100%;
     font-size: 16px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--greyBg);
   }
   .wrapper-text {
     grid-column: 2/12;

@@ -89,7 +89,7 @@
     height: auto;
     font-size: 16px;
     margin-top: 0px;
-    background-color: rgb(250, 250, 250);
+    background-color: white;
   }
   .gallery {
     overflow-x: auto;

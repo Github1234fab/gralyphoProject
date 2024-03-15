@@ -50,7 +50,7 @@
     padding: 40px;
     color: var(--colorH);
     font-size: var(--m);
-    font-weight: 800;
+    font-weight: 500;
     cursor: pointer;
     border-radius: 8px;
     border-top: none;
@@ -62,6 +62,8 @@
     /* background: linear-gradient(to left, rgb(192, 191, 191), rgb(228, 228, 228)); */
     height: 100px;
     text-align: left;
+    letter-spacing: -1px;
+    font-family: epilogue;
   }
   .button-after {
     position: absolute;

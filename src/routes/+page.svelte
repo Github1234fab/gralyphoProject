@@ -24,17 +24,19 @@
   <section id="sectionE">
     <ESection />
   </section>
+      <JSection />
+          <BeneficeSection />
     <Difference/>
   <!-- <SectionSocial/>  -->
 
   <!-- <ActionSection />
   <DSection /> -->
 
-    <BeneficeSection />
+
       <!-- <Csection /> -->
    
   <GSection />
-       <JSection />
+   
   <Form />
 </main>
 

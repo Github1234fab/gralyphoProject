@@ -24,7 +24,7 @@
 
 <div class="card-services">
   <h2>{title}</h2>
-  <a href={lien}><div class="icon">{i}</div> </a>
+  <a href={lien}><i class="{i} icon"></i> </a>
 </div>
 
 <style>
@@ -49,8 +49,9 @@
     text-align: center;
   }
   .icon {
+    margin-top: 10px;
     transition: 0.7s ease-in-out;
-    color: white;
+    color: var(--blue2);
     font-size: 3.4em;
     z-index: 2;
     text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.235);

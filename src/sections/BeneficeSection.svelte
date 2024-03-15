@@ -34,7 +34,6 @@
         <span class="title-yellow">Augmentez</span><br />
         votre potentiel client. <i class="fa-solid fa-sack-dollar icon-difference"></i>
       </h1>
-
       <p>
         Augmentez vos revenus grâce à une visibilité acquise grâce à notre expertise SEO. + de visibilité + de prospects
         + plus de clients = plus d'argent!
@@ -70,7 +69,7 @@
     align-items: left;
     justify-content: left;
     width: 100%;
-    min-height: 420px;
+    min-height: 340px;
     box-shadow: 0px 0px 2px rgb(127, 124, 124);
     padding: 20px;
     margin-bottom: 100px;
