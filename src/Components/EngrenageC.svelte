@@ -11,7 +11,6 @@
   height="280.000000pt"
   viewBox="0 0 1280.000000 1280.000000"
   preserveAspectRatio="xMidYMid meet"
-
 >
   <defs>
     <filter id="shadow" x="-20" y="-20" height="150" width="150">
@@ -65,12 +64,13 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
 
 <style>
   .C {
-    top: 100px;
-    left: 220px;
+    top: 0px;
+    left: 30px;
     position: absolute;
-    width: 230px;
-    height: 230px;
-    animation: rotation 17s linear infinite ;
+    width: 30px;
+    height: 30px;
+    animation: rotation 18s linear infinite reverse;
+    z-index: 0;
   }
   @keyframes rotation {
     0% {
@@ -81,62 +81,5 @@ c485 0 474 -1 521 62 34 46 98 426 134 793 24 252 24 838 0 1090 -36 367 -100
     }
   }
 
-  /* @media only screen and (min-width: 1900px) and (max-width: 2500px) {
-    .C {
-      top: 233px;
-      left: 80px;
-      width: 500px;
-      height: 500px;
-    }
-  }
 
-  @media only screen and (min-width: 1400px) and (max-width: 1900px) {
-    .C {
-      top: 233px;
-      left: 80px;
-      width: 400px;
-      height: 400px;
-    }
-  }
-  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
-    .C {
-      top: 194px;
-      left: 75px;
-      width: 350px;
-      height: 350px;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .C {
-      top: 190px;
-      left: 94px;
-      width: 290px;
-      height: 290px;
-    }
-  }
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
-    .C {
-      top: 190px;
-      left: 94px;
-      width: 230px;
-      height: 230px;
-    }
-  }
-
-  @media only screen and (min-width: 300px) and (max-width: 576px) {
-    .C {
-      top: 170px;
-      left: 60px;
-      width: 130px;
-      height: 130px;
-    }
-  } */
-    @media only screen and (min-width: 300px) and (max-width: 576px) {
-    .C {
-      top: 200px;
-      left: 110px;
-      width: 110px;
-      height: 110px;
-    }
-  } 
 </style>

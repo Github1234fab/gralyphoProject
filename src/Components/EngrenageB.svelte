@@ -56,12 +56,13 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
 
 <style>
   .B {
-    top: 7px;
-    left: 19px;
+    top: -25px;
+    left: 20px;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 30px;
+    height: 30px;
     animation: rotation 17s linear infinite;
+    z-index: 0;
   }
   @keyframes rotation {
     0% {
@@ -72,65 +73,5 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     }
   }
 
-   /* @media only screen and (min-width: 1900px) and (max-width: 2500px) {
-    .B {
-      top: 3px;
-      left: 20px;
-      width: 400px;
-      height: 400px;
-    }
-  }
-
-  @media only screen and (min-width: 1400px) and (max-width: 1900px) {
-    .B {
-      top: 133px;
-      left: 0px;
-      width: 300px;
-      height: 300px;
-    }
-  }
-
-  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
-    .B {
-      top: 84px;
-      left: 44px;
-      width: 300px;
-      height: 300px;
-    }
-  } 
-  @media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .B {
-      top: 84px;
-      left: 44px;
-      width: 250px;
-      height: 250px;
-    }
-  } 
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
-    .B {
-      top: 84px;
-      left: 44px;
-      width: 250px;
-      height: 250px;
-      opacity: 0.7;
-    }
-  }
-
-  @media only screen and (min-width: 300px) and (max-width: 576px) {
-    .B {
-      top: 100px;
-      left: 65px;
-      width: 140px;
-      height: 140px;
-    }
-  } */
-
-    @media only screen and (min-width: 300px) and (max-width: 576px) {
-    .B {
-      top: 57px;
-      left: 47px;
-      width: 140px;
-      height: 140px;
-    }
-  } 
+  
 </style>

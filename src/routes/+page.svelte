@@ -16,9 +16,11 @@
   import ActionSection from "../sections/ActionSection.svelte";
   import Difference from "../sections/Difference.svelte";
     import Form from "../Components/Form.svelte";
+    import Mouse from "../Components/Mouse.svelte"
 </script>
 
 <main in:fade={{ duration: 2000 }}>
+<Mouse/>
   <HSection />
 
   <section id="sectionE">

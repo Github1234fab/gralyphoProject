@@ -8,6 +8,7 @@
 body {
   background-color: white;
   scroll-behavior: smooth;
+   cursor: none;
 }
 html {
   scroll-behavior: smooth;
@@ -75,7 +76,9 @@ a {
   --alternate: #877455;
   --newBlue: #2993fa;
   --CTA: #4682b4;
+  --CTAHero: #ffa500;
   --CTA2: #ff7f00;
+  --CTAHero2: #add8e6;
   --bgAssets: #4683b42b;
   --greyBg: rgb(250, 250, 250);
   --yellow: #ffd700;
@@ -98,4 +101,8 @@ a {
   --orange: #ffa500;
   --rouge: #ff6347;
   --bleuAcier: #4682b4;
+
+
+  --line-url: url(../Assets/png-gralypho/line-4.svg);
+
 }

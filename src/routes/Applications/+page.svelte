@@ -4,6 +4,7 @@
   import Header from "../../sections/Header.svelte";
   import CardsSectionB from "../../Components/CardsSectionB.svelte";
   import Form from "../../Components/Form.svelte";
+  import Mouse from "../../Components/Mouse.svelte";
 
   let collapseTab = [
     {
@@ -26,6 +27,7 @@
 </script>
 
 <Header />
+<Mouse/>
 
 <section class="application-section" in:fade={{ duration: 3000 }}>
 

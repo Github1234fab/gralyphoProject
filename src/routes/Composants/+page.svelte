@@ -27,6 +27,7 @@
   import Corporated from "../../Assets/png-gralypho/corporate.png";
   import institutionnel from "../../Assets/png-gralypho/institutionnel.png";
   import Form from "../../Components/Form.svelte";
+  import Mouse from "../../Components/Mouse.svelte";
   // import Csection from "../../sections/Csection.svelte";
 
   let accordeonTab = [
@@ -107,6 +108,7 @@
 </script>
 
 <Header />
+<Mouse/>
 
 <!-- ***************HERO*************** -->
 

@@ -1,10 +1,12 @@
 <div class="rect">
   <div class="rec-left">G</div>
+  <h1>Gralypho</h1>
 </div>
 
 <style>
   .rect {
     display: flex;
+    flex-direction: column;
     width: 130px;
     height: 40px;
     font-family: poppins;
@@ -12,9 +14,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-left: -30px;
-     
+    margin-left: -30px; 
   }
+  .rect h1{
+    font-size: 0.7em;
+    color: #6CA0DC;
+  }
+
   .rect:hover{
         animation: bounce 0.4s ease-in-out;
   }

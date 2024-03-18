@@ -2,6 +2,7 @@
   import burger from "../Assets/png-gralypho/burger-menu-right-svgrepo-com.svg";
   import { fade, slide } from "svelte/transition";
   import Logo from "../Components/Gralypho.svelte";
+    import Engrenage from "../Components/Engrenages.svelte";
 
   let toggle = false;
   function display() {
@@ -12,7 +13,9 @@
 
 <nav class="navigation">
   <div class="wrapper-logo-burger">
-    <a href="/" class="logo"><Logo /></a>
+   
+    <a href="/" class="logo"> <Engrenage/></a>
+    <!-- <Logo /> -->
     <h1 class="title">Gralypho, créateur de site Web & Application</h1>
     <button class="burger-menu" aria-label="Menu" on:click={display}>
       <i class="fa-solid fa-bars burger" class:visible={toggle}></i>
@@ -44,10 +47,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 30px;
     font-size: 16px;
-    border-bottom: 1px rgb(74, 74, 74) solid;
+    /* border-bottom: 1px rgb(74, 74, 74) solid; */
     background-color: var(--primary);
+    z-index: 2;
   }
 
   .navigation h1 span {
@@ -96,7 +100,7 @@
     margin-top: 50px;
     margin-bottom: 40px;
     width: 100vw;
-    z-index: 0;
+    z-index: 2;
   }
   a {
     color: white;
@@ -104,6 +108,7 @@
     font-weight: 300;
     text-decoration: none;
     transition: 0.4s ease-in-out;
+      z-index: 2;
   }
   a:hover {
     transition: 0.4s ease-in-out;

@@ -98,12 +98,13 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
 
 <style>
   .A {
-    top: 175px;
-    left: -20px;
+    top: -10px;
+    left: 0px;
     position: absolute;
-    width: 290px;
-    height: 290px;
+    width: 30px;
+    height: 30px;
     animation: rotation 19s linear infinite reverse;
+    z-index: 0;
   }
   @keyframes rotation {
     0% {
@@ -116,66 +117,5 @@ l20 -30 -25 28 c-36 42 -102 173 -127 249 -19 60 -24 67 -43 63 -12 -3 -80
 
   /* ******************MEDIA************************ */
 
-   /* @media only screen and (min-width: 1900px) and (max-width: 2500px) {
-    .A {
-      top: 103px;
-      left: -200px;
-      width: 500px;
-      height: 500px;
-    }
-  }
 
-    @media only screen and (min-width: 1400px) and (max-width: 1900px) {
-    .A {
-      top: 233px;
-      left: -80px;
-      width: 400px;
-      height: 400px;
-    }
-  }
-  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
-    .A {
-      top: 133px;
-      left: -80px;
-      width: 400px;
-      height: 400px;
-    }
-  } */
-  /* @media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .A {
-      top: 133px;
-      left: -70px;
-      width: 300px;
-      height: 300px;
-    }
-  } */
-
-  /* @media only screen and (min-width: 576px) and (max-width: 768px) {
-    .A {
-      top: 204px;
-      left: 0px;
-      width: 220px;
-      height: 220px;
-    }
-  }
-    @media only screen and (min-width: 300px) and (max-width: 576px) {
-       .A {
-      top: 170px;
-      left: -20px;
-      width: 130px;
-      height: 130px;
-
-    }
-  }  */
-    @media only screen and (min-width: 300px) and (max-width: 576px) {
-       .A {
-      top: 160px;
-      left: -50px;
-      width: 180px;
-      height: 180px;
-
-    }
-  }
-   
-  
 </style>

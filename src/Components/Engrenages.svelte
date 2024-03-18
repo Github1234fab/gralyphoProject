@@ -44,6 +44,20 @@
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: 0;
+  }
+  .engrenage-wrapper::after {
+    position: absolute;
+    content: "Gralypho";
+    font-family: Geologica;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    z-index: 3;
+    top: -20px;
+    letter-spacing: -1px;
+    background-color:  #1a1c2156;
+    padding: 5px;
   }
 
   @keyframes rotation {
